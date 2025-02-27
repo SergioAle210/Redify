@@ -1,0 +1,3501 @@
+usuario_id,contenido_id,tipo_contenido,fecha_comentario,tipo,editado
+1495,607,Post,2020-04-09,"['Sticker', 'Emoji', 'Texto']",False
+196,273,Post,2022-06-09,"['Texto', 'Sticker', 'Emoji']",False
+324,256,Post,2023-06-04,['Texto'],False
+435,162,Post,2023-10-28,"['Texto', 'Sticker']",False
+801,967,Post,2020-05-03,"['Emoji', 'Sticker', 'Texto']",True
+433,550,Post,2020-07-12,['Texto'],True
+1245,302,Post,2023-01-06,"['Emoji', 'Texto', 'Sticker']",False
+346,436,Post,2023-01-02,"['Emoji', 'Sticker', 'Texto']",False
+924,820,Post,2022-03-01,"['Emoji', 'Sticker']",False
+728,89,Post,2020-09-14,"['Sticker', 'Emoji', 'Texto']",False
+1231,1054,Post,2025-02-13,"['Emoji', 'Texto', 'Sticker']",True
+627,493,Post,2025-01-29,"['Emoji', 'Sticker', 'Texto']",False
+574,3,Post,2022-07-10,"['Texto', 'Emoji']",False
+1188,72,Post,2025-01-12,"['Emoji', 'Sticker', 'Texto']",True
+708,272,Post,2021-10-02,['Emoji'],True
+384,2,Post,2022-06-25,"['Sticker', 'Emoji']",True
+105,1092,Post,2022-06-08,"['Texto', 'Sticker', 'Emoji']",True
+334,1188,Post,2020-09-22,['Texto'],True
+794,953,Post,2023-06-17,"['Texto', 'Sticker']",True
+1156,1011,Post,2020-11-17,"['Texto', 'Sticker', 'Emoji']",False
+208,296,Post,2023-04-01,"['Sticker', 'Texto', 'Emoji']",True
+766,452,Post,2020-07-10,['Texto'],False
+1066,1149,Post,2021-09-28,"['Sticker', 'Texto', 'Emoji']",True
+866,354,Post,2024-11-29,"['Sticker', 'Texto']",True
+200,264,Post,2023-11-19,"['Texto', 'Emoji', 'Sticker']",False
+1335,557,Post,2024-12-05,"['Emoji', 'Sticker']",True
+299,612,Post,2021-06-12,"['Emoji', 'Texto']",True
+1390,145,Post,2023-09-12,"['Emoji', 'Texto']",True
+1014,210,Post,2021-08-16,['Sticker'],False
+1390,1189,Post,2021-05-04,"['Sticker', 'Texto', 'Emoji']",False
+196,622,Post,2022-11-29,"['Sticker', 'Texto', 'Emoji']",True
+1011,353,Post,2023-01-05,['Sticker'],True
+499,365,Post,2022-12-27,"['Sticker', 'Texto', 'Emoji']",False
+42,211,Post,2023-12-10,['Texto'],False
+1139,702,Post,2022-09-29,"['Emoji', 'Texto']",False
+410,820,Post,2021-01-24,['Sticker'],False
+747,67,Post,2022-05-16,['Texto'],True
+515,490,Post,2023-02-01,['Texto'],False
+1099,871,Post,2020-07-10,"['Sticker', 'Emoji']",False
+786,602,Post,2024-08-02,"['Emoji', 'Texto']",False
+496,423,Post,2020-06-23,['Texto'],False
+1071,194,Post,2023-11-04,"['Emoji', 'Sticker']",True
+175,1193,Post,2023-06-02,"['Emoji', 'Texto', 'Sticker']",True
+138,624,Post,2020-05-13,"['Texto', 'Sticker']",True
+1287,336,Post,2022-02-16,"['Emoji', 'Texto']",True
+546,799,Post,2023-09-09,"['Emoji', 'Texto']",True
+625,795,Post,2022-02-18,"['Texto', 'Sticker']",True
+1041,1060,Post,2022-05-31,"['Texto', 'Emoji', 'Sticker']",False
+1296,407,Post,2020-04-07,"['Sticker', 'Emoji', 'Texto']",False
+1389,1005,Post,2025-02-07,['Texto'],True
+1008,322,Post,2020-11-25,"['Emoji', 'Texto']",True
+1330,178,Post,2023-05-23,['Texto'],True
+627,11,Post,2020-10-25,"['Texto', 'Sticker']",False
+828,42,Post,2023-09-10,"['Sticker', 'Texto']",False
+517,760,Post,2024-12-18,['Sticker'],False
+1265,735,Post,2022-01-04,"['Emoji', 'Texto', 'Sticker']",True
+880,1194,Post,2021-03-15,['Texto'],False
+456,1070,Post,2022-03-29,"['Texto', 'Emoji', 'Sticker']",True
+380,656,Post,2021-11-01,"['Texto', 'Emoji']",False
+554,974,Post,2022-04-07,"['Texto', 'Sticker']",False
+120,609,Post,2023-05-14,['Sticker'],True
+592,300,Post,2021-11-10,"['Emoji', 'Sticker', 'Texto']",False
+318,866,Post,2022-08-19,['Sticker'],True
+526,828,Post,2022-11-25,"['Texto', 'Emoji']",True
+899,329,Post,2021-08-15,"['Sticker', 'Emoji']",False
+1413,21,Post,2024-09-11,"['Emoji', 'Texto']",True
+447,985,Post,2020-06-01,"['Texto', 'Sticker', 'Emoji']",False
+771,778,Post,2022-06-10,"['Emoji', 'Texto', 'Sticker']",False
+1491,987,Post,2022-01-08,['Sticker'],True
+527,346,Post,2021-10-04,"['Emoji', 'Sticker']",True
+361,1104,Post,2021-08-31,"['Sticker', 'Emoji', 'Texto']",True
+1034,297,Post,2023-06-10,"['Texto', 'Emoji']",False
+1463,1195,Post,2022-05-06,"['Emoji', 'Sticker', 'Texto']",False
+1350,1035,Post,2022-07-06,['Emoji'],False
+1420,77,Post,2022-06-04,"['Emoji', 'Texto']",True
+939,711,Post,2023-05-04,"['Texto', 'Emoji']",False
+76,1145,Post,2024-06-30,"['Sticker', 'Texto']",True
+663,1068,Post,2020-12-18,"['Emoji', 'Sticker']",True
+62,776,Post,2023-08-08,['Sticker'],False
+153,793,Post,2022-09-21,"['Sticker', 'Texto']",False
+650,143,Post,2025-02-16,['Texto'],False
+539,228,Post,2022-06-24,"['Texto', 'Emoji']",False
+1027,863,Post,2023-09-09,"['Sticker', 'Emoji']",True
+233,861,Post,2020-12-20,"['Sticker', 'Texto', 'Emoji']",True
+1359,491,Post,2022-12-12,['Sticker'],True
+1007,63,Post,2021-07-01,"['Sticker', 'Texto']",True
+427,968,Post,2024-06-10,"['Emoji', 'Sticker', 'Texto']",True
+414,672,Post,2023-08-23,"['Texto', 'Sticker']",True
+334,40,Post,2024-11-04,"['Sticker', 'Emoji']",True
+1450,1130,Post,2021-02-12,"['Emoji', 'Sticker']",True
+595,99,Post,2022-12-10,"['Texto', 'Emoji']",False
+648,180,Post,2021-01-30,"['Texto', 'Sticker', 'Emoji']",False
+26,765,Post,2023-03-25,"['Emoji', 'Texto', 'Sticker']",True
+1314,535,Post,2023-08-31,['Emoji'],True
+690,1079,Post,2024-02-13,"['Emoji', 'Texto', 'Sticker']",True
+768,1002,Post,2022-09-20,['Texto'],True
+220,844,Post,2020-04-22,"['Emoji', 'Sticker', 'Texto']",True
+330,1104,Post,2024-04-17,"['Emoji', 'Texto', 'Sticker']",False
+1259,1037,Post,2025-02-24,"['Sticker', 'Emoji', 'Texto']",True
+1462,988,Post,2022-04-19,"['Texto', 'Sticker', 'Emoji']",True
+787,178,Post,2025-01-04,"['Texto', 'Sticker', 'Emoji']",True
+456,774,Post,2020-12-18,"['Emoji', 'Sticker']",False
+1209,403,Post,2023-11-20,"['Sticker', 'Emoji']",True
+108,477,Post,2020-05-26,"['Emoji', 'Texto']",False
+954,1121,Post,2023-10-04,"['Sticker', 'Emoji', 'Texto']",False
+1499,133,Post,2020-04-17,['Sticker'],False
+818,1152,Post,2024-10-08,"['Texto', 'Sticker', 'Emoji']",False
+630,118,Post,2020-12-30,"['Sticker', 'Emoji']",False
+856,57,Post,2021-05-03,"['Texto', 'Sticker', 'Emoji']",False
+197,583,Post,2023-01-29,"['Emoji', 'Sticker', 'Texto']",True
+927,599,Post,2023-11-22,"['Emoji', 'Texto', 'Sticker']",False
+1226,1020,Post,2020-09-05,"['Emoji', 'Texto', 'Sticker']",True
+26,230,Post,2023-06-30,"['Emoji', 'Sticker', 'Texto']",False
+764,313,Post,2020-05-31,['Sticker'],False
+762,802,Post,2021-06-22,"['Emoji', 'Sticker']",True
+1133,868,Post,2024-09-01,"['Sticker', 'Emoji', 'Texto']",True
+1368,803,Post,2021-07-24,"['Sticker', 'Texto', 'Emoji']",False
+955,1179,Post,2021-05-30,"['Sticker', 'Emoji']",True
+1133,135,Post,2022-05-31,"['Emoji', 'Sticker']",False
+1184,961,Post,2024-10-30,"['Texto', 'Emoji', 'Sticker']",False
+172,386,Post,2025-02-14,"['Texto', 'Emoji', 'Sticker']",True
+986,825,Post,2023-11-17,['Emoji'],True
+808,582,Post,2020-09-20,"['Sticker', 'Texto', 'Emoji']",False
+1072,950,Post,2022-10-22,"['Emoji', 'Sticker', 'Texto']",False
+606,1024,Post,2024-03-14,['Emoji'],True
+1381,988,Post,2020-08-03,"['Texto', 'Sticker']",True
+1190,886,Post,2023-08-22,['Emoji'],False
+1292,705,Post,2024-04-21,['Texto'],False
+648,859,Post,2023-02-15,['Sticker'],False
+120,845,Post,2023-06-29,['Texto'],True
+72,208,Post,2022-12-15,"['Texto', 'Sticker']",False
+1272,860,Post,2020-06-07,"['Texto', 'Sticker']",True
+440,359,Post,2020-04-22,['Sticker'],True
+1008,409,Post,2020-04-24,['Emoji'],False
+1059,358,Post,2021-09-15,"['Texto', 'Sticker']",True
+259,95,Post,2021-02-11,['Sticker'],False
+1140,920,Post,2024-12-29,['Sticker'],False
+247,759,Post,2023-12-27,"['Emoji', 'Texto']",False
+1484,960,Post,2023-12-11,['Texto'],True
+1268,1113,Post,2023-09-27,['Emoji'],False
+1405,731,Post,2022-09-25,"['Texto', 'Sticker']",False
+792,56,Post,2023-12-09,"['Emoji', 'Texto']",False
+87,3,Post,2020-03-18,"['Emoji', 'Sticker']",False
+340,1124,Post,2022-10-17,"['Texto', 'Emoji']",True
+534,672,Post,2024-11-20,"['Sticker', 'Emoji']",False
+1267,374,Post,2023-08-21,['Texto'],True
+108,38,Post,2020-05-25,"['Sticker', 'Emoji']",False
+627,237,Post,2020-11-06,"['Sticker', 'Texto']",True
+170,1040,Post,2023-08-02,"['Texto', 'Emoji', 'Sticker']",True
+3,776,Post,2023-01-21,"['Emoji', 'Sticker', 'Texto']",True
+1024,57,Post,2023-07-17,"['Emoji', 'Sticker']",False
+1076,968,Post,2020-09-28,"['Texto', 'Emoji', 'Sticker']",False
+291,255,Post,2021-05-11,['Sticker'],False
+223,301,Post,2022-10-17,['Texto'],False
+798,703,Post,2023-11-12,"['Texto', 'Sticker', 'Emoji']",True
+1382,197,Post,2023-08-28,"['Emoji', 'Sticker']",False
+1118,209,Post,2021-04-18,['Sticker'],False
+1439,336,Post,2022-12-24,['Texto'],True
+1113,771,Post,2023-08-29,['Emoji'],True
+286,206,Post,2025-02-07,['Texto'],False
+51,1170,Post,2023-02-07,"['Texto', 'Sticker']",False
+1128,398,Post,2020-09-12,"['Emoji', 'Texto']",False
+813,13,Post,2021-05-08,"['Emoji', 'Texto', 'Sticker']",False
+619,32,Post,2023-04-25,"['Sticker', 'Emoji', 'Texto']",False
+639,584,Post,2020-09-19,['Emoji'],False
+756,772,Post,2023-09-29,"['Sticker', 'Texto']",False
+381,180,Post,2021-04-21,['Texto'],True
+1196,370,Post,2024-06-03,"['Sticker', 'Texto', 'Emoji']",False
+788,169,Post,2020-05-27,['Texto'],True
+210,803,Post,2021-08-22,"['Emoji', 'Texto']",False
+308,776,Post,2023-05-27,"['Sticker', 'Texto', 'Emoji']",True
+1494,235,Post,2021-01-30,"['Texto', 'Emoji', 'Sticker']",True
+555,700,Post,2022-06-28,"['Emoji', 'Texto', 'Sticker']",False
+383,169,Post,2021-09-04,"['Texto', 'Emoji', 'Sticker']",True
+68,180,Post,2021-06-12,"['Sticker', 'Texto', 'Emoji']",True
+980,466,Post,2024-08-16,['Texto'],False
+807,720,Post,2022-08-22,"['Sticker', 'Texto']",True
+563,221,Post,2024-05-25,['Emoji'],False
+687,49,Post,2022-08-05,"['Texto', 'Sticker', 'Emoji']",True
+197,1162,Post,2023-06-04,"['Emoji', 'Texto']",True
+372,542,Post,2025-02-19,"['Texto', 'Sticker', 'Emoji']",False
+57,820,Post,2024-04-17,"['Texto', 'Sticker']",True
+1421,263,Post,2024-08-03,['Texto'],False
+789,569,Post,2023-01-29,"['Sticker', 'Texto', 'Emoji']",True
+714,692,Post,2021-03-12,"['Emoji', 'Texto', 'Sticker']",True
+362,153,Post,2021-12-10,['Emoji'],False
+350,573,Post,2023-09-29,"['Sticker', 'Texto']",False
+158,1049,Post,2024-08-22,['Texto'],True
+1132,848,Post,2020-10-11,['Sticker'],True
+1078,1013,Post,2022-06-26,['Texto'],False
+459,1062,Post,2024-09-28,"['Sticker', 'Emoji', 'Texto']",True
+544,318,Post,2020-05-03,['Emoji'],False
+951,122,Post,2022-06-29,"['Texto', 'Sticker', 'Emoji']",False
+1189,383,Post,2022-06-03,"['Sticker', 'Texto']",False
+1491,383,Post,2023-05-09,"['Emoji', 'Texto']",True
+1434,537,Post,2022-02-15,"['Sticker', 'Texto', 'Emoji']",False
+294,176,Post,2023-01-06,"['Texto', 'Sticker', 'Emoji']",True
+1439,883,Post,2024-10-31,"['Texto', 'Sticker', 'Emoji']",True
+792,973,Post,2020-06-26,['Sticker'],True
+310,297,Post,2020-07-07,"['Sticker', 'Texto', 'Emoji']",True
+856,332,Post,2021-04-17,['Texto'],True
+28,1126,Post,2023-12-25,['Texto'],True
+1186,178,Post,2021-04-26,"['Emoji', 'Texto']",True
+1183,487,Post,2020-12-12,"['Sticker', 'Texto', 'Emoji']",True
+186,141,Post,2023-12-14,"['Emoji', 'Texto', 'Sticker']",True
+987,474,Post,2021-01-07,['Texto'],False
+293,1163,Post,2022-06-03,"['Emoji', 'Sticker', 'Texto']",False
+945,150,Post,2021-03-18,['Emoji'],True
+620,289,Post,2021-01-19,['Emoji'],False
+1374,818,Post,2021-04-17,"['Texto', 'Emoji', 'Sticker']",False
+1381,940,Post,2021-01-30,"['Sticker', 'Emoji', 'Texto']",False
+936,71,Post,2021-09-08,"['Sticker', 'Emoji', 'Texto']",False
+504,135,Post,2020-07-01,['Emoji'],False
+632,140,Post,2023-02-06,['Texto'],False
+1285,535,Post,2024-08-04,"['Emoji', 'Sticker']",True
+1193,735,Post,2024-06-04,"['Sticker', 'Texto']",True
+421,533,Post,2024-06-07,"['Texto', 'Emoji']",False
+1470,1140,Post,2022-08-19,"['Emoji', 'Sticker', 'Texto']",True
+20,1077,Post,2020-09-22,"['Emoji', 'Texto', 'Sticker']",False
+197,3,Post,2025-02-11,"['Emoji', 'Sticker', 'Texto']",False
+499,165,Post,2021-10-26,"['Emoji', 'Sticker']",False
+1381,813,Post,2023-06-24,"['Texto', 'Sticker', 'Emoji']",False
+514,1023,Post,2021-08-02,"['Sticker', 'Emoji']",True
+1048,1121,Post,2023-05-06,['Emoji'],False
+891,1100,Post,2021-12-10,['Sticker'],True
+265,564,Post,2020-12-04,"['Emoji', 'Texto']",True
+24,243,Post,2022-01-14,"['Texto', 'Emoji']",False
+524,584,Post,2022-09-19,"['Emoji', 'Texto']",True
+859,1147,Post,2025-02-16,"['Texto', 'Sticker', 'Emoji']",False
+589,236,Post,2022-04-28,"['Emoji', 'Texto', 'Sticker']",True
+1295,555,Post,2023-10-05,"['Sticker', 'Texto']",False
+592,1180,Post,2020-05-21,['Texto'],True
+780,872,Post,2024-02-13,['Emoji'],True
+235,981,Post,2024-07-05,"['Sticker', 'Emoji', 'Texto']",False
+331,551,Post,2020-09-27,"['Sticker', 'Texto']",True
+128,784,Post,2024-07-01,"['Emoji', 'Sticker', 'Texto']",True
+1409,1188,Post,2021-07-07,['Emoji'],False
+723,395,Post,2023-01-09,"['Emoji', 'Texto']",True
+1487,560,Post,2021-03-29,['Sticker'],False
+233,483,Post,2021-01-28,['Texto'],True
+1466,837,Post,2022-02-28,"['Emoji', 'Sticker', 'Texto']",True
+274,502,Post,2024-10-12,['Sticker'],False
+1162,450,Post,2023-01-25,"['Sticker', 'Texto']",False
+1264,1017,Post,2021-07-18,"['Emoji', 'Texto', 'Sticker']",False
+987,324,Post,2021-04-17,['Sticker'],True
+1153,1020,Post,2021-07-26,['Emoji'],False
+291,954,Post,2022-01-04,['Emoji'],False
+1484,872,Post,2021-03-09,"['Sticker', 'Emoji']",False
+737,447,Post,2020-09-16,"['Texto', 'Sticker', 'Emoji']",True
+546,998,Post,2022-10-19,"['Emoji', 'Sticker']",False
+760,546,Post,2021-09-23,"['Texto', 'Sticker']",False
+1061,615,Post,2022-01-24,['Sticker'],True
+331,1056,Post,2020-10-29,['Sticker'],True
+12,1134,Post,2020-10-29,['Texto'],True
+1327,1108,Post,2023-03-28,"['Texto', 'Emoji']",True
+1163,1114,Post,2022-10-18,"['Texto', 'Emoji', 'Sticker']",True
+1423,60,Post,2024-04-06,"['Sticker', 'Emoji']",False
+337,416,Post,2025-02-07,"['Sticker', 'Texto', 'Emoji']",True
+157,1117,Post,2023-12-31,"['Texto', 'Emoji']",True
+1492,884,Post,2020-03-23,"['Sticker', 'Texto', 'Emoji']",False
+1108,66,Post,2022-05-06,"['Emoji', 'Texto']",False
+96,607,Post,2025-01-05,"['Sticker', 'Emoji', 'Texto']",False
+74,483,Post,2024-09-09,['Emoji'],False
+1203,943,Post,2024-06-28,"['Texto', 'Sticker']",True
+374,338,Post,2022-02-02,"['Sticker', 'Emoji', 'Texto']",True
+472,866,Post,2020-10-25,"['Emoji', 'Texto']",True
+457,688,Post,2021-08-19,['Emoji'],True
+1020,1176,Post,2020-04-19,"['Texto', 'Emoji', 'Sticker']",True
+1095,1176,Post,2023-05-17,['Texto'],True
+1435,661,Post,2020-06-15,['Texto'],True
+929,176,Post,2022-10-29,"['Texto', 'Sticker', 'Emoji']",False
+942,1178,Post,2022-02-09,"['Emoji', 'Texto']",False
+773,288,Post,2025-02-08,['Texto'],True
+1210,524,Post,2023-01-23,"['Emoji', 'Sticker']",False
+1056,1079,Post,2022-10-16,"['Emoji', 'Sticker']",True
+535,790,Post,2022-03-26,"['Sticker', 'Texto']",False
+530,826,Post,2021-07-28,['Sticker'],True
+509,450,Post,2024-07-12,['Texto'],True
+1493,15,Post,2022-07-05,"['Sticker', 'Texto']",False
+1368,830,Post,2023-02-07,['Texto'],False
+1336,362,Post,2020-10-20,"['Texto', 'Emoji']",True
+258,1078,Post,2021-04-05,"['Texto', 'Sticker', 'Emoji']",True
+223,184,Post,2024-12-12,['Emoji'],False
+275,106,Post,2021-12-06,"['Emoji', 'Texto']",False
+1345,599,Post,2024-09-16,['Sticker'],False
+713,853,Post,2024-01-19,"['Emoji', 'Texto']",False
+91,1011,Post,2024-08-04,['Emoji'],False
+1414,483,Post,2024-06-29,"['Emoji', 'Sticker', 'Texto']",False
+1442,753,Post,2022-06-14,['Sticker'],True
+766,491,Post,2021-11-14,"['Sticker', 'Emoji']",False
+339,259,Post,2020-10-21,['Emoji'],False
+939,829,Post,2020-03-07,"['Texto', 'Emoji']",False
+629,1183,Post,2023-11-18,['Emoji'],True
+1324,316,Post,2022-08-23,"['Texto', 'Emoji']",False
+1137,202,Post,2025-01-06,"['Texto', 'Sticker']",True
+1115,760,Post,2020-11-01,"['Sticker', 'Texto', 'Emoji']",False
+1044,823,Post,2022-05-22,"['Sticker', 'Texto']",False
+792,1154,Post,2024-08-21,"['Sticker', 'Emoji']",False
+774,1160,Post,2023-12-28,"['Sticker', 'Emoji']",False
+878,137,Post,2023-09-05,['Texto'],False
+36,93,Post,2022-07-18,['Emoji'],False
+274,367,Post,2021-09-02,"['Texto', 'Sticker', 'Emoji']",True
+732,53,Post,2023-11-29,"['Sticker', 'Texto']",False
+350,48,Post,2021-12-30,['Texto'],True
+941,280,Post,2020-03-11,['Texto'],False
+456,524,Post,2020-03-15,['Texto'],True
+1061,282,Post,2025-02-16,"['Texto', 'Sticker']",False
+933,1049,Post,2021-07-28,"['Texto', 'Sticker']",True
+1371,491,Post,2020-08-06,"['Texto', 'Emoji']",True
+1470,936,Post,2021-01-05,['Sticker'],False
+204,435,Post,2024-09-08,"['Emoji', 'Texto']",False
+956,521,Post,2024-12-05,"['Sticker', 'Emoji', 'Texto']",False
+334,658,Post,2024-04-15,"['Sticker', 'Texto', 'Emoji']",False
+1302,1169,Post,2020-09-02,"['Texto', 'Sticker']",False
+216,598,Post,2023-09-17,['Sticker'],True
+592,492,Post,2024-10-12,"['Sticker', 'Texto', 'Emoji']",True
+5,1108,Post,2021-10-30,"['Sticker', 'Emoji', 'Texto']",False
+539,244,Post,2021-05-30,"['Sticker', 'Texto']",False
+1414,103,Post,2025-01-03,"['Emoji', 'Sticker', 'Texto']",True
+1018,680,Post,2021-05-30,"['Sticker', 'Texto', 'Emoji']",False
+729,35,Post,2022-06-19,"['Emoji', 'Texto', 'Sticker']",True
+1174,696,Post,2020-08-17,"['Sticker', 'Emoji', 'Texto']",False
+14,657,Post,2020-10-30,"['Emoji', 'Texto', 'Sticker']",False
+490,989,Post,2021-02-17,['Sticker'],False
+842,1029,Post,2023-05-13,['Emoji'],False
+812,1124,Post,2021-08-15,['Sticker'],True
+728,201,Post,2024-06-27,"['Texto', 'Sticker', 'Emoji']",True
+374,938,Post,2020-04-29,"['Sticker', 'Emoji']",False
+1386,109,Post,2020-11-24,['Sticker'],True
+1208,696,Post,2023-09-08,['Texto'],True
+877,1180,Post,2024-10-01,['Sticker'],True
+613,73,Post,2020-06-11,['Texto'],True
+60,551,Post,2024-02-07,"['Sticker', 'Texto']",False
+797,54,Post,2022-03-18,"['Sticker', 'Texto']",False
+1300,1188,Post,2021-08-12,['Texto'],False
+842,896,Post,2024-07-25,['Sticker'],True
+851,770,Post,2021-01-16,['Sticker'],False
+1010,921,Post,2025-01-14,['Emoji'],True
+535,735,Post,2024-02-05,"['Emoji', 'Sticker']",True
+853,382,Post,2023-04-10,['Texto'],True
+1230,434,Post,2020-06-04,['Emoji'],True
+1406,153,Post,2024-01-08,"['Texto', 'Emoji', 'Sticker']",True
+445,1112,Post,2024-04-29,"['Sticker', 'Texto']",True
+69,914,Post,2021-06-06,"['Sticker', 'Texto', 'Emoji']",False
+23,853,Post,2020-10-13,"['Sticker', 'Emoji']",True
+402,182,Post,2024-06-08,"['Sticker', 'Texto']",True
+462,1091,Post,2024-11-20,['Emoji'],True
+1005,288,Post,2020-04-23,"['Emoji', 'Texto']",True
+552,112,Post,2023-10-26,"['Sticker', 'Texto']",True
+573,772,Post,2023-09-20,"['Emoji', 'Sticker', 'Texto']",True
+1056,578,Post,2023-02-18,['Emoji'],False
+440,998,Post,2020-08-17,['Sticker'],True
+186,689,Post,2022-12-30,['Emoji'],False
+1068,577,Post,2023-10-10,"['Sticker', 'Texto', 'Emoji']",True
+419,374,Post,2023-03-25,['Texto'],True
+23,229,Post,2023-04-21,"['Emoji', 'Texto', 'Sticker']",False
+124,227,Post,2022-02-19,"['Texto', 'Sticker']",False
+1413,746,Post,2022-07-13,"['Sticker', 'Texto']",False
+195,1114,Post,2020-05-07,['Emoji'],False
+1386,772,Post,2020-07-30,['Sticker'],True
+791,859,Post,2021-06-06,['Sticker'],False
+465,844,Post,2023-11-09,"['Sticker', 'Texto']",False
+1290,184,Post,2024-05-07,['Texto'],True
+110,366,Post,2020-11-08,"['Sticker', 'Emoji', 'Texto']",True
+659,977,Post,2023-08-29,"['Emoji', 'Sticker']",False
+545,287,Post,2020-09-26,"['Texto', 'Sticker']",False
+440,185,Post,2024-01-08,"['Sticker', 'Texto']",True
+743,473,Post,2021-04-19,"['Texto', 'Sticker']",False
+705,789,Post,2024-01-16,['Texto'],False
+406,528,Post,2023-12-09,['Sticker'],True
+1265,124,Post,2022-11-08,['Texto'],True
+346,514,Post,2022-02-22,['Texto'],True
+272,921,Post,2024-12-20,"['Sticker', 'Texto']",False
+815,273,Post,2022-12-20,"['Emoji', 'Sticker']",False
+1115,968,Post,2022-05-10,"['Sticker', 'Texto']",True
+265,1031,Post,2021-12-09,"['Emoji', 'Sticker']",True
+192,992,Post,2020-12-12,"['Texto', 'Sticker', 'Emoji']",True
+160,525,Post,2023-10-16,['Emoji'],False
+969,1141,Post,2020-12-14,"['Emoji', 'Texto', 'Sticker']",False
+983,227,Post,2020-10-11,"['Texto', 'Sticker']",False
+1205,1032,Post,2024-09-29,"['Emoji', 'Texto', 'Sticker']",False
+483,1088,Post,2023-08-14,"['Texto', 'Sticker', 'Emoji']",True
+628,718,Post,2024-07-20,"['Sticker', 'Texto', 'Emoji']",True
+433,401,Post,2021-02-04,['Emoji'],False
+96,455,Post,2022-07-11,"['Texto', 'Sticker', 'Emoji']",False
+320,1017,Post,2021-08-13,['Sticker'],False
+1285,474,Post,2021-02-18,"['Sticker', 'Emoji']",False
+430,604,Post,2024-06-19,"['Sticker', 'Emoji']",False
+1166,888,Post,2023-04-20,"['Emoji', 'Texto']",True
+202,171,Post,2025-01-21,['Texto'],False
+261,339,Post,2021-09-08,"['Texto', 'Emoji', 'Sticker']",False
+1108,1091,Post,2024-12-21,['Texto'],True
+872,1149,Post,2022-03-17,"['Sticker', 'Emoji', 'Texto']",True
+476,304,Post,2020-08-04,['Sticker'],True
+147,505,Post,2020-05-13,"['Emoji', 'Sticker', 'Texto']",True
+661,542,Post,2022-08-30,"['Emoji', 'Sticker', 'Texto']",False
+40,429,Post,2022-06-27,['Sticker'],False
+1118,211,Post,2021-05-20,['Texto'],True
+325,570,Post,2021-06-27,"['Texto', 'Sticker']",True
+117,1047,Post,2025-02-06,['Sticker'],True
+569,370,Post,2022-06-03,['Sticker'],False
+898,565,Post,2023-08-31,"['Sticker', 'Emoji', 'Texto']",True
+905,475,Post,2024-11-04,"['Texto', 'Emoji', 'Sticker']",False
+694,538,Post,2024-02-19,"['Sticker', 'Emoji', 'Texto']",False
+1087,186,Post,2023-07-25,"['Emoji', 'Texto']",False
+801,724,Post,2021-01-07,"['Emoji', 'Texto']",False
+298,1143,Post,2023-08-15,"['Sticker', 'Texto']",True
+444,890,Post,2023-08-26,['Texto'],False
+191,623,Post,2021-03-19,"['Texto', 'Emoji']",True
+1244,582,Post,2021-02-21,"['Texto', 'Emoji']",False
+1447,650,Post,2024-09-15,['Sticker'],False
+596,202,Post,2023-04-27,"['Emoji', 'Texto', 'Sticker']",False
+22,58,Post,2024-02-04,"['Sticker', 'Texto', 'Emoji']",False
+327,39,Post,2020-06-17,"['Emoji', 'Sticker']",True
+1426,77,Post,2020-07-28,"['Emoji', 'Sticker', 'Texto']",False
+1180,164,Post,2020-12-12,['Texto'],True
+1139,1024,Post,2020-04-29,['Emoji'],False
+1064,157,Post,2025-01-11,"['Sticker', 'Emoji']",True
+865,996,Post,2021-06-27,['Sticker'],False
+888,967,Post,2020-08-30,['Emoji'],False
+882,1009,Post,2024-03-12,"['Emoji', 'Sticker', 'Texto']",False
+1128,365,Post,2022-02-12,['Texto'],False
+299,1057,Post,2023-12-03,"['Sticker', 'Emoji']",True
+136,691,Post,2024-11-04,"['Emoji', 'Texto']",False
+38,818,Post,2023-11-13,"['Emoji', 'Sticker', 'Texto']",True
+1113,1133,Post,2023-07-27,"['Texto', 'Emoji', 'Sticker']",False
+1096,1004,Post,2022-11-21,['Sticker'],True
+1146,657,Post,2023-03-17,['Emoji'],False
+1260,827,Post,2024-03-06,"['Sticker', 'Emoji']",False
+1350,206,Post,2021-02-18,"['Sticker', 'Emoji', 'Texto']",True
+288,394,Post,2023-01-04,['Texto'],False
+378,789,Post,2022-12-21,"['Texto', 'Sticker', 'Emoji']",False
+195,451,Post,2024-04-04,"['Emoji', 'Sticker', 'Texto']",True
+94,218,Post,2021-07-23,"['Emoji', 'Sticker']",False
+135,299,Post,2024-12-22,['Emoji'],False
+1291,128,Post,2020-07-08,['Texto'],False
+1098,388,Post,2021-10-11,['Texto'],True
+606,954,Post,2022-05-30,"['Texto', 'Sticker']",True
+1176,812,Post,2020-09-27,"['Texto', 'Sticker', 'Emoji']",True
+309,716,Post,2022-02-08,"['Emoji', 'Sticker', 'Texto']",False
+873,345,Post,2024-10-19,['Texto'],False
+409,372,Post,2023-09-17,"['Sticker', 'Texto', 'Emoji']",True
+83,886,Post,2022-10-27,"['Sticker', 'Emoji']",False
+1192,31,Post,2020-10-06,"['Emoji', 'Sticker']",True
+34,493,Post,2024-02-06,"['Sticker', 'Texto']",False
+524,767,Post,2023-06-05,"['Texto', 'Emoji', 'Sticker']",False
+1149,285,Post,2024-05-17,"['Sticker', 'Texto', 'Emoji']",True
+570,1186,Post,2022-02-09,"['Sticker', 'Emoji', 'Texto']",False
+278,914,Post,2024-03-19,"['Emoji', 'Texto', 'Sticker']",False
+435,926,Post,2021-06-01,"['Emoji', 'Texto', 'Sticker']",False
+917,300,Post,2024-04-12,['Texto'],True
+438,1185,Post,2021-08-08,"['Emoji', 'Sticker']",True
+1150,902,Post,2023-01-31,"['Texto', 'Emoji']",False
+1368,345,Post,2020-05-24,"['Sticker', 'Texto', 'Emoji']",False
+510,179,Post,2023-07-17,['Texto'],True
+293,194,Post,2021-10-12,['Texto'],False
+967,541,Post,2023-01-30,['Texto'],True
+1496,698,Post,2022-01-06,"['Emoji', 'Sticker', 'Texto']",False
+50,1055,Post,2021-03-07,['Texto'],True
+1117,125,Post,2021-06-26,['Sticker'],True
+61,936,Post,2021-02-24,['Sticker'],True
+86,677,Post,2023-03-20,"['Sticker', 'Emoji', 'Texto']",True
+1012,734,Post,2020-10-13,"['Emoji', 'Sticker', 'Texto']",True
+1219,1011,Post,2020-07-19,"['Emoji', 'Sticker']",False
+1343,900,Post,2020-05-30,"['Emoji', 'Texto']",True
+390,351,Post,2021-01-27,"['Sticker', 'Emoji', 'Texto']",False
+18,621,Post,2021-08-21,"['Sticker', 'Emoji']",True
+1427,995,Post,2024-08-20,"['Texto', 'Sticker']",False
+1115,1116,Post,2021-09-12,"['Texto', 'Sticker']",False
+174,308,Post,2022-06-24,"['Sticker', 'Texto']",True
+144,887,Post,2024-08-07,"['Texto', 'Emoji', 'Sticker']",False
+1442,235,Post,2023-10-31,"['Texto', 'Emoji', 'Sticker']",True
+935,814,Post,2020-12-13,['Emoji'],True
+48,1197,Post,2022-01-03,"['Emoji', 'Texto']",False
+371,190,Post,2020-11-10,"['Emoji', 'Sticker']",False
+370,39,Post,2020-12-23,['Texto'],False
+400,143,Post,2020-02-26,"['Texto', 'Emoji']",True
+576,527,Post,2021-10-08,['Texto'],False
+609,9,Post,2022-12-05,"['Sticker', 'Emoji', 'Texto']",False
+304,1174,Post,2024-07-29,"['Emoji', 'Texto']",False
+355,568,Post,2020-05-17,"['Texto', 'Sticker']",True
+140,1075,Post,2024-01-08,"['Emoji', 'Sticker', 'Texto']",False
+98,633,Post,2024-02-10,"['Sticker', 'Texto']",True
+432,908,Post,2020-11-17,"['Sticker', 'Emoji']",False
+151,1182,Post,2020-08-20,"['Texto', 'Sticker', 'Emoji']",True
+577,304,Post,2020-12-08,"['Texto', 'Sticker', 'Emoji']",True
+204,571,Post,2021-07-26,['Sticker'],True
+474,895,Post,2020-08-23,"['Sticker', 'Emoji', 'Texto']",True
+1013,118,Post,2022-04-24,['Emoji'],True
+1155,598,Post,2023-01-21,['Sticker'],True
+451,543,Post,2025-02-02,['Sticker'],False
+117,853,Post,2022-02-08,"['Sticker', 'Texto', 'Emoji']",True
+645,912,Post,2024-07-02,['Sticker'],False
+102,58,Post,2024-03-14,"['Emoji', 'Sticker']",True
+540,241,Post,2023-03-20,"['Texto', 'Sticker']",False
+879,631,Post,2023-05-11,"['Sticker', 'Texto']",False
+163,1026,Post,2022-01-27,['Texto'],True
+1500,92,Post,2024-08-03,"['Texto', 'Emoji']",False
+1012,731,Post,2022-09-22,"['Emoji', 'Sticker', 'Texto']",False
+647,829,Post,2022-11-23,"['Sticker', 'Emoji']",False
+776,865,Post,2022-04-12,"['Sticker', 'Emoji']",False
+524,1178,Post,2022-12-03,"['Texto', 'Emoji', 'Sticker']",True
+805,1197,Post,2022-07-01,"['Sticker', 'Texto', 'Emoji']",True
+618,291,Post,2023-06-24,['Texto'],False
+1437,524,Post,2024-10-20,"['Sticker', 'Texto', 'Emoji']",False
+1478,588,Post,2021-02-12,"['Emoji', 'Texto', 'Sticker']",False
+818,195,Post,2023-09-14,['Texto'],False
+1172,1053,Post,2023-06-03,['Sticker'],True
+109,685,Post,2021-08-16,"['Texto', 'Emoji', 'Sticker']",False
+155,600,Post,2021-10-15,"['Emoji', 'Texto']",False
+1220,176,Post,2020-07-21,"['Texto', 'Sticker', 'Emoji']",False
+419,937,Post,2020-03-25,"['Texto', 'Emoji', 'Sticker']",False
+1104,444,Post,2021-10-09,"['Texto', 'Emoji']",True
+1020,734,Post,2023-12-05,['Emoji'],False
+121,434,Post,2022-02-19,"['Sticker', 'Emoji']",True
+430,881,Post,2023-06-24,"['Texto', 'Emoji']",False
+359,306,Post,2021-10-28,"['Texto', 'Sticker', 'Emoji']",True
+392,205,Post,2024-02-11,['Emoji'],True
+738,690,Post,2023-01-29,"['Sticker', 'Emoji', 'Texto']",False
+144,900,Post,2024-03-22,['Sticker'],False
+693,661,Post,2020-06-16,['Sticker'],True
+242,1118,Post,2024-07-23,['Texto'],False
+1,420,Post,2020-09-29,['Emoji'],True
+1374,510,Post,2022-12-21,['Emoji'],False
+412,1101,Post,2020-09-11,['Sticker'],True
+588,548,Post,2024-09-23,"['Emoji', 'Texto', 'Sticker']",True
+145,857,Post,2020-04-04,"['Texto', 'Sticker']",True
+130,204,Post,2024-01-10,"['Sticker', 'Emoji']",True
+777,237,Post,2024-05-12,['Sticker'],True
+980,30,Post,2024-10-02,['Texto'],False
+428,1117,Post,2022-01-29,"['Sticker', 'Texto']",True
+743,668,Post,2021-12-22,"['Emoji', 'Sticker', 'Texto']",True
+181,408,Post,2023-10-13,"['Texto', 'Emoji', 'Sticker']",True
+153,379,Post,2024-08-18,"['Texto', 'Sticker']",False
+778,796,Post,2021-09-23,['Emoji'],True
+413,773,Post,2023-08-24,['Texto'],False
+465,566,Post,2020-09-11,"['Texto', 'Sticker']",True
+158,597,Post,2022-08-17,"['Emoji', 'Texto']",True
+20,703,Post,2022-09-23,"['Emoji', 'Sticker', 'Texto']",False
+926,763,Post,2023-07-11,['Emoji'],True
+872,127,Post,2022-05-27,['Sticker'],False
+1057,224,Post,2023-03-06,['Emoji'],True
+757,483,Post,2023-04-03,['Emoji'],True
+878,564,Post,2023-12-19,['Sticker'],False
+228,1027,Post,2023-02-19,['Emoji'],True
+919,717,Post,2022-01-16,"['Sticker', 'Texto']",False
+672,535,Post,2020-09-19,"['Emoji', 'Texto', 'Sticker']",False
+181,289,Post,2020-09-04,['Emoji'],False
+1068,997,Post,2020-07-11,"['Texto', 'Sticker', 'Emoji']",False
+422,86,Post,2021-04-23,"['Emoji', 'Texto', 'Sticker']",True
+1159,513,Post,2023-08-23,"['Emoji', 'Sticker', 'Texto']",True
+793,873,Post,2023-10-17,"['Sticker', 'Texto']",True
+438,829,Post,2024-11-26,"['Texto', 'Sticker', 'Emoji']",True
+1116,1183,Post,2023-12-04,"['Sticker', 'Emoji']",False
+48,242,Post,2022-10-15,"['Texto', 'Emoji', 'Sticker']",False
+404,735,Post,2021-09-15,"['Emoji', 'Texto', 'Sticker']",False
+331,912,Post,2024-03-09,['Emoji'],True
+1091,1047,Post,2022-11-13,['Sticker'],False
+754,783,Post,2023-12-07,['Sticker'],True
+360,1138,Post,2020-10-02,"['Sticker', 'Emoji', 'Texto']",False
+952,39,Post,2022-06-24,"['Sticker', 'Texto']",True
+491,691,Post,2024-08-09,"['Emoji', 'Texto']",True
+550,582,Post,2020-09-08,['Texto'],False
+91,832,Post,2021-08-25,"['Emoji', 'Sticker', 'Texto']",True
+1210,457,Post,2023-04-29,"['Emoji', 'Sticker', 'Texto']",False
+1434,297,Post,2023-02-16,"['Texto', 'Emoji']",True
+1271,225,Post,2021-04-09,"['Texto', 'Sticker', 'Emoji']",False
+571,727,Post,2020-12-25,"['Sticker', 'Emoji']",True
+394,250,Post,2023-08-08,"['Emoji', 'Sticker', 'Texto']",False
+1193,375,Post,2023-02-02,"['Emoji', 'Sticker']",True
+1293,362,Post,2021-11-16,"['Emoji', 'Sticker', 'Texto']",False
+583,1065,Post,2024-05-14,['Sticker'],False
+256,1160,Post,2024-12-24,"['Emoji', 'Sticker', 'Texto']",True
+1278,540,Post,2022-04-13,['Emoji'],True
+818,610,Post,2022-07-01,"['Emoji', 'Sticker']",False
+330,1185,Post,2023-12-29,['Texto'],False
+636,89,Post,2022-04-17,"['Texto', 'Sticker', 'Emoji']",True
+1140,363,Post,2020-03-27,['Texto'],False
+226,967,Post,2020-09-17,"['Texto', 'Sticker', 'Emoji']",False
+1409,538,Post,2022-12-28,"['Texto', 'Sticker', 'Emoji']",True
+542,740,Post,2024-11-03,"['Emoji', 'Texto']",True
+1112,1158,Post,2023-08-31,"['Texto', 'Emoji']",True
+1303,978,Post,2023-09-13,"['Emoji', 'Sticker']",False
+767,868,Post,2024-08-18,"['Emoji', 'Texto', 'Sticker']",False
+255,1032,Post,2022-07-22,['Sticker'],True
+621,940,Post,2025-01-24,['Emoji'],True
+395,929,Post,2021-08-12,['Emoji'],True
+743,47,Post,2023-12-08,"['Emoji', 'Texto']",True
+282,16,Post,2021-07-06,['Sticker'],True
+493,911,Post,2023-03-22,"['Emoji', 'Sticker', 'Texto']",False
+1299,373,Post,2022-05-01,"['Sticker', 'Emoji', 'Texto']",False
+65,750,Post,2022-12-20,"['Emoji', 'Sticker']",True
+478,744,Post,2021-08-04,"['Texto', 'Sticker', 'Emoji']",True
+348,320,Post,2024-08-28,"['Sticker', 'Emoji', 'Texto']",True
+748,1199,Post,2021-10-06,"['Sticker', 'Emoji', 'Texto']",False
+584,279,Post,2021-06-02,['Texto'],False
+603,1029,Post,2022-06-27,"['Sticker', 'Texto', 'Emoji']",True
+1230,1033,Post,2020-05-26,"['Emoji', 'Sticker', 'Texto']",True
+509,750,Post,2021-04-30,"['Emoji', 'Texto', 'Sticker']",True
+1295,878,Post,2021-10-03,"['Texto', 'Emoji', 'Sticker']",True
+8,153,Post,2020-06-05,"['Texto', 'Sticker']",False
+977,881,Post,2024-08-03,['Texto'],False
+1330,245,Post,2025-02-12,"['Sticker', 'Texto']",True
+713,867,Post,2020-10-09,"['Sticker', 'Emoji', 'Texto']",True
+1018,579,Post,2021-04-24,"['Texto', 'Emoji']",True
+436,848,Post,2021-07-13,"['Texto', 'Sticker']",True
+262,791,Post,2025-02-02,"['Emoji', 'Sticker', 'Texto']",False
+684,1030,Post,2022-07-21,"['Texto', 'Sticker']",True
+137,1089,Post,2021-10-22,"['Emoji', 'Sticker', 'Texto']",False
+374,382,Post,2023-11-24,"['Emoji', 'Sticker', 'Texto']",True
+914,322,Post,2021-01-17,"['Sticker', 'Emoji']",True
+22,504,Post,2022-10-25,"['Texto', 'Emoji']",False
+1149,1141,Post,2020-06-17,['Emoji'],False
+58,483,Post,2021-01-23,"['Texto', 'Sticker']",True
+1207,552,Post,2020-07-23,"['Emoji', 'Sticker', 'Texto']",False
+31,42,Post,2021-06-01,"['Sticker', 'Texto', 'Emoji']",False
+1354,529,Post,2022-04-02,['Emoji'],False
+1352,148,Post,2025-01-05,"['Texto', 'Sticker', 'Emoji']",False
+857,218,Post,2022-09-10,['Sticker'],False
+1282,685,Post,2021-02-20,['Sticker'],True
+282,900,Post,2022-10-11,"['Emoji', 'Texto', 'Sticker']",True
+742,1132,Post,2021-04-06,['Texto'],True
+62,1053,Post,2020-08-18,"['Texto', 'Sticker', 'Emoji']",True
+153,889,Post,2020-09-04,"['Emoji', 'Sticker', 'Texto']",False
+261,301,Post,2024-12-27,['Sticker'],False
+113,1128,Post,2022-09-23,"['Sticker', 'Texto', 'Emoji']",True
+445,1000,Post,2020-06-30,"['Sticker', 'Emoji']",True
+1347,1149,Post,2021-03-09,['Sticker'],True
+877,109,Post,2023-11-29,"['Emoji', 'Texto']",False
+594,58,Post,2024-04-05,"['Texto', 'Emoji']",True
+365,1130,Post,2022-05-14,"['Sticker', 'Texto', 'Emoji']",False
+1486,575,Post,2020-12-25,['Sticker'],True
+560,414,Post,2024-12-23,"['Emoji', 'Texto', 'Sticker']",True
+208,931,Post,2021-08-22,['Emoji'],True
+596,888,Post,2024-06-26,['Sticker'],False
+321,318,Post,2021-11-16,"['Emoji', 'Texto']",True
+509,534,Post,2021-05-07,['Sticker'],True
+284,850,Post,2022-09-01,"['Emoji', 'Texto', 'Sticker']",False
+1105,449,Post,2024-12-20,"['Emoji', 'Texto']",False
+492,1100,Post,2023-04-20,['Emoji'],False
+1026,1119,Post,2020-12-22,"['Sticker', 'Texto']",False
+1251,550,Post,2021-02-07,"['Sticker', 'Emoji']",False
+106,441,Post,2020-03-15,['Emoji'],False
+1007,1163,Post,2023-10-13,"['Emoji', 'Sticker', 'Texto']",True
+370,500,Post,2023-12-29,"['Emoji', 'Sticker', 'Texto']",False
+1264,446,Post,2020-05-31,['Sticker'],False
+674,931,Post,2021-08-29,"['Sticker', 'Emoji', 'Texto']",True
+479,120,Post,2022-09-02,"['Sticker', 'Texto']",False
+1343,791,Post,2020-09-11,"['Emoji', 'Texto']",True
+1140,865,Post,2020-10-10,['Texto'],True
+1040,512,Post,2023-09-04,"['Sticker', 'Texto']",True
+1046,149,Post,2025-01-25,"['Emoji', 'Texto', 'Sticker']",False
+1082,113,Post,2022-01-19,['Texto'],True
+584,941,Post,2022-09-10,['Emoji'],False
+568,519,Post,2024-01-16,"['Sticker', 'Texto']",True
+715,832,Post,2024-11-22,"['Texto', 'Emoji']",True
+1153,680,Post,2024-01-03,['Texto'],True
+1164,559,Post,2024-02-04,"['Emoji', 'Texto']",False
+725,1076,Post,2023-09-04,"['Texto', 'Emoji', 'Sticker']",False
+731,182,Post,2021-05-15,"['Sticker', 'Texto']",True
+1,15,Post,2024-03-02,"['Emoji', 'Sticker', 'Texto']",False
+219,632,Post,2022-06-23,['Sticker'],False
+340,328,Post,2023-06-19,['Emoji'],False
+668,880,Post,2023-11-26,"['Emoji', 'Texto', 'Sticker']",False
+1155,475,Post,2021-12-06,"['Sticker', 'Texto']",True
+1477,1009,Post,2020-03-03,['Texto'],False
+853,148,Post,2024-01-30,"['Emoji', 'Texto', 'Sticker']",False
+966,925,Post,2021-05-27,['Texto'],True
+20,349,Post,2021-02-26,"['Emoji', 'Texto']",False
+1351,653,Post,2024-04-13,"['Texto', 'Emoji', 'Sticker']",False
+235,711,Post,2024-11-14,"['Texto', 'Sticker', 'Emoji']",True
+1361,41,Post,2021-08-24,"['Sticker', 'Emoji']",False
+276,466,Post,2020-10-10,"['Sticker', 'Texto', 'Emoji']",True
+198,97,Post,2025-02-19,"['Sticker', 'Texto']",False
+1365,1184,Post,2021-04-24,"['Sticker', 'Emoji']",True
+516,296,Post,2024-04-07,"['Texto', 'Sticker']",False
+833,833,Post,2020-05-22,"['Emoji', 'Texto']",True
+765,556,Post,2020-08-16,"['Sticker', 'Emoji', 'Texto']",False
+16,361,Post,2023-08-05,"['Emoji', 'Sticker', 'Texto']",False
+261,429,Post,2024-07-07,"['Texto', 'Sticker', 'Emoji']",True
+320,238,Post,2022-04-21,"['Emoji', 'Sticker']",True
+1235,788,Post,2023-07-02,"['Sticker', 'Texto', 'Emoji']",True
+543,347,Post,2022-08-16,"['Emoji', 'Texto', 'Sticker']",True
+814,1111,Post,2021-08-31,"['Emoji', 'Sticker']",False
+808,7,Post,2024-09-07,"['Emoji', 'Sticker', 'Texto']",True
+299,145,Post,2024-05-27,"['Texto', 'Emoji', 'Sticker']",True
+570,609,Post,2022-04-06,['Texto'],False
+1240,667,Post,2022-09-18,['Sticker'],False
+853,516,Post,2023-04-07,"['Emoji', 'Texto']",False
+640,850,Post,2023-11-30,['Sticker'],True
+634,597,Post,2023-06-12,['Sticker'],True
+188,870,Post,2021-10-10,"['Emoji', 'Sticker', 'Texto']",True
+998,113,Post,2023-04-05,['Texto'],True
+449,903,Post,2024-07-07,"['Texto', 'Sticker', 'Emoji']",False
+257,240,Post,2024-01-22,['Emoji'],True
+872,809,Post,2021-10-17,['Sticker'],True
+1421,1097,Post,2020-12-23,"['Sticker', 'Texto']",True
+1484,1146,Post,2020-11-23,"['Emoji', 'Texto', 'Sticker']",True
+1026,1039,Post,2020-11-17,"['Texto', 'Sticker', 'Emoji']",False
+308,128,Post,2021-12-25,"['Sticker', 'Texto']",True
+1150,911,Post,2023-04-07,"['Texto', 'Emoji']",False
+1226,868,Post,2022-08-09,"['Sticker', 'Texto']",False
+1269,646,Post,2021-09-08,"['Emoji', 'Sticker', 'Texto']",True
+666,74,Post,2022-10-27,['Emoji'],False
+1138,661,Post,2024-12-05,"['Emoji', 'Texto']",False
+1413,797,Post,2023-05-29,"['Texto', 'Sticker']",False
+1198,346,Post,2024-02-24,['Texto'],False
+134,656,Post,2022-06-26,['Sticker'],True
+990,252,Post,2022-11-15,"['Sticker', 'Emoji', 'Texto']",False
+1035,493,Post,2023-08-15,"['Emoji', 'Sticker', 'Texto']",True
+139,896,Post,2022-08-17,"['Emoji', 'Sticker']",False
+948,161,Post,2022-10-23,['Texto'],True
+1364,668,Post,2022-01-23,"['Texto', 'Sticker', 'Emoji']",False
+1136,185,Post,2021-03-04,['Texto'],True
+622,496,Post,2021-11-25,"['Texto', 'Sticker']",False
+1162,236,Post,2021-07-19,"['Sticker', 'Texto', 'Emoji']",True
+704,1140,Post,2024-09-18,['Emoji'],False
+1420,779,Post,2021-02-03,['Sticker'],True
+575,878,Post,2023-05-01,"['Texto', 'Emoji']",True
+72,891,Post,2023-06-09,"['Emoji', 'Texto', 'Sticker']",True
+770,188,Post,2020-10-24,"['Emoji', 'Texto', 'Sticker']",False
+665,396,Post,2021-11-17,"['Sticker', 'Texto']",False
+731,36,Post,2023-09-22,"['Texto', 'Emoji', 'Sticker']",False
+117,466,Post,2024-05-28,"['Sticker', 'Texto']",False
+1324,154,Post,2021-09-24,['Sticker'],True
+584,341,Post,2022-01-07,"['Emoji', 'Sticker', 'Texto']",True
+268,639,Post,2022-02-26,['Sticker'],True
+137,319,Post,2021-05-22,['Emoji'],True
+435,1119,Post,2020-06-11,"['Texto', 'Emoji']",True
+1399,792,Post,2022-08-20,['Texto'],True
+1036,910,Post,2023-10-25,"['Emoji', 'Sticker', 'Texto']",True
+959,946,Post,2020-03-08,"['Sticker', 'Emoji']",True
+45,1127,Post,2024-07-21,"['Sticker', 'Emoji', 'Texto']",True
+981,259,Post,2022-08-23,"['Emoji', 'Sticker']",True
+396,1015,Post,2023-06-09,"['Sticker', 'Emoji']",True
+396,485,Post,2023-11-30,['Emoji'],False
+1500,655,Post,2022-09-06,"['Texto', 'Emoji']",False
+664,595,Post,2020-06-09,"['Emoji', 'Sticker', 'Texto']",True
+1044,699,Post,2024-02-25,['Sticker'],True
+482,803,Post,2021-04-15,"['Texto', 'Emoji', 'Sticker']",False
+1082,884,Post,2022-08-08,['Texto'],True
+389,438,Post,2024-08-25,['Sticker'],False
+204,466,Post,2020-07-17,['Texto'],True
+1375,500,Post,2021-01-28,"['Texto', 'Emoji']",False
+962,111,Post,2024-07-10,"['Texto', 'Emoji', 'Sticker']",False
+1488,361,Post,2024-03-20,"['Texto', 'Emoji', 'Sticker']",True
+213,1058,Post,2024-04-06,"['Texto', 'Emoji', 'Sticker']",False
+1198,1168,Post,2021-01-08,['Texto'],True
+96,130,Post,2024-04-21,['Emoji'],True
+1291,1152,Post,2020-05-04,"['Texto', 'Emoji']",True
+1045,314,Post,2024-10-01,"['Emoji', 'Sticker', 'Texto']",True
+545,484,Post,2022-04-25,['Sticker'],False
+368,1111,Post,2024-11-21,['Sticker'],True
+743,1112,Post,2020-11-04,"['Sticker', 'Emoji', 'Texto']",True
+937,836,Post,2022-11-12,"['Sticker', 'Texto', 'Emoji']",False
+582,858,Post,2021-07-06,"['Sticker', 'Texto']",True
+1344,706,Post,2024-04-28,"['Emoji', 'Sticker', 'Texto']",False
+58,1196,Post,2023-12-30,['Emoji'],False
+60,298,Post,2021-01-20,"['Texto', 'Sticker', 'Emoji']",False
+297,314,Post,2020-10-07,"['Sticker', 'Texto', 'Emoji']",False
+950,793,Post,2023-03-17,"['Emoji', 'Texto', 'Sticker']",True
+1326,221,Post,2021-07-13,"['Emoji', 'Sticker']",False
+1044,769,Post,2024-05-07,"['Emoji', 'Texto']",False
+111,505,Post,2022-11-20,"['Emoji', 'Sticker']",False
+568,665,Post,2020-04-09,['Sticker'],False
+1161,386,Post,2024-02-12,"['Texto', 'Sticker', 'Emoji']",True
+534,706,Post,2021-11-22,"['Sticker', 'Texto', 'Emoji']",True
+971,736,Post,2023-10-10,"['Sticker', 'Emoji', 'Texto']",False
+627,869,Post,2020-11-09,"['Sticker', 'Emoji']",True
+1075,718,Post,2022-03-09,"['Texto', 'Emoji']",False
+89,787,Post,2021-09-30,['Texto'],False
+30,361,Post,2020-06-15,['Emoji'],True
+1312,696,Post,2022-09-26,"['Sticker', 'Texto', 'Emoji']",False
+1068,686,Post,2020-08-20,"['Texto', 'Emoji']",False
+47,617,Post,2023-07-15,"['Texto', 'Sticker']",True
+556,1094,Post,2022-04-12,"['Sticker', 'Emoji', 'Texto']",True
+1016,583,Post,2021-07-15,"['Sticker', 'Emoji']",False
+825,1072,Post,2021-08-09,['Sticker'],True
+889,25,Post,2021-10-20,"['Texto', 'Sticker', 'Emoji']",True
+453,869,Post,2023-06-13,"['Emoji', 'Texto']",False
+960,564,Post,2021-08-13,"['Sticker', 'Emoji']",True
+400,610,Post,2024-06-17,['Emoji'],False
+110,657,Post,2020-12-18,"['Sticker', 'Texto']",True
+1424,409,Post,2025-02-05,['Texto'],False
+466,183,Post,2024-01-14,"['Emoji', 'Texto']",False
+1433,592,Post,2024-12-10,"['Sticker', 'Texto', 'Emoji']",False
+481,528,Post,2020-10-30,['Texto'],False
+255,100,Post,2021-01-15,['Sticker'],False
+312,781,Post,2020-11-06,['Texto'],True
+172,95,Post,2021-12-16,"['Emoji', 'Sticker']",False
+971,1054,Post,2020-05-17,"['Emoji', 'Sticker', 'Texto']",True
+66,762,Post,2024-03-11,"['Texto', 'Emoji']",True
+185,1062,Post,2022-02-06,"['Sticker', 'Texto']",False
+338,818,Post,2023-09-24,['Emoji'],False
+95,163,Post,2023-06-14,"['Emoji', 'Texto', 'Sticker']",False
+1468,901,Post,2020-12-01,"['Sticker', 'Texto', 'Emoji']",True
+949,163,Post,2023-08-07,"['Sticker', 'Texto', 'Emoji']",True
+1209,555,Post,2024-01-17,"['Texto', 'Emoji', 'Sticker']",False
+1431,449,Post,2021-01-31,"['Texto', 'Sticker']",False
+478,761,Post,2025-01-26,"['Emoji', 'Texto']",False
+1305,1101,Post,2023-11-22,['Sticker'],False
+968,473,Post,2023-10-28,"['Sticker', 'Emoji']",False
+228,638,Post,2023-11-18,"['Sticker', 'Texto', 'Emoji']",False
+1381,933,Post,2024-08-11,"['Texto', 'Emoji', 'Sticker']",False
+152,263,Post,2020-09-21,['Texto'],False
+908,1051,Post,2023-05-23,['Emoji'],True
+1483,221,Post,2021-08-17,"['Sticker', 'Emoji']",True
+450,899,Post,2023-07-26,['Emoji'],False
+926,42,Post,2023-05-20,"['Emoji', 'Texto']",False
+1436,689,Post,2024-04-26,"['Emoji', 'Sticker', 'Texto']",True
+809,553,Post,2020-12-15,['Texto'],True
+754,1155,Post,2022-06-16,['Sticker'],True
+262,1036,Post,2020-09-12,"['Sticker', 'Emoji']",False
+533,1027,Post,2023-11-04,"['Texto', 'Emoji']",False
+308,139,Post,2024-10-17,['Emoji'],False
+1210,1065,Post,2021-08-18,"['Sticker', 'Emoji', 'Texto']",True
+142,1171,Post,2023-08-13,"['Emoji', 'Sticker']",False
+1408,906,Post,2023-03-31,"['Texto', 'Emoji', 'Sticker']",True
+796,66,Post,2025-02-02,"['Sticker', 'Texto', 'Emoji']",True
+34,1024,Post,2024-05-06,"['Emoji', 'Texto', 'Sticker']",True
+27,222,Post,2020-07-02,['Sticker'],True
+575,12,Post,2020-08-12,"['Emoji', 'Texto', 'Sticker']",False
+1393,307,Post,2023-12-10,"['Emoji', 'Sticker', 'Texto']",False
+987,586,Post,2021-12-25,"['Sticker', 'Emoji']",True
+1490,365,Post,2021-07-12,['Emoji'],False
+47,749,Post,2021-02-04,"['Emoji', 'Sticker']",False
+1070,1067,Post,2021-04-29,"['Sticker', 'Texto', 'Emoji']",False
+537,982,Post,2023-12-31,"['Texto', 'Emoji']",True
+262,1092,Post,2020-10-10,"['Emoji', 'Texto', 'Sticker']",False
+453,928,Post,2021-05-07,['Sticker'],True
+1450,583,Post,2020-11-16,['Emoji'],True
+252,504,Post,2023-03-02,"['Sticker', 'Texto', 'Emoji']",True
+1097,1131,Post,2021-03-15,"['Texto', 'Sticker']",False
+649,1007,Post,2023-12-06,['Emoji'],False
+479,954,Post,2020-04-25,"['Texto', 'Emoji']",True
+25,993,Post,2023-08-01,['Texto'],False
+1169,1114,Post,2021-06-17,"['Texto', 'Sticker', 'Emoji']",True
+364,377,Post,2024-01-21,['Sticker'],False
+1336,73,Post,2022-01-06,['Texto'],True
+485,391,Post,2021-01-30,"['Emoji', 'Texto']",True
+796,1101,Post,2023-10-20,"['Texto', 'Sticker']",False
+304,1173,Post,2024-03-11,['Emoji'],False
+669,751,Post,2021-11-18,['Sticker'],True
+359,16,Post,2022-04-21,['Emoji'],True
+1348,263,Post,2024-12-24,"['Sticker', 'Texto']",True
+81,786,Post,2021-06-05,['Texto'],False
+651,996,Post,2024-11-12,['Sticker'],True
+1186,386,Post,2022-05-10,"['Sticker', 'Texto']",False
+562,202,Post,2021-05-20,"['Texto', 'Emoji']",True
+373,349,Post,2023-10-28,"['Texto', 'Emoji']",True
+1182,764,Post,2024-04-21,['Texto'],True
+261,502,Post,2024-07-28,['Texto'],True
+1478,248,Post,2023-09-04,['Emoji'],True
+1468,1107,Post,2020-12-08,"['Emoji', 'Texto']",False
+383,1014,Post,2023-12-17,['Sticker'],True
+353,282,Post,2024-05-29,['Emoji'],False
+1265,174,Post,2022-07-14,"['Texto', 'Emoji']",True
+1229,1190,Post,2020-03-26,"['Texto', 'Emoji']",True
+1,674,Post,2022-11-28,"['Sticker', 'Emoji', 'Texto']",True
+601,506,Post,2022-09-15,"['Sticker', 'Texto', 'Emoji']",True
+1280,1170,Post,2024-10-05,"['Emoji', 'Texto']",False
+833,495,Post,2023-02-13,['Emoji'],True
+1218,211,Post,2021-02-10,['Sticker'],False
+429,234,Post,2021-03-29,"['Emoji', 'Sticker']",True
+161,599,Post,2020-04-19,['Texto'],False
+1381,1147,Post,2023-08-15,"['Texto', 'Emoji', 'Sticker']",False
+1361,713,Post,2021-01-19,"['Texto', 'Emoji']",True
+1262,1121,Post,2021-03-25,['Emoji'],True
+1445,1014,Post,2023-05-13,['Sticker'],False
+298,1154,Post,2024-07-05,['Emoji'],False
+268,765,Post,2024-03-15,"['Emoji', 'Texto', 'Sticker']",False
+776,719,Post,2022-04-09,"['Emoji', 'Sticker']",True
+872,911,Post,2024-02-24,['Texto'],False
+1263,637,Post,2020-04-05,"['Emoji', 'Texto']",True
+468,45,Post,2021-01-21,"['Emoji', 'Sticker']",True
+658,414,Post,2022-06-15,['Emoji'],True
+634,1195,Post,2022-06-02,"['Texto', 'Sticker']",True
+34,812,Post,2024-06-04,"['Sticker', 'Emoji', 'Texto']",True
+1177,375,Post,2024-01-13,['Emoji'],True
+1423,289,Post,2024-04-08,"['Emoji', 'Sticker', 'Texto']",True
+550,29,Post,2021-01-05,['Sticker'],True
+878,800,Post,2023-04-11,"['Emoji', 'Sticker', 'Texto']",True
+206,654,Post,2024-08-18,"['Emoji', 'Texto']",True
+702,1108,Post,2021-03-22,"['Emoji', 'Texto']",True
+835,27,Post,2024-05-05,"['Sticker', 'Texto']",False
+1125,134,Post,2024-11-14,"['Sticker', 'Texto']",False
+1360,890,Post,2020-12-26,"['Emoji', 'Sticker']",True
+991,299,Post,2021-05-22,"['Texto', 'Emoji', 'Sticker']",True
+643,500,Post,2023-03-12,['Sticker'],False
+462,394,Post,2024-06-16,"['Sticker', 'Texto', 'Emoji']",True
+856,930,Post,2022-02-21,"['Emoji', 'Texto', 'Sticker']",True
+104,362,Post,2021-12-24,['Emoji'],False
+1409,313,Post,2024-12-11,['Emoji'],False
+820,530,Post,2024-12-09,"['Emoji', 'Texto']",True
+529,524,Post,2020-10-21,['Sticker'],False
+896,731,Post,2024-05-02,"['Emoji', 'Sticker', 'Texto']",False
+527,500,Post,2025-01-26,"['Sticker', 'Texto', 'Emoji']",False
+1450,617,Post,2021-12-21,"['Emoji', 'Texto', 'Sticker']",False
+574,656,Post,2023-09-22,"['Sticker', 'Texto']",True
+1078,432,Post,2024-06-02,['Texto'],False
+1428,1169,Post,2023-09-24,"['Emoji', 'Sticker']",False
+270,377,Post,2022-06-01,"['Texto', 'Emoji', 'Sticker']",False
+607,319,Post,2021-07-03,"['Emoji', 'Sticker']",True
+8,570,Post,2021-02-25,"['Sticker', 'Emoji', 'Texto']",False
+905,1089,Post,2022-11-04,"['Emoji', 'Sticker', 'Texto']",True
+890,404,Post,2020-09-23,"['Emoji', 'Texto', 'Sticker']",True
+1477,689,Post,2020-11-02,"['Emoji', 'Texto', 'Sticker']",True
+337,215,Post,2021-04-16,['Emoji'],False
+781,327,Post,2023-06-24,['Texto'],True
+889,771,Post,2020-09-19,"['Sticker', 'Emoji']",True
+1289,873,Post,2020-03-18,['Texto'],True
+1393,605,Post,2025-02-24,"['Texto', 'Emoji', 'Sticker']",True
+162,714,Post,2020-09-18,"['Sticker', 'Texto']",False
+1365,748,Post,2021-04-20,"['Emoji', 'Sticker']",False
+188,542,Post,2024-08-21,"['Emoji', 'Sticker']",True
+697,299,Post,2021-06-08,"['Emoji', 'Texto', 'Sticker']",True
+755,972,Post,2024-03-24,"['Sticker', 'Texto']",False
+251,868,Post,2024-04-18,"['Sticker', 'Emoji']",False
+949,824,Post,2022-11-01,"['Texto', 'Sticker']",True
+499,785,Post,2023-05-14,"['Sticker', 'Emoji']",True
+917,238,Post,2023-02-21,['Texto'],False
+1169,838,Post,2021-10-11,"['Emoji', 'Sticker']",True
+1262,377,Post,2024-12-22,"['Emoji', 'Sticker']",True
+465,638,Post,2024-12-02,"['Texto', 'Sticker']",True
+1031,647,Post,2021-12-18,['Sticker'],False
+381,1079,Post,2024-04-30,['Sticker'],False
+910,917,Post,2023-10-17,"['Sticker', 'Texto', 'Emoji']",True
+458,507,Post,2024-02-16,"['Emoji', 'Texto']",True
+109,963,Post,2022-02-04,"['Sticker', 'Emoji', 'Texto']",True
+754,440,Post,2021-06-27,"['Emoji', 'Sticker']",True
+420,673,Post,2023-09-27,"['Emoji', 'Texto', 'Sticker']",False
+634,1107,Post,2022-10-07,"['Emoji', 'Texto', 'Sticker']",True
+1048,639,Post,2021-07-13,"['Sticker', 'Emoji']",False
+13,1072,Post,2023-11-10,"['Sticker', 'Emoji', 'Texto']",False
+879,53,Post,2023-09-07,['Sticker'],True
+1355,347,Post,2023-12-25,"['Texto', 'Sticker']",False
+366,295,Post,2023-12-02,"['Texto', 'Emoji']",True
+936,459,Post,2021-12-14,"['Sticker', 'Emoji']",False
+858,937,Post,2020-05-22,['Emoji'],True
+774,91,Post,2020-11-22,"['Texto', 'Sticker']",False
+335,400,Post,2022-05-20,"['Sticker', 'Emoji']",False
+154,531,Post,2021-04-14,"['Emoji', 'Sticker']",False
+723,962,Post,2021-11-15,"['Texto', 'Sticker', 'Emoji']",True
+321,324,Post,2023-01-18,"['Texto', 'Emoji']",True
+524,1193,Post,2021-04-25,"['Sticker', 'Emoji', 'Texto']",True
+547,538,Post,2024-04-14,"['Texto', 'Sticker', 'Emoji']",False
+1102,377,Post,2022-06-06,"['Texto', 'Sticker']",True
+53,1185,Post,2022-03-10,"['Sticker', 'Emoji', 'Texto']",True
+418,1064,Post,2022-07-23,"['Texto', 'Sticker', 'Emoji']",True
+1295,490,Post,2020-06-21,"['Texto', 'Sticker', 'Emoji']",False
+990,20,Post,2024-01-18,"['Texto', 'Emoji']",True
+1092,673,Post,2020-10-07,['Emoji'],True
+1113,790,Post,2023-08-10,['Sticker'],False
+1413,375,Post,2021-05-11,"['Emoji', 'Sticker']",False
+1172,178,Post,2024-04-12,['Texto'],True
+28,1112,Post,2023-07-25,"['Sticker', 'Emoji', 'Texto']",True
+1138,58,Post,2023-11-11,"['Texto', 'Sticker']",False
+201,797,Post,2022-05-11,['Sticker'],False
+1303,201,Post,2024-03-29,['Texto'],False
+412,672,Post,2024-08-25,"['Emoji', 'Sticker']",True
+1175,859,Post,2022-10-08,['Emoji'],True
+596,1055,Post,2024-08-03,['Emoji'],True
+645,980,Post,2023-11-06,"['Emoji', 'Sticker']",False
+1086,519,Post,2020-05-23,"['Texto', 'Emoji', 'Sticker']",True
+1028,942,Post,2022-11-01,['Texto'],True
+939,1164,Post,2023-06-02,"['Texto', 'Sticker', 'Emoji']",False
+1406,551,Post,2022-04-15,"['Emoji', 'Texto']",False
+897,415,Post,2021-02-25,"['Texto', 'Emoji', 'Sticker']",True
+811,154,Post,2022-02-07,"['Emoji', 'Sticker']",False
+1311,1061,Post,2020-10-30,['Sticker'],False
+1311,823,Post,2020-05-08,"['Texto', 'Sticker']",True
+97,735,Post,2023-07-25,['Texto'],True
+843,401,Post,2023-07-28,"['Emoji', 'Sticker']",True
+183,944,Post,2023-07-02,['Texto'],True
+1147,722,Post,2020-07-12,"['Emoji', 'Texto']",False
+1170,683,Post,2021-06-16,"['Texto', 'Emoji']",True
+675,70,Post,2024-05-16,"['Texto', 'Sticker', 'Emoji']",True
+878,315,Post,2021-05-16,"['Texto', 'Emoji', 'Sticker']",False
+378,254,Post,2022-09-26,['Sticker'],True
+491,758,Post,2022-12-28,"['Texto', 'Emoji']",True
+661,999,Post,2021-02-25,"['Emoji', 'Texto']",True
+449,1096,Post,2021-11-15,"['Texto', 'Sticker']",True
+1087,924,Post,2023-03-04,['Emoji'],False
+69,291,Post,2023-08-24,"['Sticker', 'Emoji']",False
+1409,671,Post,2020-03-16,['Texto'],True
+964,816,Post,2020-08-05,"['Emoji', 'Texto', 'Sticker']",True
+31,1183,Post,2020-10-19,"['Texto', 'Sticker']",False
+627,541,Post,2022-05-15,['Emoji'],False
+1201,463,Post,2024-07-30,"['Sticker', 'Emoji']",True
+833,232,Post,2020-04-10,"['Emoji', 'Sticker']",True
+504,798,Post,2023-07-29,['Sticker'],True
+36,162,Post,2024-11-13,['Emoji'],True
+437,143,Post,2020-10-05,['Texto'],True
+467,818,Post,2020-08-25,"['Texto', 'Sticker']",False
+904,469,Post,2023-10-21,['Emoji'],True
+842,87,Post,2023-01-13,['Sticker'],True
+425,557,Post,2023-04-03,['Texto'],False
+299,1040,Post,2020-02-29,"['Emoji', 'Sticker', 'Texto']",False
+280,598,Post,2021-11-20,"['Sticker', 'Texto', 'Emoji']",False
+1077,1144,Post,2023-07-20,"['Texto', 'Emoji', 'Sticker']",True
+640,505,Post,2022-01-01,"['Sticker', 'Emoji', 'Texto']",False
+479,398,Post,2021-05-28,"['Emoji', 'Sticker', 'Texto']",False
+989,878,Post,2023-10-23,"['Sticker', 'Texto', 'Emoji']",True
+54,1000,Post,2021-08-12,['Sticker'],True
+492,1035,Post,2022-01-30,"['Sticker', 'Emoji']",False
+551,476,Post,2024-03-11,"['Emoji', 'Sticker', 'Texto']",True
+762,924,Post,2022-11-23,['Sticker'],False
+691,714,Post,2020-05-03,"['Texto', 'Emoji']",False
+1298,1049,Post,2023-01-02,"['Sticker', 'Emoji', 'Texto']",True
+97,1191,Post,2022-08-27,"['Texto', 'Emoji']",False
+577,933,Post,2021-12-08,"['Emoji', 'Sticker', 'Texto']",True
+246,1068,Post,2021-06-18,"['Texto', 'Emoji']",False
+753,451,Post,2021-09-22,"['Texto', 'Sticker', 'Emoji']",False
+868,19,Post,2023-09-20,['Emoji'],False
+372,982,Post,2020-03-28,['Emoji'],True
+1234,843,Post,2021-07-01,"['Sticker', 'Emoji']",True
+1397,443,Post,2024-04-01,"['Emoji', 'Texto', 'Sticker']",True
+842,474,Post,2024-12-01,"['Sticker', 'Texto']",False
+1015,1030,Post,2022-06-26,['Sticker'],False
+1336,1135,Post,2023-06-18,['Sticker'],False
+513,713,Post,2021-09-14,['Emoji'],True
+760,1055,Post,2022-07-24,['Sticker'],True
+588,1119,Post,2020-08-16,['Emoji'],False
+531,669,Post,2023-05-07,"['Texto', 'Emoji', 'Sticker']",True
+1459,82,Post,2024-07-19,"['Emoji', 'Sticker']",False
+1067,819,Post,2021-11-22,"['Emoji', 'Sticker', 'Texto']",True
+1126,573,Post,2023-12-31,['Sticker'],False
+1021,129,Post,2023-01-04,"['Texto', 'Sticker']",False
+640,243,Post,2022-05-10,['Sticker'],False
+843,398,Post,2023-03-09,['Sticker'],True
+567,867,Post,2024-08-15,['Texto'],True
+697,1010,Post,2024-04-06,"['Emoji', 'Sticker', 'Texto']",True
+687,985,Post,2020-08-12,"['Sticker', 'Emoji', 'Texto']",False
+438,874,Post,2021-05-19,['Texto'],True
+198,228,Post,2021-12-20,"['Emoji', 'Texto', 'Sticker']",False
+1151,880,Post,2020-04-22,['Sticker'],False
+989,1184,Post,2024-02-28,"['Sticker', 'Emoji', 'Texto']",False
+136,842,Post,2020-09-15,"['Texto', 'Emoji', 'Sticker']",False
+290,1092,Post,2020-07-08,"['Emoji', 'Texto', 'Sticker']",True
+994,225,Post,2022-12-11,['Sticker'],False
+24,337,Post,2023-05-12,['Texto'],True
+567,913,Post,2022-10-02,"['Texto', 'Emoji', 'Sticker']",True
+264,559,Post,2020-07-03,['Emoji'],False
+647,1107,Post,2020-05-05,"['Emoji', 'Texto', 'Sticker']",False
+275,705,Post,2023-08-30,"['Sticker', 'Emoji', 'Texto']",False
+145,244,Post,2023-12-25,"['Emoji', 'Sticker']",False
+954,245,Post,2022-10-02,"['Texto', 'Emoji']",False
+1261,407,Post,2021-01-20,"['Texto', 'Sticker', 'Emoji']",False
+1048,808,Post,2023-04-29,['Texto'],True
+1160,338,Post,2024-08-13,"['Texto', 'Sticker', 'Emoji']",True
+268,889,Post,2023-06-06,"['Emoji', 'Texto', 'Sticker']",False
+1356,1138,Post,2024-05-13,"['Emoji', 'Sticker', 'Texto']",True
+768,626,Post,2022-11-10,['Emoji'],False
+1124,595,Post,2021-04-08,['Texto'],False
+1252,743,Post,2022-08-05,"['Sticker', 'Texto', 'Emoji']",False
+958,695,Post,2020-05-06,"['Sticker', 'Emoji']",True
+1067,839,Post,2024-09-19,"['Emoji', 'Texto']",False
+702,436,Post,2024-05-14,"['Texto', 'Sticker', 'Emoji']",True
+416,1001,Post,2022-06-23,['Texto'],True
+810,621,Post,2020-12-31,['Emoji'],True
+1231,613,Post,2022-11-03,"['Sticker', 'Texto']",True
+49,1067,Post,2023-04-19,"['Texto', 'Sticker']",True
+731,1192,Post,2020-04-18,['Emoji'],True
+191,647,Post,2024-01-06,"['Emoji', 'Sticker']",False
+1444,566,Post,2022-12-23,"['Emoji', 'Texto', 'Sticker']",True
+344,26,Post,2024-05-03,"['Texto', 'Sticker']",True
+73,247,Post,2023-09-06,"['Texto', 'Sticker', 'Emoji']",False
+874,764,Post,2022-05-09,['Texto'],True
+311,723,Post,2022-10-04,"['Texto', 'Sticker']",False
+449,945,Post,2025-01-25,"['Texto', 'Emoji']",True
+869,858,Post,2023-05-09,"['Sticker', 'Emoji']",False
+1317,862,Post,2022-04-05,"['Texto', 'Emoji']",False
+99,901,Post,2025-01-08,['Texto'],True
+1160,768,Post,2021-09-15,"['Sticker', 'Emoji', 'Texto']",True
+1040,1083,Post,2020-12-19,"['Texto', 'Sticker', 'Emoji']",False
+1409,422,Post,2022-09-28,"['Texto', 'Emoji']",False
+1326,147,Post,2024-11-15,"['Emoji', 'Sticker', 'Texto']",True
+1410,129,Post,2021-03-04,"['Emoji', 'Sticker', 'Texto']",False
+674,1035,Post,2025-01-01,['Sticker'],True
+1083,880,Post,2023-07-04,['Texto'],True
+956,1062,Post,2022-10-17,"['Texto', 'Sticker']",True
+1178,746,Post,2021-07-26,"['Texto', 'Sticker']",False
+363,218,Post,2022-06-30,['Texto'],True
+530,998,Post,2020-09-04,"['Texto', 'Sticker', 'Emoji']",False
+1343,673,Post,2022-07-23,"['Emoji', 'Sticker']",True
+113,397,Post,2021-10-25,"['Texto', 'Sticker']",True
+620,867,Post,2023-07-24,['Emoji'],True
+111,291,Post,2023-04-07,"['Emoji', 'Sticker']",True
+445,965,Post,2022-08-17,"['Texto', 'Sticker', 'Emoji']",True
+486,227,Post,2022-11-26,"['Sticker', 'Emoji', 'Texto']",True
+299,807,Post,2020-10-29,"['Texto', 'Sticker', 'Emoji']",True
+1279,264,Post,2020-10-14,"['Sticker', 'Texto']",True
+795,275,Post,2023-10-12,['Texto'],True
+593,290,Post,2020-07-31,['Sticker'],False
+896,470,Post,2020-07-31,['Texto'],False
+269,1029,Post,2021-08-29,['Texto'],True
+414,246,Post,2021-04-29,"['Sticker', 'Emoji', 'Texto']",False
+1209,142,Post,2021-06-11,['Emoji'],False
+1034,383,Post,2023-10-14,"['Sticker', 'Texto', 'Emoji']",False
+915,1076,Post,2022-12-20,"['Emoji', 'Texto', 'Sticker']",False
+1404,256,Post,2023-09-29,"['Emoji', 'Sticker', 'Texto']",True
+437,1164,Post,2024-05-06,['Sticker'],True
+405,267,Post,2021-06-27,"['Emoji', 'Texto', 'Sticker']",True
+1441,937,Post,2023-09-22,"['Sticker', 'Texto']",True
+1086,968,Post,2023-05-07,['Sticker'],False
+585,577,Post,2021-04-18,['Sticker'],False
+996,662,Post,2022-09-22,"['Texto', 'Emoji']",False
+231,413,Post,2022-02-07,"['Emoji', 'Texto']",False
+71,324,Post,2022-07-08,"['Emoji', 'Sticker', 'Texto']",False
+1382,216,Post,2020-12-24,['Emoji'],False
+201,967,Post,2024-02-05,"['Sticker', 'Emoji', 'Texto']",False
+418,784,Post,2024-10-09,['Texto'],False
+642,623,Post,2020-09-15,"['Sticker', 'Emoji']",True
+1017,758,Post,2022-09-21,['Sticker'],True
+932,426,Post,2024-08-07,['Sticker'],False
+412,924,Post,2020-07-06,['Sticker'],False
+562,1167,Post,2024-09-20,"['Emoji', 'Texto']",True
+326,774,Post,2023-06-19,"['Sticker', 'Texto', 'Emoji']",True
+853,333,Post,2023-03-22,['Texto'],True
+295,709,Post,2024-11-26,"['Emoji', 'Sticker', 'Texto']",False
+105,276,Post,2023-05-27,"['Sticker', 'Texto', 'Emoji']",True
+1040,967,Post,2021-01-12,['Sticker'],False
+72,157,Post,2022-09-11,['Sticker'],False
+1136,1178,Post,2023-08-14,"['Sticker', 'Texto']",False
+456,1005,Post,2021-06-12,"['Emoji', 'Texto']",False
+815,142,Post,2021-02-21,['Sticker'],True
+229,1118,Post,2020-10-22,['Sticker'],False
+993,584,Post,2025-02-09,['Sticker'],True
+1412,672,Post,2022-01-16,['Sticker'],False
+1240,27,Post,2023-05-26,"['Texto', 'Emoji']",False
+860,331,Post,2024-09-24,"['Texto', 'Sticker']",True
+37,742,Post,2024-02-07,['Texto'],True
+995,215,Post,2023-03-27,"['Emoji', 'Sticker', 'Texto']",False
+306,1139,Post,2024-03-23,['Sticker'],False
+537,13,Post,2022-06-30,"['Emoji', 'Sticker', 'Texto']",False
+745,435,Post,2020-12-02,['Emoji'],True
+743,595,Post,2021-08-08,"['Emoji', 'Texto']",False
+613,440,Post,2021-08-18,"['Texto', 'Emoji', 'Sticker']",False
+946,4,Post,2024-06-23,['Emoji'],False
+517,216,Post,2024-03-06,"['Emoji', 'Sticker', 'Texto']",False
+1496,723,Post,2023-10-19,"['Texto', 'Sticker']",True
+1299,397,Post,2024-04-13,['Emoji'],False
+699,711,Post,2020-04-02,"['Emoji', 'Sticker']",True
+778,649,Post,2022-04-14,"['Sticker', 'Texto', 'Emoji']",True
+76,419,Post,2022-06-04,['Texto'],True
+836,599,Post,2022-10-10,"['Texto', 'Emoji']",False
+1334,877,Post,2024-03-09,"['Texto', 'Emoji']",False
+174,626,Post,2020-10-03,"['Texto', 'Emoji', 'Sticker']",True
+1223,826,Post,2024-09-26,['Emoji'],True
+362,893,Post,2023-06-12,"['Emoji', 'Texto']",True
+473,153,Post,2024-12-15,"['Texto', 'Emoji']",True
+883,646,Post,2022-09-04,"['Emoji', 'Texto', 'Sticker']",False
+358,1192,Post,2020-09-10,"['Emoji', 'Texto', 'Sticker']",False
+1088,404,Post,2022-02-01,"['Texto', 'Sticker']",True
+262,456,Post,2020-08-04,['Sticker'],True
+305,671,Post,2022-04-24,['Sticker'],True
+84,141,Post,2020-06-19,"['Texto', 'Emoji', 'Sticker']",True
+34,984,Post,2024-09-29,['Emoji'],True
+157,291,Post,2020-08-06,['Texto'],True
+541,408,Post,2024-06-20,"['Emoji', 'Sticker', 'Texto']",True
+195,124,Post,2023-08-16,['Texto'],False
+1309,559,Post,2021-05-07,"['Texto', 'Emoji']",False
+1442,105,Post,2024-07-31,['Emoji'],True
+137,946,Post,2022-02-14,['Sticker'],True
+1046,761,Post,2022-11-08,"['Texto', 'Emoji', 'Sticker']",False
+48,621,Post,2022-12-09,['Texto'],True
+1486,704,Post,2024-04-01,['Texto'],True
+342,1032,Post,2021-01-04,"['Sticker', 'Texto']",True
+810,958,Post,2022-07-20,['Texto'],True
+1207,994,Post,2021-09-19,['Emoji'],True
+899,194,Post,2024-02-15,"['Emoji', 'Texto']",False
+221,191,Post,2020-06-03,['Sticker'],False
+227,621,Post,2025-02-21,['Sticker'],False
+1443,1102,Post,2022-01-02,"['Texto', 'Sticker', 'Emoji']",False
+132,87,Post,2020-11-12,"['Sticker', 'Texto', 'Emoji']",True
+695,134,Post,2020-11-10,['Sticker'],False
+467,855,Post,2021-09-15,"['Texto', 'Sticker', 'Emoji']",True
+725,376,Post,2020-09-11,['Emoji'],True
+1500,631,Post,2021-06-07,"['Sticker', 'Texto']",True
+992,1128,Post,2023-01-03,['Sticker'],False
+393,773,Post,2025-02-09,"['Texto', 'Sticker']",False
+1037,1132,Post,2023-01-01,['Texto'],False
+718,923,Post,2022-02-06,"['Texto', 'Sticker']",True
+907,925,Post,2023-01-01,"['Sticker', 'Emoji']",False
+270,946,Post,2021-12-23,['Texto'],False
+212,70,Post,2021-04-19,"['Texto', 'Emoji']",True
+43,969,Post,2022-08-09,['Emoji'],False
+480,1151,Post,2021-03-02,"['Emoji', 'Texto']",True
+660,957,Post,2021-07-21,"['Texto', 'Emoji', 'Sticker']",False
+239,879,Post,2023-10-05,"['Texto', 'Emoji', 'Sticker']",True
+534,956,Post,2023-09-05,"['Sticker', 'Texto']",False
+610,1075,Post,2023-08-01,['Sticker'],False
+627,486,Post,2021-08-31,"['Sticker', 'Emoji', 'Texto']",True
+819,817,Post,2020-07-15,['Sticker'],True
+1223,705,Post,2023-10-10,['Emoji'],True
+1464,468,Post,2024-12-05,"['Texto', 'Emoji', 'Sticker']",False
+163,654,Post,2022-12-06,"['Texto', 'Emoji']",False
+945,965,Post,2023-06-27,"['Sticker', 'Texto', 'Emoji']",False
+1093,843,Post,2023-08-30,['Sticker'],True
+120,166,Post,2020-07-10,['Texto'],True
+497,1009,Post,2020-03-07,"['Sticker', 'Texto', 'Emoji']",False
+1364,1075,Post,2021-06-13,"['Emoji', 'Texto', 'Sticker']",True
+1177,118,Post,2024-07-14,"['Sticker', 'Texto']",False
+1136,612,Post,2024-10-24,['Texto'],True
+850,383,Post,2022-12-21,"['Sticker', 'Texto', 'Emoji']",False
+1444,787,Post,2022-09-26,"['Sticker', 'Texto', 'Emoji']",True
+853,1059,Post,2020-09-26,"['Texto', 'Emoji', 'Sticker']",False
+321,1036,Post,2020-09-30,"['Emoji', 'Sticker', 'Texto']",False
+1308,1145,Post,2020-10-22,"['Texto', 'Sticker']",True
+539,236,Post,2021-03-01,"['Texto', 'Emoji', 'Sticker']",True
+841,214,Post,2021-04-09,"['Sticker', 'Texto']",True
+1021,1168,Post,2020-05-25,"['Sticker', 'Texto', 'Emoji']",True
+674,460,Post,2020-12-01,['Texto'],True
+1383,329,Post,2023-03-16,"['Texto', 'Sticker']",False
+918,41,Post,2020-06-09,"['Emoji', 'Sticker']",False
+94,350,Post,2021-06-20,['Texto'],True
+922,602,Post,2023-05-08,"['Sticker', 'Emoji', 'Texto']",False
+775,734,Post,2020-12-01,['Texto'],False
+203,663,Post,2023-01-02,"['Emoji', 'Texto', 'Sticker']",False
+526,1137,Post,2023-04-18,"['Texto', 'Emoji', 'Sticker']",True
+114,168,Post,2022-04-26,['Texto'],True
+1470,221,Post,2021-06-10,"['Texto', 'Sticker']",True
+99,991,Post,2024-02-05,"['Emoji', 'Sticker', 'Texto']",False
+1459,1009,Post,2023-12-12,"['Emoji', 'Sticker']",True
+1496,1036,Post,2020-12-05,"['Emoji', 'Sticker']",True
+753,33,Post,2022-06-23,['Sticker'],False
+502,868,Post,2020-09-13,"['Emoji', 'Sticker']",False
+1208,304,Post,2020-08-04,"['Texto', 'Emoji', 'Sticker']",True
+226,17,Post,2022-10-21,"['Emoji', 'Texto', 'Sticker']",True
+161,468,Post,2023-03-13,"['Sticker', 'Texto']",True
+1211,404,Post,2021-04-24,"['Sticker', 'Emoji', 'Texto']",False
+839,739,Post,2024-08-03,"['Emoji', 'Texto', 'Sticker']",False
+774,45,Post,2024-09-17,"['Texto', 'Sticker']",True
+271,728,Post,2024-03-01,"['Emoji', 'Texto']",False
+705,1108,Post,2023-08-11,"['Emoji', 'Texto']",True
+1373,981,Post,2022-08-15,"['Texto', 'Sticker', 'Emoji']",True
+1121,404,Post,2023-10-29,"['Emoji', 'Sticker']",False
+425,563,Post,2024-06-19,['Texto'],False
+1409,641,Post,2024-07-01,"['Emoji', 'Texto', 'Sticker']",False
+927,222,Post,2020-05-02,"['Sticker', 'Emoji']",False
+1491,506,Post,2020-05-14,"['Sticker', 'Texto']",True
+1040,141,Post,2022-04-19,"['Sticker', 'Texto', 'Emoji']",True
+20,958,Post,2022-11-17,"['Texto', 'Sticker', 'Emoji']",False
+478,912,Post,2021-06-25,['Texto'],True
+271,807,Post,2023-05-23,"['Emoji', 'Texto', 'Sticker']",True
+274,537,Post,2020-05-21,"['Sticker', 'Emoji', 'Texto']",True
+636,1096,Post,2023-01-03,"['Sticker', 'Emoji']",True
+198,455,Post,2021-01-30,['Texto'],False
+270,535,Post,2024-06-03,"['Texto', 'Emoji']",True
+644,1009,Post,2023-04-17,['Emoji'],True
+800,688,Post,2022-08-25,['Texto'],False
+240,20,Post,2023-06-04,"['Emoji', 'Sticker']",False
+867,894,Post,2022-07-04,"['Sticker', 'Emoji']",False
+67,581,Post,2020-12-13,['Emoji'],True
+1321,128,Post,2021-11-14,['Sticker'],False
+1195,925,Post,2024-04-15,['Sticker'],False
+744,850,Post,2021-05-22,"['Texto', 'Emoji']",True
+1440,332,Post,2024-11-28,"['Emoji', 'Sticker']",False
+1311,617,Post,2021-01-24,['Sticker'],False
+972,279,Post,2021-01-18,['Emoji'],True
+134,171,Post,2021-03-28,['Emoji'],False
+1077,496,Post,2021-07-30,"['Emoji', 'Texto', 'Sticker']",True
+1182,925,Post,2021-12-06,"['Sticker', 'Texto']",True
+34,1015,Post,2020-10-24,['Emoji'],True
+442,750,Post,2022-09-24,['Emoji'],True
+387,834,Post,2022-05-20,"['Emoji', 'Sticker']",False
+1239,289,Post,2024-11-26,"['Emoji', 'Texto']",False
+975,986,Post,2024-09-08,"['Sticker', 'Emoji']",True
+347,594,Post,2023-08-10,"['Sticker', 'Texto']",False
+749,556,Post,2022-02-06,"['Sticker', 'Emoji', 'Texto']",True
+936,824,Post,2023-09-08,['Sticker'],True
+1498,357,Post,2023-10-02,"['Texto', 'Sticker', 'Emoji']",True
+996,185,Post,2024-06-10,"['Emoji', 'Sticker']",False
+635,380,Post,2020-06-08,"['Emoji', 'Texto', 'Sticker']",True
+356,558,Post,2021-08-23,"['Texto', 'Emoji']",False
+344,1198,Post,2022-11-08,"['Emoji', 'Sticker', 'Texto']",False
+962,237,Post,2023-04-13,['Texto'],True
+904,476,Post,2022-06-07,['Sticker'],True
+1100,90,Post,2024-10-14,"['Emoji', 'Texto']",False
+289,503,Post,2023-01-28,"['Emoji', 'Sticker', 'Texto']",False
+1421,987,Post,2024-12-12,"['Texto', 'Emoji']",True
+1183,208,Post,2023-12-16,"['Sticker', 'Emoji', 'Texto']",False
+1029,1085,Post,2022-12-14,"['Texto', 'Sticker']",True
+565,855,Post,2021-09-20,"['Emoji', 'Texto']",True
+1084,1069,Post,2023-08-28,['Texto'],False
+822,926,Post,2023-02-07,['Emoji'],True
+866,220,Post,2024-04-24,"['Emoji', 'Texto']",False
+1005,489,Post,2020-06-23,"['Texto', 'Emoji', 'Sticker']",True
+1021,10,Post,2020-08-20,"['Sticker', 'Texto', 'Emoji']",False
+75,1149,Post,2023-02-06,['Texto'],False
+133,819,Post,2023-08-24,['Sticker'],True
+704,578,Post,2021-05-04,"['Sticker', 'Emoji']",True
+230,975,Post,2024-08-10,"['Texto', 'Sticker']",True
+1431,17,Post,2022-08-14,['Sticker'],False
+742,51,Post,2022-07-26,"['Emoji', 'Texto']",False
+922,1123,Post,2021-10-17,['Sticker'],True
+310,967,Post,2021-05-24,"['Texto', 'Emoji']",False
+491,397,Post,2020-06-06,"['Sticker', 'Texto', 'Emoji']",True
+1217,255,Post,2024-10-03,['Texto'],True
+165,1134,Post,2020-11-25,"['Sticker', 'Texto']",True
+1016,517,Post,2020-12-11,['Texto'],False
+337,1099,Post,2023-10-11,"['Emoji', 'Sticker', 'Texto']",True
+459,997,Post,2020-07-09,"['Texto', 'Emoji']",False
+773,971,Post,2023-08-25,['Emoji'],False
+561,299,Post,2021-09-01,"['Sticker', 'Texto']",True
+323,868,Post,2022-03-31,"['Sticker', 'Texto']",True
+1315,502,Post,2024-12-17,['Sticker'],True
+325,776,Post,2022-12-06,['Emoji'],True
+370,279,Post,2023-11-04,['Emoji'],False
+677,769,Post,2020-12-06,['Sticker'],False
+1081,439,Post,2021-10-23,"['Emoji', 'Sticker']",True
+935,449,Post,2023-05-28,['Emoji'],True
+1497,1056,Post,2020-12-11,['Emoji'],True
+592,292,Post,2022-11-29,"['Texto', 'Emoji']",False
+464,730,Post,2021-01-08,"['Sticker', 'Emoji', 'Texto']",True
+1051,1041,Post,2020-03-23,['Texto'],True
+1269,452,Post,2020-03-19,"['Sticker', 'Emoji', 'Texto']",True
+1242,361,Post,2021-11-19,"['Texto', 'Sticker', 'Emoji']",False
+1093,754,Post,2024-05-15,['Sticker'],False
+704,553,Post,2022-05-07,"['Emoji', 'Sticker', 'Texto']",False
+627,289,Post,2025-01-06,"['Emoji', 'Sticker', 'Texto']",False
+301,878,Post,2021-05-31,"['Texto', 'Emoji', 'Sticker']",True
+520,1092,Post,2021-03-17,['Texto'],False
+1380,723,Post,2021-06-06,"['Emoji', 'Sticker']",True
+1009,1109,Post,2020-03-24,"['Texto', 'Emoji']",True
+157,220,Post,2023-09-21,"['Sticker', 'Texto']",True
+298,861,Post,2024-07-06,"['Sticker', 'Emoji']",False
+911,721,Post,2023-06-10,"['Texto', 'Sticker']",False
+220,981,Post,2020-06-18,['Sticker'],True
+1336,1106,Post,2020-07-27,['Texto'],True
+476,750,Post,2024-05-16,"['Texto', 'Sticker']",False
+36,251,Post,2024-02-15,['Sticker'],False
+232,113,Post,2022-12-10,"['Emoji', 'Texto', 'Sticker']",True
+160,478,Post,2023-12-16,"['Texto', 'Emoji']",True
+1356,263,Post,2020-12-11,['Texto'],True
+933,468,Post,2023-03-26,"['Texto', 'Emoji', 'Sticker']",True
+813,1104,Post,2023-03-27,"['Emoji', 'Sticker']",False
+472,2,Post,2022-12-19,"['Texto', 'Sticker']",False
+1114,1106,Post,2023-06-08,"['Texto', 'Sticker']",False
+880,1149,Post,2021-04-30,['Emoji'],True
+1280,1166,Post,2021-10-03,"['Emoji', 'Texto']",True
+37,264,Post,2025-01-17,"['Emoji', 'Sticker', 'Texto']",True
+656,30,Post,2022-07-27,"['Texto', 'Emoji', 'Sticker']",False
+390,264,Post,2024-05-18,"['Emoji', 'Sticker', 'Texto']",False
+392,258,Post,2023-09-10,['Emoji'],True
+497,27,Post,2022-10-12,"['Sticker', 'Texto']",True
+352,486,Post,2023-08-18,"['Emoji', 'Sticker', 'Texto']",True
+1355,1143,Post,2020-09-08,"['Sticker', 'Emoji']",True
+152,695,Post,2022-07-21,['Emoji'],False
+601,517,Post,2023-01-08,"['Sticker', 'Texto']",True
+1274,851,Post,2024-01-14,"['Emoji', 'Sticker']",True
+886,1198,Post,2024-06-29,['Texto'],True
+8,578,Post,2023-05-03,"['Texto', 'Emoji']",True
+329,853,Post,2020-03-18,['Emoji'],True
+1082,1033,Post,2025-01-30,"['Sticker', 'Texto', 'Emoji']",True
+1422,548,Post,2023-01-05,"['Sticker', 'Texto', 'Emoji']",True
+748,436,Post,2021-03-05,"['Emoji', 'Texto', 'Sticker']",True
+1277,17,Post,2024-11-02,"['Emoji', 'Sticker']",True
+1030,297,Post,2020-05-25,['Emoji'],False
+256,884,Post,2025-02-20,['Texto'],True
+1360,1008,Post,2022-10-25,['Emoji'],True
+1460,1089,Post,2020-09-02,['Texto'],True
+1311,194,Post,2023-03-15,['Texto'],False
+204,12,Post,2023-05-09,"['Texto', 'Sticker']",False
+1154,988,Post,2020-04-20,"['Texto', 'Sticker', 'Emoji']",True
+1192,897,Post,2021-12-25,"['Sticker', 'Emoji', 'Texto']",True
+211,68,Post,2021-03-30,['Emoji'],False
+685,412,Post,2023-06-20,['Emoji'],False
+286,276,Post,2023-08-09,['Sticker'],False
+489,337,Post,2021-04-17,"['Texto', 'Sticker']",False
+1422,366,Post,2023-01-17,"['Emoji', 'Sticker', 'Texto']",False
+775,313,Post,2020-12-23,['Texto'],True
+939,763,Post,2020-08-14,['Emoji'],False
+633,532,Post,2022-02-18,"['Texto', 'Emoji', 'Sticker']",False
+1191,439,Post,2020-12-23,"['Texto', 'Emoji']",False
+168,894,Post,2023-04-02,"['Emoji', 'Sticker', 'Texto']",True
+64,994,Post,2022-04-06,['Sticker'],True
+312,648,Post,2020-05-14,"['Sticker', 'Emoji']",True
+826,428,Post,2024-06-25,"['Texto', 'Sticker', 'Emoji']",True
+434,1052,Post,2024-02-19,"['Emoji', 'Texto', 'Sticker']",True
+1166,659,Post,2020-06-08,"['Emoji', 'Texto']",True
+1378,428,Post,2022-03-08,['Emoji'],False
+1085,880,Post,2022-01-30,['Texto'],False
+291,269,Post,2020-02-28,['Sticker'],True
+296,856,Post,2021-07-14,"['Texto', 'Emoji']",True
+530,563,Post,2022-07-03,['Texto'],True
+744,781,Post,2023-08-23,"['Sticker', 'Emoji']",False
+863,26,Post,2024-04-08,"['Sticker', 'Texto', 'Emoji']",False
+255,996,Post,2024-03-28,"['Texto', 'Sticker']",True
+256,58,Post,2023-09-19,"['Sticker', 'Texto', 'Emoji']",True
+510,206,Post,2023-09-22,"['Emoji', 'Sticker']",False
+799,885,Post,2024-11-11,"['Texto', 'Emoji', 'Sticker']",False
+598,1146,Post,2024-11-15,"['Texto', 'Emoji']",False
+869,875,Post,2023-12-11,['Texto'],False
+1007,770,Post,2020-03-13,"['Emoji', 'Sticker', 'Texto']",False
+872,619,Post,2023-10-08,"['Emoji', 'Texto']",False
+753,83,Post,2022-08-26,['Emoji'],True
+969,932,Post,2020-11-30,"['Sticker', 'Emoji', 'Texto']",True
+681,596,Post,2020-08-19,"['Sticker', 'Emoji']",True
+604,604,Post,2024-06-22,"['Emoji', 'Texto']",True
+98,224,Post,2020-08-10,['Sticker'],False
+1048,507,Post,2020-09-19,"['Texto', 'Emoji']",True
+994,265,Post,2020-03-20,"['Sticker', 'Texto', 'Emoji']",False
+860,751,Post,2024-02-24,['Sticker'],True
+137,1009,Post,2021-06-24,"['Texto', 'Sticker', 'Emoji']",True
+775,1014,Post,2024-12-11,"['Emoji', 'Texto']",True
+98,298,Post,2023-11-05,"['Emoji', 'Texto', 'Sticker']",True
+550,391,Post,2024-05-14,['Texto'],False
+950,1157,Post,2021-08-10,['Emoji'],True
+1305,189,Post,2021-08-25,['Texto'],False
+400,370,Post,2022-07-26,['Emoji'],False
+128,1168,Post,2024-08-20,"['Sticker', 'Emoji', 'Texto']",True
+880,331,Post,2023-01-13,"['Texto', 'Emoji']",True
+787,410,Post,2023-02-21,['Emoji'],False
+584,565,Post,2021-02-18,"['Emoji', 'Texto', 'Sticker']",False
+922,782,Post,2023-01-21,"['Emoji', 'Sticker']",True
+1304,68,Post,2023-12-18,"['Emoji', 'Sticker', 'Texto']",True
+818,713,Post,2020-06-16,['Texto'],False
+654,513,Post,2021-11-16,"['Texto', 'Sticker']",True
+559,337,Post,2022-05-08,"['Texto', 'Sticker', 'Emoji']",False
+296,483,Post,2021-11-17,"['Sticker', 'Emoji', 'Texto']",True
+56,13,Post,2022-07-24,"['Emoji', 'Sticker', 'Texto']",False
+115,834,Post,2025-01-11,"['Emoji', 'Texto', 'Sticker']",False
+817,492,Post,2020-12-10,"['Texto', 'Emoji', 'Sticker']",True
+664,609,Post,2023-11-21,"['Texto', 'Emoji', 'Sticker']",True
+805,317,Post,2020-10-21,['Texto'],False
+846,115,Post,2020-07-30,['Emoji'],True
+1291,1021,Post,2020-08-08,['Sticker'],True
+963,487,Post,2022-02-19,"['Sticker', 'Texto']",True
+186,890,Post,2023-01-25,"['Emoji', 'Sticker', 'Texto']",True
+920,29,Post,2024-05-04,"['Sticker', 'Emoji']",True
+91,690,Post,2020-07-01,"['Emoji', 'Texto']",True
+1196,1187,Post,2022-12-31,"['Emoji', 'Texto']",False
+550,139,Post,2024-09-10,"['Emoji', 'Sticker', 'Texto']",False
+1265,90,Post,2022-01-31,['Emoji'],False
+1249,1150,Post,2022-01-07,['Sticker'],True
+286,665,Post,2022-10-10,"['Sticker', 'Emoji']",False
+220,535,Post,2022-07-17,"['Sticker', 'Texto', 'Emoji']",False
+787,52,Post,2022-03-26,['Sticker'],True
+545,28,Post,2024-04-20,"['Emoji', 'Texto', 'Sticker']",True
+853,1159,Post,2022-07-28,['Texto'],True
+405,509,Post,2024-04-29,"['Texto', 'Sticker']",False
+354,1094,Post,2023-05-05,['Sticker'],True
+387,365,Post,2020-08-26,"['Sticker', 'Emoji', 'Texto']",False
+767,1046,Post,2023-10-22,['Sticker'],False
+1199,560,Post,2021-12-03,"['Texto', 'Sticker']",True
+1302,1033,Post,2023-07-29,"['Emoji', 'Texto']",False
+1254,224,Post,2024-11-26,"['Sticker', 'Emoji']",False
+1335,38,Post,2023-01-08,"['Sticker', 'Emoji', 'Texto']",False
+1340,60,Post,2021-12-05,"['Texto', 'Emoji']",True
+705,901,Post,2024-12-12,['Sticker'],True
+319,1088,Post,2021-09-19,"['Texto', 'Emoji', 'Sticker']",False
+138,640,Post,2024-06-20,"['Texto', 'Sticker']",False
+716,804,Post,2023-07-19,"['Texto', 'Emoji']",True
+374,232,Post,2021-11-23,"['Emoji', 'Sticker', 'Texto']",False
+622,912,Post,2023-05-08,['Emoji'],False
+1413,1141,Post,2025-02-08,"['Emoji', 'Texto']",True
+827,699,Post,2022-02-17,"['Texto', 'Emoji']",False
+894,844,Post,2022-04-18,['Sticker'],False
+1192,711,Post,2020-10-31,['Texto'],False
+137,865,Post,2020-09-11,['Emoji'],True
+359,783,Post,2023-04-01,['Sticker'],True
+312,1077,Post,2021-04-26,"['Sticker', 'Emoji', 'Texto']",False
+1201,997,Post,2023-03-08,"['Sticker', 'Texto', 'Emoji']",False
+1081,151,Post,2023-09-18,"['Sticker', 'Texto', 'Emoji']",False
+771,476,Post,2022-06-10,"['Emoji', 'Texto']",True
+1307,275,Post,2021-01-05,"['Texto', 'Emoji']",False
+209,547,Post,2023-07-20,['Texto'],True
+224,370,Post,2023-03-01,"['Texto', 'Sticker', 'Emoji']",True
+1195,402,Post,2020-07-27,"['Emoji', 'Texto']",False
+1291,431,Post,2023-10-28,['Texto'],False
+1199,523,Post,2022-09-05,"['Texto', 'Sticker']",True
+1474,1047,Post,2021-12-14,['Emoji'],False
+263,223,Post,2022-02-01,"['Emoji', 'Texto', 'Sticker']",True
+275,341,Post,2020-05-16,"['Texto', 'Emoji', 'Sticker']",False
+380,461,Post,2023-02-02,['Texto'],False
+637,990,Post,2022-08-30,"['Emoji', 'Sticker', 'Texto']",False
+1278,1171,Post,2020-09-02,"['Emoji', 'Texto', 'Sticker']",True
+36,776,Post,2023-08-04,"['Texto', 'Sticker', 'Emoji']",False
+635,501,Post,2024-12-31,"['Texto', 'Sticker', 'Emoji']",True
+267,1155,Post,2023-10-10,['Emoji'],False
+1426,1069,Post,2023-04-19,"['Sticker', 'Texto', 'Emoji']",True
+898,600,Post,2021-01-01,"['Texto', 'Sticker', 'Emoji']",False
+576,366,Post,2022-07-02,"['Texto', 'Emoji']",True
+1198,342,Post,2024-07-02,['Texto'],False
+125,857,Post,2021-05-08,"['Emoji', 'Texto', 'Sticker']",True
+557,115,Post,2023-06-06,['Texto'],False
+354,1045,Post,2024-11-24,['Texto'],False
+1108,71,Post,2021-08-27,"['Texto', 'Emoji']",True
+1177,950,Post,2024-01-13,"['Emoji', 'Texto']",False
+1006,308,Post,2021-05-09,['Emoji'],True
+883,859,Post,2023-01-14,"['Emoji', 'Texto']",False
+872,741,Post,2023-08-11,"['Texto', 'Sticker']",True
+103,308,Post,2022-04-01,"['Emoji', 'Sticker']",True
+844,141,Post,2022-04-05,"['Texto', 'Sticker']",False
+651,480,Post,2020-06-19,"['Emoji', 'Sticker', 'Texto']",True
+1391,192,Post,2020-09-07,"['Emoji', 'Sticker', 'Texto']",True
+1106,834,Post,2025-02-04,"['Emoji', 'Texto', 'Sticker']",True
+1336,237,Post,2021-05-30,"['Sticker', 'Texto', 'Emoji']",True
+52,605,Post,2021-06-21,"['Sticker', 'Texto', 'Emoji']",False
+846,1130,Post,2022-07-10,"['Sticker', 'Emoji', 'Texto']",False
+842,256,Post,2020-10-08,['Emoji'],False
+949,75,Post,2020-12-05,"['Texto', 'Emoji', 'Sticker']",True
+123,974,Post,2024-03-09,['Sticker'],False
+823,659,Post,2024-03-07,"['Emoji', 'Sticker']",True
+1247,689,Post,2021-02-27,"['Sticker', 'Texto']",True
+391,544,Post,2023-04-13,['Emoji'],True
+1120,857,Post,2023-02-23,"['Texto', 'Sticker']",False
+1017,472,Post,2021-10-14,"['Sticker', 'Texto', 'Emoji']",True
+706,59,Post,2023-10-20,"['Texto', 'Sticker']",True
+248,321,Post,2024-04-29,['Emoji'],False
+153,96,Post,2022-03-19,['Emoji'],True
+358,1080,Post,2021-02-09,['Emoji'],False
+1071,886,Post,2024-04-07,['Texto'],True
+199,1,Post,2022-08-18,['Sticker'],True
+932,953,Post,2021-06-27,"['Texto', 'Emoji', 'Sticker']",True
+119,520,Post,2020-09-18,"['Sticker', 'Texto', 'Emoji']",False
+1248,772,Post,2021-01-14,['Emoji'],False
+660,512,Post,2023-01-24,"['Emoji', 'Sticker']",False
+1120,233,Post,2021-04-11,"['Sticker', 'Emoji', 'Texto']",True
+1480,97,Post,2021-01-08,['Texto'],False
+478,801,Post,2025-02-01,['Sticker'],False
+980,74,Post,2021-07-03,"['Texto', 'Sticker', 'Emoji']",True
+1497,933,Post,2023-11-03,"['Emoji', 'Texto']",True
+875,1079,Post,2022-03-04,['Sticker'],True
+596,621,Post,2023-09-22,"['Sticker', 'Emoji']",False
+918,718,Post,2020-03-19,['Texto'],True
+90,279,Post,2025-01-25,"['Sticker', 'Emoji']",False
+375,972,Post,2025-02-24,"['Sticker', 'Texto']",False
+1072,129,Post,2024-05-13,['Sticker'],False
+270,201,Post,2020-06-27,"['Sticker', 'Emoji', 'Texto']",False
+1163,513,Post,2024-02-25,"['Sticker', 'Emoji']",True
+135,684,Post,2021-10-08,"['Emoji', 'Sticker', 'Texto']",False
+1184,352,Post,2023-04-23,"['Texto', 'Sticker']",False
+678,347,Post,2023-04-01,"['Texto', 'Emoji', 'Sticker']",True
+284,386,Post,2021-01-02,['Emoji'],True
+280,332,Post,2022-02-17,"['Emoji', 'Sticker', 'Texto']",False
+216,641,Post,2020-12-13,['Texto'],True
+305,506,Post,2020-05-09,"['Sticker', 'Texto', 'Emoji']",True
+1378,115,Post,2022-03-14,['Emoji'],False
+83,249,Post,2024-12-27,"['Sticker', 'Emoji']",True
+1162,359,Post,2024-09-25,"['Texto', 'Emoji', 'Sticker']",False
+199,230,Post,2023-10-18,['Emoji'],False
+1434,925,Post,2024-10-03,['Emoji'],True
+607,131,Post,2024-07-30,['Sticker'],True
+612,937,Post,2023-10-22,"['Emoji', 'Sticker', 'Texto']",False
+293,967,Post,2021-10-22,"['Emoji', 'Sticker']",False
+1243,428,Post,2022-12-26,['Emoji'],False
+301,242,Post,2022-08-30,"['Sticker', 'Texto', 'Emoji']",True
+991,58,Post,2021-01-02,"['Texto', 'Sticker', 'Emoji']",False
+596,364,Post,2021-05-08,"['Sticker', 'Texto', 'Emoji']",False
+1355,906,Post,2022-01-25,"['Texto', 'Sticker']",False
+396,199,Post,2020-03-26,['Texto'],True
+750,591,Post,2024-03-03,"['Emoji', 'Texto', 'Sticker']",False
+963,562,Post,2023-03-07,"['Sticker', 'Emoji']",False
+460,246,Post,2023-05-17,['Texto'],True
+766,791,Post,2023-12-22,['Texto'],False
+1025,381,Post,2022-09-20,['Texto'],True
+1276,71,Post,2022-10-24,"['Sticker', 'Emoji', 'Texto']",False
+791,906,Post,2022-04-10,"['Texto', 'Sticker']",True
+590,1083,Post,2024-02-11,['Emoji'],True
+1053,979,Post,2024-04-25,"['Emoji', 'Sticker', 'Texto']",False
+1239,46,Post,2020-06-17,"['Sticker', 'Texto', 'Emoji']",True
+1004,926,Post,2023-07-08,"['Texto', 'Emoji', 'Sticker']",True
+1011,659,Post,2022-04-23,"['Texto', 'Sticker', 'Emoji']",False
+170,490,Post,2021-06-23,['Texto'],False
+117,815,Post,2021-04-25,['Texto'],True
+398,794,Post,2023-04-11,['Emoji'],True
+1316,1191,Post,2023-09-02,"['Emoji', 'Texto']",True
+169,435,Post,2021-12-04,['Sticker'],True
+862,794,Post,2024-06-23,['Emoji'],False
+938,225,Post,2023-04-01,"['Sticker', 'Emoji', 'Texto']",True
+780,355,Post,2020-09-24,"['Sticker', 'Emoji']",True
+555,132,Post,2023-11-07,"['Emoji', 'Texto']",False
+1360,745,Post,2020-05-24,"['Sticker', 'Texto', 'Emoji']",False
+441,331,Post,2021-11-03,['Texto'],False
+150,288,Post,2021-01-31,['Sticker'],True
+1272,910,Post,2021-06-19,"['Texto', 'Sticker', 'Emoji']",False
+449,224,Post,2020-09-10,"['Sticker', 'Texto']",False
+1163,307,Post,2020-11-04,"['Sticker', 'Texto', 'Emoji']",False
+1065,849,Post,2022-09-14,"['Texto', 'Sticker', 'Emoji']",True
+664,615,Post,2022-05-28,"['Sticker', 'Texto', 'Emoji']",True
+836,217,Post,2021-04-12,['Emoji'],False
+1050,976,Post,2021-10-14,['Sticker'],True
+218,554,Post,2024-10-03,"['Emoji', 'Sticker']",False
+208,752,Post,2020-10-27,"['Emoji', 'Texto', 'Sticker']",True
+1494,298,Post,2022-10-21,"['Sticker', 'Texto', 'Emoji']",True
+1211,1007,Post,2022-12-21,"['Emoji', 'Texto', 'Sticker']",False
+545,326,Post,2022-07-02,['Sticker'],True
+166,274,Post,2020-08-20,"['Sticker', 'Texto', 'Emoji']",True
+1483,277,Post,2022-03-27,"['Emoji', 'Texto', 'Sticker']",False
+646,774,Post,2021-04-29,"['Sticker', 'Texto', 'Emoji']",False
+877,957,Post,2024-03-17,['Texto'],False
+629,332,Post,2022-06-19,"['Emoji', 'Sticker']",False
+907,434,Post,2021-01-09,['Texto'],False
+273,414,Post,2023-01-25,"['Emoji', 'Texto']",False
+1383,549,Post,2022-04-27,['Sticker'],True
+938,149,Post,2023-11-02,"['Emoji', 'Sticker', 'Texto']",False
+821,893,Post,2022-04-16,"['Sticker', 'Emoji']",False
+58,646,Post,2021-09-16,"['Sticker', 'Texto']",True
+164,48,Post,2021-06-22,"['Sticker', 'Emoji']",True
+1484,315,Post,2023-04-01,"['Emoji', 'Sticker', 'Texto']",False
+684,241,Post,2023-04-19,['Emoji'],False
+842,14,Post,2024-12-26,"['Emoji', 'Texto', 'Sticker']",False
+1066,30,Post,2021-05-03,"['Emoji', 'Texto']",True
+879,694,Post,2021-04-24,"['Emoji', 'Sticker', 'Texto']",True
+1314,818,Post,2024-05-26,['Emoji'],True
+881,352,Post,2020-10-12,['Sticker'],False
+45,687,Post,2021-09-17,"['Emoji', 'Sticker', 'Texto']",True
+379,859,Post,2020-03-26,['Texto'],False
+1148,562,Post,2024-02-26,"['Emoji', 'Texto']",False
+114,770,Post,2022-09-23,"['Emoji', 'Texto', 'Sticker']",False
+1219,531,Post,2022-06-28,"['Sticker', 'Emoji', 'Texto']",True
+438,38,Post,2020-10-25,"['Emoji', 'Texto']",True
+673,772,Post,2021-01-18,"['Texto', 'Emoji']",False
+922,626,Post,2022-08-26,['Sticker'],False
+1015,652,Post,2024-07-23,"['Texto', 'Sticker', 'Emoji']",False
+1438,560,Post,2023-06-05,['Sticker'],False
+35,930,Post,2021-07-18,"['Sticker', 'Emoji']",False
+628,1184,Post,2024-04-17,"['Emoji', 'Texto']",True
+197,623,Post,2024-06-23,"['Texto', 'Sticker', 'Emoji']",True
+565,127,Post,2021-10-05,"['Texto', 'Sticker']",False
+596,663,Post,2021-04-08,['Emoji'],True
+1459,873,Post,2024-06-10,['Texto'],True
+1451,283,Post,2022-08-01,['Sticker'],False
+1458,865,Post,2022-11-25,"['Emoji', 'Texto']",False
+769,276,Post,2021-10-15,"['Texto', 'Sticker']",True
+950,1113,Post,2024-07-31,"['Texto', 'Sticker', 'Emoji']",False
+739,1144,Post,2021-02-18,"['Texto', 'Sticker']",False
+1256,312,Post,2021-07-24,"['Texto', 'Emoji', 'Sticker']",False
+1103,951,Post,2025-01-07,"['Sticker', 'Emoji']",True
+350,356,Post,2021-03-19,"['Emoji', 'Sticker', 'Texto']",False
+25,514,Post,2023-11-05,"['Sticker', 'Emoji']",True
+1104,793,Post,2023-11-05,"['Sticker', 'Texto', 'Emoji']",True
+521,76,Post,2020-08-21,"['Texto', 'Sticker', 'Emoji']",True
+651,671,Post,2022-06-12,"['Sticker', 'Texto', 'Emoji']",True
+957,65,Post,2020-04-03,"['Texto', 'Emoji', 'Sticker']",True
+1444,131,Post,2020-05-21,['Sticker'],False
+470,687,Post,2025-01-30,['Emoji'],True
+1474,591,Post,2024-11-22,['Texto'],False
+849,826,Post,2025-02-14,"['Texto', 'Emoji', 'Sticker']",False
+803,845,Post,2022-01-25,['Emoji'],True
+1451,312,Post,2023-10-02,"['Emoji', 'Sticker', 'Texto']",True
+144,158,Post,2024-10-05,"['Texto', 'Emoji', 'Sticker']",True
+735,70,Post,2023-12-22,['Sticker'],True
+687,757,Post,2020-07-05,"['Emoji', 'Texto']",False
+1416,914,Post,2020-09-18,"['Texto', 'Sticker', 'Emoji']",True
+639,733,Post,2024-02-25,['Emoji'],False
+833,595,Post,2021-05-21,"['Sticker', 'Texto', 'Emoji']",False
+1279,657,Post,2020-10-19,['Sticker'],True
+687,224,Post,2023-04-13,"['Emoji', 'Sticker', 'Texto']",False
+567,193,Post,2020-11-21,['Sticker'],True
+1146,220,Post,2024-09-08,['Texto'],True
+428,160,Post,2022-05-26,"['Sticker', 'Emoji']",True
+851,867,Post,2024-02-13,"['Texto', 'Emoji', 'Sticker']",False
+549,1116,Post,2022-07-24,"['Emoji', 'Sticker']",False
+378,844,Post,2022-05-10,"['Sticker', 'Texto']",True
+710,841,Post,2020-07-04,['Emoji'],False
+582,395,Post,2020-09-05,['Emoji'],True
+1456,1109,Post,2020-08-31,['Emoji'],True
+873,89,Post,2022-11-09,"['Emoji', 'Sticker', 'Texto']",True
+1158,669,Post,2022-04-23,"['Emoji', 'Sticker', 'Texto']",True
+783,191,Post,2022-04-12,"['Texto', 'Emoji']",True
+417,1016,Post,2020-12-02,"['Emoji', 'Texto']",True
+308,19,Post,2021-07-12,"['Sticker', 'Emoji', 'Texto']",True
+1421,1017,Post,2021-03-26,"['Emoji', 'Sticker']",False
+191,742,Post,2021-07-17,"['Sticker', 'Emoji']",True
+1414,386,Post,2023-09-15,"['Emoji', 'Sticker', 'Texto']",False
+633,837,Post,2022-09-12,"['Emoji', 'Texto', 'Sticker']",False
+936,1045,Post,2025-02-10,"['Emoji', 'Texto']",False
+246,1128,Post,2021-09-25,['Emoji'],False
+1222,126,Post,2022-01-14,"['Sticker', 'Texto']",True
+263,799,Post,2021-06-23,"['Texto', 'Sticker']",True
+113,477,Post,2023-12-01,['Sticker'],True
+52,1043,Post,2021-07-23,"['Texto', 'Emoji']",True
+2,333,Post,2022-09-05,"['Sticker', 'Emoji']",False
+858,861,Post,2022-10-10,"['Emoji', 'Sticker', 'Texto']",False
+602,184,Post,2023-03-17,['Emoji'],True
+1276,136,Post,2020-06-11,['Sticker'],True
+1154,889,Post,2022-01-14,"['Texto', 'Emoji']",False
+1080,694,Post,2024-06-08,"['Texto', 'Sticker']",False
+74,416,Post,2025-01-25,"['Texto', 'Sticker']",True
+900,158,Post,2021-12-05,"['Texto', 'Emoji', 'Sticker']",False
+1009,84,Post,2022-09-29,"['Emoji', 'Texto']",True
+1327,631,Post,2024-03-31,"['Sticker', 'Texto', 'Emoji']",False
+1005,768,Post,2023-10-06,['Sticker'],True
+824,1144,Post,2022-07-14,"['Texto', 'Emoji']",False
+1478,420,Post,2025-02-15,"['Emoji', 'Texto']",False
+1381,164,Post,2022-11-18,['Sticker'],True
+730,858,Post,2021-09-17,"['Texto', 'Sticker']",False
+101,884,Post,2021-09-30,"['Texto', 'Emoji']",True
+708,605,Post,2021-06-09,['Emoji'],False
+1168,872,Post,2022-11-13,"['Texto', 'Sticker']",True
+789,1143,Post,2021-11-06,['Sticker'],True
+695,833,Post,2024-03-05,['Emoji'],True
+76,128,Post,2024-03-12,"['Emoji', 'Texto', 'Sticker']",False
+149,188,Post,2022-09-02,"['Sticker', 'Texto']",False
+721,394,Post,2021-09-09,"['Sticker', 'Texto']",True
+1450,991,Post,2021-06-29,"['Texto', 'Emoji']",True
+701,271,Post,2023-08-26,['Emoji'],True
+888,487,Post,2023-11-30,"['Texto', 'Sticker']",True
+963,390,Post,2020-09-09,"['Emoji', 'Sticker', 'Texto']",True
+477,192,Post,2023-05-22,['Texto'],False
+1109,1066,Post,2022-08-08,"['Texto', 'Sticker']",False
+206,289,Post,2024-10-25,['Texto'],False
+729,776,Post,2022-04-29,"['Sticker', 'Emoji']",True
+954,1003,Post,2022-03-16,['Emoji'],False
+520,319,Post,2023-01-29,['Sticker'],False
+427,1041,Post,2021-03-10,"['Texto', 'Sticker']",True
+407,225,Post,2022-08-04,['Texto'],True
+615,543,Post,2023-03-18,['Emoji'],True
+1109,162,Post,2022-08-04,"['Sticker', 'Emoji']",True
+502,283,Post,2023-08-06,"['Emoji', 'Sticker']",True
+702,522,Post,2021-04-18,"['Sticker', 'Texto']",True
+746,758,Post,2023-06-21,"['Texto', 'Emoji', 'Sticker']",True
+1278,376,Post,2020-06-29,"['Texto', 'Sticker', 'Emoji']",False
+161,217,Post,2022-11-25,"['Emoji', 'Sticker']",True
+1246,998,Post,2023-01-26,"['Texto', 'Emoji', 'Sticker']",False
+395,1067,Post,2022-02-05,['Texto'],True
+1286,889,Post,2024-06-07,"['Texto', 'Sticker']",True
+1410,57,Post,2023-03-30,"['Emoji', 'Texto', 'Sticker']",False
+86,136,Post,2023-03-04,"['Texto', 'Emoji']",False
+1422,178,Post,2023-02-16,"['Sticker', 'Emoji', 'Texto']",False
+86,128,Post,2024-10-04,['Sticker'],False
+1408,512,Post,2024-05-28,"['Texto', 'Emoji', 'Sticker']",True
+1460,855,Post,2023-01-11,"['Emoji', 'Texto']",True
+319,906,Post,2025-01-05,['Sticker'],False
+1405,736,Post,2020-12-27,['Texto'],True
+624,986,Post,2024-08-27,"['Emoji', 'Sticker']",False
+376,385,Post,2024-12-20,['Sticker'],True
+1492,969,Post,2020-09-06,"['Emoji', 'Sticker']",True
+323,843,Post,2022-01-08,"['Texto', 'Sticker']",False
+1124,524,Post,2022-06-07,['Sticker'],True
+588,736,Post,2024-03-01,"['Emoji', 'Sticker']",True
+799,82,Post,2024-01-22,"['Sticker', 'Texto']",False
+728,717,Post,2022-04-19,"['Emoji', 'Sticker', 'Texto']",True
+451,549,Post,2022-06-24,"['Sticker', 'Emoji']",False
+1264,1183,Post,2025-01-23,"['Emoji', 'Sticker']",True
+1443,215,Post,2023-02-15,['Texto'],True
+112,1092,Post,2024-11-14,['Texto'],True
+382,215,Post,2022-12-30,"['Texto', 'Sticker']",False
+286,731,Post,2021-12-14,['Emoji'],False
+424,205,Post,2021-01-16,"['Texto', 'Emoji', 'Sticker']",True
+193,294,Post,2021-03-16,"['Sticker', 'Texto']",True
+4,114,Post,2020-10-01,"['Sticker', 'Emoji']",True
+20,730,Post,2022-01-19,"['Emoji', 'Sticker']",True
+562,504,Post,2020-08-13,"['Texto', 'Emoji', 'Sticker']",False
+841,678,Post,2024-09-07,"['Emoji', 'Texto', 'Sticker']",True
+1275,509,Post,2021-12-02,"['Texto', 'Emoji']",True
+494,432,Post,2021-05-21,"['Sticker', 'Emoji']",False
+548,1163,Post,2020-11-06,"['Sticker', 'Emoji', 'Texto']",True
+31,743,Post,2021-09-26,"['Emoji', 'Sticker']",True
+958,435,Post,2021-01-16,['Sticker'],False
+1232,180,Post,2023-10-13,"['Texto', 'Emoji']",False
+977,340,Post,2021-01-05,"['Emoji', 'Texto']",False
+382,431,Post,2024-01-01,['Texto'],False
+856,300,Post,2023-09-21,"['Texto', 'Sticker']",True
+998,24,Post,2021-05-04,['Texto'],True
+26,1127,Post,2023-03-09,"['Texto', 'Sticker']",False
+1063,1049,Post,2020-12-06,['Texto'],True
+981,261,Post,2025-01-15,"['Sticker', 'Emoji', 'Texto']",True
+1014,1053,Post,2024-01-11,"['Emoji', 'Sticker']",False
+421,560,Post,2021-11-29,['Sticker'],True
+1107,811,Post,2021-01-01,"['Emoji', 'Sticker']",False
+934,25,Post,2020-05-29,"['Texto', 'Sticker', 'Emoji']",False
+1159,830,Post,2021-05-30,"['Texto', 'Emoji']",True
+838,908,Post,2024-07-21,['Emoji'],False
+1402,828,Post,2022-04-08,"['Sticker', 'Texto', 'Emoji']",True
+396,690,Post,2022-01-04,"['Emoji', 'Texto']",True
+404,557,Post,2020-12-14,"['Emoji', 'Sticker', 'Texto']",True
+627,100,Post,2021-05-16,"['Texto', 'Sticker']",True
+1279,755,Post,2023-11-14,"['Texto', 'Sticker', 'Emoji']",False
+150,556,Post,2022-12-04,"['Sticker', 'Emoji', 'Texto']",False
+694,1168,Post,2021-05-09,"['Emoji', 'Sticker', 'Texto']",True
+777,1056,Post,2024-05-30,"['Texto', 'Emoji', 'Sticker']",True
+41,899,Post,2020-12-18,"['Sticker', 'Emoji', 'Texto']",True
+975,728,Post,2020-03-02,"['Texto', 'Sticker']",True
+1231,136,Post,2020-08-15,"['Texto', 'Sticker', 'Emoji']",True
+658,58,Post,2023-12-08,['Texto'],True
+1115,1180,Post,2022-07-25,"['Sticker', 'Texto', 'Emoji']",False
+104,358,Post,2024-10-19,"['Emoji', 'Sticker']",True
+408,512,Post,2024-10-26,['Texto'],False
+1026,429,Post,2024-09-24,"['Sticker', 'Texto', 'Emoji']",True
+1447,258,Post,2024-03-24,"['Sticker', 'Emoji', 'Texto']",False
+459,788,Post,2020-10-17,['Sticker'],True
+495,804,Post,2020-03-26,['Emoji'],True
+899,649,Post,2023-03-08,['Sticker'],True
+1409,602,Post,2022-04-30,"['Sticker', 'Texto', 'Emoji']",False
+1380,708,Post,2024-08-07,['Texto'],True
+1199,250,Post,2022-08-20,"['Texto', 'Sticker']",False
+411,32,Post,2020-06-20,"['Sticker', 'Emoji']",False
+419,1104,Post,2022-06-26,"['Sticker', 'Emoji']",True
+125,934,Post,2022-03-31,"['Emoji', 'Texto', 'Sticker']",False
+936,527,Post,2024-11-18,"['Texto', 'Sticker', 'Emoji']",False
+656,1050,Post,2020-08-08,"['Emoji', 'Texto', 'Sticker']",True
+839,297,Post,2020-08-21,"['Texto', 'Sticker']",True
+584,244,Post,2024-10-05,"['Sticker', 'Emoji', 'Texto']",True
+486,423,Post,2023-05-23,"['Emoji', 'Texto', 'Sticker']",False
+1022,368,Post,2023-08-20,"['Texto', 'Emoji', 'Sticker']",False
+288,629,Post,2023-08-24,"['Sticker', 'Texto', 'Emoji']",True
+1486,733,Post,2022-12-19,['Texto'],True
+1001,610,Post,2024-07-26,"['Sticker', 'Texto']",True
+1301,17,Post,2020-10-23,['Sticker'],True
+1311,42,Post,2022-10-30,"['Sticker', 'Texto']",True
+1191,270,Post,2021-12-05,"['Texto', 'Sticker', 'Emoji']",True
+422,111,Post,2022-04-06,"['Emoji', 'Texto']",False
+136,839,Post,2023-05-15,"['Texto', 'Sticker']",False
+207,301,Post,2021-06-23,"['Sticker', 'Emoji', 'Texto']",True
+387,389,Post,2021-05-24,['Emoji'],False
+60,408,Post,2022-03-17,['Emoji'],True
+1391,762,Post,2022-03-15,"['Texto', 'Emoji']",True
+598,45,Post,2021-12-12,['Emoji'],True
+717,430,Post,2023-06-06,['Emoji'],True
+580,114,Post,2022-07-02,['Sticker'],False
+148,956,Post,2023-10-22,"['Emoji', 'Texto']",True
+1416,1051,Post,2025-01-10,"['Texto', 'Emoji', 'Sticker']",True
+565,765,Post,2023-02-15,"['Texto', 'Emoji']",True
+1371,175,Post,2022-06-06,"['Sticker', 'Emoji', 'Texto']",False
+364,229,Post,2024-12-23,"['Sticker', 'Texto', 'Emoji']",False
+744,885,Post,2022-10-18,"['Sticker', 'Texto']",False
+869,309,Post,2023-10-26,['Emoji'],False
+248,837,Post,2023-03-19,['Sticker'],True
+1390,285,Post,2024-12-10,['Sticker'],True
+169,47,Post,2021-05-16,"['Emoji', 'Texto']",True
+540,142,Post,2020-04-12,['Emoji'],False
+580,659,Post,2023-03-28,"['Emoji', 'Texto']",True
+51,1173,Post,2022-09-16,"['Texto', 'Emoji']",False
+520,736,Post,2024-08-07,['Sticker'],True
+1222,630,Post,2024-11-23,"['Sticker', 'Texto']",False
+6,312,Post,2024-08-11,['Emoji'],False
+1246,1062,Post,2023-03-27,['Texto'],True
+348,500,Post,2020-08-03,"['Sticker', 'Emoji', 'Texto']",True
+1224,1129,Post,2024-02-17,"['Sticker', 'Texto', 'Emoji']",True
+726,136,Post,2021-12-16,"['Texto', 'Emoji']",True
+1450,649,Post,2021-06-06,"['Emoji', 'Texto', 'Sticker']",True
+765,767,Post,2023-04-15,"['Texto', 'Sticker']",True
+3,1035,Post,2024-02-04,"['Texto', 'Emoji']",True
+210,828,Post,2020-11-24,['Emoji'],True
+633,141,Post,2023-08-18,['Emoji'],True
+135,268,Post,2021-09-21,"['Texto', 'Emoji']",True
+871,243,Post,2020-08-20,['Emoji'],True
+1486,1171,Post,2024-03-30,"['Sticker', 'Emoji']",False
+1443,962,Post,2024-03-16,"['Emoji', 'Texto']",True
+583,1171,Post,2021-07-24,['Texto'],False
+477,441,Post,2023-09-08,"['Sticker', 'Texto', 'Emoji']",False
+905,639,Post,2021-03-31,"['Texto', 'Sticker', 'Emoji']",False
+999,171,Post,2023-04-03,"['Sticker', 'Texto']",False
+685,840,Post,2021-09-27,"['Emoji', 'Sticker']",False
+483,313,Post,2021-12-09,['Emoji'],False
+804,792,Post,2021-04-02,['Texto'],True
+667,1092,Post,2020-06-28,"['Emoji', 'Sticker', 'Texto']",True
+1441,327,Post,2023-08-06,"['Texto', 'Sticker']",True
+107,307,Post,2023-09-16,"['Texto', 'Emoji']",False
+1050,277,Post,2021-05-25,"['Texto', 'Emoji']",False
+298,144,Post,2023-12-31,"['Texto', 'Emoji']",True
+139,1069,Post,2021-04-15,"['Sticker', 'Texto', 'Emoji']",True
+584,978,Post,2023-01-17,['Sticker'],True
+700,1141,Post,2020-06-09,"['Emoji', 'Sticker', 'Texto']",True
+1259,124,Post,2024-04-17,['Texto'],False
+1166,913,Post,2020-04-01,['Emoji'],True
+1105,1045,Post,2020-09-28,"['Emoji', 'Sticker']",True
+937,496,Post,2021-04-21,"['Texto', 'Emoji']",True
+1396,1125,Post,2020-06-20,"['Emoji', 'Sticker']",True
+566,808,Post,2020-04-04,"['Emoji', 'Sticker', 'Texto']",False
+1403,1127,Post,2024-10-30,"['Sticker', 'Texto', 'Emoji']",False
+1466,588,Post,2022-07-28,['Emoji'],True
+1355,1010,Post,2020-07-17,['Emoji'],False
+767,975,Post,2024-03-13,"['Emoji', 'Texto']",True
+97,658,Post,2023-04-06,"['Texto', 'Sticker', 'Emoji']",False
+560,452,Post,2024-07-26,"['Emoji', 'Texto']",True
+66,210,Post,2024-07-04,"['Sticker', 'Emoji', 'Texto']",False
+1426,163,Post,2021-07-09,['Emoji'],False
+1336,517,Post,2021-04-05,"['Texto', 'Emoji', 'Sticker']",True
+1294,5,Post,2021-05-23,"['Texto', 'Emoji', 'Sticker']",True
+911,397,Post,2024-03-24,"['Sticker', 'Texto']",True
+839,310,Post,2021-03-26,"['Texto', 'Sticker']",False
+931,25,Post,2022-10-23,"['Emoji', 'Sticker', 'Texto']",False
+747,28,Post,2024-07-06,"['Texto', 'Sticker']",True
+477,318,Post,2022-11-18,"['Texto', 'Sticker']",False
+1381,747,Post,2022-01-21,"['Emoji', 'Sticker']",False
+910,836,Post,2020-09-09,"['Emoji', 'Texto', 'Sticker']",True
+16,75,Post,2024-05-12,"['Sticker', 'Emoji']",False
+709,500,Post,2024-07-11,['Emoji'],False
+42,988,Post,2022-12-30,"['Sticker', 'Texto', 'Emoji']",False
+324,921,Post,2024-06-13,['Sticker'],False
+1242,440,Post,2024-02-27,['Sticker'],True
+586,343,Post,2024-06-13,['Emoji'],False
+514,1135,Post,2024-04-07,['Texto'],True
+1116,26,Post,2021-11-24,['Emoji'],False
+129,76,Post,2022-06-23,"['Texto', 'Sticker']",True
+1412,251,Post,2020-08-09,"['Sticker', 'Texto', 'Emoji']",False
+534,392,Post,2023-02-21,"['Emoji', 'Sticker']",False
+1424,160,Post,2022-02-18,['Emoji'],False
+114,447,Post,2024-09-29,"['Sticker', 'Texto', 'Emoji']",False
+14,516,Post,2023-07-10,"['Emoji', 'Texto', 'Sticker']",True
+1121,945,Post,2024-03-25,['Texto'],True
+394,670,Post,2023-08-05,['Emoji'],False
+107,849,Post,2023-11-21,['Texto'],True
+625,560,Post,2024-01-11,['Emoji'],False
+1492,1161,Post,2020-04-03,"['Emoji', 'Texto', 'Sticker']",True
+403,431,Post,2021-10-03,"['Emoji', 'Sticker']",True
+1370,471,Post,2024-03-29,"['Emoji', 'Texto']",False
+1126,331,Post,2021-10-07,"['Emoji', 'Sticker', 'Texto']",False
+1060,1099,Post,2023-12-01,['Sticker'],False
+137,717,Post,2024-12-18,"['Sticker', 'Emoji']",False
+827,617,Post,2023-08-06,['Texto'],False
+408,108,Post,2024-03-13,['Sticker'],True
+802,601,Post,2021-05-10,"['Texto', 'Sticker']",False
+123,602,Post,2024-11-16,['Emoji'],True
+556,1108,Post,2020-06-26,"['Texto', 'Emoji', 'Sticker']",False
+908,865,Post,2021-11-17,['Texto'],False
+1001,1173,Post,2023-08-18,['Emoji'],True
+521,919,Post,2023-12-04,['Texto'],True
+19,408,Post,2021-03-12,"['Sticker', 'Texto']",False
+1213,223,Post,2025-01-16,"['Texto', 'Sticker', 'Emoji']",True
+680,933,Post,2025-01-21,"['Emoji', 'Sticker', 'Texto']",True
+42,1033,Post,2025-01-21,['Emoji'],True
+1000,143,Post,2022-04-15,['Sticker'],True
+373,651,Post,2023-08-04,"['Sticker', 'Emoji']",True
+1155,19,Post,2023-04-18,['Texto'],True
+275,152,Post,2020-06-07,['Texto'],False
+1263,140,Post,2020-11-26,"['Sticker', 'Emoji', 'Texto']",False
+30,632,Post,2021-09-26,['Emoji'],False
+1016,327,Post,2021-10-18,"['Texto', 'Sticker']",False
+1040,525,Post,2023-01-06,"['Emoji', 'Texto']",False
+1161,1042,Post,2024-04-06,"['Texto', 'Emoji', 'Sticker']",True
+1495,634,Post,2024-08-18,['Sticker'],True
+602,1018,Post,2021-05-23,"['Emoji', 'Texto']",True
+86,1106,Post,2021-08-20,['Texto'],False
+1486,1195,Post,2021-10-29,['Sticker'],False
+832,733,Post,2022-06-19,['Texto'],True
+962,346,Post,2024-01-28,"['Sticker', 'Emoji']",False
+511,462,Post,2020-06-18,"['Sticker', 'Texto', 'Emoji']",True
+903,1127,Post,2024-10-06,['Emoji'],True
+985,202,Post,2022-01-10,"['Texto', 'Emoji']",False
+481,987,Post,2022-10-03,"['Texto', 'Emoji', 'Sticker']",True
+1082,865,Post,2020-07-26,['Sticker'],True
+779,1152,Post,2023-11-07,['Texto'],True
+695,1077,Post,2021-06-11,['Sticker'],True
+60,736,Post,2023-05-09,['Sticker'],False
+26,385,Post,2021-05-08,"['Sticker', 'Texto']",False
+637,365,Post,2023-04-16,['Texto'],True
+1335,693,Post,2022-02-14,"['Emoji', 'Sticker']",True
+635,537,Post,2023-07-11,"['Texto', 'Emoji']",False
+938,1197,Post,2022-10-23,"['Sticker', 'Emoji', 'Texto']",True
+699,352,Post,2022-10-12,['Sticker'],True
+226,27,Post,2020-10-10,"['Sticker', 'Emoji', 'Texto']",False
+699,83,Post,2022-06-17,"['Sticker', 'Texto']",True
+368,14,Post,2024-09-25,['Sticker'],False
+711,334,Post,2024-03-07,['Texto'],True
+622,279,Post,2024-04-27,['Emoji'],False
+328,304,Post,2023-11-24,"['Sticker', 'Texto']",False
+321,1069,Post,2022-08-25,"['Emoji', 'Sticker']",True
+155,412,Post,2023-01-13,"['Sticker', 'Texto']",False
+689,41,Post,2025-01-01,"['Emoji', 'Texto', 'Sticker']",True
+46,1082,Post,2024-12-20,"['Emoji', 'Sticker']",False
+297,133,Post,2022-07-01,"['Texto', 'Emoji', 'Sticker']",False
+567,769,Post,2021-03-09,"['Texto', 'Emoji']",True
+258,238,Post,2024-06-01,"['Texto', 'Emoji', 'Sticker']",False
+1338,700,Post,2024-09-18,"['Texto', 'Sticker', 'Emoji']",True
+1319,963,Post,2022-02-01,"['Sticker', 'Texto', 'Emoji']",True
+937,1186,Post,2023-05-18,"['Sticker', 'Texto', 'Emoji']",True
+357,1168,Post,2024-07-15,"['Emoji', 'Texto']",False
+544,289,Post,2020-03-13,"['Emoji', 'Texto']",True
+917,722,Post,2024-10-05,['Texto'],False
+979,714,Post,2025-02-01,"['Sticker', 'Emoji']",True
+452,156,Post,2024-08-16,"['Emoji', 'Texto']",False
+938,392,Post,2024-08-11,"['Sticker', 'Emoji']",True
+1372,855,Post,2020-09-05,"['Texto', 'Emoji', 'Sticker']",True
+39,431,Post,2025-02-20,"['Texto', 'Emoji', 'Sticker']",True
+1375,630,Post,2021-10-17,"['Sticker', 'Emoji']",False
+608,592,Post,2021-07-26,['Emoji'],False
+23,404,Post,2020-04-27,"['Texto', 'Emoji']",True
+56,629,Post,2023-11-20,['Emoji'],True
+1065,612,Post,2023-06-21,"['Texto', 'Sticker', 'Emoji']",False
+860,322,Post,2022-07-30,['Emoji'],False
+476,1128,Post,2022-08-22,"['Texto', 'Emoji']",True
+205,751,Post,2024-08-19,"['Texto', 'Sticker']",True
+1239,996,Post,2020-09-15,"['Emoji', 'Texto']",False
+263,500,Post,2024-03-14,"['Texto', 'Sticker', 'Emoji']",False
+629,430,Post,2023-03-06,"['Texto', 'Sticker', 'Emoji']",False
+725,641,Post,2023-03-04,['Emoji'],True
+743,64,Post,2021-04-03,"['Sticker', 'Emoji']",True
+387,1178,Post,2023-01-03,['Sticker'],False
+515,509,Post,2022-02-10,['Emoji'],False
+1165,271,Post,2020-09-19,"['Texto', 'Emoji', 'Sticker']",True
+253,296,Post,2021-09-14,['Emoji'],False
+1345,17,Post,2023-02-21,"['Texto', 'Emoji', 'Sticker']",False
+122,371,Post,2022-11-20,"['Emoji', 'Sticker', 'Texto']",True
+1301,722,Post,2021-05-01,['Texto'],False
+235,63,Post,2022-11-19,"['Sticker', 'Texto', 'Emoji']",False
+1195,1016,Post,2020-05-23,"['Emoji', 'Sticker']",False
+386,286,Post,2020-05-21,['Emoji'],False
+393,992,Post,2021-10-15,"['Texto', 'Sticker']",False
+298,239,Post,2020-08-01,"['Emoji', 'Sticker']",False
+329,347,Post,2024-10-12,"['Emoji', 'Texto', 'Sticker']",True
+812,184,Post,2025-01-18,"['Emoji', 'Sticker']",True
+435,1136,Post,2024-02-12,['Emoji'],False
+1235,182,Post,2021-11-09,"['Texto', 'Emoji', 'Sticker']",False
+614,654,Post,2024-03-13,"['Emoji', 'Texto']",False
+656,654,Reel,2023-08-21,['Sticker'],True
+50,258,Reel,2020-08-01,['Texto'],True
+411,225,Reel,2021-08-21,"['Texto', 'Sticker']",False
+162,71,Reel,2024-02-26,"['Emoji', 'Texto']",False
+966,668,Reel,2024-07-24,['Texto'],True
+1389,73,Reel,2024-03-08,"['Texto', 'Sticker', 'Emoji']",True
+500,443,Reel,2020-08-18,"['Sticker', 'Emoji', 'Texto']",False
+1081,532,Reel,2021-11-05,"['Sticker', 'Texto', 'Emoji']",True
+1231,31,Reel,2022-04-12,['Texto'],True
+1111,358,Reel,2021-04-14,"['Sticker', 'Texto']",False
+994,266,Reel,2021-02-13,"['Emoji', 'Sticker']",True
+452,569,Reel,2023-01-13,['Emoji'],False
+200,496,Reel,2024-05-31,"['Sticker', 'Emoji']",True
+972,628,Reel,2021-12-07,['Texto'],True
+1078,379,Reel,2023-08-04,['Texto'],False
+509,407,Reel,2021-12-03,['Texto'],True
+1419,339,Reel,2020-06-28,"['Sticker', 'Texto']",True
+1440,474,Reel,2021-10-30,['Sticker'],False
+1236,249,Reel,2021-03-22,['Emoji'],False
+1026,348,Reel,2024-07-01,['Emoji'],True
+1068,446,Reel,2023-02-01,['Sticker'],True
+1232,367,Reel,2024-08-13,"['Texto', 'Sticker']",False
+578,191,Reel,2023-10-21,['Sticker'],True
+1493,300,Reel,2024-02-11,"['Texto', 'Emoji', 'Sticker']",True
+791,599,Reel,2022-06-18,['Sticker'],True
+629,261,Reel,2022-01-21,"['Emoji', 'Texto']",True
+515,115,Reel,2023-06-04,['Sticker'],False
+691,672,Reel,2020-05-06,"['Emoji', 'Sticker', 'Texto']",True
+1220,231,Reel,2022-08-21,"['Sticker', 'Emoji', 'Texto']",False
+1023,325,Reel,2024-06-09,"['Sticker', 'Emoji', 'Texto']",False
+399,318,Reel,2024-09-01,"['Emoji', 'Sticker']",True
+48,476,Reel,2024-07-31,['Sticker'],True
+837,361,Reel,2022-02-24,"['Texto', 'Emoji']",False
+622,488,Reel,2022-03-16,['Texto'],True
+158,268,Reel,2023-06-28,"['Emoji', 'Sticker']",True
+95,156,Reel,2021-04-28,['Sticker'],False
+734,500,Reel,2024-10-26,"['Sticker', 'Emoji', 'Texto']",False
+1070,83,Reel,2021-02-14,"['Texto', 'Sticker', 'Emoji']",False
+1420,278,Reel,2023-11-20,"['Sticker', 'Emoji']",True
+475,407,Reel,2022-11-05,"['Emoji', 'Sticker', 'Texto']",True
+915,563,Reel,2020-03-16,"['Texto', 'Emoji']",True
+535,362,Reel,2023-11-03,"['Sticker', 'Emoji', 'Texto']",False
+1478,658,Reel,2020-06-28,"['Texto', 'Sticker']",False
+63,406,Reel,2022-08-25,"['Emoji', 'Texto', 'Sticker']",True
+1237,683,Reel,2024-02-08,['Texto'],False
+1353,383,Reel,2020-09-15,"['Sticker', 'Texto']",True
+933,685,Reel,2024-09-12,"['Texto', 'Emoji', 'Sticker']",True
+530,698,Reel,2024-07-01,"['Texto', 'Sticker', 'Emoji']",False
+962,624,Reel,2024-07-20,['Texto'],True
+1195,348,Reel,2020-04-05,"['Texto', 'Emoji', 'Sticker']",False
+1355,161,Reel,2023-06-21,"['Sticker', 'Texto', 'Emoji']",False
+184,234,Reel,2023-02-03,"['Emoji', 'Texto']",True
+1412,621,Reel,2020-10-06,"['Emoji', 'Sticker']",True
+614,73,Reel,2022-02-17,['Texto'],True
+152,596,Reel,2020-11-13,['Sticker'],False
+997,236,Reel,2025-02-17,"['Emoji', 'Sticker']",True
+1386,242,Reel,2021-03-10,"['Emoji', 'Sticker']",False
+852,125,Reel,2022-06-30,['Sticker'],False
+1089,290,Reel,2021-07-17,"['Emoji', 'Sticker', 'Texto']",False
+20,4,Reel,2024-12-16,"['Texto', 'Emoji', 'Sticker']",False
+290,94,Reel,2023-08-11,['Sticker'],True
+1366,491,Reel,2023-12-19,"['Emoji', 'Sticker']",False
+1071,388,Reel,2021-11-09,"['Texto', 'Sticker', 'Emoji']",False
+724,207,Reel,2020-04-14,['Emoji'],True
+934,233,Reel,2023-12-14,['Texto'],True
+899,645,Reel,2022-04-21,"['Sticker', 'Emoji']",True
+396,89,Reel,2023-06-24,['Sticker'],False
+938,196,Reel,2024-10-25,"['Sticker', 'Texto', 'Emoji']",False
+541,82,Reel,2023-06-18,"['Sticker', 'Texto']",True
+985,379,Reel,2021-11-21,"['Emoji', 'Texto']",True
+938,144,Reel,2024-09-25,['Emoji'],True
+679,168,Reel,2023-05-13,"['Texto', 'Emoji']",True
+1266,544,Reel,2022-09-04,"['Sticker', 'Emoji']",False
+820,511,Reel,2023-06-18,"['Texto', 'Emoji', 'Sticker']",False
+725,700,Reel,2020-10-20,"['Sticker', 'Texto', 'Emoji']",True
+1063,20,Reel,2020-09-01,"['Sticker', 'Texto', 'Emoji']",False
+205,124,Reel,2024-01-11,"['Texto', 'Sticker']",True
+73,94,Reel,2024-10-26,['Emoji'],True
+110,106,Reel,2020-12-29,"['Texto', 'Sticker']",True
+920,570,Reel,2021-08-12,['Texto'],False
+837,39,Reel,2023-12-29,"['Emoji', 'Sticker', 'Texto']",False
+176,616,Reel,2024-01-15,"['Texto', 'Sticker']",True
+1227,268,Reel,2022-05-04,"['Sticker', 'Emoji']",False
+1271,30,Reel,2021-03-12,"['Sticker', 'Emoji', 'Texto']",True
+345,679,Reel,2024-02-28,"['Texto', 'Emoji', 'Sticker']",False
+851,553,Reel,2023-10-07,"['Texto', 'Emoji']",True
+671,385,Reel,2022-12-03,['Emoji'],False
+231,623,Reel,2022-11-15,"['Texto', 'Sticker']",False
+481,102,Reel,2024-07-05,"['Emoji', 'Texto', 'Sticker']",False
+1268,573,Reel,2024-11-08,"['Sticker', 'Emoji', 'Texto']",False
+1421,466,Reel,2024-06-24,"['Texto', 'Sticker', 'Emoji']",False
+1095,534,Reel,2021-04-06,['Emoji'],False
+1410,613,Reel,2022-01-10,"['Sticker', 'Emoji', 'Texto']",True
+243,391,Reel,2020-09-15,['Emoji'],False
+1077,488,Reel,2023-08-20,"['Sticker', 'Emoji', 'Texto']",True
+106,338,Reel,2021-05-21,['Emoji'],True
+1036,292,Reel,2024-04-04,['Emoji'],False
+624,127,Reel,2020-06-11,"['Texto', 'Emoji', 'Sticker']",True
+749,548,Reel,2022-08-26,['Sticker'],False
+1303,488,Reel,2021-01-04,"['Emoji', 'Texto', 'Sticker']",False
+275,386,Reel,2022-07-29,['Emoji'],False
+501,681,Reel,2021-03-01,"['Texto', 'Sticker', 'Emoji']",True
+894,467,Reel,2024-08-04,['Sticker'],True
+750,5,Reel,2023-03-30,"['Texto', 'Sticker', 'Emoji']",False
+202,97,Reel,2023-09-10,"['Emoji', 'Texto', 'Sticker']",False
+1440,62,Reel,2021-03-29,"['Emoji', 'Texto']",True
+502,142,Reel,2022-03-05,"['Texto', 'Sticker', 'Emoji']",True
+819,349,Reel,2022-03-02,"['Sticker', 'Texto', 'Emoji']",False
+439,123,Reel,2021-11-27,['Texto'],True
+47,146,Reel,2024-09-04,"['Texto', 'Emoji']",True
+808,248,Reel,2022-03-02,['Sticker'],False
+1370,694,Reel,2021-02-01,"['Texto', 'Emoji', 'Sticker']",False
+497,230,Reel,2023-07-27,"['Texto', 'Sticker']",False
+501,328,Reel,2024-05-24,"['Sticker', 'Texto']",True
+286,393,Reel,2021-09-06,"['Texto', 'Sticker']",True
+1191,608,Reel,2025-02-03,"['Sticker', 'Emoji', 'Texto']",True
+919,284,Reel,2020-07-20,['Emoji'],False
+867,209,Reel,2020-06-13,['Emoji'],True
+358,152,Reel,2022-02-23,"['Texto', 'Emoji', 'Sticker']",True
+1316,484,Reel,2024-01-01,['Emoji'],False
+44,640,Reel,2021-05-07,"['Texto', 'Emoji', 'Sticker']",True
+939,686,Reel,2022-10-06,['Emoji'],True
+798,116,Reel,2024-05-01,['Texto'],True
+414,561,Reel,2020-08-27,['Emoji'],False
+704,647,Reel,2025-02-15,"['Emoji', 'Sticker']",False
+167,698,Reel,2022-04-25,"['Texto', 'Emoji']",False
+1149,589,Reel,2021-03-02,"['Texto', 'Sticker']",True
+784,468,Reel,2023-03-13,"['Texto', 'Emoji', 'Sticker']",True
+1397,226,Reel,2020-11-20,"['Emoji', 'Texto']",True
+488,108,Reel,2021-10-25,['Sticker'],False
+640,299,Reel,2020-08-06,['Emoji'],True
+1439,86,Reel,2024-04-22,"['Emoji', 'Texto']",True
+1184,344,Reel,2022-09-07,"['Texto', 'Emoji', 'Sticker']",False
+739,41,Reel,2022-12-08,"['Texto', 'Emoji', 'Sticker']",True
+1035,316,Reel,2023-04-11,"['Emoji', 'Texto', 'Sticker']",False
+684,616,Reel,2021-05-28,['Texto'],True
+118,397,Reel,2020-06-12,"['Emoji', 'Texto']",True
+582,419,Reel,2020-03-21,"['Emoji', 'Texto', 'Sticker']",True
+787,356,Reel,2021-11-02,"['Texto', 'Emoji']",True
+1378,505,Reel,2023-02-19,"['Sticker', 'Texto']",False
+994,185,Reel,2021-08-04,['Sticker'],True
+890,553,Reel,2020-04-28,"['Emoji', 'Sticker', 'Texto']",True
+986,347,Reel,2023-04-09,"['Texto', 'Sticker', 'Emoji']",False
+1449,57,Reel,2024-03-21,"['Texto', 'Sticker']",True
+210,551,Reel,2020-06-10,['Emoji'],True
+223,407,Reel,2024-11-10,"['Emoji', 'Texto', 'Sticker']",False
+1181,607,Reel,2021-10-28,"['Sticker', 'Texto', 'Emoji']",True
+1393,651,Reel,2025-02-05,['Sticker'],False
+832,515,Reel,2021-04-09,['Sticker'],True
+735,176,Reel,2021-06-22,"['Sticker', 'Emoji']",False
+723,181,Reel,2023-09-09,"['Emoji', 'Texto', 'Sticker']",True
+1332,40,Reel,2022-03-19,['Sticker'],True
+19,17,Reel,2020-03-03,"['Emoji', 'Sticker']",True
+681,112,Reel,2021-11-26,['Texto'],True
+1155,638,Reel,2020-08-11,"['Texto', 'Emoji']",False
+348,405,Reel,2024-05-18,"['Sticker', 'Texto']",False
+209,428,Reel,2024-06-12,"['Sticker', 'Texto']",True
+740,588,Reel,2022-02-22,['Emoji'],False
+539,81,Reel,2024-05-19,"['Sticker', 'Texto']",True
+1187,508,Reel,2020-09-18,"['Texto', 'Sticker']",False
+580,153,Reel,2023-08-21,"['Sticker', 'Texto', 'Emoji']",False
+634,439,Reel,2022-05-14,"['Texto', 'Sticker']",False
+1396,384,Reel,2021-05-29,"['Texto', 'Emoji']",False
+61,209,Reel,2022-06-30,['Emoji'],False
+1375,548,Reel,2023-07-31,"['Sticker', 'Emoji', 'Texto']",False
+259,441,Reel,2021-01-04,['Emoji'],False
+274,532,Reel,2021-05-26,"['Texto', 'Emoji', 'Sticker']",True
+200,320,Reel,2023-02-26,['Emoji'],True
+1358,156,Reel,2024-04-22,"['Texto', 'Emoji']",True
+1338,130,Reel,2024-09-15,"['Emoji', 'Texto', 'Sticker']",True
+1373,425,Reel,2021-03-13,"['Emoji', 'Texto', 'Sticker']",True
+648,243,Reel,2021-07-25,"['Sticker', 'Emoji']",True
+1202,600,Reel,2021-10-04,"['Emoji', 'Sticker']",True
+892,73,Reel,2021-10-07,"['Texto', 'Emoji']",True
+1333,155,Reel,2021-02-24,['Sticker'],True
+890,662,Reel,2023-09-28,['Sticker'],False
+825,627,Reel,2020-05-26,"['Sticker', 'Emoji', 'Texto']",True
+485,234,Reel,2021-11-05,"['Sticker', 'Emoji', 'Texto']",False
+141,94,Reel,2020-08-04,"['Emoji', 'Sticker']",False
+1217,377,Reel,2024-09-27,"['Sticker', 'Texto', 'Emoji']",False
+22,302,Reel,2021-09-22,"['Sticker', 'Emoji', 'Texto']",False
+395,396,Reel,2023-04-26,['Sticker'],False
+148,681,Reel,2023-07-31,"['Emoji', 'Texto', 'Sticker']",True
+310,97,Reel,2022-03-14,"['Emoji', 'Texto', 'Sticker']",False
+82,309,Reel,2020-10-31,"['Texto', 'Sticker', 'Emoji']",True
+23,60,Reel,2020-11-23,"['Texto', 'Sticker']",True
+956,390,Reel,2022-08-20,"['Emoji', 'Sticker', 'Texto']",False
+597,59,Reel,2020-05-02,"['Sticker', 'Emoji', 'Texto']",True
+690,565,Reel,2021-08-07,"['Emoji', 'Sticker', 'Texto']",False
+212,138,Reel,2020-12-14,"['Texto', 'Sticker', 'Emoji']",False
+328,549,Reel,2023-02-16,"['Emoji', 'Texto', 'Sticker']",False
+886,291,Reel,2021-12-08,"['Sticker', 'Texto', 'Emoji']",True
+318,324,Reel,2020-07-29,"['Sticker', 'Emoji', 'Texto']",False
+1274,112,Reel,2024-06-24,['Texto'],False
+721,595,Reel,2020-04-11,"['Texto', 'Emoji', 'Sticker']",False
+1131,192,Reel,2022-07-23,['Emoji'],True
+1029,501,Reel,2020-08-15,['Sticker'],False
+785,450,Reel,2021-07-08,"['Sticker', 'Texto']",True
+635,663,Reel,2024-01-22,"['Sticker', 'Texto']",False
+279,338,Reel,2023-08-31,"['Emoji', 'Sticker']",False
+1296,75,Reel,2020-10-07,['Texto'],False
+571,429,Reel,2024-02-15,['Sticker'],False
+1343,433,Reel,2024-04-23,['Texto'],True
+1405,445,Reel,2024-10-17,['Sticker'],True
+1262,292,Reel,2021-01-05,"['Emoji', 'Sticker', 'Texto']",False
+1286,188,Reel,2021-08-03,"['Texto', 'Sticker']",False
+661,683,Reel,2024-07-07,"['Sticker', 'Emoji']",False
+138,108,Reel,2022-04-12,"['Sticker', 'Texto', 'Emoji']",True
+815,215,Reel,2022-03-29,"['Emoji', 'Sticker', 'Texto']",True
+639,279,Reel,2021-04-11,"['Texto', 'Sticker']",False
+1016,675,Reel,2022-01-07,['Emoji'],False
+1289,280,Reel,2022-07-01,"['Emoji', 'Sticker']",False
+161,270,Reel,2023-04-30,['Emoji'],False
+930,317,Reel,2022-05-03,['Emoji'],False
+212,146,Reel,2021-04-28,"['Sticker', 'Texto']",False
+506,371,Reel,2021-05-24,['Emoji'],True
+357,139,Reel,2021-11-25,"['Sticker', 'Emoji']",True
+1425,674,Reel,2020-11-16,['Sticker'],False
+370,123,Reel,2024-03-19,"['Sticker', 'Emoji', 'Texto']",True
+266,674,Reel,2024-05-26,"['Texto', 'Sticker']",True
+960,264,Reel,2024-07-19,"['Emoji', 'Texto', 'Sticker']",False
+1317,167,Reel,2021-02-01,['Sticker'],True
+1060,12,Reel,2023-06-16,"['Sticker', 'Emoji']",False
+105,57,Reel,2021-08-31,"['Sticker', 'Emoji', 'Texto']",True
+1281,144,Reel,2021-02-07,"['Sticker', 'Texto', 'Emoji']",False
+837,664,Reel,2022-06-27,['Texto'],False
+531,50,Reel,2021-07-07,"['Sticker', 'Emoji', 'Texto']",True
+908,88,Reel,2024-03-12,"['Texto', 'Emoji', 'Sticker']",True
+252,21,Reel,2023-09-07,"['Emoji', 'Sticker', 'Texto']",True
+766,307,Reel,2023-03-30,['Sticker'],False
+517,552,Reel,2023-10-29,"['Emoji', 'Texto', 'Sticker']",True
+22,286,Reel,2023-01-12,['Texto'],True
+277,473,Reel,2023-11-17,"['Texto', 'Emoji']",False
+950,304,Reel,2020-05-02,"['Texto', 'Sticker', 'Emoji']",True
+980,558,Reel,2024-03-20,"['Emoji', 'Sticker', 'Texto']",False
+284,473,Reel,2023-10-05,"['Emoji', 'Texto']",False
+52,392,Reel,2021-06-08,"['Texto', 'Sticker']",True
+1477,586,Reel,2020-09-22,"['Sticker', 'Texto', 'Emoji']",False
+610,452,Reel,2022-04-26,['Sticker'],False
+1127,569,Reel,2021-03-06,"['Sticker', 'Texto']",False
+74,495,Reel,2023-08-18,"['Emoji', 'Texto', 'Sticker']",False
+707,386,Reel,2022-01-05,"['Emoji', 'Texto', 'Sticker']",True
+1075,67,Reel,2022-10-25,"['Sticker', 'Texto', 'Emoji']",True
+293,559,Reel,2020-08-14,['Emoji'],False
+115,220,Reel,2021-05-03,['Sticker'],False
+937,368,Reel,2020-09-12,"['Emoji', 'Texto', 'Sticker']",False
+907,556,Reel,2022-07-26,['Sticker'],False
+699,281,Reel,2021-09-29,"['Texto', 'Sticker', 'Emoji']",True
+430,516,Reel,2020-11-08,"['Texto', 'Emoji', 'Sticker']",True
+1254,418,Reel,2020-05-06,"['Sticker', 'Emoji', 'Texto']",False
+646,683,Reel,2023-05-13,"['Emoji', 'Texto', 'Sticker']",False
+774,389,Reel,2021-03-05,['Emoji'],True
+1045,170,Reel,2021-03-11,['Sticker'],True
+818,695,Reel,2022-05-24,"['Emoji', 'Sticker', 'Texto']",False
+995,242,Reel,2020-09-28,['Emoji'],False
+370,593,Reel,2020-07-19,"['Sticker', 'Texto', 'Emoji']",False
+80,652,Reel,2023-06-20,['Texto'],False
+1105,92,Reel,2022-07-24,"['Texto', 'Sticker', 'Emoji']",True
+793,684,Reel,2022-11-21,['Texto'],True
+180,353,Reel,2023-01-09,"['Sticker', 'Texto']",True
+149,263,Reel,2024-06-07,"['Emoji', 'Texto', 'Sticker']",True
+1099,669,Reel,2021-09-26,"['Sticker', 'Emoji', 'Texto']",True
+1360,605,Reel,2020-03-17,"['Emoji', 'Texto']",False
+1176,153,Reel,2020-05-13,"['Sticker', 'Emoji', 'Texto']",True
+1089,340,Reel,2025-01-09,"['Emoji', 'Texto', 'Sticker']",True
+371,665,Reel,2022-04-27,['Texto'],False
+1293,662,Reel,2020-09-12,['Texto'],True
+1167,421,Reel,2021-03-26,['Texto'],False
+1253,159,Reel,2022-06-15,['Texto'],False
+474,333,Reel,2022-04-23,"['Emoji', 'Sticker', 'Texto']",True
+1271,534,Reel,2023-03-18,['Sticker'],False
+965,150,Reel,2021-03-18,"['Texto', 'Emoji']",True
+853,347,Reel,2023-05-07,"['Sticker', 'Emoji', 'Texto']",True
+374,700,Reel,2020-12-22,"['Sticker', 'Emoji']",True
+737,232,Reel,2022-10-07,"['Texto', 'Sticker']",False
+865,519,Reel,2023-08-15,['Sticker'],False
+1282,9,Reel,2022-12-25,"['Emoji', 'Sticker', 'Texto']",True
+923,484,Reel,2022-04-04,['Emoji'],False
+267,153,Reel,2024-02-08,"['Texto', 'Emoji', 'Sticker']",False
+985,110,Reel,2020-03-04,"['Sticker', 'Emoji', 'Texto']",True
+1347,451,Reel,2021-06-12,['Texto'],False
+610,250,Reel,2022-01-02,['Emoji'],False
+808,688,Reel,2024-07-03,"['Emoji', 'Sticker', 'Texto']",False
+1292,6,Reel,2024-02-28,['Texto'],False
+951,685,Reel,2024-07-24,"['Sticker', 'Emoji', 'Texto']",True
+706,586,Reel,2022-02-23,"['Texto', 'Sticker']",True
+299,281,Reel,2021-09-16,['Emoji'],False
+1375,487,Reel,2022-01-18,"['Sticker', 'Texto']",True
+1384,356,Reel,2021-08-05,"['Texto', 'Emoji']",False
+930,128,Reel,2022-03-24,"['Texto', 'Emoji', 'Sticker']",False
+1294,246,Reel,2023-05-23,"['Texto', 'Emoji']",False
+1469,325,Reel,2023-11-27,"['Emoji', 'Texto', 'Sticker']",True
+1212,412,Reel,2023-11-22,"['Texto', 'Emoji', 'Sticker']",False
+113,471,Reel,2020-05-12,"['Emoji', 'Sticker', 'Texto']",True
+330,76,Reel,2024-11-03,"['Emoji', 'Texto']",False
+839,506,Reel,2024-12-26,"['Sticker', 'Texto']",True
+24,642,Reel,2023-04-22,['Sticker'],True
+1413,686,Reel,2021-11-19,"['Emoji', 'Sticker']",True
+870,248,Reel,2022-09-09,['Sticker'],True
+1121,601,Reel,2021-05-26,['Texto'],False
+698,611,Reel,2023-03-02,"['Sticker', 'Emoji', 'Texto']",True
+954,149,Reel,2020-09-19,"['Sticker', 'Texto', 'Emoji']",True
+1483,312,Reel,2024-05-16,"['Sticker', 'Texto']",True
+1044,38,Reel,2020-08-30,['Sticker'],False
+119,609,Reel,2021-03-10,"['Sticker', 'Texto']",False
+947,695,Reel,2021-10-14,"['Texto', 'Sticker']",False
+149,532,Reel,2022-11-06,['Sticker'],False
+107,262,Reel,2024-05-30,"['Emoji', 'Texto', 'Sticker']",True
+880,205,Reel,2024-09-09,['Texto'],True
+1355,172,Reel,2020-12-05,"['Sticker', 'Texto', 'Emoji']",True
+609,498,Reel,2021-06-27,['Emoji'],True
+1157,445,Reel,2021-03-07,"['Texto', 'Sticker']",False
+989,354,Reel,2023-05-01,['Emoji'],False
+767,215,Reel,2023-05-03,"['Sticker', 'Emoji']",True
+497,640,Reel,2023-02-17,"['Texto', 'Sticker', 'Emoji']",True
+609,238,Reel,2021-04-19,"['Texto', 'Sticker', 'Emoji']",True
+703,225,Reel,2022-05-26,['Emoji'],True
+436,385,Reel,2024-11-28,['Texto'],False
+880,502,Reel,2025-01-20,['Sticker'],True
+170,652,Reel,2022-04-11,"['Emoji', 'Texto', 'Sticker']",True
+494,164,Reel,2020-03-01,"['Texto', 'Sticker', 'Emoji']",True
+772,40,Reel,2024-06-13,"['Texto', 'Sticker']",False
+706,379,Reel,2024-03-04,"['Emoji', 'Sticker']",False
+1486,254,Reel,2021-03-14,"['Sticker', 'Texto', 'Emoji']",True
+1018,340,Reel,2021-11-21,"['Sticker', 'Texto', 'Emoji']",False
+756,608,Reel,2020-04-06,"['Sticker', 'Texto']",True
+951,687,Reel,2021-01-08,['Texto'],True
+523,669,Reel,2023-08-04,"['Sticker', 'Emoji']",False
+992,631,Reel,2020-12-06,"['Sticker', 'Texto', 'Emoji']",False
+246,74,Reel,2024-11-17,"['Texto', 'Sticker', 'Emoji']",False
+63,566,Reel,2024-08-07,"['Texto', 'Sticker']",False
+109,541,Reel,2020-05-18,['Sticker'],True
+418,697,Reel,2022-10-12,"['Sticker', 'Texto']",True
+671,167,Reel,2020-09-26,"['Texto', 'Emoji']",False
+1189,282,Reel,2021-01-12,"['Texto', 'Sticker']",False
+704,305,Reel,2021-09-11,['Emoji'],False
+274,286,Reel,2020-09-16,"['Emoji', 'Sticker']",False
+416,635,Reel,2021-04-06,"['Emoji', 'Sticker', 'Texto']",True
+184,290,Reel,2023-06-06,"['Texto', 'Emoji', 'Sticker']",False
+1251,185,Reel,2021-03-12,"['Emoji', 'Sticker']",False
+1366,330,Reel,2020-07-30,['Sticker'],False
+53,124,Reel,2020-03-11,['Sticker'],False
+690,539,Reel,2023-10-08,"['Sticker', 'Texto']",True
+710,30,Reel,2021-02-27,['Sticker'],False
+758,566,Reel,2020-07-25,['Emoji'],True
+1380,690,Reel,2021-04-26,['Sticker'],False
+1341,31,Reel,2025-01-05,"['Sticker', 'Emoji']",False
+1349,191,Reel,2023-06-21,"['Texto', 'Emoji', 'Sticker']",True
+83,551,Reel,2024-03-01,"['Emoji', 'Texto']",True
+50,436,Reel,2022-06-06,['Emoji'],True
+1012,543,Reel,2023-09-17,['Texto'],False
+1199,117,Reel,2024-02-24,['Emoji'],False
+1357,540,Reel,2023-11-20,"['Texto', 'Emoji']",True
+786,203,Reel,2024-07-02,"['Texto', 'Emoji', 'Sticker']",False
+188,430,Reel,2020-05-14,"['Texto', 'Emoji', 'Sticker']",False
+378,105,Reel,2021-10-19,"['Texto', 'Sticker']",False
+1364,33,Reel,2022-07-27,['Emoji'],True
+677,521,Reel,2025-01-05,"['Texto', 'Sticker']",True
+382,11,Reel,2021-10-21,['Emoji'],False
+671,677,Reel,2021-01-16,"['Texto', 'Emoji']",False
+1084,593,Reel,2023-11-10,['Texto'],False
+384,604,Reel,2022-02-18,"['Sticker', 'Texto', 'Emoji']",True
+728,355,Reel,2021-12-25,"['Sticker', 'Texto', 'Emoji']",False
+1248,176,Reel,2022-09-27,"['Texto', 'Emoji', 'Sticker']",True
+1387,310,Reel,2024-10-11,['Texto'],True
+678,528,Reel,2022-02-26,"['Emoji', 'Texto', 'Sticker']",True
+447,410,Reel,2023-04-09,"['Texto', 'Emoji', 'Sticker']",True
+1007,433,Reel,2023-03-30,"['Emoji', 'Texto', 'Sticker']",False
+1342,270,Reel,2023-11-29,"['Sticker', 'Texto']",True
+1240,649,Reel,2022-10-22,"['Emoji', 'Texto', 'Sticker']",True
+912,656,Reel,2025-01-20,"['Emoji', 'Texto', 'Sticker']",False
+780,493,Reel,2020-05-27,"['Sticker', 'Emoji', 'Texto']",True
+595,654,Reel,2024-10-05,"['Texto', 'Emoji', 'Sticker']",False
+1050,305,Reel,2023-01-22,['Sticker'],True
+143,696,Reel,2023-11-23,['Emoji'],True
+408,203,Reel,2022-09-14,"['Sticker', 'Texto', 'Emoji']",False
+436,493,Reel,2024-04-19,"['Sticker', 'Texto', 'Emoji']",True
+641,62,Reel,2020-11-11,['Texto'],False
+200,116,Reel,2024-04-30,"['Texto', 'Sticker']",False
+725,697,Reel,2023-12-01,"['Emoji', 'Texto']",False
+345,360,Reel,2021-01-24,['Texto'],True
+548,679,Reel,2022-11-15,"['Texto', 'Sticker', 'Emoji']",True
+903,242,Reel,2022-12-30,['Texto'],False
+1264,624,Reel,2023-08-22,['Sticker'],True
+1304,530,Reel,2022-08-20,"['Texto', 'Emoji']",True
+1238,310,Reel,2024-08-03,"['Texto', 'Emoji', 'Sticker']",False
+167,72,Reel,2025-01-17,['Texto'],True
+1240,646,Reel,2023-05-10,"['Sticker', 'Texto', 'Emoji']",False
+857,480,Reel,2022-04-21,"['Emoji', 'Sticker', 'Texto']",False
+727,621,Reel,2022-02-27,"['Emoji', 'Texto', 'Sticker']",True
+432,39,Reel,2021-06-14,['Texto'],True
+1149,299,Reel,2021-06-09,"['Texto', 'Emoji']",True
+435,558,Reel,2022-05-19,"['Emoji', 'Texto']",True
+262,96,Reel,2023-06-28,['Texto'],True
+126,663,Reel,2025-02-23,['Sticker'],True
+1273,339,Reel,2023-06-10,"['Texto', 'Emoji']",True
+265,611,Reel,2022-02-18,['Emoji'],True
+1191,347,Reel,2021-01-22,"['Sticker', 'Texto', 'Emoji']",True
+49,464,Reel,2024-09-11,"['Texto', 'Emoji']",True
+1424,177,Reel,2021-01-03,"['Sticker', 'Emoji']",True
+172,524,Reel,2022-12-02,"['Texto', 'Sticker']",True
+457,654,Reel,2024-09-07,['Sticker'],True
+1079,492,Reel,2023-09-24,"['Sticker', 'Texto']",False
+503,8,Reel,2020-03-03,"['Texto', 'Sticker']",False
+271,500,Reel,2025-02-20,"['Texto', 'Emoji']",True
+1202,502,Reel,2021-10-29,"['Texto', 'Emoji']",False
+281,469,Reel,2021-07-05,"['Texto', 'Sticker', 'Emoji']",False
+530,563,Reel,2023-06-15,"['Texto', 'Emoji', 'Sticker']",False
+300,9,Reel,2021-11-15,['Sticker'],False
+805,631,Reel,2022-04-17,"['Texto', 'Sticker']",True
+144,305,Reel,2021-10-27,['Texto'],True
+1207,541,Reel,2020-08-05,"['Sticker', 'Emoji', 'Texto']",False
+494,207,Reel,2021-06-05,"['Sticker', 'Texto', 'Emoji']",True
+1098,289,Reel,2023-10-26,['Emoji'],False
+843,690,Reel,2021-06-29,['Emoji'],True
+375,675,Reel,2020-04-26,"['Sticker', 'Texto', 'Emoji']",True
+105,51,Reel,2022-07-23,"['Emoji', 'Texto']",False
+547,568,Reel,2024-07-05,"['Sticker', 'Texto', 'Emoji']",False
+1163,416,Reel,2021-04-20,"['Emoji', 'Sticker']",True
+386,139,Reel,2022-04-17,['Emoji'],False
+31,245,Reel,2020-04-28,"['Sticker', 'Texto', 'Emoji']",True
+475,684,Reel,2021-02-06,"['Emoji', 'Sticker']",True
+277,71,Reel,2023-02-09,"['Emoji', 'Texto']",False
+1131,72,Reel,2021-05-22,['Sticker'],False
+418,394,Reel,2020-10-01,['Texto'],False
+1403,295,Reel,2023-12-26,"['Texto', 'Sticker']",False
+746,422,Reel,2021-12-01,['Sticker'],False
+1346,462,Reel,2024-09-28,['Texto'],False
+1351,353,Reel,2021-02-02,['Sticker'],True
+945,288,Reel,2020-08-01,"['Emoji', 'Sticker', 'Texto']",True
+957,44,Reel,2020-09-22,"['Emoji', 'Sticker']",False
+774,101,Reel,2024-08-04,"['Texto', 'Sticker']",True
+823,58,Reel,2023-12-08,"['Emoji', 'Sticker']",False
+1021,698,Reel,2022-03-07,['Sticker'],False
+630,5,Reel,2021-11-26,"['Emoji', 'Texto', 'Sticker']",False
+62,158,Reel,2021-09-15,"['Emoji', 'Sticker', 'Texto']",True
+1487,459,Reel,2022-07-29,['Texto'],True
+879,304,Reel,2024-03-18,"['Texto', 'Emoji', 'Sticker']",True
+731,690,Reel,2020-12-28,"['Sticker', 'Texto', 'Emoji']",True
+583,538,Reel,2023-01-24,"['Emoji', 'Sticker']",False
+1407,337,Reel,2021-07-14,"['Texto', 'Emoji']",True
+568,179,Reel,2023-01-22,['Emoji'],False
+122,435,Reel,2024-11-21,"['Texto', 'Emoji', 'Sticker']",True
+971,163,Reel,2025-02-17,"['Emoji', 'Sticker', 'Texto']",True
+1144,422,Reel,2023-07-18,"['Sticker', 'Texto']",True
+1351,595,Reel,2024-03-13,"['Sticker', 'Emoji']",False
+1474,466,Reel,2022-02-21,"['Emoji', 'Sticker']",False
+1403,570,Reel,2020-08-31,"['Texto', 'Sticker']",False
+1314,677,Reel,2021-10-08,"['Sticker', 'Emoji', 'Texto']",True
+165,535,Reel,2021-01-11,"['Sticker', 'Texto', 'Emoji']",True
+1086,455,Reel,2023-06-14,['Sticker'],True
+446,490,Reel,2024-12-28,"['Emoji', 'Sticker', 'Texto']",False
+313,422,Reel,2023-12-11,"['Emoji', 'Texto']",True
+790,532,Reel,2021-08-26,['Texto'],False
+135,345,Reel,2024-07-30,"['Emoji', 'Texto', 'Sticker']",False
+98,495,Reel,2021-01-08,"['Sticker', 'Texto', 'Emoji']",True
+1378,552,Reel,2024-09-28,['Emoji'],True
+987,315,Reel,2024-06-28,"['Emoji', 'Sticker', 'Texto']",True
+571,92,Reel,2023-04-19,"['Texto', 'Emoji', 'Sticker']",False
+1229,112,Reel,2024-09-11,"['Texto', 'Emoji', 'Sticker']",False
+1353,700,Reel,2022-04-13,['Sticker'],True
+168,360,Reel,2020-06-20,"['Texto', 'Sticker', 'Emoji']",False
+1404,121,Reel,2024-01-15,"['Texto', 'Sticker']",True
+1110,152,Reel,2022-03-18,"['Texto', 'Emoji']",False
+1378,619,Reel,2022-08-12,"['Texto', 'Emoji', 'Sticker']",True
+123,198,Reel,2022-02-06,"['Emoji', 'Texto']",False
+1213,311,Reel,2020-11-09,"['Emoji', 'Texto', 'Sticker']",False
+1188,291,Reel,2025-01-06,['Emoji'],True
+723,139,Reel,2020-04-29,"['Texto', 'Sticker']",True
+914,494,Reel,2024-10-27,"['Emoji', 'Texto', 'Sticker']",False
+812,299,Reel,2023-03-03,['Texto'],False
+1256,110,Reel,2023-12-18,"['Emoji', 'Texto']",True
+270,320,Reel,2021-12-16,['Texto'],True
+579,72,Reel,2022-07-02,"['Emoji', 'Sticker']",True
+1413,82,Reel,2023-07-05,"['Texto', 'Sticker', 'Emoji']",True
+748,167,Reel,2024-07-16,"['Sticker', 'Emoji']",True
+1273,25,Reel,2023-11-09,['Texto'],False
+248,493,Reel,2024-01-29,['Texto'],False
+34,161,Reel,2023-01-16,"['Texto', 'Sticker']",True
+187,360,Reel,2024-10-30,['Texto'],True
+1245,633,Reel,2024-03-07,"['Texto', 'Sticker']",False
+1477,188,Reel,2020-09-01,"['Emoji', 'Sticker']",True
+754,418,Reel,2020-12-11,['Sticker'],False
+559,686,Reel,2022-12-16,"['Emoji', 'Sticker']",True
+583,332,Reel,2022-08-05,"['Emoji', 'Sticker']",True
+850,164,Reel,2021-06-11,"['Sticker', 'Texto', 'Emoji']",False
+634,620,Reel,2021-04-14,['Emoji'],True
+1083,482,Reel,2024-05-07,['Texto'],True
+1450,421,Reel,2020-06-27,['Sticker'],False
+392,121,Reel,2023-04-13,['Texto'],True
+189,145,Reel,2023-05-03,"['Sticker', 'Texto', 'Emoji']",False
+656,318,Reel,2024-03-13,"['Emoji', 'Texto']",True
+572,593,Reel,2024-01-10,"['Emoji', 'Texto']",True
+490,41,Reel,2021-06-26,"['Texto', 'Emoji', 'Sticker']",True
+829,73,Reel,2020-06-13,"['Sticker', 'Texto', 'Emoji']",False
+817,450,Reel,2020-07-20,['Sticker'],False
+579,7,Reel,2022-11-19,"['Texto', 'Emoji', 'Sticker']",False
+902,436,Reel,2022-02-23,"['Emoji', 'Texto', 'Sticker']",True
+785,600,Reel,2023-09-07,"['Texto', 'Sticker', 'Emoji']",True
+705,292,Reel,2024-10-27,['Emoji'],False
+441,356,Reel,2024-08-13,"['Sticker', 'Texto']",False
+219,454,Reel,2020-08-06,"['Sticker', 'Emoji']",False
+154,250,Reel,2024-11-12,"['Emoji', 'Texto', 'Sticker']",True
+1473,252,Reel,2025-01-20,"['Sticker', 'Emoji', 'Texto']",False
+468,471,Reel,2023-10-30,['Texto'],True
+786,103,Reel,2022-06-24,"['Sticker', 'Texto']",False
+428,548,Reel,2022-01-11,"['Texto', 'Emoji', 'Sticker']",False
+442,111,Reel,2022-10-26,['Sticker'],False
+58,473,Reel,2022-03-31,"['Texto', 'Sticker']",True
+1375,270,Reel,2024-10-14,"['Sticker', 'Emoji', 'Texto']",False
+1221,61,Reel,2021-08-26,"['Texto', 'Emoji']",True
+219,59,Reel,2020-06-03,"['Texto', 'Emoji', 'Sticker']",True
+239,286,Reel,2021-01-08,"['Emoji', 'Texto', 'Sticker']",False
+1137,358,Reel,2024-09-27,['Emoji'],False
+948,638,Reel,2024-02-21,['Emoji'],True
+1376,395,Reel,2024-04-24,"['Sticker', 'Texto']",False
+1300,116,Reel,2023-09-01,['Emoji'],False
+73,227,Reel,2023-12-30,['Emoji'],True
+303,700,Reel,2020-10-28,['Emoji'],True
+375,246,Reel,2021-07-18,"['Texto', 'Sticker']",False
+668,696,Reel,2025-01-05,"['Texto', 'Sticker']",True
+683,627,Reel,2022-06-10,['Emoji'],False
+58,667,Reel,2022-04-19,['Emoji'],False
+311,48,Reel,2020-10-22,"['Emoji', 'Sticker']",False
+904,509,Reel,2020-09-28,"['Sticker', 'Emoji']",False
+252,195,Reel,2023-04-21,['Emoji'],False
+1030,216,Reel,2022-01-11,"['Sticker', 'Texto', 'Emoji']",True
+803,436,Reel,2020-03-03,['Texto'],False
+876,521,Reel,2021-01-25,"['Emoji', 'Sticker', 'Texto']",False
+636,514,Reel,2021-06-05,"['Texto', 'Sticker', 'Emoji']",True
+884,68,Reel,2024-05-08,"['Emoji', 'Sticker', 'Texto']",True
+5,223,Reel,2020-08-19,"['Texto', 'Sticker', 'Emoji']",False
+420,572,Reel,2023-12-08,"['Texto', 'Emoji', 'Sticker']",True
+144,362,Reel,2021-10-18,['Texto'],False
+1421,546,Reel,2023-06-08,['Sticker'],True
+620,555,Reel,2023-07-23,"['Emoji', 'Sticker']",True
+677,337,Reel,2021-09-02,"['Texto', 'Sticker']",True
+905,534,Reel,2020-08-04,"['Texto', 'Sticker']",False
+58,101,Reel,2023-08-21,"['Emoji', 'Texto', 'Sticker']",False
+979,696,Reel,2021-06-10,"['Emoji', 'Texto', 'Sticker']",False
+1426,684,Reel,2024-05-18,['Emoji'],False
+307,268,Reel,2021-03-20,"['Emoji', 'Sticker', 'Texto']",False
+106,267,Reel,2022-05-09,"['Texto', 'Sticker', 'Emoji']",False
+1395,692,Reel,2022-07-10,"['Texto', 'Emoji', 'Sticker']",False
+1489,574,Reel,2024-01-07,"['Emoji', 'Texto', 'Sticker']",True
+1465,191,Reel,2020-04-02,"['Sticker', 'Emoji']",False
+1458,319,Reel,2024-12-21,['Sticker'],True
+646,606,Reel,2025-02-05,"['Emoji', 'Texto']",True
+320,571,Reel,2023-10-20,"['Emoji', 'Sticker']",True
+1197,228,Reel,2024-02-27,"['Emoji', 'Texto', 'Sticker']",True
+892,158,Reel,2022-05-13,"['Sticker', 'Emoji', 'Texto']",True
+1400,44,Reel,2023-04-03,['Emoji'],False
+459,345,Reel,2020-04-08,"['Texto', 'Emoji', 'Sticker']",True
+1310,361,Reel,2024-01-05,"['Texto', 'Sticker']",False
+174,266,Reel,2020-09-14,"['Texto', 'Emoji', 'Sticker']",True
+38,188,Reel,2023-10-29,"['Emoji', 'Sticker']",False
+668,455,Reel,2021-05-21,['Emoji'],True
+1241,501,Reel,2022-02-18,"['Texto', 'Sticker']",True
+1114,368,Reel,2021-06-22,"['Texto', 'Emoji']",False
+323,384,Reel,2023-03-09,"['Emoji', 'Texto', 'Sticker']",True
+649,223,Reel,2021-04-14,"['Sticker', 'Emoji', 'Texto']",True
+953,166,Reel,2023-11-08,['Sticker'],True
+507,446,Reel,2023-02-08,"['Sticker', 'Texto', 'Emoji']",True
+797,226,Reel,2023-04-03,['Texto'],False
+1336,188,Reel,2022-12-25,"['Sticker', 'Texto']",False
+580,556,Reel,2023-12-06,['Texto'],False
+564,560,Reel,2023-01-13,"['Emoji', 'Texto']",False
+308,589,Reel,2023-12-06,['Emoji'],False
+593,52,Reel,2023-08-15,"['Texto', 'Emoji', 'Sticker']",False
+659,529,Reel,2024-07-10,"['Emoji', 'Texto']",False
+950,204,Reel,2021-03-13,['Texto'],True
+368,161,Reel,2021-02-04,['Texto'],False
+504,645,Reel,2021-07-15,"['Sticker', 'Texto']",False
+1311,239,Reel,2020-03-21,['Emoji'],False
+1,99,Reel,2020-06-17,"['Sticker', 'Emoji']",False
+1361,63,Reel,2023-03-13,"['Sticker', 'Texto', 'Emoji']",True
+1023,71,Reel,2023-09-20,"['Emoji', 'Sticker', 'Texto']",False
+146,22,Reel,2022-11-18,['Emoji'],True
+592,411,Reel,2022-11-05,"['Sticker', 'Texto']",True
+356,171,Reel,2023-02-04,['Sticker'],True
+723,175,Reel,2022-03-24,"['Sticker', 'Texto', 'Emoji']",True
+897,494,Reel,2020-07-26,"['Emoji', 'Sticker', 'Texto']",True
+613,478,Reel,2022-04-19,"['Emoji', 'Texto', 'Sticker']",False
+376,144,Reel,2020-04-29,"['Texto', 'Emoji']",False
+1011,342,Reel,2024-04-03,"['Texto', 'Sticker', 'Emoji']",True
+1230,183,Reel,2022-07-09,['Emoji'],True
+838,18,Reel,2021-11-05,"['Sticker', 'Emoji', 'Texto']",True
+951,646,Reel,2021-11-20,['Sticker'],False
+105,368,Reel,2024-09-01,"['Emoji', 'Sticker']",False
+263,484,Reel,2024-01-20,['Emoji'],True
+145,98,Reel,2021-06-30,['Emoji'],False
+1214,516,Reel,2023-12-23,['Texto'],True
+1056,613,Reel,2020-03-26,"['Sticker', 'Texto', 'Emoji']",False
+320,700,Reel,2024-03-13,"['Emoji', 'Sticker']",False
+705,73,Reel,2023-03-25,"['Emoji', 'Sticker']",True
+441,501,Reel,2021-12-23,['Texto'],False
+61,555,Reel,2022-01-31,"['Sticker', 'Emoji', 'Texto']",True
+250,326,Reel,2023-02-23,"['Texto', 'Emoji', 'Sticker']",False
+496,577,Reel,2021-08-26,['Emoji'],True
+1153,104,Reel,2022-08-02,"['Emoji', 'Sticker', 'Texto']",False
+646,606,Reel,2021-07-29,"['Emoji', 'Texto']",False
+276,57,Reel,2021-10-23,"['Emoji', 'Sticker', 'Texto']",False
+1257,343,Reel,2024-11-26,"['Emoji', 'Sticker', 'Texto']",False
+322,363,Reel,2022-09-14,['Emoji'],True
+390,652,Reel,2022-04-14,"['Emoji', 'Texto', 'Sticker']",True
+103,428,Reel,2024-11-12,"['Texto', 'Emoji', 'Sticker']",False
+440,523,Reel,2021-04-03,"['Sticker', 'Texto']",True
+424,257,Reel,2022-04-03,"['Sticker', 'Emoji', 'Texto']",False
+307,229,Reel,2021-06-07,['Sticker'],False
+176,34,Reel,2024-10-14,['Emoji'],True
+232,122,Reel,2020-04-05,"['Sticker', 'Texto', 'Emoji']",False
+89,689,Reel,2020-12-23,['Sticker'],False
+135,249,Reel,2024-02-29,['Emoji'],False
+354,624,Reel,2020-09-07,"['Texto', 'Sticker']",False
+1317,628,Reel,2020-06-18,"['Sticker', 'Texto']",False
+42,224,Reel,2023-07-11,"['Sticker', 'Emoji']",True
+148,365,Reel,2021-11-12,"['Sticker', 'Texto']",False
+525,157,Reel,2024-04-17,['Sticker'],True
+1197,366,Reel,2024-08-14,"['Sticker', 'Emoji']",True
+1358,582,Reel,2020-10-18,"['Texto', 'Sticker', 'Emoji']",False
+1177,51,Reel,2021-03-11,"['Sticker', 'Emoji']",False
+1078,151,Reel,2024-10-16,"['Texto', 'Sticker', 'Emoji']",False
+876,413,Reel,2023-10-27,['Emoji'],True
+1082,455,Reel,2024-08-05,['Texto'],False
+552,628,Reel,2025-02-25,"['Emoji', 'Texto', 'Sticker']",False
+188,564,Reel,2022-03-21,['Texto'],True
+389,118,Reel,2024-10-10,"['Sticker', 'Emoji']",False
+946,325,Reel,2021-12-12,['Texto'],False
+401,377,Reel,2025-02-13,"['Texto', 'Sticker', 'Emoji']",False
+728,30,Reel,2023-01-28,"['Sticker', 'Emoji']",False
+935,541,Reel,2022-05-15,"['Emoji', 'Texto', 'Sticker']",False
+1277,247,Reel,2021-10-11,"['Emoji', 'Sticker', 'Texto']",False
+1395,683,Reel,2022-07-05,['Sticker'],True
+654,513,Reel,2022-12-27,['Sticker'],False
+298,163,Reel,2024-05-25,['Texto'],True
+394,481,Reel,2020-10-24,"['Texto', 'Sticker', 'Emoji']",True
+218,310,Reel,2021-04-16,"['Texto', 'Emoji']",True
+501,135,Reel,2024-11-26,"['Texto', 'Sticker', 'Emoji']",True
+541,103,Reel,2022-07-29,"['Emoji', 'Texto']",False
+450,524,Reel,2020-08-16,"['Texto', 'Emoji']",False
+145,523,Reel,2022-01-03,"['Sticker', 'Emoji']",True
+1243,27,Reel,2024-06-20,['Emoji'],False
+226,665,Reel,2022-05-22,"['Emoji', 'Texto']",True
+448,239,Reel,2020-09-05,['Texto'],True
+781,37,Reel,2023-04-14,"['Emoji', 'Sticker']",True
+1498,54,Reel,2024-11-08,"['Sticker', 'Texto', 'Emoji']",True
+740,689,Reel,2024-08-29,"['Sticker', 'Emoji', 'Texto']",True
+488,515,Reel,2024-02-06,"['Sticker', 'Texto']",False
+480,27,Reel,2020-03-17,['Emoji'],False
+159,516,Reel,2022-04-17,['Texto'],True
+1376,221,Reel,2020-12-09,"['Sticker', 'Emoji', 'Texto']",False
+433,691,Reel,2024-12-23,"['Texto', 'Sticker']",False
+1010,367,Reel,2021-11-03,"['Texto', 'Sticker']",False
+1274,533,Reel,2021-02-13,['Texto'],True
+1248,593,Reel,2024-10-21,['Emoji'],True
+334,520,Reel,2024-01-29,"['Texto', 'Emoji', 'Sticker']",False
+963,30,Reel,2022-01-06,['Emoji'],True
+999,475,Reel,2021-04-04,"['Texto', 'Sticker', 'Emoji']",False
+1017,532,Reel,2022-02-19,"['Emoji', 'Sticker']",False
+895,126,Reel,2021-10-14,['Texto'],False
+1003,290,Reel,2022-12-06,"['Sticker', 'Emoji', 'Texto']",False
+774,369,Reel,2021-01-07,"['Sticker', 'Texto']",False
+688,615,Reel,2024-12-22,"['Texto', 'Sticker', 'Emoji']",True
+298,552,Reel,2022-12-12,['Emoji'],True
+195,186,Reel,2020-08-05,"['Emoji', 'Sticker', 'Texto']",False
+1368,282,Reel,2023-09-05,"['Sticker', 'Texto']",False
+341,400,Reel,2021-05-07,"['Texto', 'Sticker']",True
+1430,312,Reel,2021-10-05,"['Emoji', 'Texto', 'Sticker']",True
+86,272,Reel,2022-04-01,"['Emoji', 'Sticker']",True
+1021,319,Reel,2022-09-29,['Emoji'],False
+729,443,Reel,2022-06-24,"['Sticker', 'Emoji']",True
+138,649,Reel,2020-05-16,['Emoji'],True
+488,541,Reel,2023-04-01,['Sticker'],False
+204,157,Reel,2024-12-21,"['Sticker', 'Emoji', 'Texto']",True
+831,230,Reel,2022-03-26,['Sticker'],True
+1341,35,Reel,2024-11-08,"['Sticker', 'Texto', 'Emoji']",True
+1399,622,Reel,2024-10-12,['Emoji'],True
+299,160,Reel,2022-02-23,"['Emoji', 'Sticker']",True
+720,567,Reel,2022-03-22,"['Texto', 'Sticker']",True
+179,555,Reel,2021-10-28,"['Emoji', 'Sticker']",True
+323,245,Reel,2021-12-09,['Emoji'],False
+1039,222,Reel,2023-12-11,['Emoji'],True
+351,639,Reel,2024-08-02,"['Sticker', 'Emoji']",True
+410,299,Reel,2024-04-16,['Emoji'],False
+241,549,Reel,2021-11-22,['Sticker'],False
+632,235,Reel,2022-02-08,"['Texto', 'Sticker']",False
+1067,109,Reel,2022-12-06,"['Sticker', 'Texto', 'Emoji']",False
+1485,567,Reel,2024-08-12,"['Texto', 'Sticker']",False
+596,167,Reel,2020-08-27,"['Sticker', 'Emoji', 'Texto']",True
+1210,157,Reel,2022-12-05,"['Texto', 'Sticker']",False
+1406,553,Reel,2024-10-29,"['Emoji', 'Texto']",False
+1438,291,Reel,2021-07-12,['Emoji'],True
+1319,55,Reel,2025-02-19,['Emoji'],True
+804,125,Reel,2024-09-01,['Texto'],True
+222,109,Reel,2023-01-15,['Sticker'],True
+615,21,Reel,2024-12-27,"['Emoji', 'Sticker']",False
+472,488,Reel,2024-06-09,"['Emoji', 'Texto']",False
+278,121,Reel,2020-09-23,"['Emoji', 'Sticker', 'Texto']",True
+96,512,Reel,2022-07-24,['Emoji'],False
+116,644,Reel,2024-07-21,['Sticker'],True
+256,434,Reel,2024-09-18,['Emoji'],False
+1054,67,Reel,2020-04-03,['Sticker'],False
+230,596,Reel,2022-11-26,"['Emoji', 'Sticker']",False
+1004,263,Reel,2022-12-30,['Emoji'],False
+788,53,Reel,2020-09-20,"['Sticker', 'Emoji']",False
+1294,320,Reel,2023-02-17,"['Emoji', 'Texto']",False
+699,60,Reel,2023-01-24,"['Emoji', 'Sticker']",False
+726,228,Reel,2023-08-24,"['Sticker', 'Emoji', 'Texto']",True
+353,427,Reel,2024-04-21,"['Texto', 'Sticker']",False
+864,456,Reel,2022-06-26,['Texto'],False
+756,177,Reel,2023-08-02,"['Sticker', 'Texto']",False
+1105,218,Reel,2022-09-18,['Texto'],True
+310,389,Reel,2021-04-15,"['Texto', 'Sticker', 'Emoji']",True
+801,220,Reel,2021-09-16,"['Sticker', 'Emoji']",False
+1410,605,Reel,2024-02-02,"['Sticker', 'Texto']",True
+592,377,Reel,2021-11-04,"['Sticker', 'Texto', 'Emoji']",True
+620,181,Reel,2020-08-06,"['Texto', 'Emoji']",False
+1263,190,Reel,2020-06-20,"['Emoji', 'Sticker', 'Texto']",True
+680,139,Reel,2023-09-07,"['Texto', 'Emoji']",False
+373,488,Reel,2022-03-11,['Sticker'],False
+241,519,Reel,2023-06-26,['Texto'],True
+1285,264,Reel,2022-08-24,['Emoji'],False
+1490,514,Reel,2024-02-04,"['Sticker', 'Texto']",False
+233,356,Reel,2020-06-23,"['Sticker', 'Emoji', 'Texto']",True
+141,385,Reel,2022-07-08,['Sticker'],False
+932,646,Reel,2024-08-10,['Texto'],True
+68,26,Reel,2024-03-23,"['Texto', 'Emoji']",True
+891,567,Reel,2020-08-30,"['Sticker', 'Texto', 'Emoji']",False
+1106,11,Reel,2022-08-26,['Emoji'],True
+474,651,Reel,2021-05-07,"['Texto', 'Emoji']",False
+1058,646,Reel,2024-08-30,"['Emoji', 'Sticker']",False
+483,572,Reel,2020-07-14,['Emoji'],False
+802,64,Reel,2022-06-17,"['Sticker', 'Texto']",False
+1251,535,Reel,2024-10-02,['Sticker'],False
+663,447,Reel,2021-01-28,['Texto'],False
+1430,53,Reel,2021-05-08,"['Sticker', 'Emoji', 'Texto']",True
+1298,7,Reel,2022-08-19,"['Texto', 'Sticker']",True
+657,570,Reel,2022-06-14,"['Sticker', 'Emoji']",True
+410,251,Reel,2023-12-03,"['Sticker', 'Texto']",False
+887,561,Reel,2023-09-29,"['Sticker', 'Texto', 'Emoji']",False
+46,536,Reel,2021-12-23,"['Sticker', 'Emoji', 'Texto']",True
+961,630,Reel,2021-10-25,"['Texto', 'Emoji']",True
+1019,469,Reel,2024-01-10,"['Texto', 'Sticker', 'Emoji']",True
+1401,292,Reel,2024-04-23,"['Sticker', 'Texto']",False
+1232,555,Reel,2025-01-08,['Sticker'],True
+885,113,Reel,2022-03-11,"['Emoji', 'Sticker', 'Texto']",False
+305,278,Reel,2024-06-29,"['Texto', 'Emoji']",False
+599,169,Reel,2020-04-24,"['Texto', 'Emoji', 'Sticker']",True
+1076,173,Reel,2022-04-25,"['Emoji', 'Sticker', 'Texto']",False
+274,86,Reel,2023-12-20,"['Texto', 'Emoji', 'Sticker']",False
+1181,319,Reel,2020-07-01,"['Texto', 'Emoji']",True
+1152,110,Reel,2021-02-12,"['Sticker', 'Emoji', 'Texto']",False
+861,608,Reel,2022-03-24,['Texto'],False
+957,27,Reel,2020-03-24,"['Emoji', 'Texto']",False
+469,202,Reel,2021-11-05,"['Texto', 'Emoji']",True
+777,233,Reel,2024-01-05,"['Emoji', 'Sticker', 'Texto']",True
+532,656,Reel,2023-10-23,['Sticker'],False
+881,189,Reel,2020-03-30,"['Sticker', 'Texto', 'Emoji']",False
+1471,349,Reel,2022-06-14,['Texto'],True
+1194,171,Reel,2021-01-27,"['Sticker', 'Texto']",True
+654,550,Reel,2025-02-20,"['Texto', 'Sticker']",False
+850,60,Reel,2020-12-26,"['Emoji', 'Texto', 'Sticker']",False
+506,338,Reel,2024-05-07,"['Sticker', 'Texto']",True
+1000,596,Reel,2024-12-16,"['Emoji', 'Sticker']",True
+1300,483,Reel,2024-02-18,"['Emoji', 'Sticker']",False
+553,265,Reel,2020-05-02,"['Emoji', 'Texto', 'Sticker']",False
+1181,237,Reel,2022-12-22,['Sticker'],False
+1163,327,Reel,2024-01-10,"['Sticker', 'Texto']",True
+257,182,Reel,2025-01-30,['Emoji'],False
+865,282,Reel,2023-12-18,"['Sticker', 'Texto']",True
+1451,510,Reel,2021-12-29,"['Sticker', 'Emoji', 'Texto']",True
+1406,688,Reel,2020-12-31,"['Sticker', 'Emoji', 'Texto']",True
+475,308,Reel,2020-04-29,"['Texto', 'Emoji', 'Sticker']",False
+488,653,Reel,2024-06-10,"['Texto', 'Emoji']",False
+698,192,Reel,2020-08-06,"['Emoji', 'Sticker']",False
+979,365,Reel,2021-08-17,['Emoji'],True
+784,659,Reel,2024-04-21,"['Texto', 'Emoji', 'Sticker']",False
+1129,624,Reel,2020-09-29,['Texto'],True
+992,401,Reel,2022-02-03,"['Texto', 'Sticker']",True
+1276,514,Reel,2023-09-29,"['Emoji', 'Texto']",True
+940,156,Reel,2021-07-26,['Sticker'],True
+358,333,Reel,2021-09-13,"['Sticker', 'Texto']",False
+428,184,Reel,2022-11-08,"['Sticker', 'Texto']",False
+465,620,Reel,2023-04-12,"['Texto', 'Emoji', 'Sticker']",False
+557,177,Reel,2024-04-15,['Sticker'],True
+1251,643,Reel,2024-07-30,"['Emoji', 'Texto', 'Sticker']",True
+113,498,Reel,2022-07-22,"['Emoji', 'Sticker', 'Texto']",False
+14,411,Reel,2020-10-06,['Sticker'],False
+371,210,Reel,2024-12-12,"['Texto', 'Emoji', 'Sticker']",False
+149,116,Reel,2020-03-25,['Sticker'],False
+696,462,Reel,2022-04-10,"['Sticker', 'Texto', 'Emoji']",True
+382,63,Reel,2021-06-01,['Texto'],False
+7,102,Reel,2021-03-30,"['Texto', 'Emoji']",True
+654,628,Reel,2021-04-16,"['Emoji', 'Sticker', 'Texto']",True
+133,147,Reel,2020-10-13,"['Emoji', 'Sticker']",False
+513,10,Reel,2021-02-23,"['Texto', 'Sticker', 'Emoji']",False
+500,460,Reel,2022-01-10,"['Texto', 'Sticker', 'Emoji']",True
+1196,384,Reel,2024-06-18,"['Sticker', 'Texto', 'Emoji']",True
+845,238,Reel,2024-06-22,"['Texto', 'Sticker']",True
+414,38,Reel,2023-10-13,['Sticker'],False
+382,239,Reel,2020-09-24,"['Sticker', 'Texto', 'Emoji']",False
+1158,117,Reel,2024-11-14,"['Texto', 'Emoji', 'Sticker']",True
+838,498,Reel,2023-08-06,['Sticker'],True
+1225,594,Reel,2023-11-03,"['Emoji', 'Texto']",False
+683,316,Reel,2020-05-29,"['Texto', 'Sticker', 'Emoji']",True
+1331,253,Reel,2024-03-03,['Sticker'],True
+1365,101,Reel,2020-04-11,"['Sticker', 'Texto']",True
+445,688,Reel,2022-10-11,"['Texto', 'Sticker', 'Emoji']",False
+812,540,Reel,2020-10-30,"['Emoji', 'Texto']",False
+176,565,Reel,2025-02-06,"['Sticker', 'Texto']",True
+957,56,Reel,2022-11-21,['Emoji'],False
+1456,596,Reel,2024-05-15,"['Emoji', 'Sticker']",True
+1145,507,Reel,2021-07-05,"['Emoji', 'Sticker', 'Texto']",False
+1049,429,Reel,2022-04-21,"['Emoji', 'Texto']",True
+892,611,Reel,2020-11-27,['Emoji'],False
+1219,601,Reel,2023-08-26,"['Sticker', 'Emoji', 'Texto']",True
+269,53,Reel,2024-11-22,['Sticker'],True
+249,64,Reel,2023-01-19,"['Emoji', 'Texto']",True
+532,428,Reel,2024-06-21,"['Emoji', 'Texto', 'Sticker']",True
+500,76,Reel,2022-05-01,['Emoji'],False
+408,676,Reel,2023-02-18,"['Emoji', 'Texto']",True
+663,690,Reel,2021-12-05,"['Texto', 'Sticker', 'Emoji']",False
+229,46,Reel,2023-06-21,"['Texto', 'Sticker']",False
+382,570,Reel,2024-12-21,"['Emoji', 'Texto']",True
+512,666,Reel,2024-06-24,['Texto'],False
+562,43,Reel,2020-10-13,"['Sticker', 'Texto', 'Emoji']",False
+1347,410,Reel,2020-06-25,['Texto'],True
+1082,570,Reel,2023-02-15,['Sticker'],True
+567,251,Reel,2021-11-07,"['Emoji', 'Texto', 'Sticker']",False
+1325,525,Reel,2022-10-13,['Texto'],True
+348,1,Reel,2020-03-26,"['Texto', 'Sticker']",False
+131,541,Reel,2023-03-31,"['Texto', 'Emoji']",False
+860,299,Reel,2022-01-15,"['Texto', 'Sticker', 'Emoji']",False
+1013,339,Reel,2022-08-27,"['Emoji', 'Texto']",True
+1326,235,Reel,2024-05-18,"['Texto', 'Emoji']",False
+457,189,Reel,2022-08-02,"['Texto', 'Emoji', 'Sticker']",True
+1239,138,Reel,2025-01-01,"['Emoji', 'Texto', 'Sticker']",True
+752,625,Reel,2021-09-15,"['Texto', 'Sticker']",False
+343,440,Reel,2021-12-16,['Emoji'],False
+911,107,Reel,2020-07-04,"['Emoji', 'Texto', 'Sticker']",False
+651,171,Reel,2024-09-28,"['Emoji', 'Sticker']",True
+12,558,Reel,2020-09-18,"['Emoji', 'Texto']",False
+21,240,Reel,2020-07-30,"['Sticker', 'Texto']",True
+1410,170,Reel,2024-02-28,"['Sticker', 'Emoji', 'Texto']",False
+1453,276,Reel,2025-02-10,"['Emoji', 'Sticker', 'Texto']",False
+750,67,Reel,2022-02-16,"['Texto', 'Sticker']",False
+1449,321,Reel,2022-06-14,['Texto'],True
+270,209,Reel,2023-03-02,"['Sticker', 'Emoji', 'Texto']",False
+600,265,Reel,2023-08-10,['Sticker'],True
+10,32,Reel,2023-03-13,['Emoji'],False
+1264,2,Reel,2020-10-05,['Emoji'],True
+521,13,Reel,2022-01-23,['Texto'],True
+283,690,Reel,2020-05-17,"['Texto', 'Sticker', 'Emoji']",False
+557,308,Reel,2024-02-23,"['Sticker', 'Emoji']",True
+48,608,Reel,2021-08-02,"['Texto', 'Sticker', 'Emoji']",False
+1126,55,Reel,2023-06-16,"['Sticker', 'Emoji', 'Texto']",False
+833,309,Reel,2024-01-08,"['Sticker', 'Emoji']",True
+679,475,Reel,2022-09-16,['Sticker'],True
+1423,238,Reel,2022-11-23,['Texto'],True
+1077,516,Reel,2022-04-09,['Sticker'],True
+1099,274,Reel,2022-01-25,"['Sticker', 'Emoji']",True
+974,318,Reel,2023-05-07,"['Texto', 'Emoji', 'Sticker']",True
+1458,500,Reel,2021-04-10,"['Emoji', 'Sticker', 'Texto']",True
+108,11,Reel,2022-11-06,['Texto'],False
+888,544,Reel,2025-01-12,"['Sticker', 'Emoji', 'Texto']",True
+1482,443,Reel,2024-12-16,"['Emoji', 'Sticker']",False
+618,138,Reel,2020-10-25,"['Texto', 'Emoji', 'Sticker']",False
+1400,536,Reel,2023-11-26,"['Texto', 'Sticker', 'Emoji']",False
+1190,240,Reel,2024-10-31,"['Emoji', 'Sticker']",False
+385,370,Reel,2020-05-27,"['Texto', 'Emoji']",True
+1485,87,Reel,2021-09-14,"['Texto', 'Sticker']",True
+738,469,Reel,2024-03-29,"['Sticker', 'Texto', 'Emoji']",False
+654,543,Reel,2020-12-27,['Texto'],True
+159,378,Reel,2022-11-07,"['Sticker', 'Emoji']",False
+131,184,Reel,2021-09-25,"['Sticker', 'Emoji']",True
+977,695,Reel,2021-05-02,"['Emoji', 'Sticker', 'Texto']",True
+301,5,Reel,2024-01-02,"['Texto', 'Emoji', 'Sticker']",True
+905,535,Reel,2022-02-24,"['Sticker', 'Texto', 'Emoji']",True
+308,679,Reel,2024-04-01,['Sticker'],True
+1226,107,Reel,2021-07-11,"['Emoji', 'Sticker']",False
+470,163,Reel,2021-05-04,['Texto'],True
+497,139,Reel,2023-09-03,"['Texto', 'Emoji']",False
+736,294,Reel,2021-11-07,['Sticker'],True
+343,62,Reel,2024-08-23,"['Emoji', 'Texto', 'Sticker']",False
+306,214,Reel,2023-09-29,"['Emoji', 'Texto']",True
+1473,429,Reel,2021-02-06,['Emoji'],False
+680,416,Reel,2024-02-18,"['Emoji', 'Sticker', 'Texto']",False
+1047,359,Reel,2021-02-02,"['Texto', 'Emoji']",True
+1449,216,Reel,2023-05-22,"['Emoji', 'Sticker', 'Texto']",False
+1429,453,Reel,2024-12-07,['Sticker'],False
+965,240,Reel,2020-09-09,['Emoji'],True
+1276,158,Reel,2021-10-17,['Texto'],False
+82,116,Reel,2024-10-26,"['Texto', 'Emoji', 'Sticker']",False
+23,199,Reel,2021-10-06,['Sticker'],False
+1309,490,Reel,2023-01-14,"['Texto', 'Sticker']",True
+1103,544,Reel,2024-08-15,['Sticker'],False
+1335,440,Reel,2021-01-13,"['Sticker', 'Texto', 'Emoji']",True
+292,100,Reel,2024-05-04,"['Sticker', 'Emoji', 'Texto']",True
+177,589,Reel,2024-06-18,"['Texto', 'Sticker']",True
+974,419,Reel,2020-12-16,['Emoji'],False
+182,566,Reel,2020-05-26,"['Emoji', 'Texto', 'Sticker']",False
+17,646,Reel,2023-03-17,['Texto'],True
+294,368,Reel,2021-06-16,['Sticker'],False
+676,605,Reel,2022-09-09,"['Emoji', 'Sticker', 'Texto']",False
+371,12,Reel,2022-11-18,"['Emoji', 'Sticker', 'Texto']",True
+7,652,Reel,2020-04-04,"['Emoji', 'Sticker']",True
+5,621,Reel,2021-10-02,['Texto'],False
+1163,504,Reel,2022-10-28,['Emoji'],False
+950,49,Reel,2024-01-05,"['Texto', 'Emoji']",False
+1447,23,Reel,2024-09-14,['Emoji'],True
+1441,239,Reel,2021-12-14,"['Texto', 'Emoji', 'Sticker']",True
+433,683,Reel,2023-04-09,['Texto'],False
+1454,313,Reel,2022-10-18,['Texto'],False
+1477,266,Reel,2021-08-31,"['Texto', 'Sticker']",False
+818,39,Reel,2020-10-05,['Sticker'],False
+1444,320,Reel,2021-02-21,['Texto'],True
+810,226,Reel,2021-11-08,"['Texto', 'Sticker', 'Emoji']",False
+383,172,Reel,2023-01-11,['Emoji'],False
+294,286,Reel,2024-03-06,"['Emoji', 'Sticker', 'Texto']",False
+1482,51,Reel,2023-07-07,"['Emoji', 'Sticker', 'Texto']",False
+1193,195,Reel,2020-12-06,"['Texto', 'Emoji', 'Sticker']",True
+724,646,Reel,2022-10-15,['Emoji'],False
+143,643,Reel,2022-05-19,['Emoji'],True
+845,380,Reel,2022-09-04,['Emoji'],False
+1178,677,Reel,2020-05-07,"['Sticker', 'Texto', 'Emoji']",True
+1281,159,Reel,2020-08-31,['Emoji'],True
+1144,234,Reel,2022-12-13,"['Sticker', 'Texto', 'Emoji']",True
+1333,282,Reel,2024-01-18,"['Emoji', 'Sticker', 'Texto']",True
+654,175,Reel,2025-02-14,"['Emoji', 'Texto', 'Sticker']",False
+539,540,Reel,2024-12-28,"['Texto', 'Sticker']",False
+1348,468,Reel,2024-04-20,"['Emoji', 'Texto', 'Sticker']",False
+826,637,Reel,2024-10-26,"['Sticker', 'Emoji', 'Texto']",False
+412,541,Reel,2022-09-23,"['Emoji', 'Sticker', 'Texto']",True
+379,432,Reel,2022-01-11,"['Emoji', 'Texto']",True
+70,328,Reel,2020-11-09,"['Sticker', 'Emoji']",False
+346,295,Reel,2023-01-20,"['Sticker', 'Emoji', 'Texto']",True
+1107,93,Reel,2021-08-11,"['Texto', 'Emoji', 'Sticker']",False
+169,163,Reel,2021-07-15,"['Sticker', 'Texto']",False
+1328,550,Reel,2024-04-12,['Sticker'],True
+1241,470,Reel,2020-11-13,['Texto'],True
+889,631,Reel,2021-02-02,"['Texto', 'Sticker', 'Emoji']",True
+345,133,Reel,2020-04-06,"['Sticker', 'Texto', 'Emoji']",False
+729,50,Reel,2024-02-13,['Emoji'],True
+564,62,Reel,2022-09-30,"['Emoji', 'Texto']",True
+640,100,Reel,2023-11-08,"['Sticker', 'Texto']",False
+234,206,Reel,2023-02-20,"['Sticker', 'Emoji']",True
+1065,388,Reel,2023-01-20,"['Texto', 'Sticker']",False
+63,279,Reel,2020-06-30,['Texto'],False
+828,305,Reel,2023-08-09,"['Emoji', 'Sticker']",True
+746,608,Reel,2023-04-18,"['Sticker', 'Texto', 'Emoji']",True
+305,133,Reel,2022-03-02,"['Emoji', 'Sticker']",True
+665,250,Reel,2020-03-27,"['Sticker', 'Emoji', 'Texto']",True
+1034,483,Reel,2021-09-05,['Emoji'],False
+83,636,Reel,2020-03-18,"['Texto', 'Emoji', 'Sticker']",False
+285,384,Reel,2020-05-15,"['Texto', 'Emoji', 'Sticker']",False
+18,534,Reel,2023-10-03,"['Emoji', 'Texto']",False
+604,588,Reel,2024-09-21,['Emoji'],True
+543,82,Reel,2023-08-07,"['Texto', 'Emoji']",True
+657,663,Reel,2023-02-08,['Emoji'],False
+566,316,Reel,2021-07-15,['Texto'],True
+403,216,Reel,2021-10-04,['Texto'],False
+867,21,Reel,2021-06-26,['Emoji'],True
+253,577,Reel,2020-07-31,['Sticker'],False
+1026,39,Reel,2022-09-25,"['Sticker', 'Texto']",False
+680,65,Reel,2021-04-23,['Emoji'],False
+827,242,Reel,2020-05-04,['Emoji'],True
+662,521,Reel,2022-08-12,['Texto'],False
+801,599,Reel,2021-07-06,['Emoji'],False
+770,205,Reel,2021-05-31,"['Texto', 'Sticker']",False
+477,112,Reel,2022-07-10,"['Emoji', 'Sticker', 'Texto']",False
+941,371,Reel,2024-02-09,['Texto'],False
+1219,686,Reel,2020-03-26,"['Sticker', 'Texto', 'Emoji']",True
+396,174,Reel,2022-05-18,"['Sticker', 'Texto', 'Emoji']",False
+40,403,Reel,2021-06-26,"['Emoji', 'Sticker', 'Texto']",True
+447,530,Reel,2024-08-04,"['Texto', 'Emoji', 'Sticker']",False
+1022,92,Reel,2022-09-03,"['Texto', 'Sticker', 'Emoji']",False
+774,258,Reel,2024-05-31,"['Emoji', 'Sticker']",False
+989,561,Reel,2022-11-04,"['Sticker', 'Texto', 'Emoji']",False
+1465,324,Reel,2020-07-25,['Texto'],False
+109,98,Reel,2020-10-16,['Emoji'],True
+863,58,Reel,2021-11-12,"['Texto', 'Sticker']",True
+1432,671,Reel,2023-08-02,"['Sticker', 'Emoji', 'Texto']",False
+839,345,Reel,2024-04-04,['Sticker'],False
+1281,92,Reel,2021-04-29,"['Texto', 'Emoji']",False
+156,314,Reel,2022-09-01,"['Texto', 'Sticker']",True
+461,654,Reel,2023-01-05,"['Emoji', 'Texto', 'Sticker']",False
+1055,66,Reel,2020-04-28,"['Emoji', 'Texto']",True
+1303,10,Reel,2024-12-02,['Emoji'],True
+1182,26,Reel,2022-03-03,"['Texto', 'Sticker']",False
+350,685,Reel,2021-05-08,"['Texto', 'Sticker', 'Emoji']",False
+1033,36,Reel,2020-08-09,"['Emoji', 'Texto', 'Sticker']",False
+1435,232,Reel,2020-05-04,"['Sticker', 'Texto']",False
+294,409,Reel,2024-08-23,['Sticker'],False
+732,327,Reel,2022-11-07,"['Sticker', 'Texto']",False
+1012,428,Reel,2024-10-31,"['Texto', 'Sticker', 'Emoji']",False
+1207,511,Reel,2023-12-02,['Texto'],True
+759,45,Reel,2022-11-25,['Emoji'],True
+786,23,Reel,2021-05-20,['Texto'],False
+1062,309,Reel,2020-09-14,"['Emoji', 'Sticker', 'Texto']",False
+1013,444,Reel,2024-12-30,"['Texto', 'Emoji', 'Sticker']",True
+1186,478,Reel,2022-01-28,"['Texto', 'Sticker']",False
+700,356,Reel,2021-07-07,"['Emoji', 'Sticker']",False
+1482,238,Reel,2023-05-31,['Emoji'],True
+785,392,Reel,2022-09-07,"['Texto', 'Emoji']",False
+337,367,Reel,2022-07-04,['Sticker'],True
+277,622,Reel,2023-05-06,['Emoji'],False
+342,589,Reel,2022-10-04,"['Texto', 'Sticker', 'Emoji']",False
+697,621,Reel,2022-01-08,['Emoji'],False
+1300,135,Reel,2020-12-29,"['Sticker', 'Texto']",True
+160,335,Reel,2020-04-26,"['Emoji', 'Sticker', 'Texto']",True
+967,75,Reel,2021-03-23,['Emoji'],False
+975,683,Reel,2021-02-20,"['Emoji', 'Sticker']",False
+1304,650,Reel,2021-04-19,['Sticker'],False
+708,253,Reel,2020-05-19,"['Texto', 'Sticker', 'Emoji']",True
+379,224,Reel,2024-12-13,"['Sticker', 'Emoji']",True
+1325,557,Reel,2024-04-25,"['Texto', 'Sticker']",False
+935,160,Reel,2023-11-10,"['Texto', 'Sticker', 'Emoji']",False
+630,6,Reel,2023-01-22,"['Sticker', 'Emoji', 'Texto']",True
+975,324,Reel,2024-07-28,['Texto'],False
+1,331,Reel,2021-12-22,"['Sticker', 'Texto']",False
+984,521,Reel,2023-03-17,"['Emoji', 'Texto']",True
+476,492,Reel,2024-05-06,"['Emoji', 'Texto', 'Sticker']",True
+741,501,Reel,2021-02-14,"['Emoji', 'Sticker']",False
+519,156,Reel,2024-02-25,"['Sticker', 'Emoji', 'Texto']",True
+1270,321,Reel,2024-08-01,"['Sticker', 'Texto']",False
+1413,450,Reel,2023-10-03,"['Emoji', 'Texto']",False
+1078,433,Reel,2021-04-23,"['Sticker', 'Emoji']",False
+244,345,Reel,2020-04-05,['Emoji'],False
+30,18,Reel,2024-08-01,"['Texto', 'Sticker', 'Emoji']",True
+745,549,Reel,2021-08-13,['Sticker'],True
+4,49,Reel,2024-01-16,"['Emoji', 'Sticker']",True
+1479,458,Reel,2025-01-28,"['Sticker', 'Texto', 'Emoji']",False
+751,228,Reel,2025-01-22,['Texto'],False
+1304,194,Reel,2024-05-12,"['Texto', 'Sticker']",True
+983,283,Reel,2021-10-14,"['Texto', 'Emoji', 'Sticker']",True
+504,206,Reel,2022-04-15,['Emoji'],False
+494,539,Reel,2024-11-19,['Texto'],True
+1107,504,Reel,2021-12-18,"['Sticker', 'Texto', 'Emoji']",False
+219,179,Reel,2021-08-20,"['Sticker', 'Texto', 'Emoji']",True
+868,648,Reel,2025-01-01,"['Sticker', 'Emoji', 'Texto']",False
+151,535,Reel,2022-04-19,"['Emoji', 'Sticker', 'Texto']",True
+785,155,Reel,2024-07-28,"['Emoji', 'Sticker']",True
+1368,32,Reel,2020-04-17,['Emoji'],True
+715,200,Reel,2024-05-04,"['Sticker', 'Emoji']",True
+318,23,Reel,2022-05-29,"['Texto', 'Sticker']",True
+479,9,Reel,2021-05-08,['Sticker'],True
+705,478,Reel,2023-07-29,['Sticker'],True
+1234,348,Reel,2024-06-06,"['Sticker', 'Emoji', 'Texto']",True
+389,612,Reel,2020-03-24,['Emoji'],False
+623,109,Reel,2021-03-02,"['Sticker', 'Texto', 'Emoji']",True
+159,213,Reel,2023-12-16,"['Texto', 'Sticker', 'Emoji']",False
+894,253,Reel,2023-02-24,"['Sticker', 'Emoji']",False
+753,549,Reel,2020-09-02,"['Emoji', 'Sticker']",False
+1450,470,Reel,2020-12-18,"['Texto', 'Emoji']",False
+1162,237,Reel,2024-02-13,"['Emoji', 'Sticker', 'Texto']",False
+435,467,Reel,2024-03-20,['Emoji'],True
+223,612,Reel,2023-02-11,"['Sticker', 'Texto']",False
+532,206,Reel,2022-07-07,['Sticker'],False
+1476,86,Reel,2023-12-29,"['Texto', 'Emoji']",False
+743,123,Reel,2023-02-10,"['Sticker', 'Emoji']",True
+255,556,Reel,2020-06-05,['Emoji'],True
+1253,96,Reel,2022-01-10,['Texto'],True
+350,388,Reel,2020-10-19,['Emoji'],True
+27,684,Reel,2023-09-17,['Emoji'],True
+918,239,Reel,2024-07-14,"['Sticker', 'Texto', 'Emoji']",True
+436,616,Reel,2021-03-12,['Sticker'],True
+927,673,Reel,2023-03-13,"['Texto', 'Sticker']",True
+1219,498,Reel,2024-01-18,['Texto'],False
+644,57,Reel,2021-10-12,"['Sticker', 'Texto', 'Emoji']",True
+513,259,Reel,2023-10-15,"['Emoji', 'Sticker']",True
+1257,647,Reel,2023-10-18,"['Sticker', 'Texto']",True
+665,503,Reel,2022-10-19,"['Emoji', 'Texto']",True
+634,660,Reel,2020-04-09,['Texto'],False
+658,210,Reel,2023-09-14,"['Texto', 'Emoji', 'Sticker']",True
+186,222,Reel,2024-12-01,"['Texto', 'Emoji', 'Sticker']",False
+1304,527,Reel,2020-03-17,['Texto'],False
+955,178,Reel,2021-02-19,['Sticker'],False
+206,66,Reel,2021-08-24,"['Sticker', 'Texto', 'Emoji']",True
+580,503,Reel,2020-05-16,"['Sticker', 'Texto']",False
+1143,557,Reel,2020-04-24,['Texto'],False
+695,215,Reel,2021-12-10,['Emoji'],False
+600,316,Reel,2024-12-20,"['Sticker', 'Texto', 'Emoji']",True
+688,402,Reel,2020-04-30,['Sticker'],False
+203,441,Reel,2024-08-29,"['Emoji', 'Texto', 'Sticker']",False
+938,89,Reel,2021-03-11,['Emoji'],False
+1217,402,Reel,2024-01-27,"['Sticker', 'Texto']",False
+742,28,Reel,2020-08-22,['Texto'],True
+758,413,Reel,2022-10-07,"['Sticker', 'Texto', 'Emoji']",True
+966,465,Reel,2023-12-03,['Sticker'],True
+167,24,Reel,2023-08-10,"['Sticker', 'Texto']",False
+176,196,Reel,2023-01-13,"['Texto', 'Emoji']",False
+1211,645,Reel,2022-12-24,"['Emoji', 'Texto']",True
+1252,105,Reel,2022-09-05,['Emoji'],True
+904,457,Reel,2022-08-11,"['Sticker', 'Emoji', 'Texto']",True
+1054,604,Reel,2020-06-22,"['Emoji', 'Texto', 'Sticker']",False
+889,602,Reel,2024-11-26,"['Texto', 'Emoji']",True
+536,503,Reel,2024-09-30,"['Sticker', 'Texto', 'Emoji']",False
+865,86,Reel,2024-11-19,"['Sticker', 'Texto', 'Emoji']",True
+137,545,Reel,2024-05-30,"['Texto', 'Sticker']",True
+486,335,Reel,2023-01-02,['Emoji'],True
+1343,511,Reel,2020-03-30,"['Sticker', 'Texto', 'Emoji']",False
+45,476,Reel,2021-10-30,"['Sticker', 'Texto']",True
+617,673,Reel,2024-04-29,"['Texto', 'Emoji']",True
+810,196,Reel,2021-07-15,"['Sticker', 'Emoji']",False
+769,156,Reel,2020-09-22,['Emoji'],False
+89,658,Reel,2025-01-11,"['Sticker', 'Emoji']",False
+344,96,Reel,2021-11-23,"['Emoji', 'Texto', 'Sticker']",False
+1169,236,Reel,2020-05-20,['Texto'],False
+1039,261,Reel,2022-10-06,"['Sticker', 'Texto', 'Emoji']",True
+1209,602,Reel,2020-12-07,['Sticker'],False
+670,123,Reel,2024-11-16,['Sticker'],True
+518,303,Reel,2020-04-18,"['Texto', 'Emoji', 'Sticker']",True
+1100,468,Reel,2024-07-29,"['Emoji', 'Sticker']",False
+413,116,Reel,2022-09-10,"['Texto', 'Emoji', 'Sticker']",False
+787,395,Reel,2024-11-23,['Texto'],False
+1254,94,Reel,2021-04-12,"['Texto', 'Sticker', 'Emoji']",False
+568,38,Reel,2025-02-20,"['Emoji', 'Sticker', 'Texto']",True
+11,235,Reel,2023-08-15,"['Texto', 'Sticker', 'Emoji']",True
+121,249,Reel,2020-04-19,['Sticker'],False
+431,588,Reel,2022-07-30,['Texto'],False
+635,133,Reel,2023-09-22,['Texto'],False
+742,597,Reel,2021-06-27,"['Texto', 'Emoji', 'Sticker']",False
+1157,93,Reel,2020-08-17,['Sticker'],False
+1364,535,Reel,2024-10-31,"['Emoji', 'Sticker', 'Texto']",False
+1243,149,Reel,2024-05-26,"['Texto', 'Sticker', 'Emoji']",False
+1372,559,Reel,2022-02-15,['Sticker'],True
+1009,652,Reel,2024-11-01,['Emoji'],False
+213,223,Reel,2022-09-30,['Texto'],False
+1055,173,Reel,2022-01-11,"['Texto', 'Sticker']",True
+571,682,Reel,2021-05-02,['Texto'],True
+328,98,Reel,2021-07-31,"['Emoji', 'Texto', 'Sticker']",True
+532,359,Reel,2020-12-31,"['Sticker', 'Texto']",False
+579,255,Reel,2023-04-08,['Texto'],True
+316,329,Reel,2023-06-25,"['Emoji', 'Sticker', 'Texto']",True
+289,283,Reel,2022-02-11,"['Emoji', 'Texto']",True
+357,62,Reel,2022-09-04,"['Emoji', 'Texto']",True
+677,31,Reel,2021-11-05,"['Emoji', 'Sticker', 'Texto']",True
+831,644,Reel,2024-04-15,"['Texto', 'Emoji']",True
+824,599,Reel,2023-09-24,['Sticker'],True
+90,476,Reel,2024-06-09,['Emoji'],False
+129,325,Reel,2021-05-14,['Sticker'],True
+741,435,Reel,2023-02-19,"['Emoji', 'Sticker']",True
+707,295,Reel,2021-03-30,"['Texto', 'Sticker', 'Emoji']",True
+911,284,Reel,2022-03-24,"['Sticker', 'Emoji']",True
+1001,569,Reel,2024-06-19,['Texto'],False
+200,334,Reel,2020-12-18,['Texto'],True
+11,406,Reel,2023-01-26,['Sticker'],True
+1213,429,Reel,2022-07-20,['Texto'],True
+773,153,Reel,2024-03-06,"['Texto', 'Sticker', 'Emoji']",True
+750,450,Reel,2022-10-07,"['Sticker', 'Emoji', 'Texto']",False
+270,207,Reel,2021-12-08,"['Emoji', 'Sticker']",True
+928,577,Reel,2021-08-10,"['Texto', 'Sticker', 'Emoji']",False
+714,161,Reel,2023-03-08,['Texto'],True
+427,321,Reel,2022-12-02,"['Texto', 'Emoji', 'Sticker']",True
+343,583,Reel,2023-12-17,['Texto'],True
+239,167,Reel,2023-03-01,"['Emoji', 'Texto']",False
+218,646,Reel,2022-10-25,"['Emoji', 'Texto']",True
+172,171,Reel,2022-03-06,['Sticker'],True
+212,45,Reel,2024-08-27,"['Emoji', 'Texto', 'Sticker']",True
+795,417,Reel,2022-02-06,"['Emoji', 'Texto']",False
+811,97,Reel,2023-03-27,"['Sticker', 'Texto', 'Emoji']",True
+618,692,Reel,2020-06-02,"['Texto', 'Sticker']",True
+825,549,Reel,2023-11-10,"['Texto', 'Emoji', 'Sticker']",False
+537,504,Reel,2023-01-31,"['Texto', 'Sticker', 'Emoji']",False
+355,143,Reel,2022-04-20,"['Emoji', 'Sticker']",False
+818,235,Reel,2020-10-06,"['Texto', 'Sticker', 'Emoji']",True
+920,405,Reel,2021-10-04,"['Sticker', 'Texto', 'Emoji']",False
+1391,572,Reel,2025-01-15,"['Texto', 'Emoji']",False
+259,636,Reel,2020-05-29,"['Texto', 'Sticker']",True
+689,305,Reel,2024-02-29,['Emoji'],False
+909,539,Reel,2022-06-26,"['Sticker', 'Texto', 'Emoji']",False
+624,322,Reel,2022-04-16,"['Sticker', 'Emoji']",True
+1137,644,Reel,2022-04-07,"['Texto', 'Emoji']",False
+1475,215,Reel,2021-03-28,['Sticker'],True
+1099,672,Reel,2025-01-04,"['Texto', 'Emoji']",True
+952,267,Reel,2024-04-11,"['Emoji', 'Texto', 'Sticker']",True
+862,640,Reel,2024-12-27,"['Sticker', 'Texto', 'Emoji']",False
+876,682,Reel,2021-04-11,"['Texto', 'Sticker']",True
+300,660,Reel,2020-03-05,['Emoji'],False
+558,412,Reel,2021-09-25,"['Sticker', 'Texto']",True
+762,419,Reel,2021-04-25,"['Texto', 'Emoji', 'Sticker']",False
+188,637,Reel,2021-09-24,"['Emoji', 'Sticker']",True
+454,519,Reel,2021-03-15,"['Texto', 'Emoji', 'Sticker']",True
+1116,512,Reel,2021-05-19,"['Sticker', 'Texto', 'Emoji']",True
+860,341,Reel,2022-02-24,"['Emoji', 'Texto', 'Sticker']",True
+132,625,Reel,2024-01-02,['Emoji'],False
+936,570,Reel,2020-03-22,"['Texto', 'Sticker', 'Emoji']",True
+378,20,Reel,2022-02-08,"['Emoji', 'Sticker', 'Texto']",True
+109,465,Reel,2021-06-24,"['Sticker', 'Emoji']",True
+369,363,Reel,2021-04-29,"['Texto', 'Sticker']",True
+184,677,Reel,2024-08-15,"['Sticker', 'Texto', 'Emoji']",True
+905,249,Reel,2024-06-02,['Emoji'],False
+764,505,Reel,2024-09-10,"['Emoji', 'Sticker']",False
+1139,261,Reel,2024-03-08,"['Texto', 'Sticker', 'Emoji']",True
+1074,427,Reel,2020-08-27,['Emoji'],True
+900,151,Reel,2021-09-10,"['Texto', 'Sticker']",False
+980,445,Reel,2023-11-04,"['Texto', 'Sticker', 'Emoji']",True
+1072,183,Reel,2020-05-30,"['Texto', 'Sticker']",False
+1038,45,Reel,2020-08-23,"['Texto', 'Sticker']",True
+671,584,Reel,2023-02-23,"['Sticker', 'Emoji', 'Texto']",False
+250,621,Reel,2021-05-02,"['Sticker', 'Texto']",False
+969,72,Reel,2020-09-02,"['Sticker', 'Texto']",False
+1167,390,Reel,2023-10-03,"['Texto', 'Emoji']",False
+995,439,Reel,2021-02-16,"['Sticker', 'Emoji']",True
+540,442,Reel,2020-05-30,"['Emoji', 'Texto']",True
+551,205,Reel,2024-08-11,['Emoji'],False
+469,163,Reel,2022-08-06,['Emoji'],True
+217,663,Reel,2021-01-30,"['Emoji', 'Texto']",True
+670,681,Reel,2020-05-11,"['Emoji', 'Sticker', 'Texto']",False
+1114,214,Reel,2023-06-08,['Emoji'],True
+871,512,Reel,2025-02-11,['Emoji'],True
+1010,292,Reel,2024-05-15,['Sticker'],True
+1052,675,Reel,2024-03-08,"['Emoji', 'Sticker']",False
+1366,422,Reel,2024-01-31,"['Emoji', 'Sticker']",True
+926,672,Reel,2023-01-08,"['Emoji', 'Texto']",False
+1379,47,Reel,2021-10-02,"['Sticker', 'Emoji', 'Texto']",True
+505,671,Reel,2021-05-04,"['Texto', 'Sticker', 'Emoji']",False
+1363,681,Reel,2022-03-19,"['Sticker', 'Texto', 'Emoji']",False
+627,66,Reel,2024-10-28,"['Sticker', 'Texto', 'Emoji']",False
+75,199,Reel,2023-06-30,['Sticker'],False
+489,386,Reel,2021-10-13,['Sticker'],False
+170,331,Reel,2024-04-09,"['Sticker', 'Emoji', 'Texto']",True
+599,32,Reel,2024-02-26,"['Sticker', 'Emoji', 'Texto']",False
+147,205,Reel,2021-11-25,"['Texto', 'Sticker']",False
+59,235,Reel,2023-08-01,"['Texto', 'Emoji', 'Sticker']",False
+136,115,Reel,2022-09-01,"['Texto', 'Sticker', 'Emoji']",False
+1420,45,Reel,2021-05-22,"['Emoji', 'Texto']",True
+971,635,Reel,2021-02-21,"['Sticker', 'Emoji']",False
+1024,21,Reel,2023-11-30,"['Sticker', 'Emoji']",True
+1,353,Reel,2024-10-19,['Emoji'],True
+1092,39,Reel,2022-12-31,['Texto'],True
+1083,670,Reel,2024-02-29,['Sticker'],True
+1412,409,Reel,2021-07-08,['Texto'],True
+250,630,Reel,2021-08-04,"['Texto', 'Sticker', 'Emoji']",True
+1498,622,Reel,2024-07-13,['Emoji'],True
+631,168,Reel,2020-04-25,['Texto'],False
+1307,424,Reel,2022-06-04,['Emoji'],False
+716,411,Reel,2022-01-20,"['Sticker', 'Texto']",False
+69,491,Reel,2023-07-10,"['Emoji', 'Sticker', 'Texto']",False
+1225,145,Reel,2020-11-30,['Texto'],True
+129,234,Reel,2023-11-20,"['Emoji', 'Sticker', 'Texto']",True
+968,424,Reel,2022-08-29,"['Emoji', 'Texto']",False
+1163,222,Reel,2021-09-29,['Sticker'],False
+251,660,Reel,2021-12-15,"['Texto', 'Sticker', 'Emoji']",True
+702,465,Reel,2024-11-13,"['Sticker', 'Emoji']",True
+1309,432,Reel,2020-08-08,"['Texto', 'Emoji']",False
+1434,334,Reel,2024-09-14,"['Emoji', 'Sticker', 'Texto']",False
+1323,82,Reel,2023-11-11,"['Emoji', 'Texto']",False
+1493,101,Reel,2020-11-27,"['Emoji', 'Sticker']",False
+1133,175,Reel,2025-02-05,"['Emoji', 'Sticker', 'Texto']",False
+1371,120,Reel,2020-11-08,"['Sticker', 'Texto']",True
+1301,303,Reel,2024-08-06,"['Sticker', 'Texto']",True
+578,691,Reel,2020-08-10,['Texto'],False
+389,657,Reel,2025-01-11,['Sticker'],False
+1200,93,Reel,2024-09-26,['Emoji'],True
+1080,641,Reel,2021-01-13,"['Emoji', 'Texto']",True
+246,535,Reel,2024-03-10,"['Texto', 'Sticker', 'Emoji']",False
+74,93,Reel,2022-09-13,"['Texto', 'Emoji']",False
+177,677,Reel,2022-11-13,"['Emoji', 'Sticker', 'Texto']",True
+712,256,Reel,2022-12-14,"['Texto', 'Sticker']",True
+922,15,Reel,2021-04-07,"['Sticker', 'Texto', 'Emoji']",False
+733,639,Reel,2023-12-23,"['Emoji', 'Sticker', 'Texto']",False
+8,563,Reel,2022-11-16,['Emoji'],False
+1147,621,Reel,2021-11-05,['Emoji'],True
+237,661,Reel,2024-05-15,"['Sticker', 'Emoji']",True
+24,517,Reel,2020-03-27,['Emoji'],False
+980,141,Reel,2020-05-10,"['Sticker', 'Texto', 'Emoji']",True
+1149,648,Reel,2022-04-16,"['Sticker', 'Texto', 'Emoji']",True
+70,183,Reel,2021-02-04,"['Texto', 'Sticker']",False
+1213,225,Reel,2020-06-10,"['Sticker', 'Emoji']",False
+25,459,Reel,2021-08-17,"['Sticker', 'Emoji']",False
+391,547,Reel,2021-11-09,"['Texto', 'Emoji', 'Sticker']",False
+62,579,Reel,2022-01-07,['Sticker'],True
+1029,580,Reel,2023-06-11,"['Sticker', 'Emoji']",True
+1078,148,Reel,2021-07-07,"['Sticker', 'Texto']",True
+903,362,Reel,2024-12-05,"['Emoji', 'Sticker', 'Texto']",True
+954,589,Reel,2023-05-16,"['Texto', 'Emoji', 'Sticker']",True
+1420,237,Reel,2022-08-03,['Sticker'],False
+1193,162,Reel,2020-10-27,"['Emoji', 'Texto', 'Sticker']",False
+1381,222,Reel,2020-09-26,"['Sticker', 'Emoji']",True
+460,394,Reel,2023-06-28,['Emoji'],False
+308,538,Reel,2021-03-23,"['Emoji', 'Sticker']",True
+217,656,Reel,2024-04-29,"['Sticker', 'Emoji']",False
+1082,471,Reel,2024-02-29,['Emoji'],False
+1118,539,Reel,2020-07-28,['Sticker'],True
+1419,470,Reel,2022-03-24,"['Sticker', 'Texto']",True
+683,183,Reel,2024-11-05,"['Sticker', 'Texto']",False
+174,20,Reel,2022-02-18,"['Texto', 'Emoji', 'Sticker']",True
+108,252,Reel,2020-10-03,"['Emoji', 'Texto']",False
+665,101,Reel,2022-01-21,"['Emoji', 'Texto']",False
+455,132,Reel,2023-10-15,"['Emoji', 'Sticker']",False
+1429,517,Reel,2022-05-08,['Sticker'],True
+1470,690,Reel,2025-02-06,['Texto'],False
+1475,660,Reel,2020-04-30,"['Sticker', 'Emoji', 'Texto']",True
+606,414,Reel,2022-03-24,"['Texto', 'Sticker', 'Emoji']",False
+64,86,Reel,2023-10-29,"['Emoji', 'Texto', 'Sticker']",False
+257,117,Reel,2022-12-09,"['Emoji', 'Texto']",True
+825,3,Reel,2023-12-26,"['Emoji', 'Sticker']",False
+1104,518,Reel,2020-10-17,"['Sticker', 'Emoji']",False
+1249,249,Reel,2023-10-03,['Sticker'],True
+405,138,Reel,2024-08-22,['Texto'],False
+360,286,Reel,2024-07-27,"['Emoji', 'Texto', 'Sticker']",True
+935,292,Reel,2024-04-25,['Sticker'],False
+788,585,Reel,2021-05-29,['Texto'],False
+544,252,Reel,2022-01-14,"['Texto', 'Emoji']",False
+35,167,Reel,2020-10-06,"['Texto', 'Emoji']",False
+85,573,Reel,2020-05-29,"['Texto', 'Sticker', 'Emoji']",True
+402,463,Reel,2020-10-17,['Sticker'],True
+1246,184,Reel,2020-06-26,"['Sticker', 'Texto', 'Emoji']",True
+873,70,Reel,2020-11-10,"['Sticker', 'Texto']",False
+524,89,Reel,2024-10-06,"['Emoji', 'Texto', 'Sticker']",False
+66,57,Reel,2023-02-13,['Texto'],True
+880,667,Reel,2023-02-25,['Texto'],True
+427,159,Reel,2022-06-18,['Emoji'],False
+1467,287,Reel,2020-04-01,"['Emoji', 'Sticker', 'Texto']",True
+329,150,Reel,2023-05-05,"['Sticker', 'Texto']",False
+1095,430,Reel,2024-04-11,"['Texto', 'Sticker']",False
+596,296,Reel,2022-05-12,"['Emoji', 'Texto', 'Sticker']",False
+77,506,Reel,2022-08-04,"['Texto', 'Emoji']",False
+1382,587,Reel,2024-07-17,"['Texto', 'Emoji', 'Sticker']",True
+359,561,Reel,2024-04-15,"['Emoji', 'Sticker', 'Texto']",True
+1041,441,Reel,2020-05-06,"['Emoji', 'Texto', 'Sticker']",False
+261,205,Reel,2022-01-11,['Texto'],True
+773,144,Reel,2024-11-16,"['Sticker', 'Emoji']",False
+810,412,Reel,2020-11-18,"['Sticker', 'Emoji', 'Texto']",False
+701,25,Reel,2024-05-19,"['Sticker', 'Emoji']",True
+1165,274,Reel,2020-12-24,['Sticker'],True
+689,284,Reel,2024-04-07,"['Texto', 'Sticker', 'Emoji']",False
+129,82,Reel,2022-06-06,"['Sticker', 'Emoji']",False
+1416,383,Reel,2024-04-07,"['Texto', 'Sticker', 'Emoji']",False
+442,263,Reel,2022-08-17,['Sticker'],False
+1340,157,Reel,2020-05-05,['Emoji'],True
+1340,234,Reel,2024-03-09,"['Texto', 'Sticker', 'Emoji']",True
+1167,492,Reel,2021-09-15,"['Emoji', 'Sticker', 'Texto']",False
+935,609,Reel,2022-03-24,"['Emoji', 'Sticker']",True
+425,353,Reel,2021-05-13,['Texto'],True
+1065,564,Reel,2024-08-16,"['Sticker', 'Emoji', 'Texto']",True
+107,614,Reel,2023-04-20,"['Sticker', 'Texto']",True
+335,531,Reel,2021-11-17,"['Sticker', 'Emoji']",True
+747,675,Reel,2022-02-24,"['Texto', 'Sticker', 'Emoji']",True
+1348,454,Reel,2024-04-07,['Texto'],False
+1066,410,Reel,2022-04-07,"['Emoji', 'Texto', 'Sticker']",False
+707,124,Reel,2023-07-12,"['Sticker', 'Texto', 'Emoji']",True
+517,414,Reel,2021-05-25,"['Sticker', 'Texto']",True
+1037,554,Reel,2021-11-04,['Sticker'],True
+1083,95,Reel,2020-05-12,['Emoji'],False
+263,505,Reel,2022-12-19,"['Sticker', 'Emoji', 'Texto']",True
+165,125,Reel,2023-12-08,['Sticker'],False
+851,242,Reel,2023-07-26,"['Texto', 'Emoji', 'Sticker']",False
+1116,380,Reel,2021-06-08,"['Sticker', 'Texto']",True
+1061,104,Reel,2020-07-30,['Sticker'],True
+214,293,Reel,2024-01-31,"['Sticker', 'Emoji']",False
+566,562,Reel,2021-07-27,"['Sticker', 'Texto']",False
+1260,109,Reel,2023-06-08,['Texto'],False
+656,173,Reel,2023-08-11,"['Sticker', 'Texto', 'Emoji']",True
+17,281,Reel,2022-03-20,['Emoji'],True
+143,195,Reel,2021-03-11,"['Sticker', 'Emoji', 'Texto']",True
+150,652,Reel,2024-09-08,['Emoji'],False
+1464,108,Reel,2023-04-06,"['Texto', 'Sticker']",False
+1362,634,Reel,2024-05-30,"['Sticker', 'Texto', 'Emoji']",False
+905,161,Reel,2023-01-16,['Sticker'],False
+592,61,Reel,2021-08-17,['Sticker'],True
+657,578,Reel,2021-01-05,"['Texto', 'Sticker']",False
+552,466,Reel,2024-08-01,"['Sticker', 'Texto', 'Emoji']",True
+1014,159,Reel,2023-11-09,"['Emoji', 'Sticker']",False
+219,402,Reel,2021-05-12,"['Emoji', 'Texto', 'Sticker']",False
+36,109,Reel,2023-04-18,"['Emoji', 'Texto']",True
+347,510,Reel,2022-01-14,['Emoji'],True
+814,284,Reel,2023-03-14,"['Sticker', 'Emoji', 'Texto']",False
+139,645,Reel,2023-06-21,['Sticker'],True
+1022,178,Reel,2021-12-21,['Emoji'],False
+707,318,Reel,2025-02-04,['Sticker'],False
+968,494,Reel,2022-05-25,"['Emoji', 'Texto', 'Sticker']",False
+353,442,Reel,2024-09-21,"['Texto', 'Sticker', 'Emoji']",False
+1160,636,Reel,2024-05-03,['Sticker'],True
+1169,497,Reel,2022-07-20,"['Emoji', 'Sticker', 'Texto']",True
+1458,414,Reel,2021-09-25,"['Sticker', 'Texto']",False
+618,266,Reel,2021-04-16,"['Texto', 'Emoji']",True
+1456,201,Reel,2022-04-26,['Texto'],False
+1300,523,Reel,2021-11-20,"['Emoji', 'Texto', 'Sticker']",True
+1001,271,Reel,2022-08-21,['Emoji'],False
+1036,578,Reel,2025-02-18,['Sticker'],False
+657,307,Reel,2020-08-22,"['Emoji', 'Texto']",False
+445,470,Reel,2021-11-11,"['Texto', 'Emoji', 'Sticker']",True
+894,520,Reel,2022-04-25,"['Texto', 'Sticker', 'Emoji']",False
+245,537,Reel,2021-05-13,"['Texto', 'Sticker']",True
+24,397,Reel,2023-06-09,['Sticker'],False
+27,539,Reel,2025-02-16,"['Sticker', 'Emoji', 'Texto']",False
+64,521,Reel,2021-06-25,['Emoji'],True
+442,648,Reel,2023-08-20,['Texto'],True
+961,224,Reel,2022-01-14,['Emoji'],False
+314,572,Reel,2022-10-07,"['Texto', 'Sticker', 'Emoji']",True
+292,410,Reel,2022-04-27,"['Sticker', 'Texto', 'Emoji']",True
+723,502,Reel,2022-09-13,['Sticker'],False
+1006,238,Reel,2024-12-03,"['Texto', 'Sticker', 'Emoji']",True
+832,233,Reel,2021-12-10,"['Sticker', 'Emoji', 'Texto']",True
+805,120,Reel,2020-03-16,"['Sticker', 'Texto', 'Emoji']",True
+328,599,Reel,2022-04-16,"['Emoji', 'Texto', 'Sticker']",False
+1195,76,Reel,2021-02-06,"['Sticker', 'Emoji', 'Texto']",False
+1123,213,Reel,2020-04-22,['Texto'],True
+58,645,Reel,2023-04-22,"['Sticker', 'Emoji']",False
+167,330,Reel,2022-10-10,"['Emoji', 'Sticker', 'Texto']",False
+1068,153,Reel,2023-01-08,"['Emoji', 'Sticker', 'Texto']",True
+1401,700,Reel,2024-08-29,['Texto'],True
+1375,634,Reel,2023-06-21,['Emoji'],True
+178,335,Reel,2020-03-30,"['Sticker', 'Texto', 'Emoji']",True
+1095,215,Reel,2020-10-01,"['Sticker', 'Texto', 'Emoji']",True
+291,516,Reel,2022-01-26,"['Emoji', 'Sticker']",False
+478,90,Reel,2024-01-04,['Texto'],True
+121,302,Reel,2024-04-28,"['Texto', 'Sticker', 'Emoji']",True
+388,256,Reel,2021-08-04,"['Texto', 'Sticker']",False
+1315,64,Reel,2024-11-03,['Sticker'],False
+968,111,Reel,2023-06-20,"['Sticker', 'Emoji', 'Texto']",False
+1338,246,Reel,2024-05-26,"['Texto', 'Emoji', 'Sticker']",False
+1259,539,Reel,2022-11-06,['Texto'],True
+1316,692,Reel,2023-11-05,"['Emoji', 'Texto']",False
+890,394,Reel,2023-08-04,['Emoji'],True
+1183,70,Reel,2024-09-21,['Sticker'],False
+138,163,Reel,2020-05-09,"['Texto', 'Emoji', 'Sticker']",False
+1368,388,Reel,2024-05-01,"['Texto', 'Sticker']",True
+1399,547,Reel,2021-10-22,['Texto'],True
+1466,281,Reel,2022-10-14,"['Emoji', 'Texto']",True
+195,608,Reel,2023-01-12,['Sticker'],True
+915,287,Reel,2024-01-22,"['Emoji', 'Texto', 'Sticker']",True
+1121,219,Reel,2021-03-18,"['Texto', 'Sticker', 'Emoji']",False
+302,32,Reel,2020-05-08,"['Emoji', 'Texto']",True
+224,278,Reel,2024-02-06,"['Sticker', 'Texto', 'Emoji']",True
+958,178,Reel,2021-01-15,['Texto'],False
+1102,11,Reel,2024-01-19,"['Texto', 'Emoji', 'Sticker']",True
+950,291,Reel,2024-07-07,"['Emoji', 'Sticker', 'Texto']",True
+40,418,Reel,2020-05-04,"['Sticker', 'Emoji', 'Texto']",False
+563,245,Reel,2023-08-17,"['Emoji', 'Sticker', 'Texto']",False
+335,255,Reel,2023-02-22,"['Emoji', 'Texto']",True
+277,586,Reel,2022-11-27,"['Texto', 'Emoji', 'Sticker']",False
+755,109,Reel,2020-06-21,"['Texto', 'Sticker']",False
+1008,452,Reel,2021-08-13,['Texto'],False
+429,441,Reel,2023-10-15,"['Emoji', 'Sticker']",False
+898,637,Reel,2022-09-25,"['Emoji', 'Sticker', 'Texto']",False
+1336,8,Reel,2024-03-15,['Texto'],False
+40,273,Reel,2021-04-17,"['Emoji', 'Texto']",True
+657,138,Reel,2021-04-15,"['Sticker', 'Emoji']",True
+1279,403,Reel,2021-11-13,['Texto'],True
+931,371,Reel,2020-10-21,"['Emoji', 'Sticker', 'Texto']",True
+1427,638,Reel,2022-05-18,"['Sticker', 'Texto', 'Emoji']",True
+1205,640,Reel,2023-08-29,['Emoji'],False
+1479,650,Reel,2022-08-25,"['Emoji', 'Sticker']",False
+483,665,Reel,2021-06-19,"['Texto', 'Emoji']",False
+143,179,Reel,2020-07-18,['Sticker'],True
+77,447,Reel,2021-06-11,['Emoji'],True
+912,683,Reel,2020-04-05,"['Sticker', 'Texto', 'Emoji']",True
+1257,518,Reel,2023-12-12,"['Emoji', 'Texto']",True
+1125,477,Reel,2023-07-05,"['Texto', 'Sticker', 'Emoji']",True
+547,666,Reel,2023-03-15,['Texto'],False
+698,392,Reel,2024-04-19,"['Emoji', 'Texto']",False
+263,462,Reel,2025-01-12,"['Texto', 'Emoji']",False
+1050,303,Reel,2023-10-25,['Emoji'],False
+243,470,Reel,2023-07-06,"['Texto', 'Emoji', 'Sticker']",False
+819,313,Reel,2024-01-10,"['Sticker', 'Emoji', 'Texto']",False
+454,423,Reel,2023-02-14,"['Emoji', 'Texto']",False
+171,473,Reel,2024-08-05,"['Emoji', 'Texto']",False
+1413,14,Reel,2020-11-02,['Texto'],False
+221,541,Reel,2021-11-29,"['Texto', 'Emoji', 'Sticker']",True
+343,334,Reel,2022-09-13,['Texto'],False
+597,71,Reel,2022-02-03,['Texto'],True
+358,35,Reel,2022-09-03,['Texto'],True
+147,422,Reel,2022-06-16,['Emoji'],True
+305,541,Reel,2024-02-05,"['Texto', 'Sticker', 'Emoji']",False
+357,429,Reel,2023-11-29,['Texto'],True
+1157,201,Reel,2023-05-22,['Emoji'],True
+25,157,Reel,2021-08-02,['Texto'],False
+334,123,Reel,2022-02-15,['Sticker'],True
+84,399,Reel,2023-07-12,['Texto'],False
+193,495,Reel,2024-12-28,"['Emoji', 'Sticker']",True
+45,411,Reel,2023-06-05,"['Emoji', 'Texto']",False
+929,445,Reel,2023-08-16,"['Texto', 'Emoji', 'Sticker']",True
+950,411,Reel,2022-04-05,"['Emoji', 'Texto', 'Sticker']",False
+96,689,Reel,2023-12-14,"['Texto', 'Emoji', 'Sticker']",False
+1479,637,Reel,2024-10-29,['Sticker'],True
+1394,634,Reel,2023-10-16,"['Texto', 'Sticker']",True
+1182,539,Reel,2021-03-03,['Emoji'],False
+594,324,Reel,2021-09-12,['Sticker'],False
+108,77,Reel,2020-03-13,"['Texto', 'Sticker', 'Emoji']",True
+1099,353,Reel,2022-05-16,"['Sticker', 'Texto']",True
+1328,10,Reel,2023-02-28,"['Sticker', 'Texto']",True
+299,270,Reel,2024-05-08,"['Texto', 'Emoji', 'Sticker']",True
+800,646,Reel,2024-05-19,"['Sticker', 'Emoji']",False
+488,270,Reel,2023-08-22,"['Emoji', 'Sticker', 'Texto']",True
+445,139,Reel,2024-04-02,['Sticker'],False
+148,427,Reel,2022-04-20,['Sticker'],True
+458,33,Reel,2020-08-21,"['Emoji', 'Texto', 'Sticker']",True
+1403,197,Reel,2022-04-20,"['Emoji', 'Sticker', 'Texto']",False
+297,16,Reel,2023-02-13,"['Sticker', 'Texto']",False
+299,672,Reel,2020-05-30,['Sticker'],True
+847,700,Reel,2023-07-09,"['Texto', 'Emoji']",False
+776,117,Reel,2021-07-27,['Texto'],False
+1437,393,Reel,2023-02-14,['Emoji'],False
+595,43,Reel,2020-11-16,['Texto'],True
+18,163,Reel,2021-03-18,"['Sticker', 'Emoji', 'Texto']",False
+211,161,Reel,2020-11-21,"['Emoji', 'Texto']",False
+1002,30,Reel,2023-02-07,"['Texto', 'Sticker', 'Emoji']",True
