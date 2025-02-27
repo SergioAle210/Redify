@@ -1,0 +1,122 @@
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=13HJCX27Ms9JjxtN5I49-1JylQnwWbREz" AS row
+CREATE (:Reel {
+    id: toInteger(row.id),
+    duracion: toFloat(row.duracion),
+    fecha_publicacion: date(row.fecha_publicacion),
+    likes: toInteger(row.likes),
+    hashtags: split(row.hashtags, ",")
+});
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1BwM709fZKJkY6gvu5IXPmXXG2PnxpFRY" AS row
+CREATE (:Grupo {
+    id: toInteger(row.id),
+    nombre: row.nombre,
+    descripcion: row.descripcion,
+    privado: row.privado = "true",
+    miembros: toInteger(row.miembros)
+});
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Z3KQeFSFN1QhUmB6lqJ4LJIYUaDxlQ-y" AS row
+CREATE (:Comentario {
+    id: toInteger(row.id),
+    contenido: row.contenido,
+    fecha_comentario: date(row.fecha_comentario),
+    likes: toInteger(row.likes),
+    reacciones: split(row.reacciones, ",")
+});
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1OMW2DuEuj6iZMvwm9dhfvAAsvS9m5jJV" AS row
+CREATE (:Publicacion {
+    id: toInteger(row.id),
+    contenido: row.contenido,
+    fecha_publicacion: date(row.fecha_publicacion),
+    likes: toInteger(row.likes),
+    privado: row.privado = "true"
+});
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=14J4S6Qn8v0bbXeETe7liQZndUxl1OHIe" AS row
+CREATE (:Usuario {
+    id: toInteger(row.id),
+    nombre: row.nombre,
+    email: row.email,
+    fecha_registro: date(row.fecha_registro),
+    intereses: split(row.intereses, ",")
+});
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1vpiTTf5gKJaYTO8nH6D31tXmtJjCELuL" AS row
+MATCH (u1:Usuario {id: toInteger(row.usuario1_id)})
+MATCH (u2:Usuario {id: toInteger(row.usuario2_id)})
+MERGE (u1)-[:FRIENDS_WITH {desde: date(row.desde), nivel_confianza: toInteger(row.nivel_confianza), tipo_amistad: row.tipo_amistad}]->(u2);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Wz-7rT0JLWsP_mBfh0VMwiLyCFmzlhGe" AS row
+MATCH (u1:Usuario {id: toInteger(row.usuario_id)})
+MATCH (u2:Usuario {id: toInteger(row.seguido_id)})
+MERGE (u1)-[:FOLLOWS {desde: date(row.desde), interaccion_frecuencia: row.interaccion_frecuencia, razón: row.razón}]->(u2);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Jyc3BZE-kTnWRIGNNs98flWnYym_8VO0" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (p:Publicacion {id: toInteger(row.contenido_id)}) 
+WHERE row.tipo_contenido = "Post"
+MERGE (u)-[:LIKES {fecha_like: date(row.fecha_like), tipo: row.tipo, desde_movil: toBoolean(row.desde_movil)}]->(p);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Jyc3BZE-kTnWRIGNNs98flWnYym_8VO0" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (c:Comentario {id: toInteger(row.contenido_id)}) 
+WHERE row.tipo_contenido = "Comment"
+MERGE (u)-[:LIKES {fecha_like: date(row.fecha_like), tipo: row.tipo, desde_movil: toBoolean(row.desde_movil)}]->(c);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Jyc3BZE-kTnWRIGNNs98flWnYym_8VO0" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (r:Reel {id: toInteger(row.contenido_id)}) 
+WHERE row.tipo_contenido = "Reel"
+MERGE (u)-[:LIKES {fecha_like: date(row.fecha_like), tipo: row.tipo, desde_movil: toBoolean(row.desde_movil)}]->(r);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1a0lIoLtSsCmcr76a7wUcWChJv_eCBG-1" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (p:Publicacion {id: toInteger(row.contenido_id)}) 
+WHERE row.tipo_contenido = "Post"
+MERGE (u)-[:COMMENTED_ON {fecha_comentario: date(row.fecha_comentario), tipo: split(row.tipo, ", "), editado: toBoolean(row.editado)}]->(p);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1a0lIoLtSsCmcr76a7wUcWChJv_eCBG-1" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (r:Reel {id: toInteger(row.contenido_id)}) 
+WHERE row.tipo_contenido = "Reel"
+MERGE (u)-[:COMMENTED_ON {fecha_comentario: date(row.fecha_comentario), tipo: split(row.tipo, ", "), editado: toBoolean(row.editado)}]->(r);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1cPnSs6WzI1SjCNzQjiOSpoiq8KGeNEYc" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (p:Publicacion {id: toInteger(row.contenido_id)})
+WHERE row.tipo_contenido = "Post"
+MERGE (p)-[:BELONGS_TO {fecha_creacion: date(row.fecha_creacion), privado: toBoolean(row.privado), categoria: row.categoria}]->(u);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1cPnSs6WzI1SjCNzQjiOSpoiq8KGeNEYc" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (c:Comentario {id: toInteger(row.contenido_id)})
+WHERE row.tipo_contenido = "Comment"
+MERGE (c)-[:BELONGS_TO {fecha_comentario: date(row.fecha_creacion), privado: toBoolean(row.privado), categoria: row.categoria}]->(u);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1dlVKTdCwnw5VCwHosLkpPAn2nDeMbeX1" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (g:Grupo {id: toInteger(row.grupo_id)})
+MERGE (u)-[:MEMBER_OF {desde: date(row.desde), rol: row.rol, activo: toBoolean(row.activo)}]->(g);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Qnl8wucIipQ4OE8wqvyrNYuLp56WRb-A" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (r:Reel {id: toInteger(row.reel_id)})
+MERGE (u)-[:CREATED {fecha_creacion: date(row.fecha_creacion), visibilidad: row.visibilidad, ubicacion: row.ubicacion}]->(r);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1uxSPpar5c8LsG3j4flYWgX8r7sEwq6J4" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (r:Reel {id: toInteger(row.reel_id)})
+MERGE (u)-[:WATCHED {fecha_vista: date(row.fecha_vista), duracion_vista: toInteger(row.duracion_vista), completo: toBoolean(row.completo)}]->(r);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1eEmCe0ULrcwVUUpyluIW1O9rJaTruYAs" AS row
+MATCH (u1:Usuario {id: toInteger(row.usuario_id)})
+MATCH (u2:Usuario {id: toInteger(row.mencionado_id)})
+MERGE (u1)-[:MENTIONS {fecha_mencion: date(row.fecha_mencion), tipo_mencion: row.tipo_mencion, notificado: toBoolean(row.notificado)}]->(u2);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1JQpn-28CegY00UMgEHCWkgj2eHpWsiyO" AS row
+MATCH (u:Usuario {id: toInteger(row.usuario_id)})
+MATCH (p:Publicacion {id: toInteger(row.post_id)})
+MERGE (u)-[:POSTED {fecha_posteo: date(row.fecha_posteo), visibilidad: row.visibilidad, ubicacion: row.ubicacion}]->(p);
+
