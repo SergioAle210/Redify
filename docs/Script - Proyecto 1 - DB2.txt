@@ -120,3 +120,12 @@ MATCH (u:Usuario {id: toInteger(row.usuario_id)})
 MATCH (p:Publicacion {id: toInteger(row.post_id)})
 MERGE (u)-[:POSTED {fecha_posteo: date(row.fecha_posteo), visibilidad: row.visibilidad, ubicacion: row.ubicacion}]->(p);
 
+CALL apoc.meta.graph();
+
+MATCH (n)
+WHERE NOT (n)--()
+RETURN labels(n), count(n);
+
+MATCH (n)
+WHERE NOT (n)--()
+RETURN count(n);
