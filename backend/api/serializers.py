@@ -33,6 +33,11 @@ class NodeSearchSerializer(serializers.Serializer):
     limit = serializers.IntegerField(required=False, default=100)
 
 
+class AggregatedDataSerializer(serializers.Serializer):
+    label = serializers.CharField(required=True)  # Ej: "Persona"
+    property = serializers.CharField(required=True)  # Ej: "edad"
+
+
 class NodeUpdateSerializer(serializers.Serializer):
     # Ahora, para actualizar, se requiere que se especifique el label del nodo (por ejemplo, "Usuario")
     node_id = (

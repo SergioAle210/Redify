@@ -19,22 +19,27 @@ from .views import (
 )
 
 urlpatterns = [
+    # Listo
     path(
         "create-node-single-label/",
         create_node_single_label,
         name="create_node_single_label",
     ),
+    # Listo
     path(
         "create-node-multiple-labels/",
         create_node_multiple_labels,
         name="create_node_multiple_labels",
     ),
+    # Listo
     path(
         "create-node-with-properties/",
         create_node_with_properties,
         name="create_node_with_properties",
     ),
+    # Listo
     path("search-nodes/", search_nodes, name="search_nodes"),
+    # Listo
     path("get-aggregated-data/", get_aggregated_data, name="get_aggregated_data"),
     path(
         "update-node-properties/", update_node_properties, name="update_node_properties"

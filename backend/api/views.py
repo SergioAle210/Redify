@@ -6,6 +6,7 @@ from .serializers import (
     NodeCreateSingleSerializer,
     NodeCreateMultipleLabelsSerializer,
     NodeSearchSerializer,
+    AggregatedDataSerializer,
     NodeUpdateSerializer,
     MultipleNodesUpdateSerializer,
     NodeSingleUpdateSerializer,
@@ -262,66 +263,56 @@ def search_nodes(request):
     return Response(serializer.errors, status=400)
 
 
-@api_view(["GET"])
-def get_all_nodes(request):
-    query = "MATCH (n) RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
-    with neo4j_conn._driver.session() as session:
-        result = session.run(query)
-        nodes = [
-            {
-                "id": record["node_id"],
-                "labels": record["labels"],
-                "properties": record["properties"],
-            }
-            for record in result
-        ]
-    return Response({"message": f"Se encontraron {len(nodes)} nodos", "nodes": nodes})
-
-
 """
 Consultas agregadas
 """
 
 
-@api_view(["GET"])
+@api_view(["POST"])
 def get_aggregated_data(request):
     """
-    Endpoint para realizar consultas agregadas de datos.
-    Parámetros opcionales:
-      - label: Etiqueta de los nodos a consultar (por defecto "Usuario").
-      - propiedad: Nombre de la propiedad numérica sobre la que se realizará la agregación (por defecto "edad").
-    Ejemplo:
-      GET /api/get-aggregated-data/?label=Usuario&propiedad=edad
-    """
-    label = request.GET.get("label", "Usuario")
-    propiedad = request.GET.get("propiedad", "edad")
+    Endpoint para realizar consultas agregadas sobre los nodos.
+    Se espera recibir un JSON con:
+      - label: Etiqueta de los nodos a consultar (por ejemplo, "Persona").
+      - property: Nombre de la propiedad numérica a agregar (por ejemplo, "edad").
 
-    # Construir la consulta Cypher de agregación.
-    query = f"""
-    MATCH (n:{label})
-    RETURN 
-      COUNT(n) AS total_nodos, 
-      AVG(n.{propiedad}) AS promedio, 
-      MAX(n.{propiedad}) AS max_valor, 
-      MIN(n.{propiedad}) AS min_valor
+    La consulta se construye de forma dinámica:
+    MATCH (n:Persona)
+    RETURN COUNT(n) AS count, AVG(n.edad) AS avg, MAX(n.edad) AS max, MIN(n.edad) AS min, SUM(n.edad) AS sum
     """
+    serializer = AggregatedDataSerializer(data=request.data)
+    if serializer.is_valid():
+        label = serializer.validated_data["label"]
+        prop = serializer.validated_data["property"]
 
-    with neo4j_conn._driver.session() as session:
-        result = session.run(query)
-        record = result.single()
-        if record:
-            # Record contiene los valores agregados.
-            return Response(
-                {
-                    "message": f"Datos agregados para nodos con label '{label}' y propiedad '{propiedad}'",
-                    "total_nodos": record["total_nodos"],
-                    "promedio": record["promedio"],
-                    "max": record["max_valor"],
-                    "min": record["min_valor"],
-                }
-            )
-        else:
-            return Response({"error": "No se encontraron datos agregados."}, status=404)
+        query = f"""
+        MATCH (n:{label})
+        RETURN COUNT(n) AS count, 
+               AVG(n.{prop}) AS avg, 
+               MAX(n.{prop}) AS max, 
+               MIN(n.{prop}) AS min, 
+               SUM(n.{prop}) AS sum
+        """
+
+        with neo4j_conn._driver.session() as session:
+            result = session.run(query)
+            record = result.single()
+            if record:
+                return Response(
+                    {
+                        "message": f"Datos agregados para nodos con label '{label}' y propiedad '{prop}'",
+                        "count": record["count"],
+                        "avg": record["avg"],
+                        "max": record["max"],
+                        "min": record["min"],
+                        "sum": record["sum"],
+                    }
+                )
+            else:
+                return Response(
+                    {"error": "No se encontraron datos agregados."}, status=404
+                )
+    return Response(serializer.errors, status=400)
 
 
 """
