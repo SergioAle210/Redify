@@ -5,7 +5,6 @@ from .views import (
     create_node_with_properties,
     search_nodes,
     get_aggregated_data,
-    update_node_properties,
     update_multiple_nodes_properties,
     remove_single_node_properties,
     remove_multiple_nodes_properties,
