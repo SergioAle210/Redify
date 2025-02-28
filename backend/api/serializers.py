@@ -9,6 +9,20 @@ class NodeSerializer(serializers.Serializer):
     properties = serializers.DictField(child=serializers.CharField())
 
 
+class FilterItemSerializer(serializers.Serializer):
+    operator = serializers.ChoiceField(
+        choices=["=", "<", "<=", ">", ">=", "IN", "CONTAINS"]
+    )
+    value = serializers.JSONField()  # Permite un valor simple o una lista
+
+
+class NodeSearchSerializer(serializers.Serializer):
+    labels = serializers.ListField(child=serializers.CharField(), required=False)
+    # Ahora, cada filtro es un objeto con operator y value.
+    filters = serializers.DictField(child=FilterItemSerializer(), required=False)
+    limit = serializers.IntegerField(required=False, default=100)
+
+
 class NodeUpdateSerializer(serializers.Serializer):
     # Ahora, para actualizar, se requiere que se especifique el label del nodo (por ejemplo, "Usuario")
     node_id = (

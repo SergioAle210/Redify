@@ -3,8 +3,7 @@ from .views import (
     create_node_single_label,
     create_node_multiple_labels,
     create_node_with_properties,
-    get_single_node,
-    get_multiple_nodes,
+    search_nodes,
     get_aggregated_data,
     update_node_properties,
     update_multiple_nodes_properties,
@@ -35,8 +34,7 @@ urlpatterns = [
         create_node_with_properties,
         name="create_node_with_properties",
     ),
-    path("get-single-node/", get_single_node, name="get_single_node"),
-    path("get-multiple-nodes/", get_multiple_nodes, name="get_multiple_nodes"),
+    path("search-nodes/", search_nodes, name="search_nodes"),
     path("get-aggregated-data/", get_aggregated_data, name="get_aggregated_data"),
     path(
         "update-node-properties/", update_node_properties, name="update_node_properties"

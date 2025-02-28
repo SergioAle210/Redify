@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import (
     NodeSerializer,
+    NodeSearchSerializer,
     NodeUpdateSerializer,
     MultipleNodesUpdateSerializer,
     NodeSingleUpdateSerializer,
@@ -149,141 +150,118 @@ def create_node_with_properties(request):
     return Response(serializer.errors, status=400)
 
 
-"""
-Consultar un nodo por ID o label
-"""
+@api_view(["POST"])
+def search_nodes(request):
+    """
+    Endpoint para buscar nodos de forma dinámica en Neo4j.
+    Parámetros en el payload JSON:
+      - labels: Lista de etiquetas (ej: ["Usuario", "Cliente"])
+      - filters: Diccionario de filtros, donde cada clave es el nombre de la propiedad y el valor es un objeto con:
+            - operator: "=", "<", "<=", ">", ">=", "IN"
+            - value: Valor a comparar (puede ser simple o una lista)
+      - limit: Número máximo de nodos a retornar (por defecto 100)
+    """
+    serializer = NodeSearchSerializer(data=request.data)
+    if serializer.is_valid():
+        labels = serializer.validated_data.get("labels", [])
+        filters = serializer.validated_data.get("filters", {})
+        limit = serializer.validated_data.get("limit", 100)
 
+        # Construir la consulta MATCH
+        query = "MATCH (n"
+        if labels:
+            query += ":" + ":".join(labels)
+        query += ")"
 
-@api_view(["GET"])
-def get_single_node(request):
-    node_id = request.GET.get("id")
-    label = request.GET.get("label")
-
-    if not node_id and not label:
-        return Response(
-            {"error": "Se requiere un ID o una label para la búsqueda"}, status=400
-        )
-
-    # Si se proporciona un ID, buscamos por id; de lo contrario, por label.
-    if node_id:
-        query = "MATCH (n {id: $node_id}) RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
-        params = {"node_id": int(node_id)}
-    else:
-        query = f"MATCH (n:{label}) RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties LIMIT 1"
         params = {}
+        where_clauses = []
 
-    with neo4j_conn._driver.session() as session:
-        result = session.run(query, params)
-        nodo = result.single()
+        if filters:
+            for key, filter_item in filters.items():
+                operator = filter_item["operator"].upper()
+                value = filter_item["value"]
 
-        if nodo:
-            properties = nodo["properties"]
+                if operator == "IN":
+                    # Si el valor es una lista, la cláusula será:
+                    # ANY(x IN $<key> WHERE x IN [y IN n.<key> | trim(y)])
+                    if isinstance(value, list):
+                        where_clauses.append(
+                            f"ANY(x IN ${key} WHERE x IN [y IN n.{key} | trim(y)])"
+                        )
+                        params[key] = [str(v).strip() for v in value]
+                    else:
+                        where_clauses.append(f"${key} IN [y IN n.{key} | trim(y)]")
+                        params[key] = str(value).strip()
+                elif operator == "CONTAINS":
+                    if isinstance(value, list):
+                        # Verifica que para al menos un elemento y en la propiedad,
+                        # exista algún x en la lista de parámetros tal que y CONTAINS x
+                        where_clauses.append(
+                            f"ANY(y IN n.{key} WHERE ANY(x IN ${key} WHERE y CONTAINS x))"
+                        )
+                        params[key] = [str(v).strip() for v in value]
+                    else:
+                        where_clauses.append(
+                            f"ANY(y IN n.{key} WHERE y CONTAINS ${key})"
+                        )
+                        params[key] = str(value).strip()
 
-            # Función para convertir cualquier objeto con método isoformat o, en su defecto, usar str()
-            def convert_value(val):
-                if hasattr(val, "isoformat"):
+                else:
+                    where_clauses.append(f"n.{key} {operator} ${key}")
+                    # Intentar convertir a número (entero o float) si es posible, sino se queda como string.
                     try:
-                        return val.isoformat()
-                    except Exception:
-                        return str(val)
-                return val
+                        params[key] = int(value)
+                    except ValueError:
+                        try:
+                            params[key] = float(value)
+                        except ValueError:
+                            params[key] = value
 
-            # Convertir cada propiedad que tenga método isoformat a string
-            properties = {
-                key: convert_value(value) for key, value in properties.items()
-            }
+        if where_clauses:
+            query += " WHERE " + " AND ".join(where_clauses)
 
-            return Response(
-                {
-                    "message": "Nodo encontrado",
-                    "node": {
-                        "id": nodo["node_id"],
-                        "labels": nodo["labels"],
-                        "properties": properties,
-                    },
-                }
-            )
-        else:
-            return Response({"error": "Nodo no encontrado"}, status=404)
+        query += " RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
+        query += f" LIMIT {limit}"
 
+        nodes = []
+        with neo4j_conn._driver.session() as session:
+            result = session.run(query, params)
+            for record in result:
+                props = record["properties"]
+                # Convertir valores de fecha a string
+                for k, v in props.items():
+                    if hasattr(v, "isoformat"):
+                        try:
+                            props[k] = v.isoformat()
+                        except Exception:
+                            props[k] = str(v)
+                nodes.append(
+                    {
+                        "id": record["node_id"],
+                        "labels": record["labels"],
+                        "properties": props,
+                    }
+                )
 
-"""
-Consultar múltiples nodos
-"""
+        return Response(
+            {"message": f"Se encontraron {len(nodes)} nodos", "nodes": nodes}
+        )
+    return Response(serializer.errors, status=400)
 
 
 @api_view(["GET"])
-def get_multiple_nodes(request):
-    """
-    Endpoint para consultar múltiples nodos con filtros opcionales.
-    Parámetros opcionales:
-      - label o labels: Filtra por la etiqueta del nodo (por ejemplo, "Usuario" o "Usuario,Cliente").
-      - propiedad: Nombre de la propiedad a filtrar (por ejemplo, "nombre").
-      - valor: Valor de la propiedad a filtrar (por ejemplo, "Juan Pérez").
-      - fecha_property: Nombre de la propiedad de fecha (por ejemplo, "fecha_registro").
-      - fecha_value: Valor de la fecha a filtrar (por ejemplo, "2024-01-01").
-    """
-    # Obtener etiquetas: se pueden pasar en "labels" (coma separadas) o "label"
-    labels_param = request.GET.get("labels")
-    label_param = request.GET.get("label")
-    if labels_param:
-        labels_list = [l.strip() for l in labels_param.split(",")]
-    elif label_param:
-        labels_list = [label_param.strip()]
-    else:
-        labels_list = []
-
-    # Obtener otros filtros
-    propiedad = request.GET.get("propiedad")  # Ej: "nombre"
-    valor = request.GET.get("valor")  # Ej: "Juan Pérez"
-    fecha_property = request.GET.get("fecha_property")  # Ej: "fecha_registro"
-    fecha_value = request.GET.get("fecha_value")  # Ej: "2024-01-01"
-
-    # Construir la consulta Cypher
-    query = "MATCH (n"
-    if labels_list:
-        query += ":" + ":".join(labels_list)  # Ej: MATCH (n:Usuario:Cliente)
-    query += ")"
-
-    # Construir cláusula WHERE según los filtros
-    where_clauses = []
-    params = {}
-
-    if propiedad and valor:
-        where_clauses.append(f"n.{propiedad} = $valor")
-        params["valor"] = valor
-
-    if fecha_property and fecha_value:
-        # Usamos date($fecha_value) para convertir la cadena a fecha en Cypher
-        where_clauses.append(f"n.{fecha_property} = date($fecha_value)")
-        params["fecha_value"] = fecha_value
-
-    if where_clauses:
-        query += " WHERE " + " AND ".join(where_clauses)
-
-    query += " RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
-
-    # Ejecutar la consulta en Neo4j
-    nodes = []
+def get_all_nodes(request):
+    query = "MATCH (n) RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
     with neo4j_conn._driver.session() as session:
-        result = session.run(query, params)
-        for record in result:
-            props = record["properties"]
-            # Convertir posibles valores de fecha a string (ISO 8601)
-            for key, val in props.items():
-                if hasattr(val, "isoformat"):
-                    try:
-                        props[key] = val.isoformat()
-                    except Exception:
-                        props[key] = str(val)
-            nodes.append(
-                {
-                    "id": record["node_id"],
-                    "labels": record["labels"],
-                    "properties": props,
-                }
-            )
-
+        result = session.run(query)
+        nodes = [
+            {
+                "id": record["node_id"],
+                "labels": record["labels"],
+                "properties": record["properties"],
+            }
+            for record in result
+        ]
     return Response({"message": f"Se encontraron {len(nodes)} nodos", "nodes": nodes})
 
 
