@@ -4,7 +4,7 @@ CREATE (:Reel {
     duracion: toFloat(row.duracion),
     fecha_publicacion: date(row.fecha_publicacion),
     likes: toInteger(row.likes),
-    hashtags: split(row.hashtags, ",")
+    hashtags: split(row.hashtags, ";")
 });
 
 LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1BwM709fZKJkY6gvu5IXPmXXG2PnxpFRY" AS row
@@ -22,7 +22,7 @@ CREATE (:Comentario {
     contenido: row.contenido,
     fecha_comentario: date(row.fecha_comentario),
     likes: toInteger(row.likes),
-    reacciones: split(row.reacciones, ",")
+    reacciones: split(row.reacciones, ";")
 });
 
 LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1OMW2DuEuj6iZMvwm9dhfvAAsvS9m5jJV" AS row
@@ -40,7 +40,7 @@ CREATE (:Usuario {
     nombre: row.nombre,
     email: row.email,
     fecha_registro: date(row.fecha_registro),
-    intereses: split(row.intereses, ",")
+    intereses: split(row.intereses, ";")
 });
 
 LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1vpiTTf5gKJaYTO8nH6D31tXmtJjCELuL" AS row
