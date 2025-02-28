@@ -41,6 +41,7 @@ urlpatterns = [
     path("search-nodes/", search_nodes, name="search_nodes"),
     # Listo
     path("get-aggregated-data/", get_aggregated_data, name="get_aggregated_data"),
+    # Listo
     path(
         "update-node-properties/", update_node_properties, name="update_node_properties"
     ),
