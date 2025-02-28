@@ -1,12 +1,22 @@
 from rest_framework import serializers
 
 
+class NodeCreateSingleSerializer(serializers.Serializer):
+    label = serializers.CharField(required=False)
+
+
+class NodeCreateMultipleLabelsSerializer(serializers.Serializer):
+    labels = serializers.ListField(
+        child=serializers.CharField(), required=False  # Para múltiples etiquetas
+    )
+
+
 class NodeSerializer(serializers.Serializer):
     label = serializers.CharField(required=False)
     labels = serializers.ListField(
         child=serializers.CharField(), required=False  # Para múltiples etiquetas
     )
-    properties = serializers.DictField(child=serializers.CharField())
+    properties = serializers.DictField(child=serializers.JSONField())
 
 
 class FilterItemSerializer(serializers.Serializer):

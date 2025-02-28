@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .serializers import (
     NodeSerializer,
+    NodeCreateSingleSerializer,
+    NodeCreateMultipleLabelsSerializer,
     NodeSearchSerializer,
     NodeUpdateSerializer,
     MultipleNodesUpdateSerializer,
@@ -15,9 +17,11 @@ from .serializers import (
     RelationshipRemoveSerializer,
     MultipleRelationshipRemoveSerializer,
     NodeDeleteSerializer,
+    MultipleNodesDeleteSerializer,
 )
 from .neo4j_connection import neo4j_conn
 import datetime
+from neo4j.exceptions import Neo4jError
 
 """
 Crear un nodo con un solo label
@@ -26,7 +30,14 @@ Crear un nodo con un solo label
 
 @api_view(["POST"])
 def create_node_single_label(request):
-    serializer = NodeSerializer(data=request.data)
+    """
+    Ejemplo de JSON esperado:
+    {
+        "label": "Persona"
+    }
+    """
+
+    serializer = NodeCreateSingleSerializer(data=request.data)
     if serializer.is_valid():
         label = serializer.validated_data["label"]
         query = f"CREATE (n:{label}) RETURN id(n) AS node_id, labels(n) AS labels"
@@ -59,7 +70,14 @@ Crear un nodo con múltiples labels
 # 2️⃣ Crear un nodo con múltiples labels
 @api_view(["POST"])
 def create_node_multiple_labels(request):
-    serializer = NodeSerializer(data=request.data)
+    """
+    Ejemplo de JSON esperado:
+    {
+        "labels": ["Persona", "Cliente"]
+    }
+    """
+
+    serializer = NodeCreateMultipleLabelsSerializer(data=request.data)
     if serializer.is_valid():
         labels = serializer.validated_data.get("labels", [])  # Obtener etiquetas
 
@@ -127,7 +145,7 @@ def create_node_with_properties(request):
 
         # Construir la cadena de propiedades para Cypher
         properties_string = ", ".join(f"n.{key} = ${key}" for key in properties.keys())
-        query = f"CREATE (n:{label}) SET {properties_string} RETURN id(n) AS id, labels(n) AS labels, properties(n) AS properties"
+        query = f"CREATE (n:{label}) SET {properties_string} RETURN id(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
 
         with neo4j_conn._driver.session() as session:
             result = session.run(query, properties)
@@ -167,7 +185,6 @@ def search_nodes(request):
         filters = serializer.validated_data.get("filters", {})
         limit = serializer.validated_data.get("limit", 100)
 
-        # Construir la consulta MATCH
         query = "MATCH (n"
         if labels:
             query += ":" + ":".join(labels)
@@ -182,20 +199,13 @@ def search_nodes(request):
                 value = filter_item["value"]
 
                 if operator == "IN":
-                    # Si el valor es una lista, la cláusula será:
-                    # ANY(x IN $<key> WHERE x IN [y IN n.<key> | trim(y)])
-                    if isinstance(value, list):
-                        where_clauses.append(
-                            f"ANY(x IN ${key} WHERE x IN [y IN n.{key} | trim(y)])"
-                        )
-                        params[key] = [str(v).strip() for v in value]
-                    else:
-                        where_clauses.append(f"${key} IN [y IN n.{key} | trim(y)]")
-                        params[key] = str(value).strip()
+                    # Si el valor no es una lista, lo convertimos a lista
+                    if not isinstance(value, list):
+                        value = [value]
+                    where_clauses.append(f"ANY(x IN n.{key} WHERE x IN ${key})")
+                    params[key] = [str(v).strip() for v in value]
                 elif operator == "CONTAINS":
                     if isinstance(value, list):
-                        # Verifica que para al menos un elemento y en la propiedad,
-                        # exista algún x en la lista de parámetros tal que y CONTAINS x
                         where_clauses.append(
                             f"ANY(y IN n.{key} WHERE ANY(x IN ${key} WHERE y CONTAINS x))"
                         )
@@ -205,10 +215,8 @@ def search_nodes(request):
                             f"ANY(y IN n.{key} WHERE y CONTAINS ${key})"
                         )
                         params[key] = str(value).strip()
-
                 else:
                     where_clauses.append(f"n.{key} {operator} ${key}")
-                    # Intentar convertir a número (entero o float) si es posible, sino se queda como string.
                     try:
                         params[key] = int(value)
                     except ValueError:
@@ -219,7 +227,6 @@ def search_nodes(request):
 
         if where_clauses:
             query += " WHERE " + " AND ".join(where_clauses)
-
         query += " RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
         query += f" LIMIT {limit}"
 
@@ -228,7 +235,6 @@ def search_nodes(request):
             result = session.run(query, params)
             for record in result:
                 props = record["properties"]
-                # Convertir valores de fecha a string
                 for k, v in props.items():
                     if hasattr(v, "isoformat"):
                         try:
@@ -444,7 +450,6 @@ def remove_single_node_properties(request):
     REMOVE n.edad, n.ocupacion
     RETURN elementId(n) AS node_element_id, labels(n) AS labels, properties(n) AS properties
     """
-    from neo4j.exceptions import Neo4jError
 
     serializer = NodePropertiesRemoveSerializer(data=request.data)
     if serializer.is_valid():
@@ -504,7 +509,6 @@ def remove_multiple_nodes_properties(request):
     REMOVE n.edad, n.ocupacion
     RETURN count(n) AS updatedCount
     """
-    from neo4j.exceptions import Neo4jError
 
     serializer = MultipleNodesPropertiesRemoveSerializer(data=request.data)
     if serializer.is_valid():
@@ -535,11 +539,6 @@ def remove_multiple_nodes_properties(request):
             return Response({"error": str(e)}, status=500)
     return Response(serializer.errors, status=400)
 
-
-from rest_framework.response import Response
-from rest_framework.decorators import api_view
-from .serializers import RelationshipCreationSerializer
-from .neo4j_connection import neo4j_conn
 
 """
 Crear una relación entre dos nodos existentes
@@ -916,7 +915,6 @@ def delete_multiple_nodes(request):
     DETACH DELETE n
     RETURN count(n) AS deletedCount
     """
-    from .serializers import MultipleNodesDeleteSerializer
 
     serializer = MultipleNodesDeleteSerializer(data=request.data)
     if serializer.is_valid():
