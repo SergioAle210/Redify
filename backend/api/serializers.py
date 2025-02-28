@@ -38,17 +38,6 @@ class AggregatedDataSerializer(serializers.Serializer):
     property = serializers.CharField(required=True)  # Ej: "edad"
 
 
-class NodeUpdateSerializer(serializers.Serializer):
-    # Ahora, para actualizar, se requiere que se especifique el label del nodo (por ejemplo, "Usuario")
-    node_id = (
-        serializers.CharField()
-    )  # Se espera que sea la propiedad 'id' del nodo (no el elementId)
-    properties = serializers.DictField(required=False)
-    label = serializers.CharField(
-        required=True
-    )  # Label del nodo, obligatorio para este update
-
-
 class MultipleNodesUpdateSerializer(serializers.Serializer):
     node_ids = serializers.ListField(
         child=serializers.CharField(),

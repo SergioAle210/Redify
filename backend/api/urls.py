@@ -43,9 +43,6 @@ urlpatterns = [
     path("get-aggregated-data/", get_aggregated_data, name="get_aggregated_data"),
     # Listo
     path(
-        "update-node-properties/", update_node_properties, name="update_node_properties"
-    ),
-    path(
         "update-multiple-nodes-properties/",
         update_multiple_nodes_properties,
         name="update_multiple_nodes_properties",

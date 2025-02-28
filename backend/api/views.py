@@ -7,7 +7,6 @@ from .serializers import (
     NodeCreateMultipleLabelsSerializer,
     NodeSearchSerializer,
     AggregatedDataSerializer,
-    NodeUpdateSerializer,
     MultipleNodesUpdateSerializer,
     NodeSingleUpdateSerializer,
     NodePropertiesRemoveSerializer,
@@ -316,74 +315,8 @@ def get_aggregated_data(request):
 
 
 """
-Agregar y actualizar propiedades de nodos
+Agregar y actualizar propiedades de uno o varios nodos
 """
-
-
-@api_view(["PUT"])
-def update_node_properties(request):
-    """
-    Endpoint para actualizar (agregar o modificar) propiedades de un nodo existente,
-    buscando el nodo por su label y su propiedad 'id'.
-
-    Se espera recibir un JSON con:
-      - node_id: El valor de la propiedad 'id' del nodo (no el elementId).
-      - properties: Un diccionario con las propiedades a agregar o actualizar.
-      - label: El label del nodo (por ejemplo, "Usuario").
-    """
-    serializer = NodeUpdateSerializer(data=request.data)
-    if serializer.is_valid():
-        # Convertir node_id a entero
-        try:
-            node_id_int = int(serializer.validated_data["node_id"])
-        except ValueError:
-            return Response({"error": "node_id debe ser un número entero."}, status=400)
-
-        new_properties = serializer.validated_data.get("properties", {})
-        label = serializer.validated_data["label"]
-
-        # Construir la consulta Cypher usando el label y la propiedad "id"
-        query = f"""
-        MATCH (n:{label})
-        WHERE n.id = $node_id
-        SET n += $props
-        RETURN n
-        """
-        params = {"node_id": node_id_int, "props": new_properties}
-
-        # (Opcional) Imprimir query y parámetros para depuración
-        print("Query:", query)
-        print("Params:", params)
-
-        with neo4j_conn._driver.session() as session:
-            result = session.run(query, params)
-            record = result.single()
-
-            if record:
-                node_data = record["n"]
-                updated_props = {}
-                for key, val in node_data.items():
-                    if hasattr(val, "isoformat"):
-                        try:
-                            updated_props[key] = val.isoformat()
-                        except Exception:
-                            updated_props[key] = str(val)
-                    else:
-                        updated_props[key] = val
-
-                return Response(
-                    {
-                        "message": "Nodo actualizado correctamente",
-                        "node": {
-                            "id": node_data.get("id"),
-                            "labels": list(node_data.labels),
-                            "properties": updated_props,
-                        },
-                    }
-                )
-            else:
-                return Response({"error": "Nodo no encontrado"}, status=404)
-    return Response(serializer.errors, status=400)
 
 
 @api_view(["PUT"])
