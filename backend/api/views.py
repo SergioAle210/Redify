@@ -217,13 +217,20 @@ def search_nodes(request):
                         params[key] = str(value).strip()
                 else:
                     where_clauses.append(f"n.{key} {operator} ${key}")
-                    try:
-                        params[key] = int(value)
-                    except ValueError:
+                    # Si la propiedad es de fecha (por ejemplo, empieza con "fecha_"), convertir el valor a fecha.
+                    if key.lower().startswith("fecha_"):
                         try:
-                            params[key] = float(value)
+                            params[key] = datetime.date.fromisoformat(value)
                         except ValueError:
                             params[key] = value
+                    else:
+                        try:
+                            params[key] = int(value)
+                        except ValueError:
+                            try:
+                                params[key] = float(value)
+                            except ValueError:
+                                params[key] = value
 
         if where_clauses:
             query += " WHERE " + " AND ".join(where_clauses)
