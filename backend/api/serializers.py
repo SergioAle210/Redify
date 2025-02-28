@@ -50,10 +50,17 @@ class NodeUpdateSerializer(serializers.Serializer):
 
 
 class MultipleNodesUpdateSerializer(serializers.Serializer):
-    label = serializers.CharField(required=True)  # Por ejemplo: "Persona"
+    node_ids = serializers.ListField(
+        child=serializers.CharField(),
+        required=True,
+        help_text="Lista de valores de la propiedad 'id' de los nodos.",
+    )
+    label = serializers.CharField(
+        required=True, help_text="Label de los nodos, por ejemplo, 'Usuario'."
+    )
     properties = serializers.DictField(
-        required=True
-    )  # Propiedades a agregar/actualizar
+        required=True, help_text="Diccionario de propiedades a agregar/actualizar."
+    )
 
 
 class NodeSingleUpdateSerializer(serializers.Serializer):

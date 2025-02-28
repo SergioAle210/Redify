@@ -389,25 +389,45 @@ def update_node_properties(request):
 @api_view(["PUT"])
 def update_multiple_nodes_properties(request):
     """
-    Endpoint para actualizar múltiples nodos de un mismo label,
-    agregando o actualizando las propiedades enviadas.
+    Endpoint para actualizar (agregar o modificar) propiedades en múltiples nodos,
+    usando el label y una lista de valores de la propiedad 'id'.
 
-    Se espera un JSON con:
-      - label: El label de los nodos a actualizar (por ejemplo, "Persona").
-      - properties: Un diccionario con las propiedades a agregar/actualizar.
+    Se espera un JSON como:
+    {
+        "node_ids": ["1", "2", "3"],
+        "label": "Usuario",
+        "properties": {
+            "edad": 35,
+            "activo": true
+        }
+    }
+
+    La consulta ejecutada es:
+
+    MATCH (n:Usuario)
+    WHERE n.id IN $node_ids
+    SET n += $props
+    RETURN count(n) AS updatedCount
     """
     serializer = MultipleNodesUpdateSerializer(data=request.data)
     if serializer.is_valid():
+        node_ids = serializer.validated_data["node_ids"]
         label = serializer.validated_data["label"]
-        properties = serializer.validated_data["properties"]
+        new_properties = serializer.validated_data["properties"]
 
-        # Construir la consulta Cypher
+        # Convertir todos los node_ids a enteros (si la propiedad se almacena como número)
+        try:
+            node_ids_int = [int(node_id) for node_id in node_ids]
+        except ValueError:
+            node_ids_int = node_ids  # Si falla la conversión, se mantienen como strings
+
         query = f"""
         MATCH (n:{label})
+        WHERE n.id IN $node_ids
         SET n += $props
         RETURN count(n) AS updatedCount
         """
-        params = {"props": properties}
+        params = {"node_ids": node_ids_int, "props": new_properties}
 
         with neo4j_conn._driver.session() as session:
             result = session.run(query, params)
@@ -420,9 +440,7 @@ def update_multiple_nodes_properties(request):
                     }
                 )
             else:
-                return Response(
-                    {"error": "No se pudieron actualizar los nodos"}, status=500
-                )
+                return Response({"error": "Error al actualizar nodos"}, status=500)
     return Response(serializer.errors, status=400)
 
 
