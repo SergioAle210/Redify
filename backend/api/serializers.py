@@ -52,14 +52,6 @@ class MultipleNodesUpdateSerializer(serializers.Serializer):
     )
 
 
-class NodeSingleUpdateSerializer(serializers.Serializer):
-    node_id = serializers.CharField()  # Se espera que sea la propiedad 'id' del nodo
-    label = serializers.CharField(required=True)  # Por ejemplo, "Persona"
-    properties = serializers.DictField(
-        required=True
-    )  # Propiedades a actualizar; se espera que tenga al menos 1 propiedad
-
-
 class NodePropertiesRemoveSerializer(serializers.Serializer):
     node_id = (
         serializers.CharField()

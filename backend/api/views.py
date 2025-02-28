@@ -8,7 +8,6 @@ from .serializers import (
     NodeSearchSerializer,
     AggregatedDataSerializer,
     MultipleNodesUpdateSerializer,
-    NodeSingleUpdateSerializer,
     NodePropertiesRemoveSerializer,
     MultipleNodesPropertiesRemoveSerializer,
     RelationshipCreationSerializer,
