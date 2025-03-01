@@ -105,4 +105,12 @@ class MultipleNodesDeleteWithChecksSerializer(serializers.Serializer):
         child=serializers.CharField(),
         required=True,
         help_text="Lista de valores de la propiedad 'id' de los nodos a eliminar",
-    )   
+    )
+
+
+class RelationshipBulkDeleteSerializer(serializers.Serializer):
+    relationships = serializers.ListField(
+        child=serializers.DictField(),
+        required=True,
+        help_text="Lista de relaciones a eliminar. Cada objeto debe incluir: label1, node1_id, label2, node2_id, rel_type.",
+    )

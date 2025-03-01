@@ -13,6 +13,7 @@ from .serializers import (
     RelationshipBulkUpdateSerializer,
     RelationshipBulkRemoveSerializer,
     MultipleNodesDeleteWithChecksSerializer,
+    RelationshipBulkDeleteSerializer,
 )
 from .neo4j_connection import neo4j_conn
 import datetime
@@ -736,6 +737,87 @@ def delete_multiple_nodes_with_checks(request):
         response_data = {
             "message": "Proceso de eliminación completado.",
             "deletedCount": deleted_count,
+        }
+        if errors:
+            response_data["errors"] = errors
+        return Response(response_data)
+    return Response(serializer.errors, status=400)
+
+
+@api_view(["DELETE"])
+def delete_bulk_relationships(request):
+    """
+    Endpoint para eliminar (borrar) de forma masiva una o más relaciones.
+
+    Se espera recibir un JSON de la siguiente forma:
+    {
+      "relationships": [
+        {
+          "label1": "Persona",
+          "node1_id": 1,
+          "label2": "Persona",
+          "node2_id": 2,
+          "rel_type": "AMIGOS"
+        },
+        {
+          "label1": "Persona",
+          "node1_id": 2,
+          "label2": "Empresa",
+          "node2_id": 100,
+          "rel_type": "TRABAJA_EN"
+        }
+      ]
+    }
+
+    Para cada objeto se ejecuta la siguiente consulta:
+
+    MATCH (a:<label1> {id: $node1_id}), (b:<label2> {id: $node2_id})
+    MATCH (a)-[r:<rel_type>]->(b)
+    DELETE r
+    RETURN count(r) AS deletedCount
+
+    Se acumulan errores si no se encuentra la relación o alguno de los nodos.
+    """
+    serializer = RelationshipBulkDeleteSerializer(data=request.data)
+    if serializer.is_valid():
+        rels = serializer.validated_data["relationships"]
+        total_deleted = 0
+        errors = []
+
+        with neo4j_conn._driver.session() as session:
+            for rel in rels:
+                label1 = rel.get("label1")
+                label2 = rel.get("label2")
+                node1_id = rel.get("node1_id")
+                node2_id = rel.get("node2_id")
+                rel_type = rel.get("rel_type")
+
+                query = f"""
+                MATCH (a:{label1} {{id: $node1_id}}), (b:{label2} {{id: $node2_id}})
+                MATCH (a)-[r:{rel_type}]->(b)
+                DELETE r
+                RETURN count(r) AS deletedCount
+                """
+                params = {"node1_id": node1_id, "node2_id": node2_id}
+
+                result = session.run(query, params)
+                record = result.single()
+                if record is not None:
+                    count = record["deletedCount"]
+                    if count == 0:
+                        errors.append(
+                            f"No se encontró la relación {rel_type} entre {label1} con id {node1_id} y {label2} con id {node2_id}."
+                        )
+                    else:
+                        total_deleted += count
+                else:
+                    errors.append(
+                        f"Error al procesar la relación {rel_type} entre {label1} con id {node1_id} y {label2} con id {node2_id}."
+                    )
+
+        response_data = {
+            "message": "Proceso de eliminación completado.",
+            "deletedCount": total_deleted,
         }
         if errors:
             response_data["errors"] = errors
