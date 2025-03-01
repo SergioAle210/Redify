@@ -10,8 +10,7 @@ from .views import (
     create_relationship,
     update_bulk_relationships,
     remove_bulk_relationships,
-    delete_single_node,
-    delete_multiple_nodes,
+    delete_multiple_nodes_with_checks,
 )
 
 urlpatterns = [
@@ -62,6 +61,9 @@ urlpatterns = [
         remove_bulk_relationships,
         name="remove_bulk_relationship",
     ),
-    path("delete-single-node/", delete_single_node, name="delete_single_node"),
-    path("delete-multiple-nodes/", delete_multiple_nodes, name="delete_multiple_nodes"),
+    path(
+        "delete-multiple-nodes/",
+        delete_multiple_nodes_with_checks,
+        name="delete_multiple_nodes_with_checks",
+    ),
 ]

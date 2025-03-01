@@ -97,14 +97,12 @@ class RelationshipBulkRemoveSerializer(serializers.Serializer):
     )
 
 
-class NodeDeleteSerializer(serializers.Serializer):
-    node_id = serializers.CharField(
-        required=True
-    )  # Valor de la propiedad "id" del nodo
+class MultipleNodesDeleteWithChecksSerializer(serializers.Serializer):
     label = serializers.CharField(
-        required=True
-    )  # Label del nodo (por ejemplo, "Persona")
-
-
-class MultipleNodesDeleteSerializer(serializers.Serializer):
-    label = serializers.CharField(required=True)
+        required=True, help_text="Label de los nodos (ej: 'Persona')"
+    )
+    node_ids = serializers.ListField(
+        child=serializers.CharField(),
+        required=True,
+        help_text="Lista de valores de la propiedad 'id' de los nodos a eliminar",
+    )   

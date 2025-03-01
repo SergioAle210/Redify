@@ -12,8 +12,7 @@ from .serializers import (
     RelationshipCreationSerializer,
     RelationshipBulkUpdateSerializer,
     RelationshipBulkRemoveSerializer,
-    NodeDeleteSerializer,
-    MultipleNodesDeleteSerializer,
+    MultipleNodesDeleteWithChecksSerializer,
 )
 from .neo4j_connection import neo4j_conn
 import datetime
@@ -674,89 +673,71 @@ def remove_bulk_relationships(request):
 
 
 @api_view(["DELETE"])
-def delete_single_node(request):
+def delete_multiple_nodes_with_checks(request):
     """
-    Endpoint para eliminar un nodo individual,
-    verificando primero si el nodo tiene relaciones.
+    Endpoint para eliminar uno o más nodos verificando que:
+      - El nodo exista.
+      - El nodo NO tenga relaciones (de lo contrario, no se elimina).
+
     Se espera recibir un JSON:
     {
-        "node_id": "1",
-        "label": "Persona"
+        "label": "Persona",
+        "node_ids": ["1", "2", "3"]
     }
+
+    Para cada nodo:
+      - Si no se encuentra, se reporta error.
+      - Si tiene relaciones, se reporta error indicando que no se puede eliminar.
+      - Si no tiene relaciones, se elimina.
+
+    Se retorna la cantidad de nodos eliminados y una lista de errores (si los hay).
     """
-    serializer = NodeDeleteSerializer(data=request.data)
+    serializer = MultipleNodesDeleteWithChecksSerializer(data=request.data)
     if serializer.is_valid():
-        node_id = serializer.validated_data["node_id"]
         label = serializer.validated_data["label"]
+        node_ids = serializer.validated_data["node_ids"]
+        deleted_count = 0
+        errors = []
+
+        # Convertir los node_ids a enteros, si la propiedad "id" es numérica
         try:
-            node_id_int = int(node_id)
+            node_ids_int = [int(nid) for nid in node_ids]
         except ValueError:
-            node_id_int = node_id
-
-        # Primero, verificar si el nodo tiene relaciones
-        query_check = f"""
-        MATCH (n:{label} {{ id: $node_id }})
-        OPTIONAL MATCH (n)-[r]-()
-        RETURN n, count(r) AS relCount
-        """
-        params = {"node_id": node_id_int}
+            node_ids_int = node_ids  # Si falla la conversión, se usan como string
 
         with neo4j_conn._driver.session() as session:
-            result = session.run(query_check, params)
-            record = result.single()
-            if record is None or record["n"] is None:
-                return Response({"error": "Nodo no encontrado"}, status=404)
-            if record["relCount"] > 0:
-                return Response(
-                    {"error": "El nodo cuenta con relaciones y no puede ser eliminado"},
-                    status=400,
-                )
+            for nid in node_ids_int:
+                params = {"node_id": nid}
+                # Verificar si el nodo existe y cuántas relaciones tiene
+                query_check = f"""
+                MATCH (n:{label} {{ id: $node_id }})
+                OPTIONAL MATCH (n)-[r]-()
+                RETURN n, count(r) AS relCount
+                """
+                result = session.run(query_check, params)
+                record = result.single()
+                if record is None or record["n"] is None:
+                    errors.append(f"Nodo con id {nid} no encontrado.")
+                    continue
+                if record["relCount"] > 0:
+                    errors.append(
+                        f"Nodo con id {nid} no puede ser eliminado porque tiene relaciones."
+                    )
+                    continue
 
-            # Si no tiene relaciones, se procede a eliminarlo
-            query_delete = f"""
-            MATCH (n:{label} {{ id: $node_id }})
-            DELETE n
-            """
-            session.run(query_delete, params)
-            return Response({"message": "Nodo eliminado correctamente"})
-    return Response(serializer.errors, status=400)
+                # Si no tiene relaciones, eliminar el nodo
+                query_delete = f"""
+                MATCH (n:{label} {{ id: $node_id }})
+                DELETE n
+                """
+                session.run(query_delete, params)
+                deleted_count += 1
 
-
-@api_view(["DELETE"])
-def delete_multiple_nodes(request):
-    """
-    Endpoint para eliminar múltiples nodos de un label específico.
-    Se usa DETACH DELETE para eliminar también las relaciones.
-    Se espera recibir un JSON:
-    {
-        "label": "Persona"
-    }
-    La consulta se ejecutará como:
-    MATCH (n:Persona)
-    DETACH DELETE n
-    RETURN count(n) AS deletedCount
-    """
-
-    serializer = MultipleNodesDeleteSerializer(data=request.data)
-    if serializer.is_valid():
-        label = serializer.validated_data["label"]
-        query = f"""
-        MATCH (n:{label})
-        WITH n, count(n) AS total
-        DETACH DELETE n
-        RETURN total AS deletedCount
-        """
-        with neo4j_conn._driver.session() as session:
-            result = session.run(query)
-            record = result.single()
-            if record is not None:
-                return Response(
-                    {
-                        "message": f"Se eliminaron {record['deletedCount']} nodos con label '{label}'"
-                    }
-                )
-            else:
-                return Response(
-                    {"error": "No se pudieron eliminar los nodos"}, status=500
-                )
+        response_data = {
+            "message": "Proceso de eliminación completado.",
+            "deletedCount": deleted_count,
+        }
+        if errors:
+            response_data["errors"] = errors
+        return Response(response_data)
     return Response(serializer.errors, status=400)
