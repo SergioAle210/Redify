@@ -88,24 +88,13 @@ class RelationshipBulkUpdateSerializer(serializers.Serializer):
     )
 
 
-class RelationshipRemoveSerializer(serializers.Serializer):
-    label1 = serializers.CharField(required=True)  # Ej: "Persona"
-    node1_id = serializers.CharField(
-        required=True
-    )  # Valor de la propiedad 'id' del primer nodo
-    label2 = serializers.CharField(required=True)  # Ej: "Empresa"
-    node2_id = serializers.CharField(
-        required=True
-    )  # Valor de la propiedad 'id' del segundo nodo
-    rel_type = serializers.CharField(required=True)  # Ej: "TRABAJA_EN"
-    properties = serializers.ListField(
-        child=serializers.CharField(), required=True
-    )  # Lista de propiedades a eliminar
-
-
-class MultipleRelationshipRemoveSerializer(serializers.Serializer):
-    rel_type = serializers.CharField(required=True)  # Ej: "TRABAJA_EN"
-    properties = serializers.ListField(child=serializers.CharField(), required=True)
+class RelationshipBulkRemoveSerializer(serializers.Serializer):
+    relationships = serializers.ListField(
+        child=serializers.DictField(),
+        required=True,
+        help_text="Lista de objetos que definen cada relación. Cada objeto debe incluir: "
+        "label1, node1_id, label2, node2_id, rel_type, y una lista 'properties' de nombres de propiedades a eliminar.",
+    )
 
 
 class NodeDeleteSerializer(serializers.Serializer):

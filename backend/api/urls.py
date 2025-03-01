@@ -9,8 +9,7 @@ from .views import (
     remove_multiple_nodes_properties,
     create_relationship,
     update_bulk_relationships,
-    remove_single_relationship_properties,
-    remove_multiple_relationships_properties,
+    remove_bulk_relationships,
     delete_single_node,
     delete_multiple_nodes,
 )
@@ -57,15 +56,11 @@ urlpatterns = [
         update_bulk_relationships,
         name="update_bulk_relationships",
     ),
+    # Listo
     path(
-        "remove-single-relationship-properties/",
-        remove_single_relationship_properties,
-        name="remove_single_relationship_properties",
-    ),
-    path(
-        "remove-multiple-relationship-properties/",
-        remove_multiple_relationships_properties,
-        name="remove_multiple_relationships_properties",
+        "remove-bulk-relationship/",
+        remove_bulk_relationships,
+        name="remove_bulk_relationship",
     ),
     path("delete-single-node/", delete_single_node, name="delete_single_node"),
     path("delete-multiple-nodes/", delete_multiple_nodes, name="delete_multiple_nodes"),

@@ -11,8 +11,7 @@ from .serializers import (
     MultipleNodesPropertiesRemoveSerializer,
     RelationshipCreationSerializer,
     RelationshipBulkUpdateSerializer,
-    RelationshipRemoveSerializer,
-    MultipleRelationshipRemoveSerializer,
+    RelationshipBulkRemoveSerializer,
     NodeDeleteSerializer,
     MultipleNodesDeleteSerializer,
 )
@@ -587,120 +586,90 @@ def update_bulk_relationships(request):
     return Response(serializer.errors, status=400)
 
 
-"""
-Eliminar propiedades de una relación entre dos nodos y validar que al menos una propiedad sea proporcionada.
-"""
-
-
 @api_view(["PUT"])
-def remove_single_relationship_properties(request):
+def remove_bulk_relationships(request):
     """
-    Elimina (REMOVE) una o más propiedades de una relación específica entre dos nodos.
+    Endpoint para eliminar (remover) propiedades de múltiples relaciones de forma masiva.
 
-    Se espera recibir un JSON:
+    Se espera recibir un JSON con la siguiente estructura:
     {
-        "label1": "Persona",
-        "node1_id": "1",
-        "label2": "Empresa",
-        "node2_id": "100",
-        "rel_type": "TRABAJA_EN",
-        "properties": ["cargo", "fechaInicio"]
-    }
-
-    La consulta Cypher se ejecuta como:
-    MATCH (n1:Persona { id: $node1_id })-[r:TRABAJA_EN]->(n2:Empresa { id: $node2_id })
-    REMOVE r.cargo, r.fechaInicio
-    RETURN elementId(r) AS rel_id, properties(r) AS rel_properties
-    """
-    serializer = RelationshipRemoveSerializer(data=request.data)
-    if serializer.is_valid():
-        data = serializer.validated_data
-        label1 = data["label1"]
-        label2 = data["label2"]
-        rel_type = data["rel_type"]
-
-        # Convertir node ids a entero si se almacenan como números
-        try:
-            node1_id = int(data["node1_id"])
-            node2_id = int(data["node2_id"])
-        except ValueError:
-            node1_id = data["node1_id"]
-            node2_id = data["node2_id"]
-
-        props_to_remove = data["properties"]
-        remove_clause = ", ".join(f"r.{prop}" for prop in props_to_remove)
-
-        query = f"""
-        MATCH (n1:{label1} {{ id: $node1_id }})-[r:{rel_type}]->(n2:{label2} {{ id: $node2_id }})
-        REMOVE {remove_clause}
-        RETURN elementId(r) AS rel_id, properties(r) AS rel_properties
-        """
-        params = {
-            "node1_id": node1_id,
-            "node2_id": node2_id,
+      "relationships": [
+        {
+          "label1": "Persona",
+          "node1_id": 1,
+          "label2": "Empresa",
+          "node2_id": 100,
+          "rel_type": "TRABAJA_EN",
+          "properties": ["cargo", "fechaInicio"]
+        },
+        {
+          "label1": "Persona",
+          "node1_id": 2,
+          "label2": "Empresa",
+          "node2_id": 101,
+          "rel_type": "TRABAJA_EN",
+          "properties": ["cargo"]
         }
-
-        with neo4j_conn._driver.session() as session:
-            result = session.run(query, params)
-            record = result.single()
-            if record:
-                return Response(
-                    {
-                        "message": "Propiedades eliminadas de la relación",
-                        "relationship": {
-                            "id": record["rel_id"],
-                            "properties": record["rel_properties"],
-                        },
-                    }
-                )
-            else:
-                return Response({"error": "Relación no encontrada"}, status=404)
-    return Response(serializer.errors, status=400)
-
-
-@api_view(["PUT"])
-def remove_multiple_relationships_properties(request):
-    """
-    Elimina (REMOVE) una o más propiedades de todas las relaciones de un tipo específico.
-
-    Se espera recibir un JSON:
-    {
-        "rel_type": "TRABAJA_EN",
-        "properties": ["cargo", "fechaInicio"]
+      ]
     }
 
-    La consulta Cypher se ejecuta como:
-    MATCH ()-[r:TRABAJA_EN]->()
-    REMOVE r.cargo, r.fechaInicio
-    RETURN count(r) AS updatedCount
-    """
-    serializer = MultipleRelationshipRemoveSerializer(data=request.data)
-    if serializer.is_valid():
-        data = serializer.validated_data
-        rel_type = data["rel_type"]
-        props_to_remove = data["properties"]
-        remove_clause = ", ".join(f"r.{prop}" for prop in props_to_remove)
+    Para cada objeto, se ejecuta la siguiente consulta:
 
-        query = f"""
-        MATCH ()-[r:{rel_type}]->()
-        REMOVE {remove_clause}
-        RETURN count(r) AS updatedCount
-        """
-        params = {}
+    MATCH (a:<label1> {id: $node1_id}), (b:<label2> {id: $node2_id})
+    MATCH (a)-[r:<rel_type>]->(b)
+    REMOVE r.<prop1>, r.<prop2>, ...
+    RETURN count(r) AS updatedCount
+
+    Se acumulan errores en caso de que no se encuentren los nodos o la relación.
+    """
+    serializer = RelationshipBulkRemoveSerializer(data=request.data)
+    if serializer.is_valid():
+        rels = serializer.validated_data["relationships"]
+        total_updated = 0
+        errors = []
+
         with neo4j_conn._driver.session() as session:
-            result = session.run(query, params)
-            record = result.single()
-            if record is not None:
-                return Response(
-                    {
-                        "message": "Propiedades eliminadas de múltiples relaciones",
-                        "updatedCount": record["updatedCount"],
-                    }
-                )
-            else:
-                return Response(
-                    {"error": "Error al actualizar las relaciones"}, status=500
-                )
+            for rel in rels:
+                label1 = rel.get("label1")
+                label2 = rel.get("label2")
+                node1_id = rel.get("node1_id")
+                node2_id = rel.get("node2_id")
+                rel_type = rel.get("rel_type")
+                props_to_remove = rel.get("properties", [])
+
+                # Construir la cláusula REMOVE a partir de la lista de propiedades
+                remove_clause = ", ".join(f"r.{prop}" for prop in props_to_remove)
+
+                query = f"""
+                MATCH (a:{label1} {{id: $node1_id}}), (b:{label2} {{id: $node2_id}})
+                MATCH (a)-[r:{rel_type}]->(b)
+                REMOVE {remove_clause}
+                RETURN count(r) AS updatedCount
+                """
+                params = {"node1_id": node1_id, "node2_id": node2_id}
+
+                result = session.run(query, params)
+                record = result.single()
+                if record:
+                    count = record["updatedCount"]
+                    if count == 0:
+                        errors.append(
+                            f"No se encontró la relación entre {label1} con id {node1_id} y {label2} con id {node2_id}."
+                        )
+                    else:
+                        total_updated += count
+                else:
+                    errors.append(
+                        f"Error al procesar la relación entre {label1} con id {node1_id} y {label2} con id {node2_id}."
+                    )
+
+        response_data = {
+            "message": "Proceso completado.",
+            "updatedCount": total_updated,
+        }
+        if errors:
+            response_data["errors"] = errors
+        return Response(response_data)
     return Response(serializer.errors, status=400)
 
 
