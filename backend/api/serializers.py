@@ -94,11 +94,13 @@ class RelationshipUpdateSerializer(serializers.Serializer):
     )  # Al menos 3 propiedades, por ejemplo: { "fechaInicio": "2025-01-01", "cargo": "Ingeniero", "salario": 60000 }
 
 
-class MultipleRelationshipUpdateSerializer(serializers.Serializer):
-    rel_type = serializers.CharField(required=True)  # Ej: "TRABAJA_EN"
-    properties = serializers.DictField(
-        required=True
-    )  # Ej: { "fechaInicio": "2025-01-01", "cargo": "Empleado" }
+class RelationshipBulkUpdateSerializer(serializers.Serializer):
+    relationships = serializers.ListField(
+        child=serializers.DictField(),
+        required=True,
+        help_text="Lista de objetos que definen cada relación. Cada objeto debe incluir: "
+        "label1, node1_id, label2, node2_id, rel_type y las propiedades a establecer (a nivel plano).",
+    )
 
 
 class RelationshipRemoveSerializer(serializers.Serializer):

@@ -11,7 +11,7 @@ from .serializers import (
     MultipleNodesPropertiesRemoveSerializer,
     RelationshipCreationSerializer,
     RelationshipUpdateSerializer,
-    MultipleRelationshipUpdateSerializer,
+    RelationshipBulkUpdateSerializer,
     RelationshipRemoveSerializer,
     MultipleRelationshipRemoveSerializer,
     NodeDeleteSerializer,
@@ -511,12 +511,6 @@ def create_relationship(request):
     return Response(serializer.errors, status=400)
 
 
-"""
-
-Actualizar propiedades de una relación entre dos nodos y validar que al menos 3 propiedades sean proporcionadas.
-"""
-
-
 @api_view(["PUT"])
 def update_single_relationship_properties(request):
     """
@@ -585,49 +579,85 @@ Actualizar propiedades de múltiples relaciones y validar que al menos 3 propied
 
 
 @api_view(["PUT"])
-def update_multiple_relationships_properties(request):
+def update_bulk_relationships(request):
     """
-    Actualiza (agrega) propiedades a todas las relaciones de un tipo específico.
-    Se espera recibir un JSON similar a:
-    {
-        "rel_type": "TRABAJA_EN",
-        "properties": {
-            "fechaInicio": "2025-01-01",
-            "cargo": "Empleado"
-        }
-    }
-    La consulta ejecutada será:
-    MATCH ()-[r:TRABAJA_EN]->()
-    SET r += $props
-    RETURN count(r) AS updatedCount
-    """
-    serializer = MultipleRelationshipUpdateSerializer(data=request.data)
-    if serializer.is_valid():
-        data = serializer.validated_data
-        rel_type = data["rel_type"]
-        props = data["properties"]
+    Endpoint para actualizar (o crear) propiedades en múltiples relaciones de forma masiva.
 
-        query = f"""
-        MATCH ()-[r:{rel_type}]->()
-        SET r += $props
-        RETURN count(r) AS updatedCount
-        """
-        params = {"props": props}
+    Se espera recibir un JSON de la siguiente forma:
+    {
+      "relationships": [
+        {
+          "label1": "Persona",
+          "node1_id": 1,
+          "label2": "Persona",
+          "node2_id": 2,
+          "rel_type": "AMIGOS",
+          "sueldo": 3000,
+          "tipo_amistad": "Mejores Amigos"
+        },
+        {
+          "label1": "Persona",
+          "node1_id": 2,
+          "label2": "Persona",
+          "node2_id": 1,
+          "rel_type": "AMIGOS",
+          "sueldo": 3500,
+          "tipo_amistad": "Mejores Amigos"
+        }
+      ]
+    }
+
+    Para cada objeto en 'relationships' se ejecuta:
+
+    MATCH (a:<label1> {id: $node1_id}), (b:<label2> {id: $node2_id})
+    MERGE (a)-[r:<rel_type>]->(b)
+    ON CREATE SET r += $props
+    ON MATCH SET r += $props
+    RETURN count(r) AS updatedCount
+
+    Se itera sobre cada relación y se suma el total de relaciones actualizadas.
+    """
+    serializer = RelationshipBulkUpdateSerializer(data=request.data)
+    if serializer.is_valid():
+        rels = serializer.validated_data["relationships"]
+        total_updated = 0
 
         with neo4j_conn._driver.session() as session:
-            result = session.run(query, params)
-            record = result.single()
-            if record:
-                return Response(
-                    {
-                        "message": "Propiedades agregadas a múltiples relaciones",
-                        "updatedCount": record["updatedCount"],
-                    }
-                )
-            else:
-                return Response(
-                    {"error": "Error al actualizar las relaciones"}, status=500
-                )
+            for rel in rels:
+                # Extraer datos obligatorios
+                label1 = rel.get("label1")
+                label2 = rel.get("label2")
+                node1_id = rel.get("node1_id")
+                node2_id = rel.get("node2_id")
+                rel_type = rel.get("rel_type")
+
+                # Se extraen las propiedades que se deben asignar, removiendo las claves de control
+                props = {
+                    k: v
+                    for k, v in rel.items()
+                    if k not in ["label1", "label2", "rel_type", "node1_id", "node2_id"]
+                }
+
+                # Construir la consulta dinámicamente
+                query = f"""
+                MATCH (a:{label1} {{id: $node1_id}}), (b:{label2} {{id: $node2_id}})
+                MERGE (a)-[r:{rel_type}]->(b)
+                ON CREATE SET r += $props
+                ON MATCH SET r += $props
+                RETURN count(r) AS updatedCount
+                """
+                params = {"node1_id": node1_id, "node2_id": node2_id, "props": props}
+                result = session.run(query, params)
+                record = result.single()
+                if record:
+                    total_updated += record["updatedCount"]
+
+        return Response(
+            {
+                "message": "Relaciones actualizadas correctamente",
+                "updatedCount": total_updated,
+            }
+        )
     return Response(serializer.errors, status=400)
 
 

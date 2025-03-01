@@ -9,7 +9,7 @@ from .views import (
     remove_multiple_nodes_properties,
     create_relationship,
     update_single_relationship_properties,
-    update_multiple_relationships_properties,
+    update_bulk_relationships,
     remove_single_relationship_properties,
     remove_multiple_relationships_properties,
     delete_single_node,
@@ -58,9 +58,9 @@ urlpatterns = [
         name="update_single_relationship_properties",
     ),
     path(
-        "update-multiple-relationship-properties/",
-        update_multiple_relationships_properties,
-        name="update_multiple_relationships_properties",
+        "update-bulk-relationships/",
+        update_bulk_relationships,
+        name="update_bulk_relationships",
     ),
     path(
         "remove-single-relationship-properties/",
