@@ -6,7 +6,6 @@ from .views import (
     search_nodes,
     get_aggregated_data,
     update_multiple_nodes_properties,
-    remove_single_node_properties,
     remove_multiple_nodes_properties,
     create_relationship,
     update_single_relationship_properties,
@@ -47,15 +46,11 @@ urlpatterns = [
         name="update_multiple_nodes_properties",
     ),
     path(
-        "remove-single-node-properties/",
-        remove_single_node_properties,
-        name="remove_single_node_properties",
-    ),
-    path(
         "remove-multiple-nodes-properties/",
         remove_multiple_nodes_properties,
         name="remove_multiple_nodes_properties",
     ),
+    # Listo
     path("create-relationship/", create_relationship, name="create_relationship"),
     path(
         "update-single-relationship-properties/",

@@ -8,7 +8,6 @@ from .serializers import (
     NodeSearchSerializer,
     AggregatedDataSerializer,
     MultipleNodesUpdateSerializer,
-    NodePropertiesRemoveSerializer,
     MultipleNodesPropertiesRemoveSerializer,
     RelationshipCreationSerializer,
     RelationshipUpdateSerializer,
@@ -377,102 +376,51 @@ def update_multiple_nodes_properties(request):
 
 
 """
-Eliminar 1 o mas propiedades de un nodos o de varios nodos
+Eliminar 1 o mas propiedades de uno o de varios nodos.
 """
 
 
 @api_view(["PUT"])
-def remove_single_node_properties(request):
+def remove_multiple_nodes_properties(request):
     """
-    Actualiza (remueve) 1 o más propiedades de un nodo específico.
-    Se busca el nodo usando su label y su propiedad "id".
-    Se espera un JSON:
-    {
-        "node_id": "1",
-        "label": "Persona",
-        "properties": ["edad", "ocupacion"]
-    }
-    La consulta ejecutada será:
-    MATCH (n:Persona)
-    WHERE n.id = $node_id
-    REMOVE n.edad, n.ocupacion
-    RETURN elementId(n) AS node_element_id, labels(n) AS labels, properties(n) AS properties
-    """
+    Endpoint para eliminar (remover) una o más propiedades de múltiples nodos.
+    Se espera recibir un JSON con:
+      - node_ids: Lista de valores de la propiedad 'id' de los nodos (ej: ["1", "2", "3"]).
+      - label: Label de los nodos (ej: "Persona").
+      - properties: Lista de nombres de propiedades a eliminar (ej: ["edad", "ocupacion"]).
 
-    serializer = NodePropertiesRemoveSerializer(data=request.data)
+    La consulta Cypher que se ejecuta es similar a:
+    MATCH (n:Persona)
+    WHERE n.id IN $node_ids
+    REMOVE n.edad, n.ocupacion
+    RETURN count(n) AS updatedCount
+    """
+    serializer = MultipleNodesPropertiesRemoveSerializer(data=request.data)
     if serializer.is_valid():
-        node_id = serializer.validated_data["node_id"]
+        node_ids = serializer.validated_data["node_ids"]
         label = serializer.validated_data["label"]
         props_to_remove = serializer.validated_data["properties"]
+
+        # Convertir los node_ids a enteros, si corresponde
+        try:
+            node_ids_int = [int(nid) for nid in node_ids]
+        except ValueError:
+            node_ids_int = node_ids  # En caso de que se almacenen como strings
 
         # Construir la cláusula REMOVE a partir de la lista de propiedades
         remove_clause = ", ".join(f"n.{prop}" for prop in props_to_remove)
 
         query = f"""
         MATCH (n:{label})
-        WHERE n.id = $node_id
-        REMOVE {remove_clause}
-        RETURN elementId(n) AS node_element_id, labels(n) AS labels, properties(n) AS properties
-        """
-        try:
-            # Convertir node_id a entero si la propiedad se almacena como número
-            try:
-                node_id_val = int(node_id)
-            except ValueError:
-                node_id_val = node_id
-
-            params = {"node_id": node_id_val}
-            with neo4j_conn._driver.session() as session:
-                result = session.run(query, params)
-                record = result.single()
-                if record:
-                    return Response(
-                        {
-                            "message": "Propiedades eliminadas del nodo",
-                            "node": {
-                                "id": record["node_element_id"],
-                                "labels": record["labels"],
-                                "properties": record["properties"],
-                            },
-                        }
-                    )
-                else:
-                    return Response({"error": "Nodo no encontrado"}, status=404)
-        except Neo4jError as e:
-            return Response({"error": str(e)}, status=500)
-    return Response(serializer.errors, status=400)
-
-
-@api_view(["PUT"])
-def remove_multiple_nodes_properties(request):
-    """
-    Actualiza (remueve) 1 o más propiedades de todos los nodos con un label específico.
-    Se espera un JSON:
-    {
-        "label": "Persona",
-        "properties": ["edad", "ocupacion"]
-    }
-    La consulta ejecutada será:
-    MATCH (n:Persona)
-    REMOVE n.edad, n.ocupacion
-    RETURN count(n) AS updatedCount
-    """
-
-    serializer = MultipleNodesPropertiesRemoveSerializer(data=request.data)
-    if serializer.is_valid():
-        label = serializer.validated_data["label"]
-        props_to_remove = serializer.validated_data["properties"]
-
-        remove_clause = ", ".join(f"n.{prop}" for prop in props_to_remove)
-
-        query = f"""
-        MATCH (n:{label})
+        WHERE n.id IN $node_ids
         REMOVE {remove_clause}
         RETURN count(n) AS updatedCount
         """
+        params = {"node_ids": node_ids_int}
+
         try:
             with neo4j_conn._driver.session() as session:
-                result = session.run(query)
+                result = session.run(query, params)
                 record = result.single()
                 if record is not None:
                     return Response(

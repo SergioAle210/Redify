@@ -52,19 +52,20 @@ class MultipleNodesUpdateSerializer(serializers.Serializer):
     )
 
 
-class NodePropertiesRemoveSerializer(serializers.Serializer):
-    node_id = (
-        serializers.CharField()
-    )  # Valor de la propiedad "id" del nodo (no elementId)
-    label = serializers.CharField(required=True)  # Ej: "Persona"
-    properties = serializers.ListField(child=serializers.CharField(), required=True)
-    # Se espera recibir una lista de nombres de propiedades a eliminar
-
-
 class MultipleNodesPropertiesRemoveSerializer(serializers.Serializer):
-    label = serializers.CharField(required=True)  # Ej: "Persona"
-    properties = serializers.ListField(child=serializers.CharField(), required=True)
-    # (Opcionalmente, podrías agregar filtros adicionales si lo necesitas)
+    node_ids = serializers.ListField(
+        child=serializers.CharField(),
+        required=True,
+        help_text="Lista de valores de la propiedad 'id' de los nodos a actualizar.",
+    )
+    label = serializers.CharField(
+        required=True, help_text="Label de los nodos (por ejemplo, 'Persona')."
+    )
+    properties = serializers.ListField(
+        child=serializers.CharField(),
+        required=True,
+        help_text="Lista de nombres de propiedades a eliminar.",
+    )
 
 
 class RelationshipCreationSerializer(serializers.Serializer):
