@@ -79,21 +79,6 @@ class RelationshipCreationSerializer(serializers.Serializer):
     )  # Propiedades de la relación (al menos 3 claves)
 
 
-class RelationshipUpdateSerializer(serializers.Serializer):
-    label1 = serializers.CharField(required=True)  # Ej: "Persona"
-    node1_id = serializers.CharField(
-        required=True
-    )  # Valor de la propiedad 'id' del primer nodo
-    label2 = serializers.CharField(required=True)  # Ej: "Empresa"
-    node2_id = serializers.CharField(
-        required=True
-    )  # Valor de la propiedad 'id' del segundo nodo
-    rel_type = serializers.CharField(required=True)  # Ej: "TRABAJA_EN"
-    properties = serializers.DictField(
-        required=True
-    )  # Al menos 3 propiedades, por ejemplo: { "fechaInicio": "2025-01-01", "cargo": "Ingeniero", "salario": 60000 }
-
-
 class RelationshipBulkUpdateSerializer(serializers.Serializer):
     relationships = serializers.ListField(
         child=serializers.DictField(),

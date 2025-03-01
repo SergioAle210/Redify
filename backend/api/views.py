@@ -10,7 +10,6 @@ from .serializers import (
     MultipleNodesUpdateSerializer,
     MultipleNodesPropertiesRemoveSerializer,
     RelationshipCreationSerializer,
-    RelationshipUpdateSerializer,
     RelationshipBulkUpdateSerializer,
     RelationshipRemoveSerializer,
     MultipleRelationshipRemoveSerializer,
@@ -511,68 +510,6 @@ def create_relationship(request):
     return Response(serializer.errors, status=400)
 
 
-@api_view(["PUT"])
-def update_single_relationship_properties(request):
-    """
-    Actualiza (agrega) propiedades en una relación específica entre dos nodos.
-    Se espera recibir un JSON similar a:
-    {
-        "label1": "Persona",
-        "node1_id": "1",
-        "label2": "Empresa",
-        "node2_id": "100",
-        "rel_type": "TRABAJA_EN",
-        "properties": {
-            "fechaInicio": "2025-01-01",
-            "cargo": "Ingeniero",
-            "salario": 60000
-        }
-    }
-    La consulta ejecutada será:
-    MATCH (n1:Persona {id: $node1_id})-[r:TRABAJA_EN]->(n2:Empresa {id: $node2_id})
-    SET r += $props
-    RETURN elementId(r) AS rel_id, properties(r) AS rel_properties
-    """
-    serializer = RelationshipUpdateSerializer(data=request.data)
-    if serializer.is_valid():
-        data = serializer.validated_data
-        label1 = data["label1"]
-        label2 = data["label2"]
-        rel_type = data["rel_type"]
-        # Convertir node ids a entero si es numérico (o usarlos como string si así se guardó)
-        try:
-            node1_id = int(data["node1_id"])
-            node2_id = int(data["node2_id"])
-        except ValueError:
-            node1_id = data["node1_id"]
-            node2_id = data["node2_id"]
-        props = data["properties"]
-
-        query = f"""
-        MATCH (n1:{label1} {{id: $node1_id}})-[r:{rel_type}]->(n2:{label2} {{id: $node2_id}})
-        SET r += $props
-        RETURN elementId(r) AS rel_id, properties(r) AS rel_properties
-        """
-        params = {"node1_id": node1_id, "node2_id": node2_id, "props": props}
-
-        with neo4j_conn._driver.session() as session:
-            result = session.run(query, params)
-            record = result.single()
-            if record:
-                return Response(
-                    {
-                        "message": "Relación actualizada correctamente",
-                        "relationship": {
-                            "id": record["rel_id"],
-                            "properties": record["rel_properties"],
-                        },
-                    }
-                )
-            else:
-                return Response({"error": "Relación no encontrada"}, status=404)
-    return Response(serializer.errors, status=400)
-
-
 """
 Actualizar propiedades de múltiples relaciones y validar que al menos 3 propiedades sean proporcionadas.
 """
@@ -581,46 +518,22 @@ Actualizar propiedades de múltiples relaciones y validar que al menos 3 propied
 @api_view(["PUT"])
 def update_bulk_relationships(request):
     """
-    Endpoint para actualizar (o crear) propiedades en múltiples relaciones de forma masiva.
+    Endpoint para crear/actualizar múltiples relaciones a nivel masivo.
+    Cada objeto en 'relationships' debe incluir:
+      - label1: Label del primer nodo (ej: "Persona")
+      - node1_id: Valor de la propiedad 'id' del primer nodo
+      - label2: Label del segundo nodo (ej: "Persona")
+      - node2_id: Valor de la propiedad 'id' del segundo nodo
+      - rel_type: Tipo de la relación (ej: "AMIGOS")
+      - Propiedades adicionales a agregar/actualizar en la relación (ej: sueldo, tipo_amistad, etc.)
 
-    Se espera recibir un JSON de la siguiente forma:
-    {
-      "relationships": [
-        {
-          "label1": "Persona",
-          "node1_id": 1,
-          "label2": "Persona",
-          "node2_id": 2,
-          "rel_type": "AMIGOS",
-          "sueldo": 3000,
-          "tipo_amistad": "Mejores Amigos"
-        },
-        {
-          "label1": "Persona",
-          "node1_id": 2,
-          "label2": "Persona",
-          "node2_id": 1,
-          "rel_type": "AMIGOS",
-          "sueldo": 3500,
-          "tipo_amistad": "Mejores Amigos"
-        }
-      ]
-    }
-
-    Para cada objeto en 'relationships' se ejecuta:
-
-    MATCH (a:<label1> {id: $node1_id}), (b:<label2> {id: $node2_id})
-    MERGE (a)-[r:<rel_type>]->(b)
-    ON CREATE SET r += $props
-    ON MATCH SET r += $props
-    RETURN count(r) AS updatedCount
-
-    Se itera sobre cada relación y se suma el total de relaciones actualizadas.
+    Se procesa cada relación de forma individual y se acumulan errores si no se encuentra alguno de los nodos o la relación.
     """
     serializer = RelationshipBulkUpdateSerializer(data=request.data)
     if serializer.is_valid():
         rels = serializer.validated_data["relationships"]
         total_updated = 0
+        errors = []
 
         with neo4j_conn._driver.session() as session:
             for rel in rels:
@@ -631,14 +544,14 @@ def update_bulk_relationships(request):
                 node2_id = rel.get("node2_id")
                 rel_type = rel.get("rel_type")
 
-                # Se extraen las propiedades que se deben asignar, removiendo las claves de control
+                # Extraer las propiedades adicionales (remover las claves de control)
                 props = {
                     k: v
                     for k, v in rel.items()
                     if k not in ["label1", "label2", "rel_type", "node1_id", "node2_id"]
                 }
 
-                # Construir la consulta dinámicamente
+                # Construir la consulta dinámicamente (sin usar APOC, para evitar problemas de procedimiento)
                 query = f"""
                 MATCH (a:{label1} {{id: $node1_id}}), (b:{label2} {{id: $node2_id}})
                 MERGE (a)-[r:{rel_type}]->(b)
@@ -647,17 +560,30 @@ def update_bulk_relationships(request):
                 RETURN count(r) AS updatedCount
                 """
                 params = {"node1_id": node1_id, "node2_id": node2_id, "props": props}
+
                 result = session.run(query, params)
                 record = result.single()
                 if record:
-                    total_updated += record["updatedCount"]
+                    count = record["updatedCount"]
+                    if count == 0:
+                        errors.append(
+                            f"No se encontró la relación entre {label1} con id {node1_id} y {label2} con id {node2_id}."
+                        )
+                    else:
+                        total_updated += count
+                else:
+                    errors.append(
+                        f"Error al actualizar la relación entre {label1} con id {node1_id} y {label2} con id {node2_id}."
+                    )
 
-        return Response(
-            {
-                "message": "Relaciones actualizadas correctamente",
-                "updatedCount": total_updated,
-            }
-        )
+        # Retornar respuesta final: si hay errores, se informan junto con el total actualizado.
+        response_data = {
+            "message": "Proceso completado.",
+            "updatedCount": total_updated,
+        }
+        if errors:
+            response_data["errors"] = errors
+        return Response(response_data)
     return Response(serializer.errors, status=400)
 
 

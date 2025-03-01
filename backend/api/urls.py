@@ -8,7 +8,6 @@ from .views import (
     update_multiple_nodes_properties,
     remove_multiple_nodes_properties,
     create_relationship,
-    update_single_relationship_properties,
     update_bulk_relationships,
     remove_single_relationship_properties,
     remove_multiple_relationships_properties,
@@ -52,11 +51,7 @@ urlpatterns = [
     ),
     # Listo
     path("create-relationship/", create_relationship, name="create_relationship"),
-    path(
-        "update-single-relationship-properties/",
-        update_single_relationship_properties,
-        name="update_single_relationship_properties",
-    ),
+    # Listo
     path(
         "update-bulk-relationships/",
         update_bulk_relationships,
