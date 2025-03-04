@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useRelationships } from '../context/RelationshipsContext';
+import '../styles/RelationshipRemovePropsForm.css'; // Importa el CSS
 
 function RelationshipRemovePropsForm() {
   const { removeBulkRelationships } = useRelationships();
@@ -55,6 +56,7 @@ function RelationshipRemovePropsForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     // Validar
     for (let rel of relationships) {
       if (!rel.label1 || !rel.node1Id || !rel.label2 || !rel.node2Id || !rel.relType) {
@@ -67,6 +69,7 @@ function RelationshipRemovePropsForm() {
         return;
       }
     }
+
     // Construir payload aplicando conversión de IDs
     const payloadRels = relationships.map(rel => ({
       label1: rel.label1,
@@ -76,6 +79,7 @@ function RelationshipRemovePropsForm() {
       rel_type: rel.relType,
       properties: rel.props.map(p => p.trim()).filter(p => p)
     }));
+
     try {
       const result = await removeBulkRelationships({ relationships: payloadRels });
       let successMsg = result.message || 'Proceso completado.';
@@ -96,87 +100,57 @@ function RelationshipRemovePropsForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Remover propiedades de relaciones (bulk)</h3>
-      <form onSubmit={handleSubmit}>
+    <div className="relationship-remove-container">
+      <h2>Remover Propiedades de Relaciones</h2>
+      <form onSubmit={handleSubmit} className="relationship-remove-form">
         {relationships.map((rel, idx) => (
-          <div key={idx} style={{ marginBottom: '1rem', padding: '0.5rem', border: '1px solid #ccc' }}>
-            <div>
-              <label>Relación {idx + 1} - Nodo 1 Label: </label>
-              <input 
-                type="text" 
-                value={rel.label1} 
-                onChange={(e) => handleChangeRelField(idx, 'label1', e.target.value)} 
-                placeholder="Label nodo 1" 
-              />
-              <label style={{ marginLeft: '0.5rem' }}>ID1: </label>
-              <input 
-                type="text" 
-                value={rel.node1Id} 
-                onChange={(e) => handleChangeRelField(idx, 'node1Id', e.target.value)} 
-                placeholder="ID nodo 1" 
-                style={{ width: '80px' }}
-              />
+          <div key={idx} className="relationship-card">
+            <h3>Relación {idx + 1}</h3>
+            <div className="input-group">
+              <label>Nodo 1 - Label:</label>
+              <input type="text" value={rel.label1} onChange={(e) => handleChangeRelField(idx, 'label1', e.target.value)} placeholder="Label nodo 1" />
+              <label>ID:</label>
+              <input type="text" value={rel.node1Id} onChange={(e) => handleChangeRelField(idx, 'node1Id', e.target.value)} placeholder="ID nodo 1" />
             </div>
-            <div style={{ marginTop: '0.25rem' }}>
-              <label>Nodo 2 Label: </label>
-              <input 
-                type="text" 
-                value={rel.label2} 
-                onChange={(e) => handleChangeRelField(idx, 'label2', e.target.value)} 
-                placeholder="Label nodo 2" 
-              />
-              <label style={{ marginLeft: '0.5rem' }}>ID2: </label>
-              <input 
-                type="text" 
-                value={rel.node2Id} 
-                onChange={(e) => handleChangeRelField(idx, 'node2Id', e.target.value)} 
-                placeholder="ID nodo 2" 
-                style={{ width: '80px' }}
-              />
+
+            <div className="input-group">
+              <label>Nodo 2 - Label:</label>
+              <input type="text" value={rel.label2} onChange={(e) => handleChangeRelField(idx, 'label2', e.target.value)} placeholder="Label nodo 2" />
+              <label>ID:</label>
+              <input type="text" value={rel.node2Id} onChange={(e) => handleChangeRelField(idx, 'node2Id', e.target.value)} placeholder="ID nodo 2" />
             </div>
-            <div style={{ marginTop: '0.25rem' }}>
-              <label>Tipo relación: </label>
-              <input 
-                type="text" 
-                value={rel.relType} 
-                onChange={(e) => handleChangeRelField(idx, 'relType', e.target.value)} 
-                placeholder="Tipo (ej: AMIGOS)" 
-              />
+
+            <div className="input-group">
+              <label>Tipo de Relación:</label>
+              <input type="text" value={rel.relType} onChange={(e) => handleChangeRelField(idx, 'relType', e.target.value)} placeholder="Ej: AMIGOS" />
             </div>
-            <div style={{ marginTop: '0.25rem' }}>
-              <label>Propiedades a remover:</label>
+
+            <div className="properties-container">
+              <label>Propiedades a Remover:</label>
               {rel.props.map((prop, pidx) => (
-                <div key={pidx} style={{ marginLeft: '1rem', marginBottom: '0.25rem' }}>
-                  <input 
-                    type="text" 
-                    placeholder="Propiedad" 
-                    value={prop} 
-                    onChange={(e) => handleChangeProp(idx, pidx, e.target.value)} 
-                  />
+                <div key={pidx} className="property-group">
+                  <input type="text" placeholder="Propiedad" value={prop} onChange={(e) => handleChangeProp(idx, pidx, e.target.value)} />
                   {rel.props.length > 1 && (
-                    <button type="button" onClick={() => handleRemovePropField(idx, pidx)} style={{ marginLeft: '0.5rem' }}>
-                      Eliminar prop
-                    </button>
+                    <button type="button" className="remove-btn" onClick={() => handleRemovePropField(idx, pidx)}>❌</button>
                   )}
                 </div>
               ))}
-              <button type="button" onClick={() => handleAddPropField(idx)}>Añadir prop</button>
+              <button type="button" className="add-btn" onClick={() => handleAddPropField(idx)}>+ Añadir Propiedad</button>
             </div>
+
             {relationships.length > 1 && (
-              <button type="button" onClick={() => handleRemoveRelationship(idx)} style={{ marginTop: '0.25rem' }}>
-                Eliminar relación {idx + 1}
-              </button>
+              <button type="button" className="remove-relationship-btn" onClick={() => handleRemoveRelationship(idx)}>❌ Eliminar Relación</button>
             )}
           </div>
         ))}
-        <button type="button" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>
-          Añadir otra relación
-        </button><br/>
-        <button type="submit">Remover propiedades</button>
+
+        <button type="button" className="add-btn" onClick={handleAddRelationship}>+ Añadir Otra Relación</button>
+        <button type="submit" className="submit-btn">Remover Propiedades</button>
+
       </form>
-      {message && <p style={{ color: 'green', whiteSpace: 'pre-wrap' }}>{message}</p>}
-      {error && <p style={{ color: 'red', whiteSpace: 'pre-wrap' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }

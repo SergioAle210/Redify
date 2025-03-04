@@ -1,25 +1,26 @@
 import React from 'react';
 import { useNodes } from '../context/NodesContext';
+import '../styles/NodeList.css'; // Importa el CSS
 
 function NodeList() {
   const { nodes, loading, error, searched } = useNodes();
 
   if (loading) {
-    return <p>Cargando nodos...</p>;
+    return <p className="loading-message">Cargando nodos...</p>;
   }
   if (error) {
-    return <p style={{ color: 'red' }}>Error: {error}</p>;
+    return <p className="error-message">Error: {error}</p>;
   }
   if (!searched) {
-    return <p>Realice una búsqueda para ver nodos.</p>;
+    return <p className="info-message">Realice una búsqueda para ver nodos.</p>;
   }
   if (nodes.length === 0) {
-    return <p>No se encontraron nodos.</p>;
+    return <p className="info-message">No se encontraron nodos.</p>;
   }
 
   return (
-    <div>
-      <table border="1" cellPadding="5" cellSpacing="0">
+    <div className="node-list-container">
+      <table className="node-table">
         <thead>
           <tr>
             <th>ID</th>
@@ -37,8 +38,7 @@ function NodeList() {
                   ? Object.entries(node.properties).map(([key, val]) => (
                       <div key={key}><strong>{key}:</strong> {String(val)}</div>
                     ))
-                  : '(Sin propiedades)'
-                }
+                  : '(Sin propiedades)'}
               </td>
             </tr>
           ))}

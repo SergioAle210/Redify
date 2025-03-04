@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNodes } from '../context/NodesContext';
+import '../styles/NodeUpdateForm.css'; // Importa el CSS
 
 function NodeUpdateForm() {
   const { updateNodesProperties } = useNodes();
@@ -50,10 +51,12 @@ function NodeUpdateForm() {
       setError('Label es requerido.');
       return;
     }
+
     if (!nodeIdsInput.trim()) {
       setError('Debe proporcionar al menos un ID de nodo.');
       return;
     }
+
     // Parsear los IDs de nodos
     const nodeIdsArray = nodeIdsInput
       .split(',')
@@ -64,6 +67,7 @@ function NodeUpdateForm() {
       return;
     }
 
+
     // Construir el objeto de propiedades, aplicando la conversión de valores
     const propsObj = {};
     let propCount = 0;
@@ -73,6 +77,7 @@ function NodeUpdateForm() {
         propCount++;
       }
     });
+
     if (propCount === 0) {
       setError('Proporcione al menos una propiedad para actualizar.');
       return;
@@ -94,6 +99,7 @@ function NodeUpdateForm() {
       } else {
         setMessage(result.message || 'Actualización realizada.');
       }
+
       // Limpiar el formulario
       setLabel('');
       setNodeIdsInput('');
@@ -104,31 +110,33 @@ function NodeUpdateForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Actualizar propiedades de nodos</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Label: </label>
+    <div className="update-form-container">
+      <h2>Actualizar Propiedades de Nodos</h2>
+      <form onSubmit={handleSubmit} className="update-form">
+        <div className="input-group">
+          <label>Label del Nodo:</label>
           <input 
             type="text" 
             value={label} 
             onChange={(e) => setLabel(e.target.value)} 
-            placeholder="Label de los nodos" 
+            placeholder="Ej: Usuario, Producto"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
-          <label>IDs de nodos (coma separadas): </label>
+
+        <div className="input-group">
+          <label>IDs de Nodos (separados por coma):</label>
           <input 
             type="text" 
             value={nodeIdsInput} 
             onChange={(e) => setNodeIdsInput(e.target.value)} 
-            placeholder="Ej: 1, 2, 3" 
+            placeholder="Ej: 1, 2, 3"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
-          <label>Nuevas propiedades:</label>
+
+        <div className="properties-container">
+          <label>Nuevas Propiedades:</label>
           {properties.map((prop, idx) => (
-            <div key={idx} style={{ marginLeft: '1rem', marginBottom: '0.25rem' }}>
+            <div key={idx} className="property-group">
               <input 
                 type="text" 
                 placeholder="Clave" 
@@ -138,7 +146,6 @@ function NodeUpdateForm() {
                   newProps[idx].key = e.target.value;
                   setProperties(newProps);
                 }} 
-                style={{ marginRight: '0.5rem' }}
               />
               <input 
                 type="text" 
@@ -151,22 +158,27 @@ function NodeUpdateForm() {
                 }} 
               />
               {properties.length > 1 && (
+
                 <button 
                   type="button" 
+                  className="remove-btn"
                   onClick={() => handleRemoveProperty(idx)} 
                   style={{ marginLeft: '0.5rem' }}
                 >
                   Eliminar
                 </button>
+
               )}
             </div>
           ))}
-          <button type="button" onClick={handleAddProperty}>Añadir propiedad</button>
+          <button type="button" className="add-btn" onClick={handleAddProperty}>+ Añadir Propiedad</button>
         </div>
-        <button type="submit" style={{ marginTop: '0.5rem' }}>Actualizar</button>
+
+        <button type="submit" className="submit-btn">Actualizar</button>
       </form>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }

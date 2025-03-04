@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNodes } from '../context/NodesContext';
+import '../styles/NodeCreateMultiForm.css'; // Importa el CSS
 
 function NodeCreateMultiForm() {
   const { createNodeMultiple } = useNodes();
@@ -11,11 +12,13 @@ function NodeCreateMultiForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     const labelsArray = labelsInput.split(',').map(lbl => lbl.trim()).filter(lbl => lbl);
     if (labelsArray.length < 2) {
       setError('Proporcione al menos dos labels.');
       return;
     }
+
     try {
       const result = await createNodeMultiple({ labels: labelsArray });
       if (result.node) {
@@ -30,19 +33,23 @@ function NodeCreateMultiForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Crear Nodo (múltiples labels)</h3>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
-          value={labelsInput} 
-          onChange={(e) => setLabelsInput(e.target.value)} 
-          placeholder="Labels separados por coma" 
-        />
-        <button type="submit">Crear</button>
+    <div className="multi-form-container">
+      <h2>Crear Nodo con Múltiples Labels</h2>
+      <form onSubmit={handleSubmit} className="multi-form">
+        <div className="input-group">
+          <label>Labels (separados por coma):</label>
+          <input 
+            type="text" 
+            value={labelsInput} 
+            onChange={(e) => setLabelsInput(e.target.value)} 
+            placeholder="Ej: Usuario, Cliente"
+          />
+        </div>
+        <button type="submit" className="submit-btn">Crear</button>
       </form>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }

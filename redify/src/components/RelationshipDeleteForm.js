@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useRelationships } from '../context/RelationshipsContext';
+import '../styles/RelationshipDeleteForm.css'; // Importa el CSS
 
 function RelationshipDeleteForm() {
   const { deleteBulkRelationships } = useRelationships();
@@ -33,12 +34,14 @@ function RelationshipDeleteForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     for (let rel of relationships) {
       if (!rel.label1 || !rel.node1Id || !rel.label2 || !rel.node2Id || !rel.relType) {
         setError('Complete todos los campos requeridos para cada relación.');
         return;
       }
     }
+
     // Construir el payload usando convertId para los IDs
     const payloadRels = relationships.map(rel => ({
       label1: rel.label1,
@@ -47,6 +50,7 @@ function RelationshipDeleteForm() {
       node2_id: convertId(rel.node2Id),
       rel_type: rel.relType
     }));
+
     try {
       const result = await deleteBulkRelationships({ relationships: payloadRels });
       let successMsg = result.message || 'Proceso completado.';
@@ -64,62 +68,45 @@ function RelationshipDeleteForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Eliminar relaciones (bulk)</h3>
-      <form onSubmit={handleSubmit}>
+    <div className="relationship-delete-container">
+      <h2>Eliminar Relaciones</h2>
+      <form onSubmit={handleSubmit} className="relationship-delete-form">
         {relationships.map((rel, idx) => (
-          <div key={idx} style={{ marginBottom: '0.5rem' }}>
-            <label>Relación {idx + 1} - Label1: </label>
-            <input 
-              type="text" 
-              value={rel.label1} 
-              onChange={(e) => handleChangeField(idx, 'label1', e.target.value)} 
-              placeholder="Label nodo 1" 
-            />
-            <label style={{ marginLeft: '0.5rem' }}>ID1: </label>
-            <input 
-              type="text" 
-              value={rel.node1Id} 
-              onChange={(e) => handleChangeField(idx, 'node1Id', e.target.value)} 
-              placeholder="ID nodo 1" 
-              style={{ width: '80px' }}
-            />
-            <label style={{ marginLeft: '0.5rem' }}>Label2: </label>
-            <input 
-              type="text" 
-              value={rel.label2} 
-              onChange={(e) => handleChangeField(idx, 'label2', e.target.value)} 
-              placeholder="Label nodo 2" 
-            />
-            <label style={{ marginLeft: '0.5rem' }}>ID2: </label>
-            <input 
-              type="text" 
-              value={rel.node2Id} 
-              onChange={(e) => handleChangeField(idx, 'node2Id', e.target.value)} 
-              placeholder="ID nodo 2" 
-              style={{ width: '80px' }}
-            />
-            <label style={{ marginLeft: '0.5rem' }}>Tipo: </label>
-            <input 
-              type="text" 
-              value={rel.relType} 
-              onChange={(e) => handleChangeField(idx, 'relType', e.target.value)} 
-              placeholder="Tipo relación" 
-            />
+          <div key={idx} className="relationship-card">
+            <h3>Relación {idx + 1}</h3>
+            <div className="input-group">
+              <label>Nodo 1 - Label:</label>
+              <input type="text" value={rel.label1} onChange={(e) => handleChangeField(idx, 'label1', e.target.value)} placeholder="Label nodo 1" />
+              <label>ID:</label>
+              <input type="text" value={rel.node1Id} onChange={(e) => handleChangeField(idx, 'node1Id', e.target.value)} placeholder="ID nodo 1" />
+            </div>
+
+            <div className="input-group">
+              <label>Nodo 2 - Label:</label>
+              <input type="text" value={rel.label2} onChange={(e) => handleChangeField(idx, 'label2', e.target.value)} placeholder="Label nodo 2" />
+              <label>ID:</label>
+              <input type="text" value={rel.node2Id} onChange={(e) => handleChangeField(idx, 'node2Id', e.target.value)} placeholder="ID nodo 2" />
+            </div>
+
+            <div className="input-group">
+              <label>Tipo de Relación:</label>
+              <input type="text" value={rel.relType} onChange={(e) => handleChangeField(idx, 'relType', e.target.value)} placeholder="Ej: AMIGOS" />
+            </div>
+
             {relationships.length > 1 && (
-              <button type="button" onClick={() => handleRemoveRelationship(idx)} style={{ marginLeft: '0.5rem' }}>
-                Eliminar
-              </button>
+              <button type="button" className="remove-relationship-btn" onClick={() => handleRemoveRelationship(idx)}>❌ Eliminar Relación</button>
             )}
           </div>
         ))}
-        <button type="button" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>
+
+        <button type="button" className="add-btn" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>
           Añadir relación
         </button><br/>
-        <button type="submit">Eliminar relaciones</button>
+        <button type="submit" className="submit-btn">Eliminar relaciones</button>
       </form>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
-      {error && <p style={{ color: 'red', whiteSpace: 'pre-wrap' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }
