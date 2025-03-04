@@ -1,5 +1,7 @@
 import React, { createContext, useContext } from 'react';
 
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000/api/';
+
 // Utility request function (same as in NodesContext)
 const request = async (endpoint, method = 'GET', data = null) => {
   const options = { method, headers: {} };
@@ -7,7 +9,7 @@ const request = async (endpoint, method = 'GET', data = null) => {
     options.headers['Content-Type'] = 'application/json';
     options.body = JSON.stringify(data);
   }
-  const res = await fetch('/api/' + endpoint, options);
+  const res = await fetch(BASE_URL + endpoint, options);
   let resData;
   try {
     resData = await res.json();

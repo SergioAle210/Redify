@@ -15,6 +15,30 @@ function NodeCreateWithPropsForm() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
+  // Función para analizar un valor individualmente
+  const parseItem = (item) => {
+    const trimmed = item.trim();
+    if (trimmed.toLowerCase() === 'true') return true;
+    if (trimmed.toLowerCase() === 'false') return false;
+    // Verifica si es numérico (entero o float)
+    if (trimmed !== '' && !isNaN(trimmed)) {
+      return Number(trimmed);
+    }
+    return trimmed;
+  };
+
+  // Función para analizar el valor: lista o valor simple
+  const parseValue = (value) => {
+    if (value.includes(',')) {
+      return value
+        .split(',')
+        .map(item => parseItem(item))
+        .filter(item => item !== '');
+    } else {
+      return parseItem(value);
+    }
+  };
+
   const handleAddProperty = () => {
     setProperties([...properties, { key: '', value: '' }]);
   };
@@ -33,12 +57,12 @@ function NodeCreateWithPropsForm() {
       return;
     }
 
-    // Construir objeto de propiedades
+    // Construir el objeto de propiedades
     const propsObj = {};
     let countProps = 0;
     properties.forEach(prop => {
       if (prop.key && prop.value !== '') {
-        propsObj[prop.key] = prop.value;
+        propsObj[prop.key] = parseValue(prop.value);
         countProps++;
       }
     });
@@ -51,12 +75,24 @@ function NodeCreateWithPropsForm() {
     try {
       const result = await createNodeWithProperties({ label, properties: propsObj });
       if (result.node) {
-        setMessage(`Nodo creado. ID: ${result.node.id}, Labels: ${Array.isArray(result.node.labels) ? result.node.labels.join(', ') : result.node.labels}, Propiedades: ${JSON.stringify(result.node.properties)}`);
+
+        const node = result.node;
+        setMessage(
+          `Nodo creado. ID: ${node.id}, Labels: ${Array.isArray(node.labels) ? node.labels.join(', ') : node.labels}, Propiedades: ${JSON.stringify(node.properties)}`
+        );
       } else {
         setMessage(result.message || 'Nodo con propiedades creado.');
       }
+      // Reiniciar formulario
       setLabel('');
-      setProperties([{ key: '', value: '' }, { key: '', value: '' }, { key: '', value: '' }, { key: '', value: '' }, { key: '', value: '' }]);
+      setProperties([
+        { key: '', value: '' },
+        { key: '', value: '' },
+        { key: '', value: '' },
+        { key: '', value: '' },
+        { key: '', value: '' }
+      ]);
+
     } catch (err) {
       setError(err.message);
     }
@@ -92,7 +128,7 @@ function NodeCreateWithPropsForm() {
               />
               <input 
                 type="text" 
-                placeholder="Valor" 
+                placeholder="Valor (usa comas para listas, 'true'/'false', números)" 
                 value={prop.value} 
                 onChange={(e) => {
                   const newProps = [...properties];
@@ -101,7 +137,16 @@ function NodeCreateWithPropsForm() {
                 }} 
               />
               {properties.length > 5 && (
-                <button type="button" className="remove-btn" onClick={() => handleRemoveProperty(idx)}>❌</button>
+
+                <button 
+                  type="button" 
+                  className="remove-btn" 
+                  onClick={() => handleRemoveProperty(idx)} 
+                  style={{ marginLeft: '0.5rem' }}
+                >
+                  Eliminar
+                </button>
+
               )}
             </div>
           ))}
