@@ -18,6 +18,8 @@ posts_count = 1200
 comments_count = 1000
 groups_count = 600
 reels_count = 700
+influencers_no_verified_count = 100
+influencers_verified_count = 100
 
 # Generar Usuarios (User)
 users = []
@@ -65,6 +67,7 @@ for i in range(users_count):
     )
 df_users = pd.DataFrame(users)
 df_users.to_csv(f"{output_dir}/users.csv", index=False)
+
 
 # Generar Publicaciones (Post)
 posts = []
@@ -413,6 +416,101 @@ for post in posts:
         }
     )
 
+# Generar usuarios influencers NO verificados
+influencers_no_verified = []
+for i in range(influencers_no_verified_count):
+    influencers_no_verified.append(
+        {
+            "id": i + 1,  # IDs 1 a 150 para no verificados
+            "nombre": fake.name(),
+            "email": fake.email(),
+            "fecha_registro": fake.date_between(start_date="-5y", end_date="today"),
+            "intereses": ";".join(
+                random.sample(
+                    [
+                        "fútbol",
+                        "programación",
+                        "cine",
+                        "música",
+                        "viajes",
+                        "lectura",
+                        "fotografía",
+                        "baloncesto",
+                        "videojuegos",
+                        "historia",
+                        "cocina",
+                        "anime",
+                        "automovilismo",
+                        "ciencia ficción",
+                        "arte digital",
+                        "senderismo",
+                        "astronomía",
+                        "idiomas",
+                        "tecnología",
+                        "eSports",
+                        "diseño gráfico",
+                        "guitarra",
+                        "baile",
+                        "escalada",
+                        "psicología",
+                        "moda",
+                    ],
+                    k=random.randint(1, 4),
+                )
+            ),
+        }
+    )
+df_influencers_no_verified = pd.DataFrame(influencers_no_verified)
+df_influencers_no_verified.to_csv(f"{output_dir}/influencers_no.csv", index=False)
+
+# Generar usuarios influencers VERIFICADOS
+influencers_verified = []
+# Para evitar conflicto de IDs, se asigna un offset (por ejemplo, a partir del 151)
+for i in range(influencers_verified_count):
+    influencers_verified.append(
+        {
+            "id": i + 1 + influencers_no_verified_count,  # IDs 151 a 300
+            "nombre": fake.name(),
+            "email": fake.email(),
+            "fecha_registro": fake.date_between(start_date="-5y", end_date="today"),
+            "intereses": ";".join(
+                random.sample(
+                    [
+                        "fútbol",
+                        "programación",
+                        "cine",
+                        "música",
+                        "viajes",
+                        "lectura",
+                        "fotografía",
+                        "baloncesto",
+                        "videojuegos",
+                        "historia",
+                        "cocina",
+                        "anime",
+                        "automovilismo",
+                        "ciencia ficción",
+                        "arte digital",
+                        "senderismo",
+                        "astronomía",
+                        "idiomas",
+                        "tecnología",
+                        "eSports",
+                        "diseño gráfico",
+                        "guitarra",
+                        "baile",
+                        "escalada",
+                        "psicología",
+                        "moda",
+                    ],
+                    k=random.randint(1, 4),
+                )
+            ),
+        }
+    )
+df_influencers_verified = pd.DataFrame(influencers_verified)
+df_influencers_verified.to_csv(f"{output_dir}/influencers_verified.csv", index=False)
+
 
 # Guardar relaciones en CSV
 for rel, data in relationships.items():
@@ -420,3 +518,51 @@ for rel, data in relationships.items():
     df_rel.to_csv(f"{output_dir}/{rel}.csv", index=False)
 
 print("Archivos CSV con relaciones generados correctamente ✅")
+
+
+# Reinicializar la lista de follows para influencers
+follows_influencers = []
+
+# Obtener IDs de influencers de cada grupo
+influencer_no_verified_ids = df_influencers_no_verified["id"].tolist()
+influencer_verified_ids = df_influencers_verified["id"].tolist()
+# Unir ambos conjuntos (total 200)
+all_influencer_ids = influencer_no_verified_ids + influencer_verified_ids
+
+for influencer_id in all_influencer_ids:
+    # Seleccionar un número aleatorio de seguidores entre 5 y 15
+    num_followers = random.randint(5, 15)
+    # Candidatos: usuarios con IDs del 1 al 1500
+    candidate_followers = list(range(1, users_count + 1))
+    # Evitar que el influencer se siga a sí mismo (en caso de que su ID esté en ese rango)
+    if influencer_id in candidate_followers:
+        candidate_followers.remove(influencer_id)
+    followers = random.sample(candidate_followers, num_followers)
+
+    # Determinar el estado de verificación del influencer
+    verified_status = (
+        "Verified" if influencer_id in influencer_verified_ids else "No Verified"
+    )
+
+    for follower in followers:
+        follows_influencers.append(
+            {
+                "usuario_id": follower,
+                "seguido_id": influencer_id,
+                "desde": fake.date_between(start_date="-5y", end_date="today"),
+                "interaccion_frecuencia": random.choice(
+                    ["Diaria", "Semanal", "Mensual", "Ocasional"]
+                ),
+                "razón": "Interés en su contenido",
+                "estado": verified_status,  # Se asigna Verified o No Verified
+            }
+        )
+
+df_follows = pd.DataFrame(follows_influencers)
+df_follows.to_csv(f"{output_dir}/follows_influencers.csv", index=False)
+print("Archivo follows_influencers.csv generado correctamente")
+
+
+print(
+    "Archivos CSV para influencers (verificados y no verificados) y relaciones follows generados correctamente ✅"
+)
