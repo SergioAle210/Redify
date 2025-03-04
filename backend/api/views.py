@@ -18,6 +18,7 @@ from .serializers import (
 from .neo4j_connection import neo4j_conn
 import datetime
 from neo4j.exceptions import Neo4jError
+from neo4j.time import Date as Neo4jDate
 
 """
 Crear un nodo con un solo label
@@ -120,14 +121,13 @@ def create_node_with_properties(request):
         "label": "Usuario",
         "properties": {
             "nombre": "Juan Pérez",
-            "email": ""
+            "email": "juanperez@gmail.com",
             "edad": 30,
             "fecha_registro": "2024-01-01",
             "activo": true
         }
     }
     """
-
     serializer = NodeSerializer(data=request.data)
     if serializer.is_valid():
         label = serializer.validated_data.get("label")
@@ -140,21 +140,46 @@ def create_node_with_properties(request):
             )
 
         # Construir la cadena de propiedades para Cypher
-        properties_string = ", ".join(f"n.{key} = ${key}" for key in properties.keys())
-        query = f"CREATE (n:{label}) SET {properties_string} RETURN id(n) AS node_id, labels(n) AS labels, properties(n) AS properties"
+        properties_string_list = []
+        for key in properties.keys():
+            # Asumimos que propiedades que comienzan con 'fecha_' o terminan con '_fecha' son de tipo fecha
+            if key.startswith("fecha_") or key.endswith("_fecha"):
+                properties_string_list.append(f"n.{key} = date(${key})")
+            else:
+                properties_string_list.append(f"n.{key} = ${key}")
+
+        properties_string = ", ".join(properties_string_list)
+
+        # Usamos elementId(n) en lugar de id(n) para evitar advertencias de deprecación
+        query = f"""
+        CREATE (n:{label})
+        SET {properties_string}
+        RETURN elementId(n) AS node_id, labels(n) AS labels, properties(n) AS properties
+        """
 
         with neo4j_conn._driver.session() as session:
             result = session.run(query, properties)
             nodo_creado = result.single()
 
             if nodo_creado:
+                node_id = nodo_creado["node_id"]
+                node_labels = nodo_creado["labels"]
+                node_props = nodo_creado["properties"]
+
+                # Convertir valores de tipo fecha (tanto de datetime como de neo4j.time.Date) a string (ISO 8601)
+                for k, v in node_props.items():
+                    if isinstance(v, (datetime.date, datetime.datetime, Neo4jDate)):
+                        try:
+                            node_props[k] = v.isoformat()
+                        except Exception:
+                            node_props[k] = str(v)
                 return Response(
                     {
                         "message": "Nodo con propiedades creado",
                         "node": {
-                            "id": nodo_creado["node_id"],
-                            "labels": nodo_creado["labels"],
-                            "properties": nodo_creado["properties"],
+                            "id": node_id,
+                            "labels": node_labels,
+                            "properties": node_props,
                         },
                     }
                 )
