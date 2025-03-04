@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import NodeManagementPage from './pages/NodeManagementPage';
+import RelationshipManagementPage from './pages/RelationshipManagementPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <nav style={{ padding: '1rem', borderBottom: '1px solid #ccc' }}>
+          <Link to="/nodes" style={{ marginRight: '1rem' }}>Gestionar Nodos</Link>
+          <Link to="/relationships">Gestionar Relaciones</Link>
+        </nav>
+        <div style={{ padding: '1rem' }}>
+          <Routes>
+            <Route path="/" element={<Navigate to="/nodes" replace />} />
+            <Route path="/nodes" element={<NodeManagementPage />} />
+            <Route path="/relationships" element={<RelationshipManagementPage />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
