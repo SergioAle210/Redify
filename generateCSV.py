@@ -421,7 +421,7 @@ influencers_no_verified = []
 for i in range(influencers_no_verified_count):
     influencers_no_verified.append(
         {
-            "id": i + 1,  # IDs 1 a 150 para no verificados
+            "id": i + 1 + users_count,  # IDs 1 a 150 para no verificados
             "nombre": fake.name(),
             "email": fake.email(),
             "fecha_registro": fake.date_between(start_date="-5y", end_date="today"),
@@ -469,7 +469,7 @@ influencers_verified = []
 for i in range(influencers_verified_count):
     influencers_verified.append(
         {
-            "id": i + 1 + influencers_no_verified_count,  # IDs 151 a 300
+            "id": i + 1 + influencers_no_verified_count + users_count,  # IDs 151 a 300
             "nombre": fake.name(),
             "email": fake.email(),
             "fecha_registro": fake.date_between(start_date="-5y", end_date="today"),
