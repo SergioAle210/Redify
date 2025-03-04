@@ -171,9 +171,18 @@ def search_nodes(request):
     Parámetros en el payload JSON:
       - labels: Lista de etiquetas (ej: ["Usuario", "Cliente"])
       - filters: Diccionario de filtros, donde cada clave es el nombre de la propiedad y el valor es un objeto con:
-            - operator: "=", "<", "<=", ">", ">=", "IN"
+            - operator: "=", "<", "<=", ">", ">=", "IN", "CONTAINS"
             - value: Valor a comparar (puede ser simple o una lista)
       - limit: Número máximo de nodos a retornar (por defecto 100)
+
+      JSON de ejemplo:
+        {
+            "labels": ["Usuario"],
+            "filters": {
+                "edad": { "operator": ">=", "value": 18 },
+                "fecha_registro": { "operator": ">=", "value": "2022-01-01" }
+            },
+            "limit": 50
     """
     serializer = NodeSearchSerializer(data=request.data)
     if serializer.is_valid():
