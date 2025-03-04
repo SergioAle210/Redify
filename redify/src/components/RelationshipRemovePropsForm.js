@@ -10,6 +10,12 @@ function RelationshipRemovePropsForm() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
+  // Función para convertir el ID a entero si es numérico
+  const convertId = (value) => {
+    const n = parseInt(value, 10);
+    return isNaN(n) ? value : n;
+  };
+
   const handleAddRelationship = () => {
     setRelationships([...relationships, {
       label1: '', node1Id: '', label2: '', node2Id: '', relType: '',
@@ -49,7 +55,7 @@ function RelationshipRemovePropsForm() {
     e.preventDefault();
     setMessage('');
     setError('');
-    // Validate
+    // Validar
     for (let rel of relationships) {
       if (!rel.label1 || !rel.node1Id || !rel.label2 || !rel.node2Id || !rel.relType) {
         setError('Complete todos los campos requeridos para cada relación.');
@@ -61,12 +67,12 @@ function RelationshipRemovePropsForm() {
         return;
       }
     }
-    // Build payload
+    // Construir payload aplicando conversión de IDs
     const payloadRels = relationships.map(rel => ({
       label1: rel.label1,
-      node1_id: rel.node1Id,
+      node1_id: convertId(rel.node1Id),
       label2: rel.label2,
-      node2_id: rel.node2Id,
+      node2_id: convertId(rel.node2Id),
       rel_type: rel.relType,
       properties: rel.props.map(p => p.trim()).filter(p => p)
     }));
@@ -164,7 +170,9 @@ function RelationshipRemovePropsForm() {
             )}
           </div>
         ))}
-        <button type="button" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>Añadir otra relación</button><br/>
+        <button type="button" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>
+          Añadir otra relación
+        </button><br/>
         <button type="submit">Remover propiedades</button>
       </form>
       {message && <p style={{ color: 'green', whiteSpace: 'pre-wrap' }}>{message}</p>}
