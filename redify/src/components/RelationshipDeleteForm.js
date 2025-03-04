@@ -9,6 +9,12 @@ function RelationshipDeleteForm() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
+  // Función para convertir el ID a entero si es numérico
+  const convertId = (value) => {
+    const n = parseInt(value, 10);
+    return isNaN(n) ? value : n;
+  };
+
   const handleAddRelationship = () => {
     setRelationships([...relationships, { label1: '', node1Id: '', label2: '', node2Id: '', relType: '' }]);
   };
@@ -33,11 +39,12 @@ function RelationshipDeleteForm() {
         return;
       }
     }
+    // Construir el payload usando convertId para los IDs
     const payloadRels = relationships.map(rel => ({
       label1: rel.label1,
-      node1_id: rel.node1Id,
+      node1_id: convertId(rel.node1Id),
       label2: rel.label2,
-      node2_id: rel.node2Id,
+      node2_id: convertId(rel.node2Id),
       rel_type: rel.relType
     }));
     try {
@@ -106,7 +113,9 @@ function RelationshipDeleteForm() {
             )}
           </div>
         ))}
-        <button type="button" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>Añadir relación</button><br/>
+        <button type="button" onClick={handleAddRelationship} style={{ marginBottom: '0.5rem' }}>
+          Añadir relación
+        </button><br/>
         <button type="submit">Eliminar relaciones</button>
       </form>
       {message && <p style={{ color: 'green' }}>{message}</p>}
