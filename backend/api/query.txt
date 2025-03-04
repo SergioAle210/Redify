@@ -1,0 +1,195 @@
+--------------------------------------------------------------------------------------------------------------
+@POST
+http://127.0.0.1:8000/api/create-node-single-label/
+
+{
+    "label": "Persona"
+}
+
+--------------------------------------------------------------------------------------------------------------
+@POST
+http://127.0.0.1:8000/api/create-node-multiple-labels/
+
+{
+    "labels": ["Persona", "Cliente", "Empresa"]
+}   
+
+--------------------------------------------------------------------------------------------------------------
+@POST
+http://127.0.0.1:8000/api/create-node-with-properties/
+
+{
+    "label": "Persona",
+    "properties": {
+        "id": 1,
+        "nombre": "Sergio",
+        "email": "juanperez@gmail.com",
+        "edad": 20,
+        "fecha_registro": "2024-01-02",
+        "intereses": ["hola", "prueba"],
+        "activo": true
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------
+@POST
+http://127.0.0.1:8000/api/search-nodes/
+
+{
+    "labels": ["Reel"],
+    "filters": {
+        "duracion": {
+            "operator" ">=",
+            "value": "30.5"
+        }
+        "likes": {
+            "operator": "<",
+            "value": "4000"
+        }
+    },
+    "limit": 10
+}
+
+--------------------------------------------------------------------------------------------------------------
+@POST
+http://127.0.0.1:8000/api/get-aggregated-data/
+
+{
+    "label": "Persona",
+    "property": "edad"
+}
+
+--------------------------------------------------------------------------------------------------------------
+@PUT
+http://127.0.0.1:8000/api/update-multiple-nodes-properties/
+
+{
+    "node_ids": [1, 2, 3],
+    "label": "Persona",
+    "properties": {
+        "edad": 22,
+        "intereses": ["Baloncesto"]
+    }
+}
+
+{
+    "node_ids": [1],
+    "label": "Persona",
+    "properties": {
+        "edad": 22,
+        "intereses": ["Baloncesto"]
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------
+@PUT
+http://127.0.0.1:8000/api/remove-multiple-nodes-properties/
+
+{
+    "node_ids": [1, 2],
+    "label": "Persona",
+    "properties": ["email"]
+}
+
+--------------------------------------------------------------------------------------------------------------
+@POST
+http://127.0.0.1:8000/api/create-relationship/
+
+{
+    "label1": "Persona",
+    "node1_id": 2,
+    "label2": "Persona",
+    "node2_id": 1,
+    "rel_type": "Profesora",
+    "properties": {
+        "tipo_amistad": "Compañeros de trabajo",
+        "desde": "2021-10-23",
+        "nivel_confianza": 10
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------
+@PUT
+http://127.0.0.1:8000/api/update-bulk-relationships/
+
+{
+  "relationships": [
+    {
+      "label1": "Persona",
+      "node1_id": 1,
+      "label2": "Persona",
+      "node2_id": 2,
+      "rel_type": "ALUMNO_DE",
+      "sueldo": 10000,
+      "tipo_amistad": "Mejores Amigos",
+      "desde": "2025-04-03"
+    },   
+    {
+      "label1": "Persona",
+      "node1_id": 2,
+      "label2": "Persona",
+      "node2_id": 1,
+      "rel_type": "Profesora",
+      "sueldo": 6000,
+      "tipo_amistad": "Mejores Amigos",
+      "desde": "2020-10-10"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------------------------------------
+@PUT
+http://127.0.0.1:8000/api/remove-bulk-relationship/
+
+{
+  "relationships": [
+    {
+      "label1": "Persona",
+      "node1_id": 1,
+      "label2": "Persona",
+      "node2_id": 2,
+      "rel_type": "ALUMNO_DE",
+      "properties": ["sueldo"]
+    },
+    {
+      "label1": "Persona",
+      "node1_id": 2,
+      "label2": "Persona",
+      "node2_id": 1,
+      "rel_type": "Profesora",
+      "properties": ["sueldo"]
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------------------------------------
+@DELETE
+http://127.0.0.1:8000/api/delete-multiple-nodes/
+
+{
+    "label": "Persona",
+    "node_ids": [1, 2]
+}
+
+--------------------------------------------------------------------------------------------------------------
+@DELETE
+http://127.0.0.1:8000/api/delete-bulk-relationships/
+
+{
+  "relationships": [
+    {
+      "label1": "Persona",
+      "node1_id": 1,
+      "label2": "Persona",
+      "node2_id": 2,
+      "rel_type": "ALUMNO_DE"
+    },
+    {
+      "label1": "Persona",
+      "node1_id": 2,
+      "label2": "Persona",
+      "node2_id": 1,
+      "rel_type": "Profesora"
+    }
+  ]
+}
