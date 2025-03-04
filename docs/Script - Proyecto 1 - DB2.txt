@@ -43,6 +43,25 @@ CREATE (:Usuario {
     intereses: split(row.intereses, ";")
 });
 
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1S49ckPo4OhPDI7BPoReFPKBLhipIWxb5" AS row
+CREATE (:Usuario:Influencers:Verified {
+    id: toInteger(row.id),
+    nombre: row.nombre,
+    email: row.email,
+    fecha_registro: date(row.fecha_registro),
+    intereses: split(row.intereses, ";")
+});
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Z6yhu5idyUTUVvYkMMjygbuP9sjjeG47" AS row
+CREATE (:Usuario:Influencers {
+    id: toInteger(row.id),
+    nombre: row.nombre,
+    email: row.email,
+    fecha_registro: date(row.fecha_registro),
+    intereses: split(row.intereses, ";")
+});
+
+
 LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1vpiTTf5gKJaYTO8nH6D31tXmtJjCELuL" AS row
 MATCH (u1:Usuario {id: toInteger(row.usuario1_id)})
 MATCH (u2:Usuario {id: toInteger(row.usuario2_id)})
@@ -52,6 +71,15 @@ LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Wz-7
 MATCH (u1:Usuario {id: toInteger(row.usuario_id)})
 MATCH (u2:Usuario {id: toInteger(row.seguido_id)})
 MERGE (u1)-[:FOLLOWS {desde: date(row.desde), interaccion_frecuencia: row.interaccion_frecuencia, razón: row.razón}]->(u2);
+
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1BnFpc9f70r4GusCOxWaI_8pQM3slj_vS" AS row
+MATCH (u1:Usuario {id: toInteger(row.usuario_id)})
+MATCH (u2:Usuario {id: toInteger(row.seguido_id)})
+MERGE (u1)-[:FOLLOWS {
+    desde: date(row.desde),
+    interaccion_frecuencia: row.interaccion_frecuencia,
+    razón: row.razón
+}]->(u2);
 
 LOAD CSV WITH HEADERS FROM "https://drive.google.com/uc?export=download&id=1Jyc3BZE-kTnWRIGNNs98flWnYym_8VO0" AS row
 MATCH (u:Usuario {id: toInteger(row.usuario_id)})
