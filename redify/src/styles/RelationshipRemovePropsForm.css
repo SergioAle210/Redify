@@ -1,0 +1,33 @@
+.relationship-remove-container {
+    background: linear-gradient(135deg, #6D28D9, #4338CA);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .relationship-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .add-btn, .submit-btn, .remove-relationship-btn {
+    background-color: #F59E0B;
+    color: black;
+    font-weight: bold;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-btn:hover, .submit-btn:hover, .remove-relationship-btn:hover {
+    background-color: #D97706;
+  }
+  

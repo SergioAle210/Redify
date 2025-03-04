@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNodes } from '../context/NodesContext';
+import '../styles/NodeCreateWithPropsForm.css'; // Importa el CSS
 
 function NodeCreateWithPropsForm() {
   const { createNodeWithProperties } = useNodes();
@@ -26,11 +27,13 @@ function NodeCreateWithPropsForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     if (!label) {
       setError('Debe proporcionar un label.');
       return;
     }
-    // Build properties object
+
+    // Construir objeto de propiedades
     const propsObj = {};
     let countProps = 0;
     properties.forEach(prop => {
@@ -39,43 +42,44 @@ function NodeCreateWithPropsForm() {
         countProps++;
       }
     });
+
     if (countProps < 5) {
       setError('Debe proporcionar al menos 5 propiedades.');
       return;
     }
+
     try {
       const result = await createNodeWithProperties({ label, properties: propsObj });
       if (result.node) {
-        const node = result.node;
-        setMessage(`Nodo creado. ID: ${node.id}, Labels: ${Array.isArray(node.labels) ? node.labels.join(', ') : node.labels}, Propiedades: ${JSON.stringify(node.properties)}`);
+        setMessage(`Nodo creado. ID: ${result.node.id}, Labels: ${Array.isArray(result.node.labels) ? result.node.labels.join(', ') : result.node.labels}, Propiedades: ${JSON.stringify(result.node.properties)}`);
       } else {
         setMessage(result.message || 'Nodo con propiedades creado.');
       }
-      // Reset form
       setLabel('');
-      setProperties([{ key: '', value: '' },{ key: '', value: '' },{ key: '', value: '' },{ key: '', value: '' },{ key: '', value: '' }]);
+      setProperties([{ key: '', value: '' }, { key: '', value: '' }, { key: '', value: '' }, { key: '', value: '' }, { key: '', value: '' }]);
     } catch (err) {
       setError(err.message);
     }
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Crear Nodo (con propiedades)</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Label: </label>
+    <div className="props-form-container">
+      <h2>Crear Nodo con Propiedades</h2>
+      <form onSubmit={handleSubmit} className="props-form">
+        <div className="input-group">
+          <label>Label del Nodo:</label>
           <input 
             type="text" 
             value={label} 
             onChange={(e) => setLabel(e.target.value)} 
-            placeholder="Label del nodo" 
+            placeholder="Ej: Usuario, Producto"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
+
+        <div className="properties-container">
           <label>Propiedades:</label>
           {properties.map((prop, idx) => (
-            <div key={idx} style={{ marginLeft: '1rem', marginBottom: '0.25rem' }}>
+            <div key={idx} className="property-group">
               <input 
                 type="text" 
                 placeholder="Clave" 
@@ -85,7 +89,6 @@ function NodeCreateWithPropsForm() {
                   newProps[idx].key = e.target.value;
                   setProperties(newProps);
                 }} 
-                style={{ marginRight: '0.5rem' }}
               />
               <input 
                 type="text" 
@@ -98,18 +101,18 @@ function NodeCreateWithPropsForm() {
                 }} 
               />
               {properties.length > 5 && (
-                <button type="button" onClick={() => handleRemoveProperty(idx)} style={{ marginLeft: '0.5rem' }}>
-                  Eliminar
-                </button>
+                <button type="button" className="remove-btn" onClick={() => handleRemoveProperty(idx)}>❌</button>
               )}
             </div>
           ))}
-          <button type="button" onClick={handleAddProperty}>Añadir propiedad</button>
+          <button type="button" className="add-btn" onClick={handleAddProperty}>+ Añadir Propiedad</button>
         </div>
-        <button type="submit" style={{ marginTop: '0.5rem' }}>Crear</button>
+
+        <button type="submit" className="submit-btn">Crear</button>
       </form>
-      {message && <p style={{ color: 'green', whiteSpace: 'pre-wrap' }}>{message}</p>}
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }

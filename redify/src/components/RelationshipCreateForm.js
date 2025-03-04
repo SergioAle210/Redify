@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useRelationships } from '../context/RelationshipsContext';
+import '../styles/RelationshipCreateForm.css'; // Importa el CSS
 
 function RelationshipCreateForm() {
   const { createRelationship } = useRelationships();
@@ -28,10 +29,12 @@ function RelationshipCreateForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     if (!label1 || !node1Id || !label2 || !node2Id || !relType) {
       setError('Todos los campos de nodo y tipo son requeridos.');
       return;
     }
+
     const propsObj = {};
     let countProps = 0;
     properties.forEach(prop => {
@@ -40,10 +43,12 @@ function RelationshipCreateForm() {
         countProps++;
       }
     });
+
     if (countProps < 3) {
       setError('Debe proporcionar al menos 3 propiedades para la relación.');
       return;
     }
+
     try {
       const result = await createRelationship({ 
         label1, node1_id: node1Id, 
@@ -51,11 +56,13 @@ function RelationshipCreateForm() {
         rel_type: relType, 
         properties: propsObj 
       });
+
       if (result.relationship) {
         setMessage(`Relación creada. ID: ${result.relationship.id}, Propiedades: ${JSON.stringify(result.relationship.properties)}`);
       } else {
         setMessage(result.message || 'Relación creada.');
       }
+
       // Reset form
       setLabel1('');
       setNode1Id('');
@@ -69,70 +76,70 @@ function RelationshipCreateForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Crear relación</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Nodo 1 - Label: </label>
+    <div className="relationship-form-container">
+      <h2>Crear Relación</h2>
+      <form onSubmit={handleSubmit} className="relationship-form">
+        <div className="input-group">
+          <label>Nodo 1 - Label:</label>
           <input 
             type="text" 
             value={label1} 
             onChange={(e) => setLabel1(e.target.value)} 
-            placeholder="Label nodo 1" 
+            placeholder="Label nodo 1"
           />
-          <label style={{ marginLeft: '0.5rem' }}>ID: </label>
+          <label>ID:</label>
           <input 
             type="text" 
             value={node1Id} 
             onChange={(e) => setNode1Id(e.target.value)} 
-            placeholder="ID nodo 1" 
-            style={{ width: '80px' }}
+            placeholder="ID nodo 1"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
-          <label>Nodo 2 - Label: </label>
+
+        <div className="input-group">
+          <label>Nodo 2 - Label:</label>
           <input 
             type="text" 
             value={label2} 
             onChange={(e) => setLabel2(e.target.value)} 
-            placeholder="Label nodo 2" 
+            placeholder="Label nodo 2"
           />
-          <label style={{ marginLeft: '0.5rem' }}>ID: </label>
+          <label>ID:</label>
           <input 
             type="text" 
             value={node2Id} 
             onChange={(e) => setNode2Id(e.target.value)} 
-            placeholder="ID nodo 2" 
-            style={{ width: '80px' }}
+            placeholder="ID nodo 2"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
-          <label>Tipo de relación: </label>
+
+        <div className="input-group">
+          <label>Tipo de Relación:</label>
           <input 
             type="text" 
             value={relType} 
             onChange={(e) => setRelType(e.target.value)} 
-            placeholder="Ej: AMIGO_DE" 
+            placeholder="Ej: AMIGO_DE"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
-          <label>Propiedades de la relación:</label>
+
+        <div className="properties-container">
+          <label>Propiedades de la Relación:</label>
           {properties.map((prop, idx) => (
-            <div key={idx} style={{ marginLeft: '1rem', marginBottom: '0.25rem' }}>
+            <div key={idx} className="property-group">
               <input 
                 type="text" 
-                placeholder="Clave" 
+                placeholder="Clave"
                 value={prop.key} 
                 onChange={(e) => {
                   const newProps = [...properties];
                   newProps[idx].key = e.target.value;
                   setProperties(newProps);
                 }} 
-                style={{ marginRight: '0.5rem' }}
               />
               <input 
                 type="text" 
-                placeholder="Valor" 
+                placeholder="Valor"
                 value={prop.value} 
                 onChange={(e) => {
                   const newProps = [...properties];
@@ -141,18 +148,18 @@ function RelationshipCreateForm() {
                 }} 
               />
               {properties.length > 3 && (
-                <button type="button" onClick={() => handleRemoveProperty(idx)} style={{ marginLeft: '0.5rem' }}>
-                  Eliminar
-                </button>
+                <button type="button" className="remove-btn" onClick={() => handleRemoveProperty(idx)}>❌</button>
               )}
             </div>
           ))}
-          <button type="button" onClick={handleAddProperty}>Añadir propiedad</button>
+          <button type="button" className="add-btn" onClick={handleAddProperty}>+ Añadir Propiedad</button>
         </div>
-        <button type="submit" style={{ marginTop: '0.5rem' }}>Crear relación</button>
+
+        <button type="submit" className="submit-btn">Crear Relación</button>
       </form>
-      {message && <p style={{ color: 'green', whiteSpace: 'pre-wrap' }}>{message}</p>}
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }

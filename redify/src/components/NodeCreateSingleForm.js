@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNodes } from '../context/NodesContext';
+import '../styles/NodeCreateSingleForm.css'; // Importa el CSS
 
 function NodeCreateSingleForm() {
   const { createNodeSingle } = useNodes();
@@ -11,10 +12,12 @@ function NodeCreateSingleForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     if (!label) {
       setError('Debe proporcionar un label.');
       return;
     }
+
     try {
       const result = await createNodeSingle({ label });
       if (result.node) {
@@ -29,19 +32,23 @@ function NodeCreateSingleForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Crear Nodo (un solo label)</h3>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
-          value={label} 
-          onChange={(e) => setLabel(e.target.value)} 
-          placeholder="Label del nodo" 
-        />
-        <button type="submit">Crear</button>
+    <div className="create-form-container">
+      <h2>Crear Nodo</h2>
+      <form onSubmit={handleSubmit} className="create-form">
+        <div className="input-group">
+          <label>Label del Nodo:</label>
+          <input 
+            type="text" 
+            value={label} 
+            onChange={(e) => setLabel(e.target.value)} 
+            placeholder="Ej: Usuario, Producto"
+          />
+        </div>
+        <button type="submit" className="submit-btn">Crear</button>
       </form>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
-      {error && <p style={{ color: 'red' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }

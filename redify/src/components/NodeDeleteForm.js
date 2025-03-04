@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNodes } from '../context/NodesContext';
+import '../styles/NodeDeleteForm.css'; // Importa el CSS
 
 function NodeDeleteForm() {
   const { deleteNodes } = useNodes();
@@ -12,19 +13,23 @@ function NodeDeleteForm() {
     e.preventDefault();
     setMessage('');
     setError('');
+
     if (!label) {
       setError('Label es requerido.');
       return;
     }
+
     if (!nodeIdsInput.trim()) {
       setError('Proporcione al menos un ID de nodo.');
       return;
     }
+
     const nodeIdsArray = nodeIdsInput.split(',').map(id => id.trim()).filter(id => id);
     if (nodeIdsArray.length === 0) {
       setError('Proporcione al menos un ID de nodo.');
       return;
     }
+
     try {
       const result = await deleteNodes({ label, node_ids: nodeIdsArray });
       let successMsg = result.message || 'Eliminación completada.';
@@ -32,9 +37,11 @@ function NodeDeleteForm() {
         successMsg += ` Nodos eliminados: ${result.deletedCount}.`;
       }
       setMessage(successMsg);
+
       if (result.errors && result.errors.length > 0) {
         setError(result.errors.join(' ; '));
       }
+
       // Clear form
       setLabel('');
       setNodeIdsInput('');
@@ -44,31 +51,34 @@ function NodeDeleteForm() {
   };
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <h3>Eliminar nodos</h3>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Label: </label>
+    <div className="delete-form-container">
+      <h2>Eliminar Nodos</h2>
+      <form onSubmit={handleSubmit} className="delete-form">
+        <div className="input-group">
+          <label>Label del Nodo:</label>
           <input 
             type="text" 
             value={label} 
             onChange={(e) => setLabel(e.target.value)} 
-            placeholder="Label de los nodos" 
+            placeholder="Ej: Usuario, Producto"
           />
         </div>
-        <div style={{ marginTop: '0.5rem' }}>
-          <label>IDs de nodos (coma separadas): </label>
+
+        <div className="input-group">
+          <label>IDs de Nodos (separados por coma):</label>
           <input 
             type="text" 
             value={nodeIdsInput} 
             onChange={(e) => setNodeIdsInput(e.target.value)} 
-            placeholder="Ej: 1, 2, 3" 
+            placeholder="Ej: 1, 2, 3"
           />
         </div>
-        <button type="submit" style={{ marginTop: '0.5rem' }}>Eliminar</button>
+
+        <button type="submit" className="delete-btn">🗑 Eliminar</button>
       </form>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
-      {error && <p style={{ color: 'red', whiteSpace: 'pre-wrap' }}>Error: {error}</p>}
+
+      {message && <p className="success-msg">{message}</p>}
+      {error && <p className="error-msg">Error: {error}</p>}
     </div>
   );
 }
