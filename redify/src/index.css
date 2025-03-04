@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navbar {
+  background: #2c3e50; /* Azul oscuro */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  border-bottom: 3px solid #3498db;
+}
+
+.nav-link {
+  text-decoration: none;
+  background: #3498db; /* Azul vibrante */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background: #2980b9; /* Azul más oscuro */
+  transform: scale(1.05);
+}

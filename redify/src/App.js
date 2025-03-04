@@ -2,14 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import NodeManagementPage from './pages/NodeManagementPage';
 import RelationshipManagementPage from './pages/RelationshipManagementPage';
-
+import "./index.css"
 function App() {
   return (
     <Router>
       <div>
-        <nav style={{ padding: '1rem', borderBottom: '1px solid #ccc' }}>
-          <Link to="/nodes" style={{ marginRight: '1rem' }}>Gestionar Nodos</Link>
-          <Link to="/relationships">Gestionar Relaciones</Link>
+        <nav className="navbar">
+          <Link to="/nodes" className="nav-link">Gestionar Nodos</Link>
+          <Link to="/relationships" className="nav-link">Gestionar Relaciones</Link>
         </nav>
         <div style={{ padding: '1rem' }}>
           <Routes>
