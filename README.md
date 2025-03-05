@@ -470,7 +470,27 @@ Payload:
 
 ```
 
-## 5. Conclusión
+## 5. Instalacion de paquetes y ejecución del Backend
+
+Aqui están los paquetes para instalar y que funcione el backend:
+
+```css
+pip install django djangorestframework neo4j python-dotenv django-cors-headers
+```
+
+Posteriormente a esto nos dirigimos al directorio del backend:
+
+```css
+cd ./backend
+```
+
+Luego procedemos a ejecutar el siguiente comando para ejecutar el backend:
+
+```css
+python manage.py runserver
+```
+
+## 6. Conclusión
 
 Este proyecto integra:
 
